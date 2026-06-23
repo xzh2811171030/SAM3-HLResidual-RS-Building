@@ -96,42 +96,192 @@ SAM3-HLResidual-RS-Building/
 
 ## Code Organization
 
-### Core modules
+The repository is organized as a research-code release. The official SAM3 codebase, if locally installed or vendored under `src/models/sam3/`, is treated as an external dependency and is not counted as part of the custom experimental pipeline.
 
-* `src/models/`: model components for SAM3-based prompt-free segmentation and High--Low Residual refinement.
-* `src/training/`: training runners, LoRA adaptation logic, lightweight decoder training, and optimization utilities.
-* `src/evaluation/`: evaluation metrics and utilities for mIoU, F1, Boundary IoU, and baseline evaluation.
-* `src/data/`: dataset and split-loading utilities.
-* `src/utils/`: shared utilities for paths, experiment management, and analysis.
+```text
+SAM3-HLResidual-RS-Building/
+├── config/
+│   └── coverage_config_template.json
+├── data/
+│   └── splits/
+│       └── e0_manifest/
+├── results/
+├── scripts/
+├── src/
+│   ├── data/
+│   ├── evaluation/
+│   ├── models/
+│   ├── training/
+│   ├── utils/
+│   └── run_*.py
+├── .gitignore
+├── README.md
+├── README_zh-CN.md
+└── requirements.txt
+```
 
-### Main experiment and diagnostic scripts
+### Pipeline-level modules
 
-| Script                                      | Purpose                                                                     |
-| ------------------------------------------- | --------------------------------------------------------------------------- |
-| `src/run_calibrated_fulltest.py`            | Validation-calibrated full-test evaluation                                  |
-| `src/run_calibrated_inference_pilot.py`     | Calibrated pilot-scale inference                                            |
-| `src/generate_mask_predictions.py`          | Export prediction masks for downstream diagnostics                          |
-| `src/recompute_excluding_pilot_metrics.py`  | Recompute held-out non-pilot metrics after excluding the fixed pilot subset |
-| `src/run_hl_residual_component_ablation.py` | Component ablation for residual-branch variants                             |
-| `src/run_e7a_prompt_drift.py`               | Prompt-drift diagnostic                                                     |
-| `src/run_e7b_image_corruption.py`           | Image-corruption diagnostic                                                 |
-| `src/run_e8_regionwise_eval.py`             | Region-wise evaluation                                                      |
-| `src/run_e9_efficiency.py`                  | Parameter and inference-time analysis                                       |
-| `src/run_qualitative_visualization_v2.py`   | Qualitative visualization                                                   |
-| `src/run_deeplabv3plus_baseline_revised.py` | DeepLabv3+ baseline                                                         |
-| `src/run_target20_segformer_baseline.py`    | Target 20-shot SegFormer baseline                                           |
-| `src/run_foundation_prompt_baselines.py`    | Prompt-dependent foundation-model diagnostic baselines                      |
-| `src/make_paper_tables.py`                  | Generate result tables from exported metrics                                |
+| Module                     | Role                                                                                                                         |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| `src/models/`              | Custom model definitions, including SAM3-based prompt-free segmentation modules and High--Low residual refinement components |
+| `src/training/`            | Training runners for LoRA adaptation, fully supervised baselines, PEFT baselines, and experiment orchestration               |
+| `src/evaluation/`          | Evaluation metrics and baseline evaluation utilities, including mIoU, F1, Boundary IoU, and related segmentation metrics     |
+| `src/data/`                | Dataset and split-loading utilities                                                                                          |
+| `src/utils/`               | Path handling, manifest auditing, mask saving, confusion-map generation, and diagnostic utilities                            |
+| `scripts/`                 | Shell wrappers and high-level analysis scripts for selected experiments                                                      |
+| `data/splits/e0_manifest/` | Fixed split manifests used by the support, validation, pilot, and held-out evaluation protocol                               |
+| `results/`                 | Lightweight result summaries and exported tables; large checkpoints and masks are intentionally excluded                     |
 
-### Shell scripts
+## Experimental Pipeline
+
+The custom code covers the following experimental stages:
+
+1. **Prompt-free SAM3-LoRA training**
+   Train the baseline model that adapts the SAM3 image encoder with LoRA and predicts full-image building masks without prompts.
+
+2. **HL-Residual refinement training**
+   Train residual refinement variants on top of the LoRA baseline, including full High--Low residual fusion and diagnostic variants.
+
+3. **Baseline training and comparison**
+   Run non-SAM or prompt-dependent diagnostic baselines such as UNetFormer-style ResNet34, SegFormer, DeepLabV3+, and SAM3 prompt-based references.
+
+4. **Validation-calibrated inference**
+   Apply validation-selected thresholding, post-processing, TTA, and full-test evaluation.
+
+5. **Held-out non-pilot recomputation**
+   Exclude the fixed pilot500 diagnostic subset from the official 8,402-image pool and recompute the 7,902-image held-out aggregate.
+
+6. **Deployment-oriented diagnostics**
+   Evaluate prompt drift, image corruption robustness, region-wise behavior, efficiency, qualitative examples, and coverage-oriented metrics.
+
+7. **Paper table generation and analysis**
+   Aggregate JSON/CSV metrics into paper-ready tables and paired image-level summaries.
+
+## Main Entry Points
+
+The most relevant entry points for reproducing and auditing the experiments are:
+
+| Stage                           | Entry point                                 | Purpose                                                            |
+| ------------------------------- | ------------------------------------------- | ------------------------------------------------------------------ |
+| LoRA baseline training          | `src/run_e6v2_pilot.py`                     | 20-shot prompt-free LoRA pilot training                            |
+| HL-Residual training            | `src/run_hl_residual_refine_pilot.py`       | Train HL-Residual refinement from a LoRA checkpoint                |
+| Component ablation              | `src/run_hl_residual_component_ablation.py` | Train and evaluate `rgb_only` and `sam_only` residual variants     |
+| Calibrated full-test evaluation | `src/run_calibrated_fulltest.py`            | Run validation-calibrated TTA inference and metric evaluation      |
+| Pilot calibrated inference      | `src/run_calibrated_inference_pilot.py`     | Pilot-scale calibrated inference for model variants                |
+| Held-out recomputation          | `src/recompute_excluding_pilot_metrics.py`  | Recompute metrics after excluding pilot500 from the full test pool |
+| Mask export                     | `src/generate_mask_predictions.py`          | Save prediction masks for coverage and confusion diagnostics       |
+| Prompt drift                    | `src/run_e7a_prompt_drift.py`               | Evaluate prompt sensitivity and prompt-free robustness             |
+| Image corruption                | `src/run_e7b_image_corruption.py`           | Evaluate corruption robustness under multiple perturbation types   |
+| Region-wise evaluation          | `src/run_e8_regionwise_eval.py`             | Summarize model behavior across region groups                      |
+| Efficiency analysis             | `src/run_e9_efficiency.py`                  | Compare parameters, FLOPs, and inference time                      |
+| Qualitative visualization       | `src/run_qualitative_visualization_v2.py`   | Generate qualitative prediction and error-map visualizations       |
+| Paper tables                    | `src/make_paper_tables.py`                  | Aggregate exported metrics into paper-ready tables                 |
+
+## Available Shell and Analysis Scripts
 
 | Script                                       | Purpose                                                              |
 | -------------------------------------------- | -------------------------------------------------------------------- |
 | `scripts/paired_significance_analysis.py`    | Paired image-level analysis between Prompt-free LoRA and HL-Residual |
-| `scripts/run_exp2_component_ablation.sh`     | Component ablation experiments                                       |
-| `scripts/run_overnight_unet_baseline.sh`     | Overnight U-Net baseline experiment                                  |
-| `scripts/run_stageA_shot_pilot_5_10.sh`      | 5-shot and 10-shot pilot diagnostics                                 |
-| `scripts/run_target20_segformer_baseline.sh` | Target 20-shot SegFormer baseline run                                |
+| `scripts/run_exp2_component_ablation.sh`     | Batch wrapper for residual-branch component ablation                 |
+| `scripts/run_overnight_unet_baseline.sh`     | Batch wrapper for UNetFormer-style baseline experiments              |
+| `scripts/run_stageA_shot_pilot_5_10.sh`      | 5-shot and 10-shot pilot sensitivity diagnostics                     |
+| `scripts/run_target20_segformer_baseline.sh` | Target-domain 20-shot SegFormer baseline run                         |
+
+<details>
+<summary>Complete custom script index</summary>
+
+### Core training scripts
+
+| File                                        | Purpose                                                        |
+| ------------------------------------------- | -------------------------------------------------------------- |
+| `src/run_e6v2_pilot.py`                     | 20-shot prompt-free LoRA pilot training                        |
+| `src/run_hl_residual_refine_pilot.py`       | HL-Residual refinement training from a LoRA checkpoint         |
+| `src/run_hl_lite_pilot.py`                  | Lightweight residual variants such as HL-Lite and HL-Lite-Aux  |
+| `src/run_distillation_pilot.py`             | Knowledge distillation pilot using SAM3 pseudo-labels          |
+| `src/run_distillation_pilot_1.py`           | Distillation pilot variant or backup version                   |
+| `src/run_hl_residual_component_ablation.py` | Component ablation for RGB-only and SAM-only residual variants |
+| `src/run_all_experiments.py`                | Legacy multi-experiment orchestration script                   |
+| `src/run_experiments_gbg.py`                | GBG-SAM3 experiment runner                                     |
+
+### Baseline training scripts
+
+| File                                        | Purpose                                                               |
+| ------------------------------------------- | --------------------------------------------------------------------- |
+| `src/run_overnight_unet_baseline.py`        | UNetFormer-style ResNet34 baseline training and calibrated evaluation |
+| `src/run_target20_segformer_baseline.py`    | Target-domain 20-shot SegFormer baseline                              |
+| `src/run_deeplabv3plus_baseline_revised.py` | Revised DeepLabV3+ baseline                                           |
+| `src/run_foundation_prompt_baselines.py`    | SAM3 prompt-dependent foundation-model diagnostic baselines           |
+
+### Training submodules
+
+| File                                         | Purpose                                                                               |
+| -------------------------------------------- | ------------------------------------------------------------------------------------- |
+| `src/training/experiment_runner.py`          | Core LoRA training, checkpoint saving, and validation monitoring                      |
+| `src/training/experiment_runner_gbg.py`      | GBG-SAM3 experiment orchestration with GatedBoundaryAdapter and source-weight loading |
+| `src/training/train_fully_supervised.py`     | Fully supervised training utilities with multi-seed and full-metric evaluation        |
+| `src/training/train_fully_supervised_seg.py` | SegFormer-style fully supervised training                                             |
+| `src/training/train_peft_baselines.py`       | PEFT baseline training, including LoRA-style adaptation                               |
+
+### Calibrated inference and evaluation scripts
+
+| File                                          | Purpose                                                                                |
+| --------------------------------------------- | -------------------------------------------------------------------------------------- |
+| `src/run_calibrated_fulltest.py`              | Calibrated full-test inference with TTA, post-processing search, and metric evaluation |
+| `src/run_calibrated_inference_pilot.py`       | Pilot-scale calibrated inference for multiple model variants                           |
+| `src/02_run_sam_calibrated_save_confusion.py` | Calibrated inference with confusion-map saving                                         |
+| `src/recompute_excluding_pilot_metrics.py`    | Recompute held-out 7,902-image metrics after excluding pilot500                        |
+| `src/generate_mask_predictions.py`            | Save prediction masks for coverage-oriented diagnostics                                |
+
+### Robustness and deployment diagnostics
+
+| File                                   | Purpose                                                                 |
+| -------------------------------------- | ----------------------------------------------------------------------- |
+| `src/run_e7_robustness.py`             | Legacy E7 image-corruption robustness evaluation                        |
+| `src/run_e7_robustness_revised.py`     | Revised E7 robustness evaluation                                        |
+| `src/run_e7a_prompt_drift.py`          | Prompt-drift diagnostic comparing box-prompted and prompt-free behavior |
+| `src/run_e7a_prompt_drift_residual.py` | Simplified prompt-drift diagnostic for HL-Residual                      |
+| `src/run_e7b_image_corruption.py`      | Image-corruption diagnostic across corruption types, models, and seeds  |
+| `src/run_e7b_resume.py`                | Resume script for unfinished E7b corruption experiments                 |
+| `src/run_e7b_resume_select.py`         | Resume-and-select script for E7b corruption experiments                 |
+| `src/merge_e7_json_parts.py`           | Merge split E7 JSON result files                                        |
+| `src/plot_e7_results.py`               | Plot E7 diagnostic results                                              |
+
+### E8/E9 analysis scripts
+
+| File                            | Purpose                                                 |
+| ------------------------------- | ------------------------------------------------------- |
+| `src/run_e8_regionwise_eval.py` | Region-wise evaluation by city or inferred region group |
+| `src/run_e9_efficiency.py`      | Parameter count, FLOPs, and inference-time analysis     |
+
+### Analysis and visualization scripts
+
+| File                                      | Purpose                                               |
+| ----------------------------------------- | ----------------------------------------------------- |
+| `src/exp1_val_budget_end2end.py`          | Validation-budget sensitivity analysis                |
+| `src/01_run_three_model_coverage_eval.py` | Three-model coverage-oriented evaluation              |
+| `src/03_run_unetformer_save_confusion.py` | UNetFormer confusion-map saving                       |
+| `src/cross_city_variance_analysis.py`     | Cross-city variance analysis                          |
+| `src/make_paper_tables.py`                | Generate paper-ready tables from exported metrics     |
+| `src/run_qualitative_visualization.py`    | Qualitative visualization of predictions and overlays |
+| `src/run_qualitative_visualization_v2.py` | Revised qualitative visualization                     |
+
+### Utility and data scripts
+
+| File                                           | Purpose                                                                             |
+| ---------------------------------------------- | ----------------------------------------------------------------------------------- |
+| `src/evaluation/eval_metrics.py`               | Metric computation for mIoU, F1, Boundary IoU, precision, and recall                |
+| `src/evaluation/e5_eval_baselines_full.py`     | Full-scale E5 baseline evaluation                                                   |
+| `src/evaluation/eval_segformer.py`             | SegFormer evaluation                                                                |
+| `src/utils/diagnose.py`                        | Diagnostic utilities for data, models, and paths                                    |
+| `src/utils/cloud_paths.py`                     | Cloud/local path adaptation utilities                                               |
+| `src/utils/audit_manifest_masks.py`            | Manifest and image-label consistency auditing                                       |
+| `src/utils/mask_saving_and_confusion_utils.py` | Utilities for mask saving and confusion-map generation                              |
+| `src/models/model.py`                          | Custom model definitions, including GatedBoundaryAdapter and HLLiteDecoder variants |
+| `src/__init__.py`                              | Package initialization file                                                         |
+
+</details>
+
 
 ## Environment
 

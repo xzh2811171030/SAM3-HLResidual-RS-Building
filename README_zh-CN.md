@@ -96,42 +96,190 @@ SAM3-HLResidual-RS-Building/
 
 ## 代码组织
 
-### 核心模块
+本仓库是整理后的 research-code release。如果本地环境中将官方 SAM3 代码放在 `src/models/sam3/` 下，该部分应视为外部依赖，不计入本项目自定义实验管线。
 
-* `src/models/`：SAM3 prompt-free segmentation 和 High--Low Residual refinement 相关模型组件。
-* `src/training/`：训练流程、LoRA 适配、轻量级 decoder 训练和优化工具。
-* `src/evaluation/`：mIoU、F1、Boundary IoU 以及 baseline evaluation 相关评估代码。
-* `src/data/`：数据集读取和 split manifest 加载工具。
-* `src/utils/`：路径管理、实验管理和分析辅助工具。
+```text
+SAM3-HLResidual-RS-Building/
+├── config/
+│   └── coverage_config_template.json
+├── data/
+│   └── splits/
+│       └── e0_manifest/
+├── results/
+├── scripts/
+├── src/
+│   ├── data/
+│   ├── evaluation/
+│   ├── models/
+│   ├── training/
+│   ├── utils/
+│   └── run_*.py
+├── .gitignore
+├── README.md
+├── README_zh-CN.md
+└── requirements.txt
+```
 
-### 主要实验与诊断脚本
+### 模块级说明
 
-| 脚本                                          | 用途                                                     |
-| ------------------------------------------- | ------------------------------------------------------ |
-| `src/run_calibrated_fulltest.py`            | validation-calibrated full-test evaluation             |
-| `src/run_calibrated_inference_pilot.py`     | calibrated pilot-scale inference                       |
-| `src/generate_mask_predictions.py`          | 导出预测 mask，用于后续诊断分析                                     |
-| `src/recompute_excluding_pilot_metrics.py`  | 排除固定 pilot subset 后重新计算 held-out non-pilot 指标          |
-| `src/run_hl_residual_component_ablation.py` | residual branch 组件消融                                   |
-| `src/run_e7a_prompt_drift.py`               | prompt-drift 诊断                                        |
-| `src/run_e7b_image_corruption.py`           | image-corruption 诊断                                    |
-| `src/run_e8_regionwise_eval.py`             | region-wise evaluation                                 |
-| `src/run_e9_efficiency.py`                  | 参数量与推理时间分析                                             |
-| `src/run_qualitative_visualization_v2.py`   | 定性可视化                                                  |
-| `src/run_deeplabv3plus_baseline_revised.py` | DeepLabv3+ baseline                                    |
-| `src/run_target20_segformer_baseline.py`    | Target 20-shot SegFormer baseline                      |
-| `src/run_foundation_prompt_baselines.py`    | prompt-dependent foundation-model diagnostic baselines |
-| `src/make_paper_tables.py`                  | 根据导出指标生成结果表                                            |
+| 模块                         | 作用                                                                            |
+| -------------------------- | ----------------------------------------------------------------------------- |
+| `src/models/`              | 自定义模型定义，包括 SAM3 prompt-free segmentation 模块和 High--Low Residual refinement 组件 |
+| `src/training/`            | LoRA 适配、全监督 baseline、PEFT baseline 和实验编排相关训练代码                                |
+| `src/evaluation/`          | mIoU、F1、Boundary IoU 以及 baseline evaluation 相关评估代码                            |
+| `src/data/`                | 数据集读取和 split manifest 加载工具                                                    |
+| `src/utils/`               | 路径管理、manifest 审计、mask 保存、混淆矩阵生成和诊断工具                                          |
+| `scripts/`                 | 部分实验的 shell wrapper 和高层分析脚本                                                   |
+| `data/splits/e0_manifest/` | support、validation、pilot 和 held-out evaluation 使用的固定划分文件                      |
+| `results/`                 | 轻量级结果汇总和导出表格；不上传大体积 checkpoint 或预测 mask                                       |
 
-### Shell 脚本
+## 实验管线
 
-| 脚本                                           | 用途                                      |
-| -------------------------------------------- | --------------------------------------- |
-| `scripts/paired_significance_analysis.py`    | Prompt-free LoRA 与 HL-Residual 的图像级配对分析 |
-| `scripts/run_exp2_component_ablation.sh`     | 组件消融实验                                  |
-| `scripts/run_overnight_unet_baseline.sh`     | U-Net baseline 实验                       |
-| `scripts/run_stageA_shot_pilot_5_10.sh`      | 5-shot 和 10-shot pilot 诊断               |
-| `scripts/run_target20_segformer_baseline.sh` | Target 20-shot SegFormer baseline       |
+本仓库自定义代码覆盖以下实验阶段：
+
+1. **Prompt-free SAM3-LoRA 训练**
+   训练不使用 prompt 的 SAM3-LoRA baseline，输入 RGB 遥感影像并直接预测建筑物 mask。
+
+2. **HL-Residual 残差细化训练**
+   在 LoRA baseline 基础上训练 High--Low residual refinement 分支，包括完整 HL-Residual 以及诊断变体。
+
+3. **Baseline 训练与对比**
+   运行 UNetFormer-style ResNet34、SegFormer、DeepLabV3+ 和 SAM3 prompt-dependent diagnostic baselines。
+
+4. **Validation-calibrated 推理**
+   使用验证集选择阈值、后处理参数、TTA 和 checkpoint，并进行 full-test 评估。
+
+5. **Held-out non-pilot 重算**
+   从官方 8,402 张测试池中排除固定 pilot500 诊断子集，重新计算 7,902 张 held-out non-pilot 主结果。
+
+6. **部署导向诊断**
+   包括 prompt drift、image corruption、region-wise behavior、efficiency、qualitative examples 和 coverage-oriented metrics。
+
+7. **论文表格与分析**
+   将 JSON/CSV 指标聚合为论文表格，并生成图像级配对分析结果。
+
+## 主要入口脚本
+
+| 阶段                        | 入口脚本                                        | 用途                                             |
+| ------------------------- | ------------------------------------------- | ---------------------------------------------- |
+| LoRA baseline 训练          | `src/run_e6v2_pilot.py`                     | 20-shot prompt-free LoRA pilot 训练              |
+| HL-Residual 训练            | `src/run_hl_residual_refine_pilot.py`       | 从 LoRA checkpoint 出发训练 HL-Residual refinement  |
+| 组件消融                      | `src/run_hl_residual_component_ablation.py` | 训练并评估 `rgb_only` 和 `sam_only` 残差变体             |
+| 校准 full-test 评估           | `src/run_calibrated_fulltest.py`            | validation-calibrated TTA 推理和指标评估              |
+| pilot 校准推理                | `src/run_calibrated_inference_pilot.py`     | 面向模型变体的 pilot-scale calibrated inference       |
+| held-out 重算               | `src/recompute_excluding_pilot_metrics.py`  | 排除 pilot500 后重新计算 held-out non-pilot 指标        |
+| mask 导出                   | `src/generate_mask_predictions.py`          | 保存预测 mask，用于 coverage 和 confusion 诊断           |
+| prompt drift              | `src/run_e7a_prompt_drift.py`               | prompt sensitivity 和 prompt-free robustness 诊断 |
+| image corruption          | `src/run_e7b_image_corruption.py`           | 多种图像扰动下的鲁棒性诊断                                  |
+| region-wise evaluation    | `src/run_e8_regionwise_eval.py`             | 分区域/城市统计模型表现                                   |
+| efficiency analysis       | `src/run_e9_efficiency.py`                  | 参数量、FLOPs 和推理时间分析                              |
+| qualitative visualization | `src/run_qualitative_visualization_v2.py`   | 生成定性预测图和 error map                             |
+| paper tables              | `src/make_paper_tables.py`                  | 从导出指标生成论文表格                                    |
+
+## Scripts 目录
+
+| 脚本                                           | 用途                                             |
+| -------------------------------------------- | ---------------------------------------------- |
+| `scripts/paired_significance_analysis.py`    | Prompt-free LoRA 与 HL-Residual 的图像级配对分析        |
+| `scripts/run_exp2_component_ablation.sh`     | residual branch 组件消融实验的批处理脚本                   |
+| `scripts/run_overnight_unet_baseline.sh`     | UNetFormer-style baseline 实验                   |
+| `scripts/run_stageA_shot_pilot_5_10.sh`      | 5-shot 和 10-shot pilot sensitivity diagnostics |
+| `scripts/run_target20_segformer_baseline.sh` | target-domain 20-shot SegFormer baseline       |
+
+<details>
+<summary>完整自定义脚本索引</summary>
+
+### 核心训练脚本
+
+| 文件                                          | 用途                                      |
+| ------------------------------------------- | --------------------------------------- |
+| `src/run_e6v2_pilot.py`                     | 20-shot Prompt-free LoRA pilot 训练       |
+| `src/run_hl_residual_refine_pilot.py`       | 基于 LoRA checkpoint 训练 HL-Residual 残差精炼器 |
+| `src/run_hl_lite_pilot.py`                  | HL-Lite / HL-Lite-Aux 等轻量残差变体训练         |
+| `src/run_distillation_pilot.py`             | 基于 SAM3 伪标签的蒸馏 pilot 训练                 |
+| `src/run_distillation_pilot_1.py`           | 蒸馏 pilot 的变体或备份版本                       |
+| `src/run_hl_residual_component_ablation.py` | RGB-only / SAM-only 残差分支组件消融            |
+| `src/run_all_experiments.py`                | 旧版多实验编排脚本                               |
+| `src/run_experiments_gbg.py`                | GBG-SAM3 实验运行脚本                         |
+
+### Baseline 训练脚本
+
+| 文件                                          | 用途                                                          |
+| ------------------------------------------- | ----------------------------------------------------------- |
+| `src/run_overnight_unet_baseline.py`        | UNetFormer-style ResNet34 baseline 训练和校准评估                  |
+| `src/run_target20_segformer_baseline.py`    | Target-domain 20-shot SegFormer baseline                    |
+| `src/run_deeplabv3plus_baseline_revised.py` | 修订版 DeepLabV3+ baseline                                     |
+| `src/run_foundation_prompt_baselines.py`    | SAM3 prompt-dependent foundation-model diagnostic baselines |
+
+### 训练子模块
+
+| 文件                                           | 用途                                                            |
+| -------------------------------------------- | ------------------------------------------------------------- |
+| `src/training/experiment_runner.py`          | LoRA 训练、checkpoint 保存和 validation monitoring                  |
+| `src/training/experiment_runner_gbg.py`      | GBG-SAM3 实验编排，包含 GatedBoundaryAdapter 和 source-weight loading |
+| `src/training/train_fully_supervised.py`     | 全监督训练工具，支持多 seed 和完整指标评估                                      |
+| `src/training/train_fully_supervised_seg.py` | SegFormer-style 全监督训练                                         |
+| `src/training/train_peft_baselines.py`       | PEFT baseline 训练，包括 LoRA-style adaptation                     |
+
+### 校准推理与评估脚本
+
+| 文件                                            | 用途                                         |
+| --------------------------------------------- | ------------------------------------------ |
+| `src/run_calibrated_fulltest.py`              | TTA、后处理搜索和指标评估的校准 full-test 推理             |
+| `src/run_calibrated_inference_pilot.py`       | 面向多模型变体的 pilot-scale calibrated inference  |
+| `src/02_run_sam_calibrated_save_confusion.py` | 校准推理并保存 confusion map                      |
+| `src/recompute_excluding_pilot_metrics.py`    | 排除 pilot500 后重算 7,902 张 held-out 指标        |
+| `src/generate_mask_predictions.py`            | 保存预测 mask，用于 coverage-oriented diagnostics |
+
+### 鲁棒性与部署诊断
+
+| 文件                                     | 用途                                                |
+| -------------------------------------- | ------------------------------------------------- |
+| `src/run_e7_robustness.py`             | 旧版 E7 图像腐蚀鲁棒性评估                                   |
+| `src/run_e7_robustness_revised.py`     | 修订版 E7 robustness evaluation                      |
+| `src/run_e7a_prompt_drift.py`          | 比较 box-prompted 与 prompt-free 行为的 prompt-drift 诊断 |
+| `src/run_e7a_prompt_drift_residual.py` | HL-Residual 的简化 prompt-drift 诊断                   |
+| `src/run_e7b_image_corruption.py`      | 多腐蚀类型、多模型、多 seed 的 image-corruption 诊断            |
+| `src/run_e7b_resume.py`                | E7b 未完成腐蚀实验的续跑脚本                                  |
+| `src/run_e7b_resume_select.py`         | E7b 续跑选模脚本                                        |
+| `src/merge_e7_json_parts.py`           | 合并分批 E7 JSON 结果                                   |
+| `src/plot_e7_results.py`               | 绘制 E7 诊断结果                                        |
+
+### E8/E9 分析脚本
+
+| 文件                              | 用途                               |
+| ------------------------------- | -------------------------------- |
+| `src/run_e8_regionwise_eval.py` | 按城市或区域组进行 region-wise evaluation |
+| `src/run_e9_efficiency.py`      | 参数量、FLOPs 和推理时间分析                |
+
+### 分析与可视化脚本
+
+| 文件                                        | 用途                                     |
+| ----------------------------------------- | -------------------------------------- |
+| `src/exp1_val_budget_end2end.py`          | validation budget sensitivity analysis |
+| `src/01_run_three_model_coverage_eval.py` | 三模型 coverage-oriented evaluation       |
+| `src/03_run_unetformer_save_confusion.py` | UNetFormer confusion-map 保存            |
+| `src/cross_city_variance_analysis.py`     | 跨城市方差分析                                |
+| `src/make_paper_tables.py`                | 从导出指标生成论文表格                            |
+| `src/run_qualitative_visualization.py`    | 预测结果与原图叠加的定性可视化                        |
+| `src/run_qualitative_visualization_v2.py` | 修订版定性可视化                               |
+
+### 工具与数据脚本
+
+| 文件                                             | 用途                                                  |
+| ---------------------------------------------- | --------------------------------------------------- |
+| `src/evaluation/eval_metrics.py`               | mIoU、F1、Boundary IoU、precision 和 recall 指标计算        |
+| `src/evaluation/e5_eval_baselines_full.py`     | E5 full-scale baseline evaluation                   |
+| `src/evaluation/eval_segformer.py`             | SegFormer evaluation                                |
+| `src/utils/diagnose.py`                        | 数据、模型和路径诊断工具                                        |
+| `src/utils/cloud_paths.py`                     | AutoDL 与本地环境的路径适配工具                                 |
+| `src/utils/audit_manifest_masks.py`            | Manifest 和 image-label 一致性审计                        |
+| `src/utils/mask_saving_and_confusion_utils.py` | Mask 保存和 confusion-map 生成工具函数                       |
+| `src/models/model.py`                          | 自定义模型定义，包括 GatedBoundaryAdapter 和 HLLiteDecoder 等变体 |
+| `src/__init__.py`                              | Python package 初始化文件                                |
+
+</details>
+
 
 ## 环境配置
 
