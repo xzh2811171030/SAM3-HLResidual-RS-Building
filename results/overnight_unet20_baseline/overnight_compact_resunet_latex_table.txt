@@ -1,0 +1,11 @@
+\begin{table}[t]
+\centering
+\caption{Target-adapted conventional baseline under the same 20-shot WHU-Mix protocol. The Compact-ResUNet baseline is source-pretrained when the source manifest is available and then fine-tuned on each 20-shot target support set. Threshold and post-processing parameters are selected only on target validation images and then frozen for final-test evaluation.}
+\begin{tabular}{lccc}
+\toprule
+Method & mIoU (\%) & F1 (\%) & BIoU (\%) \\
+\midrule
+Compact-ResUNet target-adapted & 43.19$\pm$4.99 & 52.09$\pm$5.59 & 30.52$\pm$2.07 \
+\bottomrule
+\end{tabular}
+\end{table}

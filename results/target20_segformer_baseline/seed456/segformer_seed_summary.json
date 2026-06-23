@@ -1,0 +1,25 @@
+{
+  "seed": 456,
+  "method": "Target 20-shot SegFormer-style",
+  "source_checkpoint": "/path/to/project/results/target20_segformer_baseline/source_pretrain/segformer_source_best.pth",
+  "target_checkpoint": "/path/to/project/results/target20_segformer_baseline/seed456/segformer_target_best.pth",
+  "support_manifest": "/path/to/project/data/splits/e0_manifest/target_support_20_seed456.txt",
+  "val_manifest": "/path/to/project/data/splits/e0_manifest/target_val.txt",
+  "test_manifest": "/path/to/project/data/splits/e0_manifest/target_final_test_8402.txt",
+  "use_tta": true,
+  "val_best_cfg": {
+    "threshold": 0.45,
+    "min_area": 128,
+    "closing_kernel": 5,
+    "fill_holes": false,
+    "mIoU": 0.4440350946287709,
+    "F1": 0.5314544854337493,
+    "Boundary_IoU": 0.27496277132861385
+  },
+  "test_calibrated_postprocess": {
+    "mIoU": 0.49704593045259055,
+    "F1": 0.5952682591881102,
+    "Boundary_IoU": 0.2999852856612549
+  },
+  "timestamp": "2026-06-16T18:01:44.048953"
+}

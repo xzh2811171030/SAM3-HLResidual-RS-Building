@@ -1,0 +1,23 @@
+{
+  "pool_size": 1000,
+  "train_pool_count": 39346,
+  "excluded_by_support_or_val": 560,
+  "candidate_count": 39286,
+  "selected_count": 1000,
+  "copied_count": 1000,
+  "missing_count": 0,
+  "missing_examples": [],
+  "out_img_dir": "/path/to/project/data/raw/processed_slim/target_whu_mix/distill_pool/images",
+  "out_manifest": "/path/to/project/data/splits/e0_manifest/target_distill_pool_1000.txt",
+  "region_counts": {
+    "asia": 111,
+    "chongqing": 111,
+    "christchurch": 111,
+    "global": 111,
+    "hangzhou": 111,
+    "hubei": 111,
+    "tianjin": 111,
+    "tyrol": 112,
+    "vienna": 111
+  }
+}

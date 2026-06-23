@@ -1,0 +1,16 @@
+{
+  "model": "SegFormer (mit-b2)",
+  "eval_batch_size": 32,
+  "num_workers": 4,
+  "full_test": true,
+  "timestamp": "20260602_160815",
+  "results": [
+    {
+      "mIoU": 0.5364549092452241,
+      "F1": 0.6179536277316604,
+      "Boundary_IoU": 0.4387057013852767,
+      "weight": "segformer_best_seed123.pth",
+      "seed": 123
+    }
+  ]
+}

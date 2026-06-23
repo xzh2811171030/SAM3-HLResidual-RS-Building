@@ -1,0 +1,415 @@
+{
+  "metadata": {
+    "platform": "cloud-linux",
+    "device": "cuda",
+    "timestamp": "20260531_222533",
+    "full_test": false,
+    "batch_size_desc": "train: auto(2/8/16 by num_shots), eval: 32",
+    "learning_rate": 0.0003,
+    "num_epochs": 30,
+    "num_workers": 8,
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05
+  },
+  "individual_results": [
+    {
+      "mode": "decoder_only",
+      "domain": "target",
+      "num_shots": 5,
+      "full_test": false,
+      "seed": 42,
+      "best_val_iou": 0.47846699158068967,
+      "mIoU": 0.5767580516154764,
+      "F1": 0.6849219239970447,
+      "Boundary_IoU": 0.42813770951353963
+    },
+    {
+      "mode": "decoder_only",
+      "domain": "target",
+      "num_shots": 5,
+      "full_test": false,
+      "seed": 123,
+      "best_val_iou": 0.45933850315435104,
+      "mIoU": 0.6024803429070903,
+      "F1": 0.7092071652902748,
+      "Boundary_IoU": 0.4088562957079486
+    },
+    {
+      "mode": "decoder_only",
+      "domain": "target",
+      "num_shots": 5,
+      "full_test": false,
+      "seed": 456,
+      "best_val_iou": 0.5714208156846614,
+      "mIoU": 0.6416490982180472,
+      "F1": 0.7466312454572042,
+      "Boundary_IoU": 0.4615619175859954
+    },
+    {
+      "mode": "lora",
+      "domain": "target",
+      "num_shots": 5,
+      "full_test": false,
+      "seed": 42,
+      "best_val_iou": 0.6643340120816547,
+      "mIoU": 0.6538453583427667,
+      "F1": 0.7470889688815213,
+      "Boundary_IoU": 0.48583239517396853
+    },
+    {
+      "mode": "lora",
+      "domain": "target",
+      "num_shots": 5,
+      "full_test": false,
+      "seed": 123,
+      "best_val_iou": 0.6899905958896064,
+      "mIoU": 0.658739867067669,
+      "F1": 0.7635443152721119,
+      "Boundary_IoU": 0.44362994232628195
+    },
+    {
+      "mode": "lora",
+      "domain": "target",
+      "num_shots": 5,
+      "full_test": false,
+      "seed": 456,
+      "best_val_iou": 0.675280690167086,
+      "mIoU": 0.670576317914772,
+      "F1": 0.7667587857936479,
+      "Boundary_IoU": 0.471700863750613
+    },
+    {
+      "mode": "decoder_only",
+      "domain": "target",
+      "num_shots": 10,
+      "full_test": false,
+      "seed": 42,
+      "best_val_iou": 0.41765630762397216,
+      "mIoU": 0.5841393009398651,
+      "F1": 0.6896784554834714,
+      "Boundary_IoU": 0.37911915636506227
+    },
+    {
+      "mode": "decoder_only",
+      "domain": "target",
+      "num_shots": 10,
+      "full_test": false,
+      "seed": 123,
+      "best_val_iou": 0.42673823745601014,
+      "mIoU": 0.5696245678131099,
+      "F1": 0.678093801217943,
+      "Boundary_IoU": 0.36671423186409835
+    },
+    {
+      "mode": "decoder_only",
+      "domain": "target",
+      "num_shots": 10,
+      "full_test": false,
+      "seed": 456,
+      "best_val_iou": 0.43220045640615107,
+      "mIoU": 0.5959972251826599,
+      "F1": 0.7029868772097362,
+      "Boundary_IoU": 0.37722852065609336
+    },
+    {
+      "mode": "lora",
+      "domain": "target",
+      "num_shots": 10,
+      "full_test": false,
+      "seed": 42,
+      "best_val_iou": 0.0,
+      "mIoU": 0.0,
+      "F1": 0.0,
+      "Boundary_IoU": 0.0,
+      "error": "CUDA out of memory. Tried to allocate 42.00 MiB. GPU 0 has a total capacity of 47.41 GiB of which 2.44 MiB is free. Process 128949 has 47.40 GiB memory in use. Of the allocated memory 45.22 GiB is allocated by PyTorch, and 1.86 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+    },
+    {
+      "mode": "lora",
+      "domain": "target",
+      "num_shots": 10,
+      "full_test": false,
+      "seed": 123,
+      "best_val_iou": 0.0,
+      "mIoU": 0.0,
+      "F1": 0.0,
+      "Boundary_IoU": 0.0,
+      "error": "CUDA out of memory. Tried to allocate 42.00 MiB. GPU 0 has a total capacity of 47.41 GiB of which 2.44 MiB is free. Process 128949 has 47.40 GiB memory in use. Of the allocated memory 45.22 GiB is allocated by PyTorch, and 1.86 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+    },
+    {
+      "mode": "lora",
+      "domain": "target",
+      "num_shots": 10,
+      "full_test": false,
+      "seed": 456,
+      "best_val_iou": 0.0,
+      "mIoU": 0.0,
+      "F1": 0.0,
+      "Boundary_IoU": 0.0,
+      "error": "CUDA out of memory. Tried to allocate 42.00 MiB. GPU 0 has a total capacity of 47.41 GiB of which 2.44 MiB is free. Process 128949 has 47.40 GiB memory in use. Of the allocated memory 45.22 GiB is allocated by PyTorch, and 1.86 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+    },
+    {
+      "mode": "decoder_only",
+      "domain": "target",
+      "num_shots": 20,
+      "full_test": false,
+      "seed": 42,
+      "best_val_iou": 0.4853126204889869,
+      "mIoU": 0.5968059496911987,
+      "F1": 0.698810363739002,
+      "Boundary_IoU": 0.4118303594729208
+    },
+    {
+      "mode": "decoder_only",
+      "domain": "target",
+      "num_shots": 20,
+      "full_test": false,
+      "seed": 123,
+      "best_val_iou": 0.4939758423369585,
+      "mIoU": 0.5869916575577362,
+      "F1": 0.6946098064959715,
+      "Boundary_IoU": 0.4021541484878103
+    },
+    {
+      "mode": "decoder_only",
+      "domain": "target",
+      "num_shots": 20,
+      "full_test": false,
+      "seed": 456,
+      "best_val_iou": 0.5755292564439578,
+      "mIoU": 0.6402297032320339,
+      "F1": 0.74090647947497,
+      "Boundary_IoU": 0.4309956122054585
+    },
+    {
+      "mode": "lora",
+      "domain": "target",
+      "num_shots": 20,
+      "full_test": false,
+      "seed": 42,
+      "best_val_iou": 0.0,
+      "mIoU": 0.0,
+      "F1": 0.0,
+      "Boundary_IoU": 0.0,
+      "error": "CUDA out of memory. Tried to allocate 42.00 MiB. GPU 0 has a total capacity of 47.41 GiB of which 2.44 MiB is free. Process 128949 has 47.40 GiB memory in use. Of the allocated memory 45.22 GiB is allocated by PyTorch, and 1.86 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+    },
+    {
+      "mode": "lora",
+      "domain": "target",
+      "num_shots": 20,
+      "full_test": false,
+      "seed": 123,
+      "best_val_iou": 0.0,
+      "mIoU": 0.0,
+      "F1": 0.0,
+      "Boundary_IoU": 0.0,
+      "error": "CUDA out of memory. Tried to allocate 42.00 MiB. GPU 0 has a total capacity of 47.41 GiB of which 2.44 MiB is free. Process 128949 has 47.40 GiB memory in use. Of the allocated memory 45.22 GiB is allocated by PyTorch, and 1.86 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+    },
+    {
+      "mode": "lora",
+      "domain": "target",
+      "num_shots": 20,
+      "full_test": false,
+      "seed": 456,
+      "best_val_iou": 0.0,
+      "mIoU": 0.0,
+      "F1": 0.0,
+      "Boundary_IoU": 0.0,
+      "error": "CUDA out of memory. Tried to allocate 42.00 MiB. GPU 0 has a total capacity of 47.41 GiB of which 2.44 MiB is free. Process 128949 has 47.40 GiB memory in use. Of the allocated memory 45.22 GiB is allocated by PyTorch, and 1.86 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+    }
+  ],
+  "aggregated_summary": {
+    "target_decoder_only_5shot": {
+      "domain": "target",
+      "num_shots": 5,
+      "mode": "decoder_only",
+      "num_runs": 3,
+      "mIoU_mean": 0.6069624975802047,
+      "mIoU_std": 0.03267689191431067,
+      "F1_mean": 0.7135867782481746,
+      "F1_std": 0.03108690795196714,
+      "Boundary_IoU_mean": 0.4328519742691612,
+      "Boundary_IoU_std": 0.026667187019396757,
+      "seeds": [
+        42,
+        123,
+        456
+      ],
+      "individual_mIoU": [
+        0.5767580516154764,
+        0.6024803429070903,
+        0.6416490982180472
+      ],
+      "individual_F1": [
+        0.6849219239970447,
+        0.7092071652902748,
+        0.7466312454572042
+      ],
+      "individual_Boundary_IoU": [
+        0.42813770951353963,
+        0.4088562957079486,
+        0.4615619175859954
+      ]
+    },
+    "target_lora_5shot": {
+      "domain": "target",
+      "num_shots": 5,
+      "mode": "lora",
+      "num_runs": 3,
+      "mIoU_mean": 0.6610538477750691,
+      "mIoU_std": 0.008602158571293868,
+      "F1_mean": 0.759130689982427,
+      "F1_std": 0.010551563414369176,
+      "Boundary_IoU_mean": 0.4670544004169545,
+      "Boundary_IoU_std": 0.02148147976103083,
+      "seeds": [
+        42,
+        123,
+        456
+      ],
+      "individual_mIoU": [
+        0.6538453583427667,
+        0.658739867067669,
+        0.670576317914772
+      ],
+      "individual_F1": [
+        0.7470889688815213,
+        0.7635443152721119,
+        0.7667587857936479
+      ],
+      "individual_Boundary_IoU": [
+        0.48583239517396853,
+        0.44362994232628195,
+        0.471700863750613
+      ]
+    },
+    "target_decoder_only_10shot": {
+      "domain": "target",
+      "num_shots": 10,
+      "mode": "decoder_only",
+      "num_runs": 3,
+      "mIoU_mean": 0.5832536979785449,
+      "mIoU_std": 0.013208613993782384,
+      "F1_mean": 0.6902530446370502,
+      "F1_std": 0.012456481148577022,
+      "Boundary_IoU_mean": 0.374353969628418,
+      "Boundary_IoU_std": 0.006683398886546116,
+      "seeds": [
+        42,
+        123,
+        456
+      ],
+      "individual_mIoU": [
+        0.5841393009398651,
+        0.5696245678131099,
+        0.5959972251826599
+      ],
+      "individual_F1": [
+        0.6896784554834714,
+        0.678093801217943,
+        0.7029868772097362
+      ],
+      "individual_Boundary_IoU": [
+        0.37911915636506227,
+        0.36671423186409835,
+        0.37722852065609336
+      ]
+    },
+    "target_lora_10shot": {
+      "domain": "target",
+      "num_shots": 10,
+      "mode": "lora",
+      "num_runs": 3,
+      "mIoU_mean": 0.0,
+      "mIoU_std": 0.0,
+      "F1_mean": 0.0,
+      "F1_std": 0.0,
+      "Boundary_IoU_mean": 0.0,
+      "Boundary_IoU_std": 0.0,
+      "seeds": [
+        42,
+        123,
+        456
+      ],
+      "individual_mIoU": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "individual_F1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "individual_Boundary_IoU": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "target_decoder_only_20shot": {
+      "domain": "target",
+      "num_shots": 20,
+      "mode": "decoder_only",
+      "num_runs": 3,
+      "mIoU_mean": 0.6080091034936562,
+      "mIoU_std": 0.028332055487482563,
+      "F1_mean": 0.7114422165699811,
+      "F1_std": 0.02560309086201744,
+      "Boundary_IoU_mean": 0.4149933733887299,
+      "Boundary_IoU_std": 0.014678589854540052,
+      "seeds": [
+        42,
+        123,
+        456
+      ],
+      "individual_mIoU": [
+        0.5968059496911987,
+        0.5869916575577362,
+        0.6402297032320339
+      ],
+      "individual_F1": [
+        0.698810363739002,
+        0.6946098064959715,
+        0.74090647947497
+      ],
+      "individual_Boundary_IoU": [
+        0.4118303594729208,
+        0.4021541484878103,
+        0.4309956122054585
+      ]
+    },
+    "target_lora_20shot": {
+      "domain": "target",
+      "num_shots": 20,
+      "mode": "lora",
+      "num_runs": 3,
+      "mIoU_mean": 0.0,
+      "mIoU_std": 0.0,
+      "F1_mean": 0.0,
+      "F1_std": 0.0,
+      "Boundary_IoU_mean": 0.0,
+      "Boundary_IoU_std": 0.0,
+      "seeds": [
+        42,
+        123,
+        456
+      ],
+      "individual_mIoU": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "individual_F1": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "individual_Boundary_IoU": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

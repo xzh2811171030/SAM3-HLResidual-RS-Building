@@ -1,0 +1,124 @@
+{
+  "variant": "msr",
+  "best_weight": "/path/to/project/results/e6v2_pilot/weights/e6v2_pilot_msr_best.pth",
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 1.2586678743362427,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 2,
+      "loss": 1.054362952709198,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 3,
+      "loss": 0.9719838917255401,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 4,
+      "loss": 0.9155954420566559,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 5,
+      "loss": 0.857448959350586,
+      "val_mIoU_05": 0.5385546818347234
+    },
+    {
+      "epoch": 6,
+      "loss": 0.8205474555492401,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 7,
+      "loss": 0.7875675857067108,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 8,
+      "loss": 0.757248443365097,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 9,
+      "loss": 0.732461330294609,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 10,
+      "loss": 0.7122737646102906,
+      "val_mIoU_05": 0.6065145467173215
+    },
+    {
+      "epoch": 11,
+      "loss": 0.6879298329353333,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 12,
+      "loss": 0.664758849143982,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 13,
+      "loss": 0.6459009230136872,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 14,
+      "loss": 0.6245329320430756,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 15,
+      "loss": 0.602887088060379,
+      "val_mIoU_05": 0.6508644850656792
+    },
+    {
+      "epoch": 16,
+      "loss": 0.5855862617492675,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 17,
+      "loss": 0.5704489350318909,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 18,
+      "loss": 0.5575572192668915,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 19,
+      "loss": 0.5481538057327271,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 20,
+      "loss": 0.5419004440307618,
+      "val_mIoU_05": 0.6401056578016718
+    }
+  ],
+  "val_sweep_best": {
+    "threshold": 0.65,
+    "min_area": 128,
+    "mIoU": 0.6998930643104067,
+    "F1": 0.7728537310098902,
+    "Boundary_IoU": 0.44620552444196926
+  },
+  "pilot_fixed_05": {
+    "mIoU": 0.6745981155402241,
+    "F1": 0.7618013435023802,
+    "Boundary_IoU": 0.34430263076719564
+  },
+  "pilot_calibrated": {
+    "mIoU": 0.6777769587455293,
+    "F1": 0.7658320889587323,
+    "Boundary_IoU": 0.36428239032585813
+  },
+  "timestamp": "2026-06-09T19:43:20.390355"
+}

@@ -1,0 +1,16 @@
+\begin{table}[H]
+\caption{Paired image-level analysis on the full WHU-Mix test set. Metrics are computed by averaging each image over the three random seeds before comparing HL-Residual with prompt-free LoRA. Confidence intervals are estimated by bootstrap resampling over the 8,402 test images.}
+\label{tab:paired_significance}
+\centering
+\small
+\setlength{\tabcolsep}{7.0pt}
+\begin{tabular}{l c c c c}
+\toprule
+\textbf{Metric} & \textbf{Mean gain (pp)} & \textbf{Median gain (pp)} & \textbf{95\% CI (pp)} & \textbf{Image win rate} \\
+\midrule
+mIoU & +1.08 & +0.91 & [1.00, 1.17] & 70.48\% \\
+F1 & +0.74 & +0.59 & [0.66, 0.82] & 70.88\% \\
+Boundary IoU & +2.52 & +2.34 & [2.43, 2.61] & 74.71\% \\
+\bottomrule
+\end{tabular}
+\end{table}

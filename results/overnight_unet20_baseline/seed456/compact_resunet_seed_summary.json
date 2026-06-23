@@ -1,0 +1,28 @@
+{
+  "seed": 456,
+  "method": "Compact-ResUNet target-adapted",
+  "support_manifest": "/path/to/project/data/splits/e0_manifest/target_support_20_seed456.txt",
+  "init_ckpt": "/path/to/project/results/overnight_unet20_baseline/weights/compact_resunet_source_pretrained_best.pth",
+  "use_tta": true,
+  "val_best_cfg": {
+    "threshold": 0.4,
+    "min_area": 128,
+    "closing_kernel": 5,
+    "fill_holes": false,
+    "mIoU": 0.5301606625905058,
+    "F1": 0.6161513392713285,
+    "Boundary_IoU": 0.3703244767782204
+  },
+  "test_fixed_05": {
+    "mIoU": 0.4219085125555238,
+    "F1": 0.5096009199639251,
+    "Boundary_IoU": 0.3018055900434902
+  },
+  "test_calibrated_postprocess": {
+    "mIoU": 0.4426782464198353,
+    "F1": 0.531339708485399,
+    "Boundary_IoU": 0.31368905053167573
+  },
+  "best_ckpt": "/path/to/project/results/overnight_unet20_baseline/seed456/compact_resunet_target_best.pth",
+  "per_image_csv": "/path/to/project/results/overnight_unet20_baseline/seed456/compact_resunet_per_image_metrics.csv"
+}

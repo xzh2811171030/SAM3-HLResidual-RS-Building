@@ -1,0 +1,7 @@
+model,model_key,seed,checkpoint,sam_total_params,lora_params,decoder_params,residual_params,model_head_total_params,trainable_params_estimated,extra_params_vs_lora,trainable_ratio_percent
+Prompt-free LoRA,promptfree_lora,42,/path/to/project/results/e6v2_pilot/weights/e6v2_pilot_lora_light_best.pth,841558326,1048576,688833,0,688833,1737409,0,0.2062825598679164
+Prompt-free LoRA,promptfree_lora,123,/path/to/project/results/e6v3_hl_lite_seed123/weights/e6v2_pilot_lora_light_best.pth,841558326,1048576,688833,0,688833,1737409,0,0.2062825598679164
+Prompt-free LoRA,promptfree_lora,456,/path/to/project/results/e6v3_hl_lite_seed456/weights/e6v2_pilot_lora_light_best.pth,841558326,1048576,688833,0,688833,1737409,0,0.2062825598679164
+HL-Residual (Ours),hl_residual,42,/path/to/project/results/hl_residual_pilot/weights/hl_residual_best.pth,841558326,1048576,688833,1028706,1717539,2766115,1028706,0.328020178782183
+HL-Residual (Ours),hl_residual,123,/path/to/project/results/hl_residual_pilot_seed123/weights/hl_residual_best.pth,841558326,1048576,688833,1028706,1717539,2766115,1028706,0.328020178782183
+HL-Residual (Ours),hl_residual,456,/path/to/project/results/hl_residual_pilot_seed456/weights/hl_residual_best.pth,841558326,1048576,688833,1028706,1717539,2766115,1028706,0.328020178782183

@@ -1,0 +1,724 @@
+{
+  "timestamp": "2026-06-09T18:36:16.851854",
+  "project_root": "/path/to/project",
+  "manifest_dir": "/path/to/project/data/splits/e0_manifest",
+  "backup_dir": "/path/to/project/data/splits/e0_manifest_backup_before_autodl_rewrite_20260609_183614",
+  "rewrite_enabled": true,
+  "dry_run": false,
+  "ignore_train_pool_all": true,
+  "directory_status": {
+    "target_support_image": {
+      "path": "/path/to/project/data/raw/processed_slim/target_whu/train_pool/images",
+      "exists": true,
+      "type": "dir"
+    },
+    "target_support_label": {
+      "path": "/path/to/project/data/raw/processed_slim/target_whu/train_pool/dual_channel_labels",
+      "exists": true,
+      "type": "dir"
+    },
+    "target_support_bbox": {
+      "path": "/path/to/project/data/raw/processed_slim/target_whu/train_pool/bboxes.json",
+      "exists": true,
+      "type": "file"
+    },
+    "target_val_image": {
+      "path": "/path/to/project/data/raw/processed_slim/target_whu/val/images",
+      "exists": true,
+      "type": "dir"
+    },
+    "target_val_label": {
+      "path": "/path/to/project/data/raw/processed_slim/target_whu/val/dual_channel_labels",
+      "exists": true,
+      "type": "dir"
+    },
+    "target_val_bbox": {
+      "path": "/path/to/project/data/raw/processed_slim/target_whu/val/bboxes.json",
+      "exists": true,
+      "type": "file"
+    },
+    "target_test_image": {
+      "path": "/path/to/project/data/raw/whu_mix_full_test/test/image",
+      "exists": true,
+      "type": "dir"
+    },
+    "target_test_label": {
+      "path": "/path/to/project/data/raw/whu_mix_full_test/dual_channel_labels",
+      "exists": true,
+      "type": "dir"
+    },
+    "target_test_bbox": {
+      "path": "/path/to/project/data/raw/whu_mix_full_test/bbox.json",
+      "exists": true,
+      "type": "file"
+    },
+    "target_pilot_test_image": {
+      "path": "/path/to/project/data/raw/processed_slim/target_whu/test/images",
+      "exists": true,
+      "type": "dir"
+    },
+    "target_pilot_test_label": {
+      "path": "/path/to/project/data/raw/processed_slim/target_whu/test/dual_channel_labels",
+      "exists": true,
+      "type": "dir"
+    },
+    "target_pilot_test_bbox": {
+      "path": "/path/to/project/data/raw/processed_slim/target_whu/test/bboxes.json",
+      "exists": true,
+      "type": "file"
+    },
+    "source_train_image": {
+      "path": "/path/to/project/data/raw/processed_slim/source_whu/train/images",
+      "exists": true,
+      "type": "dir"
+    },
+    "source_train_label": {
+      "path": "/path/to/project/data/raw/processed_slim/source_whu/train/dual_channel_labels",
+      "exists": true,
+      "type": "dir"
+    },
+    "source_val_image": {
+      "path": "/path/to/project/data/raw/processed_slim/source_whu/val/images",
+      "exists": true,
+      "type": "dir"
+    },
+    "source_val_label": {
+      "path": "/path/to/project/data/raw/processed_slim/source_whu/val/dual_channel_labels",
+      "exists": true,
+      "type": "dir"
+    },
+    "source_test_image": {
+      "path": "/path/to/project/data/raw/processed_slim/source_whu/test/images",
+      "exists": true,
+      "type": "dir"
+    },
+    "source_test_label": {
+      "path": "/path/to/project/data/raw/processed_slim/source_whu/test/dual_channel_labels",
+      "exists": true,
+      "type": "dir"
+    }
+  },
+  "rewrite_report": {
+    "rewritten": [
+      {
+        "manifest": "source_test.txt",
+        "split_type": "source_test",
+        "count": 500,
+        "rewritten_count": 500,
+        "missing_images": [],
+        "missing_image_count": 0
+      },
+      {
+        "manifest": "source_train.txt",
+        "split_type": "source_train",
+        "count": 1000,
+        "rewritten_count": 1000,
+        "missing_images": [],
+        "missing_image_count": 0
+      },
+      {
+        "manifest": "source_val.txt",
+        "split_type": "source_val",
+        "count": 200,
+        "rewritten_count": 200,
+        "missing_images": [],
+        "missing_image_count": 0
+      },
+      {
+        "manifest": "target_final_test_8402.txt",
+        "split_type": "target_test",
+        "count": 8402,
+        "rewritten_count": 8402,
+        "missing_images": [],
+        "missing_image_count": 0
+      },
+      {
+        "manifest": "target_pilot_test_500.txt",
+        "split_type": "target_pilot_test",
+        "count": 500,
+        "rewritten_count": 500,
+        "missing_images": [],
+        "missing_image_count": 0
+      },
+      {
+        "manifest": "target_support_10_seed123.txt",
+        "split_type": "target_support",
+        "count": 10,
+        "rewritten_count": 10,
+        "missing_images": [],
+        "missing_image_count": 0
+      },
+      {
+        "manifest": "target_support_10_seed42.txt",
+        "split_type": "target_support",
+        "count": 10,
+        "rewritten_count": 10,
+        "missing_images": [],
+        "missing_image_count": 0
+      },
+      {
+        "manifest": "target_support_10_seed456.txt",
+        "split_type": "target_support",
+        "count": 10,
+        "rewritten_count": 10,
+        "missing_images": [],
+        "missing_image_count": 0
+      },
+      {
+        "manifest": "target_support_20_seed123.txt",
+        "split_type": "target_support",
+        "count": 20,
+        "rewritten_count": 20,
+        "missing_images": [],
+        "missing_image_count": 0
+      },
+      {
+        "manifest": "target_support_20_seed42.txt",
+        "split_type": "target_support",
+        "count": 20,
+        "rewritten_count": 20,
+        "missing_images": [],
+        "missing_image_count": 0
+      },
+      {
+        "manifest": "target_support_20_seed456.txt",
+        "split_type": "target_support",
+        "count": 20,
+        "rewritten_count": 20,
+        "missing_images": [],
+        "missing_image_count": 0
+      },
+      {
+        "manifest": "target_support_5_seed123.txt",
+        "split_type": "target_support",
+        "count": 5,
+        "rewritten_count": 5,
+        "missing_images": [],
+        "missing_image_count": 0
+      },
+      {
+        "manifest": "target_support_5_seed42.txt",
+        "split_type": "target_support",
+        "count": 5,
+        "rewritten_count": 5,
+        "missing_images": [],
+        "missing_image_count": 0
+      },
+      {
+        "manifest": "target_support_5_seed456.txt",
+        "split_type": "target_support",
+        "count": 5,
+        "rewritten_count": 5,
+        "missing_images": [],
+        "missing_image_count": 0
+      },
+      {
+        "manifest": "target_val.txt",
+        "split_type": "target_val",
+        "count": 500,
+        "rewritten_count": 500,
+        "missing_images": [],
+        "missing_image_count": 0
+      }
+    ],
+    "skipped": [
+      {
+        "manifest": "target_pilot_test_1000.txt",
+        "reason": "pilot_test_1000 data not uploaded; only pilot_test_500 is available"
+      },
+      {
+        "manifest": "target_train_pool_all.txt",
+        "reason": "ignored by default because full 39346 train pool is not uploaded to AutoDL"
+      }
+    ]
+  },
+  "file_report": {
+    "file_checks": [
+      {
+        "manifest": "source_test.txt",
+        "split_type": "source_test",
+        "count": 500,
+        "missing_images": [],
+        "missing_image_count": 0,
+        "missing_labels": [],
+        "missing_label_count": 0,
+        "bbox_path": "",
+        "missing_bbox_keys": [],
+        "missing_bbox_key_count": 0,
+        "empty_bbox_keys": [],
+        "empty_bbox_key_count": 0
+      },
+      {
+        "manifest": "source_train.txt",
+        "split_type": "source_train",
+        "count": 1000,
+        "missing_images": [],
+        "missing_image_count": 0,
+        "missing_labels": [],
+        "missing_label_count": 0,
+        "bbox_path": "",
+        "missing_bbox_keys": [],
+        "missing_bbox_key_count": 0,
+        "empty_bbox_keys": [],
+        "empty_bbox_key_count": 0
+      },
+      {
+        "manifest": "source_val.txt",
+        "split_type": "source_val",
+        "count": 200,
+        "missing_images": [],
+        "missing_image_count": 0,
+        "missing_labels": [],
+        "missing_label_count": 0,
+        "bbox_path": "",
+        "missing_bbox_keys": [],
+        "missing_bbox_key_count": 0,
+        "empty_bbox_keys": [],
+        "empty_bbox_key_count": 0
+      },
+      {
+        "manifest": "target_final_test_8402.txt",
+        "split_type": "target_test",
+        "count": 8402,
+        "missing_images": [],
+        "missing_image_count": 0,
+        "missing_labels": [],
+        "missing_label_count": 0,
+        "bbox_path": "/path/to/project/data/raw/whu_mix_full_test/bbox.json",
+        "missing_bbox_keys": [],
+        "missing_bbox_key_count": 0,
+        "empty_bbox_keys": [
+          "dunedin_1047.tif",
+          "dunedin_1048.tif",
+          "dunedin_1049.tif",
+          "dunedin_1050.tif",
+          "dunedin_1051.tif",
+          "dunedin_1052.tif",
+          "dunedin_1083.tif",
+          "dunedin_1084.tif",
+          "dunedin_1085.tif",
+          "dunedin_1086.tif",
+          "dunedin_1087.tif",
+          "dunedin_1088.tif",
+          "dunedin_1089.tif",
+          "dunedin_1114.tif",
+          "dunedin_112.tif",
+          "dunedin_1121.tif",
+          "dunedin_1122.tif",
+          "dunedin_1123.tif",
+          "dunedin_1124.tif",
+          "dunedin_1125.tif"
+        ],
+        "empty_bbox_key_count": 1548
+      },
+      {
+        "manifest": "target_pilot_test_500.txt",
+        "split_type": "target_pilot_test",
+        "count": 500,
+        "missing_images": [],
+        "missing_image_count": 0,
+        "missing_labels": [],
+        "missing_label_count": 0,
+        "bbox_path": "/path/to/project/data/raw/processed_slim/target_whu/test/bboxes.json",
+        "missing_bbox_keys": [],
+        "missing_bbox_key_count": 0,
+        "empty_bbox_keys": [
+          "potsdam_175.tif",
+          "potsdam_655.tif",
+          "potsdam_1057.tif",
+          "potsdam_170.tif",
+          "potsdam_1000.tif",
+          "potsdam_132.tif",
+          "potsdam_56.tif",
+          "potsdam_641.tif",
+          "potsdam_608.tif",
+          "potsdam_998.tif",
+          "potsdam_597.tif",
+          "potsdam_129.tif",
+          "potsdam_130.tif",
+          "potsdam_832.tif",
+          "potsdam_1012.tif",
+          "kitsap_1147.tif",
+          "kitsap_850.tif",
+          "kitsap_142.tif",
+          "kitsap_3288.tif",
+          "kitsap_317.tif"
+        ],
+        "empty_bbox_key_count": 83
+      },
+      {
+        "manifest": "target_support_10_seed123.txt",
+        "split_type": "target_support",
+        "count": 10,
+        "missing_images": [],
+        "missing_image_count": 0,
+        "missing_labels": [],
+        "missing_label_count": 0,
+        "bbox_path": "/path/to/project/data/raw/processed_slim/target_whu/train_pool/bboxes.json",
+        "missing_bbox_keys": [],
+        "missing_bbox_key_count": 0,
+        "empty_bbox_keys": [],
+        "empty_bbox_key_count": 0
+      },
+      {
+        "manifest": "target_support_10_seed42.txt",
+        "split_type": "target_support",
+        "count": 10,
+        "missing_images": [],
+        "missing_image_count": 0,
+        "missing_labels": [],
+        "missing_label_count": 0,
+        "bbox_path": "/path/to/project/data/raw/processed_slim/target_whu/train_pool/bboxes.json",
+        "missing_bbox_keys": [],
+        "missing_bbox_key_count": 0,
+        "empty_bbox_keys": [],
+        "empty_bbox_key_count": 0
+      },
+      {
+        "manifest": "target_support_10_seed456.txt",
+        "split_type": "target_support",
+        "count": 10,
+        "missing_images": [],
+        "missing_image_count": 0,
+        "missing_labels": [],
+        "missing_label_count": 0,
+        "bbox_path": "/path/to/project/data/raw/processed_slim/target_whu/train_pool/bboxes.json",
+        "missing_bbox_keys": [],
+        "missing_bbox_key_count": 0,
+        "empty_bbox_keys": [],
+        "empty_bbox_key_count": 0
+      },
+      {
+        "manifest": "target_support_20_seed123.txt",
+        "split_type": "target_support",
+        "count": 20,
+        "missing_images": [],
+        "missing_image_count": 0,
+        "missing_labels": [],
+        "missing_label_count": 0,
+        "bbox_path": "/path/to/project/data/raw/processed_slim/target_whu/train_pool/bboxes.json",
+        "missing_bbox_keys": [],
+        "missing_bbox_key_count": 0,
+        "empty_bbox_keys": [],
+        "empty_bbox_key_count": 0
+      },
+      {
+        "manifest": "target_support_20_seed42.txt",
+        "split_type": "target_support",
+        "count": 20,
+        "missing_images": [],
+        "missing_image_count": 0,
+        "missing_labels": [],
+        "missing_label_count": 0,
+        "bbox_path": "/path/to/project/data/raw/processed_slim/target_whu/train_pool/bboxes.json",
+        "missing_bbox_keys": [],
+        "missing_bbox_key_count": 0,
+        "empty_bbox_keys": [],
+        "empty_bbox_key_count": 0
+      },
+      {
+        "manifest": "target_support_20_seed456.txt",
+        "split_type": "target_support",
+        "count": 20,
+        "missing_images": [],
+        "missing_image_count": 0,
+        "missing_labels": [],
+        "missing_label_count": 0,
+        "bbox_path": "/path/to/project/data/raw/processed_slim/target_whu/train_pool/bboxes.json",
+        "missing_bbox_keys": [],
+        "missing_bbox_key_count": 0,
+        "empty_bbox_keys": [],
+        "empty_bbox_key_count": 0
+      },
+      {
+        "manifest": "target_support_5_seed123.txt",
+        "split_type": "target_support",
+        "count": 5,
+        "missing_images": [],
+        "missing_image_count": 0,
+        "missing_labels": [],
+        "missing_label_count": 0,
+        "bbox_path": "/path/to/project/data/raw/processed_slim/target_whu/train_pool/bboxes.json",
+        "missing_bbox_keys": [],
+        "missing_bbox_key_count": 0,
+        "empty_bbox_keys": [],
+        "empty_bbox_key_count": 0
+      },
+      {
+        "manifest": "target_support_5_seed42.txt",
+        "split_type": "target_support",
+        "count": 5,
+        "missing_images": [],
+        "missing_image_count": 0,
+        "missing_labels": [],
+        "missing_label_count": 0,
+        "bbox_path": "/path/to/project/data/raw/processed_slim/target_whu/train_pool/bboxes.json",
+        "missing_bbox_keys": [],
+        "missing_bbox_key_count": 0,
+        "empty_bbox_keys": [],
+        "empty_bbox_key_count": 0
+      },
+      {
+        "manifest": "target_support_5_seed456.txt",
+        "split_type": "target_support",
+        "count": 5,
+        "missing_images": [],
+        "missing_image_count": 0,
+        "missing_labels": [],
+        "missing_label_count": 0,
+        "bbox_path": "/path/to/project/data/raw/processed_slim/target_whu/train_pool/bboxes.json",
+        "missing_bbox_keys": [],
+        "missing_bbox_key_count": 0,
+        "empty_bbox_keys": [],
+        "empty_bbox_key_count": 0
+      },
+      {
+        "manifest": "target_val.txt",
+        "split_type": "target_val",
+        "count": 500,
+        "missing_images": [],
+        "missing_image_count": 0,
+        "missing_labels": [],
+        "missing_label_count": 0,
+        "bbox_path": "/path/to/project/data/raw/processed_slim/target_whu/val/bboxes.json",
+        "missing_bbox_keys": [],
+        "missing_bbox_key_count": 0,
+        "empty_bbox_keys": [
+          "hangzhou_val_246.tif",
+          "hangzhou_val_425.tif",
+          "hangzhou_val_638.tif",
+          "hangzhou_val_435.tif",
+          "hangzhou_val_206.tif",
+          "hangzhou_val_944.tif",
+          "hangzhou_val_594.tif",
+          "hangzhou_val_1250.tif",
+          "hangzhou_val_300.tif",
+          "hangzhou_val_1223.tif",
+          "hangzhou_val_18.tif",
+          "hangzhou_val_845.tif",
+          "hangzhou_val_930.tif",
+          "hangzhou_val_642.tif",
+          "hangzhou_val_1161.tif",
+          "hangzhou_val_1044.tif",
+          "hangzhou_val_25.tif",
+          "hangzhou_val_838.tif",
+          "hangzhou_val_1242.tif",
+          "hangzhou_val_1414.tif"
+        ],
+        "empty_bbox_key_count": 144
+      }
+    ],
+    "directory_status": {
+      "target_support_image": {
+        "path": "/path/to/project/data/raw/processed_slim/target_whu/train_pool/images",
+        "exists": true,
+        "type": "dir"
+      },
+      "target_support_label": {
+        "path": "/path/to/project/data/raw/processed_slim/target_whu/train_pool/dual_channel_labels",
+        "exists": true,
+        "type": "dir"
+      },
+      "target_support_bbox": {
+        "path": "/path/to/project/data/raw/processed_slim/target_whu/train_pool/bboxes.json",
+        "exists": true,
+        "type": "file"
+      },
+      "target_val_image": {
+        "path": "/path/to/project/data/raw/processed_slim/target_whu/val/images",
+        "exists": true,
+        "type": "dir"
+      },
+      "target_val_label": {
+        "path": "/path/to/project/data/raw/processed_slim/target_whu/val/dual_channel_labels",
+        "exists": true,
+        "type": "dir"
+      },
+      "target_val_bbox": {
+        "path": "/path/to/project/data/raw/processed_slim/target_whu/val/bboxes.json",
+        "exists": true,
+        "type": "file"
+      },
+      "target_test_image": {
+        "path": "/path/to/project/data/raw/whu_mix_full_test/test/image",
+        "exists": true,
+        "type": "dir"
+      },
+      "target_test_label": {
+        "path": "/path/to/project/data/raw/whu_mix_full_test/dual_channel_labels",
+        "exists": true,
+        "type": "dir"
+      },
+      "target_test_bbox": {
+        "path": "/path/to/project/data/raw/whu_mix_full_test/bbox.json",
+        "exists": true,
+        "type": "file"
+      },
+      "target_pilot_test_image": {
+        "path": "/path/to/project/data/raw/processed_slim/target_whu/test/images",
+        "exists": true,
+        "type": "dir"
+      },
+      "target_pilot_test_label": {
+        "path": "/path/to/project/data/raw/processed_slim/target_whu/test/dual_channel_labels",
+        "exists": true,
+        "type": "dir"
+      },
+      "target_pilot_test_bbox": {
+        "path": "/path/to/project/data/raw/processed_slim/target_whu/test/bboxes.json",
+        "exists": true,
+        "type": "file"
+      },
+      "source_train_image": {
+        "path": "/path/to/project/data/raw/processed_slim/source_whu/train/images",
+        "exists": true,
+        "type": "dir"
+      },
+      "source_train_label": {
+        "path": "/path/to/project/data/raw/processed_slim/source_whu/train/dual_channel_labels",
+        "exists": true,
+        "type": "dir"
+      },
+      "source_val_image": {
+        "path": "/path/to/project/data/raw/processed_slim/source_whu/val/images",
+        "exists": true,
+        "type": "dir"
+      },
+      "source_val_label": {
+        "path": "/path/to/project/data/raw/processed_slim/source_whu/val/dual_channel_labels",
+        "exists": true,
+        "type": "dir"
+      },
+      "source_test_image": {
+        "path": "/path/to/project/data/raw/processed_slim/source_whu/test/images",
+        "exists": true,
+        "type": "dir"
+      },
+      "source_test_label": {
+        "path": "/path/to/project/data/raw/processed_slim/source_whu/test/dual_channel_labels",
+        "exists": true,
+        "type": "dir"
+      }
+    }
+  },
+  "split_report": {
+    "intersections": {
+      "support": {
+        "target_support_10_seed123": {
+          "count": 10,
+          "intersect_val": 0,
+          "intersect_final_test": 0
+        },
+        "target_support_10_seed42": {
+          "count": 10,
+          "intersect_val": 0,
+          "intersect_final_test": 0
+        },
+        "target_support_10_seed456": {
+          "count": 10,
+          "intersect_val": 0,
+          "intersect_final_test": 0
+        },
+        "target_support_20_seed123": {
+          "count": 20,
+          "intersect_val": 0,
+          "intersect_final_test": 0
+        },
+        "target_support_20_seed42": {
+          "count": 20,
+          "intersect_val": 0,
+          "intersect_final_test": 0
+        },
+        "target_support_20_seed456": {
+          "count": 20,
+          "intersect_val": 0,
+          "intersect_final_test": 0
+        },
+        "target_support_5_seed123": {
+          "count": 5,
+          "intersect_val": 0,
+          "intersect_final_test": 0
+        },
+        "target_support_5_seed42": {
+          "count": 5,
+          "intersect_val": 0,
+          "intersect_final_test": 0
+        },
+        "target_support_5_seed456": {
+          "count": 5,
+          "intersect_val": 0,
+          "intersect_final_test": 0
+        }
+      },
+      "val_final_test": {
+        "target_val_count": 500,
+        "target_final_test_count": 8402,
+        "intersect": 0
+      }
+    },
+    "nested": {
+      "ok": true,
+      "detail": {
+        "123": [
+          {
+            "small": 5,
+            "large": 10,
+            "ok": true,
+            "small_count": 5,
+            "large_count": 10
+          },
+          {
+            "small": 10,
+            "large": 20,
+            "ok": true,
+            "small_count": 10,
+            "large_count": 20
+          }
+        ],
+        "42": [
+          {
+            "small": 5,
+            "large": 10,
+            "ok": true,
+            "small_count": 5,
+            "large_count": 10
+          },
+          {
+            "small": 10,
+            "large": 20,
+            "ok": true,
+            "small_count": 10,
+            "large_count": 20
+          }
+        ],
+        "456": [
+          {
+            "small": 5,
+            "large": 10,
+            "ok": true,
+            "small_count": 5,
+            "large_count": 10
+          },
+          {
+            "small": 10,
+            "large": 20,
+            "ok": true,
+            "small_count": 10,
+            "large_count": 20
+          }
+        ]
+      }
+    },
+    "summary": {
+      "target_final_test_count": 8402,
+      "target_val_count": 500,
+      "final_test_is_8402": true,
+      "support_val_zero_intersection": true,
+      "support_test_zero_intersection": true,
+      "val_test_zero_intersection": true,
+      "nested_ok": true
+    }
+  },
+  "ok": true,
+  "errors": []
+}

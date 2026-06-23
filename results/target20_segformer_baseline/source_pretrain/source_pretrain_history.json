@@ -1,0 +1,212 @@
+[
+  {
+    "epoch": 1,
+    "loss": 0.9520472388267517,
+    "val_mIoU_05": 0.36163398433686067,
+    "val_F1_05": 0.44648216108181127,
+    "val_BIoU_05": 0.20873395425715396
+  },
+  {
+    "epoch": 2,
+    "loss": 0.6798887038230896,
+    "val_mIoU_05": null,
+    "val_F1_05": null,
+    "val_BIoU_05": null
+  },
+  {
+    "epoch": 3,
+    "loss": 0.6152721745967865,
+    "val_mIoU_05": null,
+    "val_F1_05": null,
+    "val_BIoU_05": null
+  },
+  {
+    "epoch": 4,
+    "loss": 0.567886095046997,
+    "val_mIoU_05": null,
+    "val_F1_05": null,
+    "val_BIoU_05": null
+  },
+  {
+    "epoch": 5,
+    "loss": 0.5188250997066498,
+    "val_mIoU_05": 0.5164362793039261,
+    "val_F1_05": 0.5895089546590766,
+    "val_BIoU_05": 0.3553409352979638
+  },
+  {
+    "epoch": 6,
+    "loss": 0.5031231982707978,
+    "val_mIoU_05": null,
+    "val_F1_05": null,
+    "val_BIoU_05": null
+  },
+  {
+    "epoch": 7,
+    "loss": 0.4926018397808075,
+    "val_mIoU_05": null,
+    "val_F1_05": null,
+    "val_BIoU_05": null
+  },
+  {
+    "epoch": 8,
+    "loss": 0.4628167586326599,
+    "val_mIoU_05": null,
+    "val_F1_05": null,
+    "val_BIoU_05": null
+  },
+  {
+    "epoch": 9,
+    "loss": 0.4450599844455719,
+    "val_mIoU_05": null,
+    "val_F1_05": null,
+    "val_BIoU_05": null
+  },
+  {
+    "epoch": 10,
+    "loss": 0.40537116360664366,
+    "val_mIoU_05": 0.6944843329527552,
+    "val_F1_05": 0.7560245679716098,
+    "val_BIoU_05": 0.5194875736973323
+  },
+  {
+    "epoch": 11,
+    "loss": 0.40458643305301667,
+    "val_mIoU_05": null,
+    "val_F1_05": null,
+    "val_BIoU_05": null
+  },
+  {
+    "epoch": 12,
+    "loss": 0.3937741765975952,
+    "val_mIoU_05": null,
+    "val_F1_05": null,
+    "val_BIoU_05": null
+  },
+  {
+    "epoch": 13,
+    "loss": 0.37847255873680113,
+    "val_mIoU_05": null,
+    "val_F1_05": null,
+    "val_BIoU_05": null
+  },
+  {
+    "epoch": 14,
+    "loss": 0.3607511874437332,
+    "val_mIoU_05": null,
+    "val_F1_05": null,
+    "val_BIoU_05": null
+  },
+  {
+    "epoch": 15,
+    "loss": 0.35415169644355776,
+    "val_mIoU_05": 0.7033487655712976,
+    "val_F1_05": 0.764200530288347,
+    "val_BIoU_05": 0.5317106710237242
+  },
+  {
+    "epoch": 16,
+    "loss": 0.3450624017715454,
+    "val_mIoU_05": null,
+    "val_F1_05": null,
+    "val_BIoU_05": null
+  },
+  {
+    "epoch": 17,
+    "loss": 0.3375217972993851,
+    "val_mIoU_05": null,
+    "val_F1_05": null,
+    "val_BIoU_05": null
+  },
+  {
+    "epoch": 18,
+    "loss": 0.32114309096336363,
+    "val_mIoU_05": null,
+    "val_F1_05": null,
+    "val_BIoU_05": null
+  },
+  {
+    "epoch": 19,
+    "loss": 0.31520104622840883,
+    "val_mIoU_05": null,
+    "val_F1_05": null,
+    "val_BIoU_05": null
+  },
+  {
+    "epoch": 20,
+    "loss": 0.31365456783771517,
+    "val_mIoU_05": 0.7058911103030746,
+    "val_F1_05": 0.7640352600024033,
+    "val_BIoU_05": 0.534603296352641
+  },
+  {
+    "epoch": 21,
+    "loss": 0.313168888092041,
+    "val_mIoU_05": null,
+    "val_F1_05": null,
+    "val_BIoU_05": null
+  },
+  {
+    "epoch": 22,
+    "loss": 0.29537266623973846,
+    "val_mIoU_05": null,
+    "val_F1_05": null,
+    "val_BIoU_05": null
+  },
+  {
+    "epoch": 23,
+    "loss": 0.2889917724132538,
+    "val_mIoU_05": null,
+    "val_F1_05": null,
+    "val_BIoU_05": null
+  },
+  {
+    "epoch": 24,
+    "loss": 0.2984652261734009,
+    "val_mIoU_05": null,
+    "val_F1_05": null,
+    "val_BIoU_05": null
+  },
+  {
+    "epoch": 25,
+    "loss": 0.27436014819145205,
+    "val_mIoU_05": 0.7084250257417821,
+    "val_F1_05": 0.7608890189493005,
+    "val_BIoU_05": 0.5372465714260539
+  },
+  {
+    "epoch": 26,
+    "loss": 0.2638035087585449,
+    "val_mIoU_05": null,
+    "val_F1_05": null,
+    "val_BIoU_05": null
+  },
+  {
+    "epoch": 27,
+    "loss": 0.27202485454082487,
+    "val_mIoU_05": null,
+    "val_F1_05": null,
+    "val_BIoU_05": null
+  },
+  {
+    "epoch": 28,
+    "loss": 0.26436370646953583,
+    "val_mIoU_05": null,
+    "val_F1_05": null,
+    "val_BIoU_05": null
+  },
+  {
+    "epoch": 29,
+    "loss": 0.2640291930437088,
+    "val_mIoU_05": null,
+    "val_F1_05": null,
+    "val_BIoU_05": null
+  },
+  {
+    "epoch": 30,
+    "loss": 0.25420988380908965,
+    "val_mIoU_05": 0.7193803072036463,
+    "val_F1_05": 0.7720479060696789,
+    "val_BIoU_05": 0.5573524933837852
+  }
+]

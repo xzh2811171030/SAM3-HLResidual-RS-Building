@@ -1,0 +1,13 @@
+use_tta,num_images,num_batches,total_time_sec,avg_batch_time_sec,avg_ms_per_image,fps,model,model_key,seed,checkpoint,batch_size
+False,500,125,49.286199774593115,0.3942895981967449,98.57239954918623,10.144827604617804,Prompt-free LoRA,promptfree_lora,42,/path/to/project/results/e6v2_pilot/weights/e6v2_pilot_lora_light_best.pth,4
+True,500,125,147.5861836131662,1.1806894689053298,295.1723672263324,3.387851001761352,Prompt-free LoRA,promptfree_lora,42,/path/to/project/results/e6v2_pilot/weights/e6v2_pilot_lora_light_best.pth,4
+False,500,125,49.37510661222041,0.39500085289776327,98.75021322444081,10.126560412858923,Prompt-free LoRA,promptfree_lora,123,/path/to/project/results/e6v3_hl_lite_seed123/weights/e6v2_pilot_lora_light_best.pth,4
+True,500,125,147.60755106713623,1.1808604085370897,295.21510213427246,3.387360581387773,Prompt-free LoRA,promptfree_lora,123,/path/to/project/results/e6v3_hl_lite_seed123/weights/e6v2_pilot_lora_light_best.pth,4
+False,500,125,49.2987071685493,0.3943896573483944,98.5974143370986,10.142253797661066,Prompt-free LoRA,promptfree_lora,456,/path/to/project/results/e6v3_hl_lite_seed456/weights/e6v2_pilot_lora_light_best.pth,4
+True,500,125,147.3967362800613,1.1791738902404905,294.7934725601226,3.3922053677631947,Prompt-free LoRA,promptfree_lora,456,/path/to/project/results/e6v3_hl_lite_seed456/weights/e6v2_pilot_lora_light_best.pth,4
+False,500,125,50.571831373497844,0.40457465098798273,101.14366274699569,9.886926900219494,HL-Residual (Ours),hl_residual,42,/path/to/project/results/hl_residual_pilot/weights/hl_residual_best.pth,4
+True,500,125,149.12637938279659,1.1930110350623726,298.25275876559317,3.3528608558016173,HL-Residual (Ours),hl_residual,42,/path/to/project/results/hl_residual_pilot/weights/hl_residual_best.pth,4
+False,500,125,50.55594583041966,0.4044475666433573,101.11189166083932,9.890033541794574,HL-Residual (Ours),hl_residual,123,/path/to/project/results/hl_residual_pilot_seed123/weights/hl_residual_best.pth,4
+True,500,125,148.997763434425,1.1919821074754,297.99552686885,3.35575506957226,HL-Residual (Ours),hl_residual,123,/path/to/project/results/hl_residual_pilot_seed123/weights/hl_residual_best.pth,4
+False,500,125,50.649999904446304,0.40519999923557043,101.29999980889261,9.871668330568102,HL-Residual (Ours),hl_residual,456,/path/to/project/results/hl_residual_pilot_seed456/weights/hl_residual_best.pth,4
+True,500,125,149.19731522072107,1.1935785217657686,298.39463044144213,3.351266738682964,HL-Residual (Ours),hl_residual,456,/path/to/project/results/hl_residual_pilot_seed456/weights/hl_residual_best.pth,4

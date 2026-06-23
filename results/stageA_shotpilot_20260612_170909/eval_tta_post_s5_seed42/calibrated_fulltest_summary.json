@@ -1,0 +1,90 @@
+{
+  "config": {
+    "project_root": "/path/to/project",
+    "manifest_dir": null,
+    "sam3_checkpoint": null,
+    "models": "lora_light,hl_residual_old",
+    "use_tta": true,
+    "val_eval_limit": 500,
+    "pilot_eval_limit": 500,
+    "test_manifest_name": "target_pilot_test_500.txt",
+    "test_eval_limit": 0,
+    "lora_light_ckpt": "results/stageA_shotpilot_20260612_170909/train_lora_s5_seed42/weights/e6v2_pilot_lora_light_best.pth",
+    "hl_lite_ckpt": null,
+    "hl_residual_old_ckpt": "results/stageA_shotpilot_20260612_170909/train_hlres_s5_seed42/weights/hl_residual_best.pth",
+    "hl_residual_v2_ckpt": null,
+    "out_dir": "results/stageA_shotpilot_20260612_170909/eval_tta_post_s5_seed42"
+  },
+  "results": [
+    {
+      "model": "lora_light",
+      "checkpoint": "results/stageA_shotpilot_20260612_170909/train_lora_s5_seed42/weights/e6v2_pilot_lora_light_best.pth",
+      "use_tta": true,
+      "val_best_cfg": {
+        "threshold": 0.55,
+        "min_area": 128,
+        "closing_kernel": 5,
+        "fill_holes": false,
+        "mIoU": 0.723128352579105,
+        "F1": 0.8004356483793557,
+        "Boundary_IoU": 0.4552292947886251
+      },
+      "test_manifest": "target_pilot_test_500.txt",
+      "test_fixed_05": {
+        "mIoU": 0.6661612058258634,
+        "F1": 0.7594395156758581,
+        "Boundary_IoU": 0.3210359931487609
+      },
+      "test_calibrated_postprocess": {
+        "mIoU": 0.6749127033678683,
+        "F1": 0.766612167054067,
+        "Boundary_IoU": 0.3359026862586408
+      },
+      "pilot_fixed_05": {
+        "mIoU": 0.6661612058258634,
+        "F1": 0.7594395156758581,
+        "Boundary_IoU": 0.3210359931487609
+      },
+      "pilot_calibrated_postprocess": {
+        "mIoU": 0.6749127033678683,
+        "F1": 0.766612167054067,
+        "Boundary_IoU": 0.3359026862586408
+      }
+    },
+    {
+      "model": "hl_residual_old",
+      "checkpoint": "results/stageA_shotpilot_20260612_170909/train_hlres_s5_seed42/weights/hl_residual_best.pth",
+      "use_tta": true,
+      "val_best_cfg": {
+        "threshold": 0.5,
+        "min_area": 128,
+        "closing_kernel": 5,
+        "fill_holes": false,
+        "mIoU": 0.7243131626894178,
+        "F1": 0.8019304300807906,
+        "Boundary_IoU": 0.4500257337957613
+      },
+      "test_manifest": "target_pilot_test_500.txt",
+      "test_fixed_05": {
+        "mIoU": 0.6642744016012325,
+        "F1": 0.7573393121535885,
+        "Boundary_IoU": 0.32292985685424574
+      },
+      "test_calibrated_postprocess": {
+        "mIoU": 0.6713121515719159,
+        "F1": 0.7641826115391123,
+        "Boundary_IoU": 0.3252478130247447
+      },
+      "pilot_fixed_05": {
+        "mIoU": 0.6642744016012325,
+        "F1": 0.7573393121535885,
+        "Boundary_IoU": 0.32292985685424574
+      },
+      "pilot_calibrated_postprocess": {
+        "mIoU": 0.6713121515719159,
+        "F1": 0.7641826115391123,
+        "Boundary_IoU": 0.3252478130247447
+      }
+    }
+  ]
+}

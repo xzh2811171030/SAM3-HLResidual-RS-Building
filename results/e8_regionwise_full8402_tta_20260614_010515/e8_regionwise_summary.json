@@ -1,0 +1,145 @@
+{
+  "experiment": "E8_regionwise_generalization",
+  "metadata": {
+    "timestamp": "2026-06-14T06:29:14.841489",
+    "val_manifest": "target_val.txt",
+    "test_manifest": "target_final_test_8402.txt",
+    "models": [
+      "promptfree_lora",
+      "hl_residual"
+    ],
+    "seeds": [
+      42,
+      123,
+      456
+    ],
+    "use_tta": true,
+    "batch_size": 4,
+    "num_workers": 2,
+    "note": "region_prefix is inferred from filename prefixes; it is reported as region-wise rather than strict city-wise when source naming is ambiguous."
+  },
+  "calibration_records": [
+    {
+      "model": "Prompt-free LoRA",
+      "seed": 42,
+      "checkpoint": "/path/to/project/results/e6v2_pilot/weights/e6v2_pilot_lora_light_best.pth",
+      "val_best_cfg": {
+        "threshold": 0.6,
+        "min_area": 128,
+        "closing_kernel": 3,
+        "fill_holes": false,
+        "mIoU": 0.7449276160591644,
+        "F1": 0.8173614755423045,
+        "Boundary_IoU": 0.4735112309960061
+      }
+    },
+    {
+      "model": "Prompt-free LoRA",
+      "seed": 123,
+      "checkpoint": "/path/to/project/results/e6v3_hl_lite_seed123/weights/e6v2_pilot_lora_light_best.pth",
+      "val_best_cfg": {
+        "threshold": 0.7,
+        "min_area": 128,
+        "closing_kernel": 5,
+        "fill_holes": false,
+        "mIoU": 0.7459883469815063,
+        "F1": 0.8162050333133145,
+        "Boundary_IoU": 0.5183140035728127
+      }
+    },
+    {
+      "model": "Prompt-free LoRA",
+      "seed": 456,
+      "checkpoint": "/path/to/project/results/e6v3_hl_lite_seed456/weights/e6v2_pilot_lora_light_best.pth",
+      "val_best_cfg": {
+        "threshold": 0.65,
+        "min_area": 128,
+        "closing_kernel": 5,
+        "fill_holes": false,
+        "mIoU": 0.7282719283124612,
+        "F1": 0.8045762031263122,
+        "Boundary_IoU": 0.47320787988195323
+      }
+    },
+    {
+      "model": "HL-Residual (Ours)",
+      "seed": 42,
+      "checkpoint": "/path/to/project/results/hl_residual_pilot/weights/hl_residual_best.pth",
+      "val_best_cfg": {
+        "threshold": 0.65,
+        "min_area": 128,
+        "closing_kernel": 3,
+        "fill_holes": false,
+        "mIoU": 0.7553752977890541,
+        "F1": 0.8245789491034134,
+        "Boundary_IoU": 0.5057278837803328
+      }
+    },
+    {
+      "model": "HL-Residual (Ours)",
+      "seed": 123,
+      "checkpoint": "/path/to/project/results/hl_residual_pilot_seed123/weights/hl_residual_best.pth",
+      "val_best_cfg": {
+        "threshold": 0.7,
+        "min_area": 128,
+        "closing_kernel": 0,
+        "fill_holes": false,
+        "mIoU": 0.7463940915130539,
+        "F1": 0.8165322488548806,
+        "Boundary_IoU": 0.5187281526377526
+      }
+    },
+    {
+      "model": "HL-Residual (Ours)",
+      "seed": 456,
+      "checkpoint": "/path/to/project/results/hl_residual_pilot_seed456/weights/hl_residual_best.pth",
+      "val_best_cfg": {
+        "threshold": 0.45,
+        "min_area": 128,
+        "closing_kernel": 5,
+        "fill_holes": false,
+        "mIoU": 0.7499081961990101,
+        "F1": 0.8221604029656446,
+        "Boundary_IoU": 0.503892884245246
+      }
+    }
+  ],
+  "city_balanced_summary": [
+    {
+      "model": "HL-Residual (Ours)",
+      "num_seeds": 3,
+      "region_balanced_mIoU": 0.715219241374272,
+      "region_balanced_mIoU_seed_std": 0.010409780708088442,
+      "region_balanced_F1": 0.801770653416613,
+      "region_balanced_F1_seed_std": 0.010210976923704283,
+      "region_balanced_Boundary_IoU": 0.39636927500659597,
+      "region_balanced_Boundary_IoU_seed_std": 0.010726512714749207,
+      "worst_region_mIoU": 0.5300196903622836,
+      "worst_region_mIoU_seed_std": 0.051824368381657014,
+      "worst_region_Boundary_IoU": 0.17881951206798388,
+      "worst_region_Boundary_IoU_seed_std": 0.011672760494176275,
+      "region_mIoU_std": 0.13596115425502653,
+      "region_mIoU_std_seed_std": 0.018619419638215912,
+      "region_Boundary_IoU_std": 0.18108118507482462,
+      "region_Boundary_IoU_std_seed_std": 0.008286327897143248
+    },
+    {
+      "model": "Prompt-free LoRA",
+      "num_seeds": 3,
+      "region_balanced_mIoU": 0.7050953789002312,
+      "region_balanced_mIoU_seed_std": 0.013950646307772303,
+      "region_balanced_F1": 0.7946001702946424,
+      "region_balanced_F1_seed_std": 0.012832267999762325,
+      "region_balanced_Boundary_IoU": 0.37398686525269936,
+      "region_balanced_Boundary_IoU_seed_std": 0.02929875738839579,
+      "worst_region_mIoU": 0.5294685900959445,
+      "worst_region_mIoU_seed_std": 0.056801853039491194,
+      "worst_region_Boundary_IoU": 0.17312791874043465,
+      "worst_region_Boundary_IoU_seed_std": 0.0039499522602588315,
+      "region_mIoU_std": 0.13422472615249156,
+      "region_mIoU_std_seed_std": 0.025587599284444332,
+      "region_Boundary_IoU_std": 0.17125737527323825,
+      "region_Boundary_IoU_std_seed_std": 0.016378722598100186
+    }
+  ]
+}

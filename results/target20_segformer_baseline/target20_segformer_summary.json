@@ -1,0 +1,49 @@
+{
+  "rows": [
+    {
+      "seed": 42,
+      "mIoU": 0.45215087917947916,
+      "F1": 0.5403658060828495,
+      "Boundary_IoU": 0.27898190613717133,
+      "threshold": 0.7,
+      "min_area": 128,
+      "closing_kernel": 5,
+      "fill_holes": false
+    },
+    {
+      "seed": 123,
+      "mIoU": 0.4000672732038659,
+      "F1": 0.482574113762458,
+      "Boundary_IoU": 0.26120791380732084,
+      "threshold": 0.4,
+      "min_area": 128,
+      "closing_kernel": 0,
+      "fill_holes": false
+    },
+    {
+      "seed": 456,
+      "mIoU": 0.49704593045259055,
+      "F1": 0.5952682591881102,
+      "Boundary_IoU": 0.2999852856612549,
+      "threshold": 0.45,
+      "min_area": 128,
+      "closing_kernel": 5,
+      "fill_holes": false
+    }
+  ],
+  "aggregate": {
+    "mIoU": {
+      "mean": 0.44975469427864523,
+      "std": 0.04853371268510828
+    },
+    "F1": {
+      "mean": 0.5394027263444726,
+      "std": 0.05635324520594502
+    },
+    "Boundary_IoU": {
+      "mean": 0.28005836853524896,
+      "std": 0.019411084988877496
+    }
+  },
+  "timestamp": "2026-06-16T18:01:44.269874"
+}

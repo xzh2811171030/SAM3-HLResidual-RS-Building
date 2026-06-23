@@ -1,0 +1,43 @@
+{
+  "experiment": "SegFormer_Fully_Supervised",
+  "metadata": {
+    "platform": "cloud-linux",
+    "device": "cuda",
+    "timestamp": "20260602_163412",
+    "full_test": true,
+    "batch_size": 8,
+    "learning_rate": 0.0001,
+    "num_epochs": 50,
+    "num_workers": 1,
+    "seeds": [
+      456
+    ]
+  },
+  "summary": {
+    "model": "SegFormer (mit-b2)",
+    "mIoU_mean": 0.455838946215569,
+    "mIoU_std": 0.0,
+    "F1_mean": 0.5171808688943657,
+    "F1_std": 0.0,
+    "Boundary_IoU_mean": 0.39059205416333087,
+    "Boundary_IoU_std": 0.0,
+    "per_seed": [
+      {
+        "mIoU": 0.455838946215569,
+        "F1": 0.5171808688943657,
+        "Boundary_IoU": 0.39059205416333087,
+        "best_val_iou": 0.8568582344055176,
+        "seed": 456
+      }
+    ]
+  },
+  "per_seed": [
+    {
+      "mIoU": 0.455838946215569,
+      "F1": 0.5171808688943657,
+      "Boundary_IoU": 0.39059205416333087,
+      "best_val_iou": 0.8568582344055176,
+      "seed": 456
+    }
+  ]
+}

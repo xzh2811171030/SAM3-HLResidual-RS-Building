@@ -1,0 +1,5 @@
+data/raw/processed_slim/target_whu/train_pool/images/christchurch_train_5213.tif
+data/raw/processed_slim/target_whu/train_pool/images/christchurch_train_5961.tif
+data/raw/processed_slim/target_whu/train_pool/images/tianjin_train_379.tif
+data/raw/processed_slim/target_whu/train_pool/images/tianjin_train_565.tif
+data/raw/processed_slim/target_whu/train_pool/images/tianjin_train_815.tif

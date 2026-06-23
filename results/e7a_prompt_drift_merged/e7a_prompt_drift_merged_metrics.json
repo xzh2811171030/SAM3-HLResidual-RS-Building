@@ -1,0 +1,755 @@
+{
+  "experiment": "merged_e7_results",
+  "metadata": {
+    "source_files": [
+      "results/e7a_prompt_drift_pilot500/e7a_prompt_drift_metrics.json",
+      "results/e7a_prompt_drift_pilot500/e7a_prompt_drift_residual_metrics.json"
+    ],
+    "e7a_prompt_drift_metrics.json": {
+      "timestamp": "2026-06-13T01:10:05.271867",
+      "test_manifest": "target_pilot_test_500.txt",
+      "val_manifest": "target_val.txt",
+      "sigmas": [
+        0,
+        2,
+        5,
+        10,
+        20
+      ],
+      "seeds": [
+        42,
+        123,
+        456
+      ],
+      "use_tta": true,
+      "bbox_json": "/path/to/project/data/raw/whu_mix_full_test/bbox.json",
+      "note": "Prompt-free models do not consume bbox prompts; their metrics are repeated across sigma levels."
+    },
+    "e7a_prompt_drift_residual_metrics.json": {
+      "timestamp": "2026-06-13T02:47:59.938914",
+      "test_manifest": "target_pilot_test_500.txt",
+      "val_manifest": "target_val.txt",
+      "sigmas": [
+        0,
+        2,
+        5,
+        10,
+        20
+      ],
+      "seeds": [
+        42,
+        123,
+        456
+      ],
+      "use_tta": true,
+      "bbox_json": "/path/to/project/data/raw/whu_mix_full_test/bbox.json",
+      "note": "Prompt-free models do not consume bbox prompts; their metrics are repeated across sigma levels."
+    }
+  },
+  "results": {
+    "Box-prompt LoRA": {
+      "0": {
+        "mIoU": 0.7268987000225214,
+        "mIoU_std": 0.012073161283439032,
+        "F1": 0.8140027541388267,
+        "F1_std": 0.01023922729329277,
+        "Boundary_IoU": 0.4504423245936498,
+        "Boundary_IoU_std": 0.008537667228261407
+      },
+      "2": {
+        "mIoU": 0.7126270373299626,
+        "mIoU_std": 0.006555451502033409,
+        "F1": 0.8020430952477055,
+        "F1_std": 0.0050522827776079225,
+        "Boundary_IoU": 0.43901959594801676,
+        "Boundary_IoU_std": 0.005739406798305351
+      },
+      "5": {
+        "mIoU": 0.648020230447018,
+        "mIoU_std": 0.024145378963356515,
+        "F1": 0.7385366693311575,
+        "F1_std": 0.02468248104493738,
+        "Boundary_IoU": 0.3992293497996639,
+        "Boundary_IoU_std": 0.012618002380061947
+      },
+      "10": {
+        "mIoU": 0.5301685300200031,
+        "mIoU_std": 0.04311534262906299,
+        "F1": 0.6112276450217807,
+        "F1_std": 0.047848846613974906,
+        "Boundary_IoU": 0.3406958336312402,
+        "Boundary_IoU_std": 0.015323981633826837
+      },
+      "20": {
+        "mIoU": 0.4259549783760435,
+        "mIoU_std": 0.036799650185233235,
+        "F1": 0.4908336535757531,
+        "F1_std": 0.040665383553975545,
+        "Boundary_IoU": 0.2841124416476116,
+        "Boundary_IoU_std": 0.006769798776699006
+      }
+    },
+    "Prompt-free LoRA": {
+      "0": {
+        "mIoU": 0.6924172022704426,
+        "mIoU_std": 0.017819659406697753,
+        "F1": 0.7776395273276364,
+        "F1_std": 0.017010643816890103,
+        "Boundary_IoU": 0.37731429144898265,
+        "Boundary_IoU_std": 0.025582475793283623
+      },
+      "2": {
+        "mIoU": 0.6924172022704426,
+        "mIoU_std": 0.017819659406697753,
+        "F1": 0.7776395273276364,
+        "F1_std": 0.017010643816890103,
+        "Boundary_IoU": 0.37731429144898265,
+        "Boundary_IoU_std": 0.025582475793283623
+      },
+      "5": {
+        "mIoU": 0.6924172022704426,
+        "mIoU_std": 0.017819659406697753,
+        "F1": 0.7776395273276364,
+        "F1_std": 0.017010643816890103,
+        "Boundary_IoU": 0.37731429144898265,
+        "Boundary_IoU_std": 0.025582475793283623
+      },
+      "10": {
+        "mIoU": 0.6924172022704426,
+        "mIoU_std": 0.017819659406697753,
+        "F1": 0.7776395273276364,
+        "F1_std": 0.017010643816890103,
+        "Boundary_IoU": 0.37731429144898265,
+        "Boundary_IoU_std": 0.025582475793283623
+      },
+      "20": {
+        "mIoU": 0.6924172022704426,
+        "mIoU_std": 0.017819659406697753,
+        "F1": 0.7776395273276364,
+        "F1_std": 0.017010643816890103,
+        "Boundary_IoU": 0.37731429144898265,
+        "Boundary_IoU_std": 0.025582475793283623
+      }
+    },
+    "HL-Residual (Ours)": {
+      "0": {
+        "mIoU": 0.7019720683444661,
+        "mIoU_std": 0.015656046757562197,
+        "F1": 0.7846141762182937,
+        "F1_std": 0.014945529209706411,
+        "Boundary_IoU": 0.398131589454843,
+        "Boundary_IoU_std": 0.008956526477931014
+      },
+      "2": {
+        "mIoU": 0.7019720683444661,
+        "mIoU_std": 0.015656046757562197,
+        "F1": 0.7846141762182937,
+        "F1_std": 0.014945529209706411,
+        "Boundary_IoU": 0.398131589454843,
+        "Boundary_IoU_std": 0.008956526477931014
+      },
+      "5": {
+        "mIoU": 0.7019720683444661,
+        "mIoU_std": 0.015656046757562197,
+        "F1": 0.7846141762182937,
+        "F1_std": 0.014945529209706411,
+        "Boundary_IoU": 0.398131589454843,
+        "Boundary_IoU_std": 0.008956526477931014
+      },
+      "10": {
+        "mIoU": 0.7019720683444661,
+        "mIoU_std": 0.015656046757562197,
+        "F1": 0.7846141762182937,
+        "F1_std": 0.014945529209706411,
+        "Boundary_IoU": 0.398131589454843,
+        "Boundary_IoU_std": 0.008956526477931014
+      },
+      "20": {
+        "mIoU": 0.7019720683444661,
+        "mIoU_std": 0.015656046757562197,
+        "F1": 0.7846141762182937,
+        "F1_std": 0.014945529209706411,
+        "Boundary_IoU": 0.398131589454843,
+        "Boundary_IoU_std": 0.008956526477931014
+      }
+    }
+  },
+  "raw_per_seed": {
+    "Box-prompt LoRA": {
+      "0": [
+        {
+          "mIoU": 0.7335929199252816,
+          "F1": 0.8194406773726861,
+          "Boundary_IoU": 0.44962426966757363,
+          "checkpoint": "/path/to/project/weights/sam3_lora_tgt_20shot_seed42.pth"
+        },
+        {
+          "mIoU": 0.7129614159320609,
+          "F1": 0.802191844505069,
+          "Boundary_IoU": 0.4423431294864933,
+          "checkpoint": "/path/to/project/weights/sam3_lora_tgt_20shot_seed123.pth"
+        },
+        {
+          "mIoU": 0.7341417642102217,
+          "F1": 0.8203757405387246,
+          "Boundary_IoU": 0.4593595746268827,
+          "checkpoint": "/path/to/project/weights/sam3_lora_tgt_20shot_seed456.pth"
+        }
+      ],
+      "2": [
+        {
+          "mIoU": 0.717611890175226,
+          "F1": 0.8053997605161938,
+          "Boundary_IoU": 0.4357687880693902,
+          "checkpoint": "/path/to/project/weights/sam3_lora_tgt_20shot_seed42.pth"
+        },
+        {
+          "mIoU": 0.7052013182970336,
+          "F1": 0.7962325525544968,
+          "Boundary_IoU": 0.4356435024616956,
+          "checkpoint": "/path/to/project/weights/sam3_lora_tgt_20shot_seed123.pth"
+        },
+        {
+          "mIoU": 0.7150679035176283,
+          "F1": 0.8044969726724255,
+          "Boundary_IoU": 0.4456464973129645,
+          "checkpoint": "/path/to/project/weights/sam3_lora_tgt_20shot_seed456.pth"
+        }
+      ],
+      "5": [
+        {
+          "mIoU": 0.6428739749168374,
+          "F1": 0.73365823807272,
+          "Boundary_IoU": 0.38635608672716537,
+          "checkpoint": "/path/to/project/weights/sam3_lora_tgt_20shot_seed42.pth"
+        },
+        {
+          "mIoU": 0.6743238526401151,
+          "F1": 0.7652940993659656,
+          "Boundary_IoU": 0.41157557586201504,
+          "checkpoint": "/path/to/project/weights/sam3_lora_tgt_20shot_seed123.pth"
+        },
+        {
+          "mIoU": 0.6268628637841014,
+          "F1": 0.7166576705547867,
+          "Boundary_IoU": 0.39975638680981124,
+          "checkpoint": "/path/to/project/weights/sam3_lora_tgt_20shot_seed456.pth"
+        }
+      ],
+      "10": [
+        {
+          "mIoU": 0.5128286931429444,
+          "F1": 0.5918484942096769,
+          "Boundary_IoU": 0.3261757284605865,
+          "checkpoint": "/path/to/project/weights/sam3_lora_tgt_20shot_seed42.pth"
+        },
+        {
+          "mIoU": 0.5792541670940986,
+          "F1": 0.6657262430420227,
+          "Boundary_IoU": 0.35671370115459405,
+          "checkpoint": "/path/to/project/weights/sam3_lora_tgt_20shot_seed123.pth"
+        },
+        {
+          "mIoU": 0.4984227298229665,
+          "F1": 0.5761081978136424,
+          "Boundary_IoU": 0.3391980712785399,
+          "checkpoint": "/path/to/project/weights/sam3_lora_tgt_20shot_seed456.pth"
+        }
+      ],
+      "20": [
+        {
+          "mIoU": 0.4230097744840167,
+          "F1": 0.4857025079160841,
+          "Boundary_IoU": 0.276456192283177,
+          "checkpoint": "/path/to/project/weights/sam3_lora_tgt_20shot_seed42.pth"
+        },
+        {
+          "mIoU": 0.46413873100248826,
+          "F1": 0.5338210884081771,
+          "Boundary_IoU": 0.2865743453633702,
+          "checkpoint": "/path/to/project/weights/sam3_lora_tgt_20shot_seed123.pth"
+        },
+        {
+          "mIoU": 0.39071642964162573,
+          "F1": 0.4529773644029981,
+          "Boundary_IoU": 0.28930678729628767,
+          "checkpoint": "/path/to/project/weights/sam3_lora_tgt_20shot_seed456.pth"
+        }
+      ]
+    },
+    "Prompt-free LoRA": {
+      "0": [
+        {
+          "mIoU": 0.7090154737493627,
+          "F1": 0.7946852185663297,
+          "Boundary_IoU": 0.3606593475653768,
+          "checkpoint": "/path/to/project/results/e6v2_pilot/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.6,
+            "min_area": 128,
+            "closing_kernel": 3,
+            "fill_holes": false,
+            "mIoU": 0.7449276160591644,
+            "F1": 0.8173614755423045,
+            "Boundary_IoU": 0.4735112309960061
+          }
+        },
+        {
+          "mIoU": 0.6946496048471434,
+          "F1": 0.7775692145068924,
+          "Boundary_IoU": 0.4067704808362293,
+          "checkpoint": "/path/to/project/results/e6v3_hl_lite_seed123/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.7,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7459883469815063,
+            "F1": 0.8162050333133145,
+            "Boundary_IoU": 0.5183140035728127
+          }
+        },
+        {
+          "mIoU": 0.6735865282148218,
+          "F1": 0.7606641489096871,
+          "Boundary_IoU": 0.36451304594534184,
+          "checkpoint": "/path/to/project/results/e6v3_hl_lite_seed456/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.65,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7282719283124612,
+            "F1": 0.8045762031263122,
+            "Boundary_IoU": 0.47320787988195323
+          }
+        }
+      ],
+      "2": [
+        {
+          "mIoU": 0.7090154737493627,
+          "F1": 0.7946852185663297,
+          "Boundary_IoU": 0.3606593475653768,
+          "checkpoint": "/path/to/project/results/e6v2_pilot/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.6,
+            "min_area": 128,
+            "closing_kernel": 3,
+            "fill_holes": false,
+            "mIoU": 0.7449276160591644,
+            "F1": 0.8173614755423045,
+            "Boundary_IoU": 0.4735112309960061
+          }
+        },
+        {
+          "mIoU": 0.6946496048471434,
+          "F1": 0.7775692145068924,
+          "Boundary_IoU": 0.4067704808362293,
+          "checkpoint": "/path/to/project/results/e6v3_hl_lite_seed123/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.7,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7459883469815063,
+            "F1": 0.8162050333133145,
+            "Boundary_IoU": 0.5183140035728127
+          }
+        },
+        {
+          "mIoU": 0.6735865282148218,
+          "F1": 0.7606641489096871,
+          "Boundary_IoU": 0.36451304594534184,
+          "checkpoint": "/path/to/project/results/e6v3_hl_lite_seed456/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.65,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7282719283124612,
+            "F1": 0.8045762031263122,
+            "Boundary_IoU": 0.47320787988195323
+          }
+        }
+      ],
+      "5": [
+        {
+          "mIoU": 0.7090154737493627,
+          "F1": 0.7946852185663297,
+          "Boundary_IoU": 0.3606593475653768,
+          "checkpoint": "/path/to/project/results/e6v2_pilot/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.6,
+            "min_area": 128,
+            "closing_kernel": 3,
+            "fill_holes": false,
+            "mIoU": 0.7449276160591644,
+            "F1": 0.8173614755423045,
+            "Boundary_IoU": 0.4735112309960061
+          }
+        },
+        {
+          "mIoU": 0.6946496048471434,
+          "F1": 0.7775692145068924,
+          "Boundary_IoU": 0.4067704808362293,
+          "checkpoint": "/path/to/project/results/e6v3_hl_lite_seed123/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.7,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7459883469815063,
+            "F1": 0.8162050333133145,
+            "Boundary_IoU": 0.5183140035728127
+          }
+        },
+        {
+          "mIoU": 0.6735865282148218,
+          "F1": 0.7606641489096871,
+          "Boundary_IoU": 0.36451304594534184,
+          "checkpoint": "/path/to/project/results/e6v3_hl_lite_seed456/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.65,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7282719283124612,
+            "F1": 0.8045762031263122,
+            "Boundary_IoU": 0.47320787988195323
+          }
+        }
+      ],
+      "10": [
+        {
+          "mIoU": 0.7090154737493627,
+          "F1": 0.7946852185663297,
+          "Boundary_IoU": 0.3606593475653768,
+          "checkpoint": "/path/to/project/results/e6v2_pilot/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.6,
+            "min_area": 128,
+            "closing_kernel": 3,
+            "fill_holes": false,
+            "mIoU": 0.7449276160591644,
+            "F1": 0.8173614755423045,
+            "Boundary_IoU": 0.4735112309960061
+          }
+        },
+        {
+          "mIoU": 0.6946496048471434,
+          "F1": 0.7775692145068924,
+          "Boundary_IoU": 0.4067704808362293,
+          "checkpoint": "/path/to/project/results/e6v3_hl_lite_seed123/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.7,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7459883469815063,
+            "F1": 0.8162050333133145,
+            "Boundary_IoU": 0.5183140035728127
+          }
+        },
+        {
+          "mIoU": 0.6735865282148218,
+          "F1": 0.7606641489096871,
+          "Boundary_IoU": 0.36451304594534184,
+          "checkpoint": "/path/to/project/results/e6v3_hl_lite_seed456/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.65,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7282719283124612,
+            "F1": 0.8045762031263122,
+            "Boundary_IoU": 0.47320787988195323
+          }
+        }
+      ],
+      "20": [
+        {
+          "mIoU": 0.7090154737493627,
+          "F1": 0.7946852185663297,
+          "Boundary_IoU": 0.3606593475653768,
+          "checkpoint": "/path/to/project/results/e6v2_pilot/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.6,
+            "min_area": 128,
+            "closing_kernel": 3,
+            "fill_holes": false,
+            "mIoU": 0.7449276160591644,
+            "F1": 0.8173614755423045,
+            "Boundary_IoU": 0.4735112309960061
+          }
+        },
+        {
+          "mIoU": 0.6946496048471434,
+          "F1": 0.7775692145068924,
+          "Boundary_IoU": 0.4067704808362293,
+          "checkpoint": "/path/to/project/results/e6v3_hl_lite_seed123/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.7,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7459883469815063,
+            "F1": 0.8162050333133145,
+            "Boundary_IoU": 0.5183140035728127
+          }
+        },
+        {
+          "mIoU": 0.6735865282148218,
+          "F1": 0.7606641489096871,
+          "Boundary_IoU": 0.36451304594534184,
+          "checkpoint": "/path/to/project/results/e6v3_hl_lite_seed456/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.65,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7282719283124612,
+            "F1": 0.8045762031263122,
+            "Boundary_IoU": 0.47320787988195323
+          }
+        }
+      ]
+    },
+    "HL-Residual (Ours)": {
+      "0": [
+        {
+          "mIoU": 0.7198576251591735,
+          "F1": 0.8017472976133726,
+          "Boundary_IoU": 0.39581672795807127,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.65,
+            "min_area": 128,
+            "closing_kernel": 3,
+            "fill_holes": false,
+            "mIoU": 0.7553752977890541,
+            "F1": 0.8245789491034134,
+            "Boundary_IoU": 0.5057278837803328
+          }
+        },
+        {
+          "mIoU": 0.6953078735203675,
+          "F1": 0.7778395298056187,
+          "Boundary_IoU": 0.40801830589782917,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot_seed123/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.7,
+            "min_area": 128,
+            "closing_kernel": 0,
+            "fill_holes": false,
+            "mIoU": 0.7463940915130539,
+            "F1": 0.8165322488548806,
+            "Boundary_IoU": 0.5187281526377526
+          }
+        },
+        {
+          "mIoU": 0.6907507063538574,
+          "F1": 0.7742557012358895,
+          "Boundary_IoU": 0.39055973450862874,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot_seed456/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.45,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7499081961990101,
+            "F1": 0.8221604029656446,
+            "Boundary_IoU": 0.503892884245246
+          }
+        }
+      ],
+      "2": [
+        {
+          "mIoU": 0.7198576251591735,
+          "F1": 0.8017472976133726,
+          "Boundary_IoU": 0.39581672795807127,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.65,
+            "min_area": 128,
+            "closing_kernel": 3,
+            "fill_holes": false,
+            "mIoU": 0.7553752977890541,
+            "F1": 0.8245789491034134,
+            "Boundary_IoU": 0.5057278837803328
+          }
+        },
+        {
+          "mIoU": 0.6953078735203675,
+          "F1": 0.7778395298056187,
+          "Boundary_IoU": 0.40801830589782917,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot_seed123/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.7,
+            "min_area": 128,
+            "closing_kernel": 0,
+            "fill_holes": false,
+            "mIoU": 0.7463940915130539,
+            "F1": 0.8165322488548806,
+            "Boundary_IoU": 0.5187281526377526
+          }
+        },
+        {
+          "mIoU": 0.6907507063538574,
+          "F1": 0.7742557012358895,
+          "Boundary_IoU": 0.39055973450862874,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot_seed456/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.45,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7499081961990101,
+            "F1": 0.8221604029656446,
+            "Boundary_IoU": 0.503892884245246
+          }
+        }
+      ],
+      "5": [
+        {
+          "mIoU": 0.7198576251591735,
+          "F1": 0.8017472976133726,
+          "Boundary_IoU": 0.39581672795807127,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.65,
+            "min_area": 128,
+            "closing_kernel": 3,
+            "fill_holes": false,
+            "mIoU": 0.7553752977890541,
+            "F1": 0.8245789491034134,
+            "Boundary_IoU": 0.5057278837803328
+          }
+        },
+        {
+          "mIoU": 0.6953078735203675,
+          "F1": 0.7778395298056187,
+          "Boundary_IoU": 0.40801830589782917,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot_seed123/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.7,
+            "min_area": 128,
+            "closing_kernel": 0,
+            "fill_holes": false,
+            "mIoU": 0.7463940915130539,
+            "F1": 0.8165322488548806,
+            "Boundary_IoU": 0.5187281526377526
+          }
+        },
+        {
+          "mIoU": 0.6907507063538574,
+          "F1": 0.7742557012358895,
+          "Boundary_IoU": 0.39055973450862874,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot_seed456/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.45,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7499081961990101,
+            "F1": 0.8221604029656446,
+            "Boundary_IoU": 0.503892884245246
+          }
+        }
+      ],
+      "10": [
+        {
+          "mIoU": 0.7198576251591735,
+          "F1": 0.8017472976133726,
+          "Boundary_IoU": 0.39581672795807127,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.65,
+            "min_area": 128,
+            "closing_kernel": 3,
+            "fill_holes": false,
+            "mIoU": 0.7553752977890541,
+            "F1": 0.8245789491034134,
+            "Boundary_IoU": 0.5057278837803328
+          }
+        },
+        {
+          "mIoU": 0.6953078735203675,
+          "F1": 0.7778395298056187,
+          "Boundary_IoU": 0.40801830589782917,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot_seed123/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.7,
+            "min_area": 128,
+            "closing_kernel": 0,
+            "fill_holes": false,
+            "mIoU": 0.7463940915130539,
+            "F1": 0.8165322488548806,
+            "Boundary_IoU": 0.5187281526377526
+          }
+        },
+        {
+          "mIoU": 0.6907507063538574,
+          "F1": 0.7742557012358895,
+          "Boundary_IoU": 0.39055973450862874,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot_seed456/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.45,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7499081961990101,
+            "F1": 0.8221604029656446,
+            "Boundary_IoU": 0.503892884245246
+          }
+        }
+      ],
+      "20": [
+        {
+          "mIoU": 0.7198576251591735,
+          "F1": 0.8017472976133726,
+          "Boundary_IoU": 0.39581672795807127,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.65,
+            "min_area": 128,
+            "closing_kernel": 3,
+            "fill_holes": false,
+            "mIoU": 0.7553752977890541,
+            "F1": 0.8245789491034134,
+            "Boundary_IoU": 0.5057278837803328
+          }
+        },
+        {
+          "mIoU": 0.6953078735203675,
+          "F1": 0.7778395298056187,
+          "Boundary_IoU": 0.40801830589782917,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot_seed123/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.7,
+            "min_area": 128,
+            "closing_kernel": 0,
+            "fill_holes": false,
+            "mIoU": 0.7463940915130539,
+            "F1": 0.8165322488548806,
+            "Boundary_IoU": 0.5187281526377526
+          }
+        },
+        {
+          "mIoU": 0.6907507063538574,
+          "F1": 0.7742557012358895,
+          "Boundary_IoU": 0.39055973450862874,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot_seed456/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.45,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7499081961990101,
+            "F1": 0.8221604029656446,
+            "Boundary_IoU": 0.503892884245246
+          }
+        }
+      ]
+    }
+  }
+}

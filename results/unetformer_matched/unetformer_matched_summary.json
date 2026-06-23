@@ -1,0 +1,186 @@
+{
+  "args": {
+    "project_root": "/path/to/project",
+    "manifest_dir": "data/splits/e0_manifest",
+    "output_dir": "/path/to/project/results/unetformer_matched",
+    "source_train": "source_train.txt",
+    "source_val": "source_val.txt",
+    "target_val": "target_val.txt",
+    "target_test": "target_final_test_8402.txt",
+    "pilot_manifest": "target_pilot_test_500.txt",
+    "support_pattern": "target_support_20_seed{seed}.txt",
+    "seeds": [
+      42,
+      123,
+      456
+    ],
+    "encoder": "resnet34",
+    "imagenet_pretrained": false,
+    "image_size": 512,
+    "source_epochs": 60,
+    "target_epochs": 120,
+    "source_repeat": 1,
+    "target_repeat": 64,
+    "batch_size": 8,
+    "eval_batch_size": 16,
+    "source_lr": 0.0003,
+    "target_lr": 0.0001,
+    "weight_decay": 0.0001,
+    "eval_interval": 5,
+    "num_workers": 4,
+    "use_tta": true,
+    "no_amp": false,
+    "skip_source_pretrain": true,
+    "source_ckpt": "results/unetformer_matched/unetformer_resnet34_source_best.pth",
+    "thresholds": [
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7
+    ],
+    "min_areas": [
+      0,
+      16,
+      32,
+      64,
+      128
+    ],
+    "closings": [
+      0,
+      3,
+      5
+    ],
+    "fill_holes": [
+      0,
+      1
+    ],
+    "save_confusion_csv": true,
+    "method_name": "UNetFormer-style ResNet34",
+    "make_coverage_table": true,
+    "extra_confusion_csv": [
+      "/path/to/project/results/three_model_coverage/sam/seed42/per_image_confusion/lora_light_seed42_calibrated_confusion.csv",
+      "/path/to/project/results/three_model_coverage/sam/seed42/per_image_confusion/hl_residual_v2_seed42_calibrated_confusion.csv",
+      "/path/to/project/results/three_model_coverage/sam/seed123/per_image_confusion/lora_light_seed123_calibrated_confusion.csv",
+      "/path/to/project/results/three_model_coverage/sam/seed123/per_image_confusion/hl_residual_v2_seed123_calibrated_confusion.csv",
+      "/path/to/project/results/three_model_coverage/sam/seed456/per_image_confusion/lora_light_seed456_calibrated_confusion.csv",
+      "/path/to/project/results/three_model_coverage/sam/seed456/per_image_confusion/hl_residual_v2_seed456_calibrated_confusion.csv"
+    ],
+    "coverage_output_dir": "/path/to/project/results/three_model_coverage/coverage_nonpilot",
+    "skip_target_finetune_if_exists": true
+  },
+  "source_pretrain": {
+    "ckpt": "/path/to/project/results/unetformer_matched/unetformer_resnet34_source_best.pth"
+  },
+  "seeds": {
+    "42": {
+      "support_manifest": "/path/to/project/data/splits/e0_manifest/target_support_20_seed42.txt",
+      "checkpoint": "/path/to/project/results/unetformer_matched/seed42/unetformer_resnet34_source_target20_seed42_best.pth",
+      "target_best_val_fixed05": {
+        "skipped": true,
+        "checkpoint": "/path/to/project/results/unetformer_matched/seed42/unetformer_resnet34_source_target20_seed42_best.pth"
+      },
+      "calibration": {
+        "threshold": 0.6,
+        "min_area": 128,
+        "closing": 5,
+        "fill_holes": false
+      },
+      "calibration_val_metrics": {
+        "mIoU": 64.04202227199664,
+        "F1": 71.68126730610084,
+        "BIoU": 54.393829605526825,
+        "n": 500
+      },
+      "full_metrics": {
+        "mIoU": 60.615824292326224,
+        "F1": 69.52163340606494,
+        "BIoU": 50.07190239644185,
+        "n": 8402
+      },
+      "nonpilot_metrics": {
+        "mIoU": 61.066786245359694,
+        "F1": 69.96164658962333,
+        "BIoU": 50.563739572164046,
+        "n": 7902
+      },
+      "per_image_full_csv": "/path/to/project/results/unetformer_matched/seed42/per_image_full_test.csv",
+      "per_image_nonpilot_csv": "/path/to/project/results/unetformer_matched/seed42/per_image_nonpilot_test.csv",
+      "per_image_full_confusion_csv": "/path/to/project/results/unetformer_matched/seed42/per_image_full_confusion.csv",
+      "per_image_nonpilot_confusion_csv": "/path/to/project/results/unetformer_matched/seed42/per_image_nonpilot_confusion.csv"
+    },
+    "123": {
+      "support_manifest": "/path/to/project/data/splits/e0_manifest/target_support_20_seed123.txt",
+      "checkpoint": "/path/to/project/results/unetformer_matched/seed123/unetformer_resnet34_source_target20_seed123_best.pth",
+      "target_best_val_fixed05": {
+        "skipped": true,
+        "checkpoint": "/path/to/project/results/unetformer_matched/seed123/unetformer_resnet34_source_target20_seed123_best.pth"
+      },
+      "calibration": {
+        "threshold": 0.45,
+        "min_area": 128,
+        "closing": 3,
+        "fill_holes": false
+      },
+      "calibration_val_metrics": {
+        "mIoU": 59.988387344264304,
+        "F1": 67.94684268830092,
+        "BIoU": 52.2051488796927,
+        "n": 500
+      },
+      "full_metrics": {
+        "mIoU": 56.796711195441965,
+        "F1": 65.26058245587029,
+        "BIoU": 48.705289604344365,
+        "n": 8402
+      },
+      "nonpilot_metrics": {
+        "mIoU": 57.289210985562974,
+        "F1": 65.7852688873982,
+        "BIoU": 49.14839421610575,
+        "n": 7902
+      },
+      "per_image_full_csv": "/path/to/project/results/unetformer_matched/seed123/per_image_full_test.csv",
+      "per_image_nonpilot_csv": "/path/to/project/results/unetformer_matched/seed123/per_image_nonpilot_test.csv",
+      "per_image_full_confusion_csv": "/path/to/project/results/unetformer_matched/seed123/per_image_full_confusion.csv",
+      "per_image_nonpilot_confusion_csv": "/path/to/project/results/unetformer_matched/seed123/per_image_nonpilot_confusion.csv"
+    },
+    "456": {
+      "support_manifest": "/path/to/project/data/splits/e0_manifest/target_support_20_seed456.txt",
+      "checkpoint": "/path/to/project/results/unetformer_matched/seed456/unetformer_resnet34_source_target20_seed456_best.pth",
+      "target_best_val_fixed05": {
+        "skipped": true,
+        "checkpoint": "/path/to/project/results/unetformer_matched/seed456/unetformer_resnet34_source_target20_seed456_best.pth"
+      },
+      "calibration": {
+        "threshold": 0.45,
+        "min_area": 128,
+        "closing": 5,
+        "fill_holes": false
+      },
+      "calibration_val_metrics": {
+        "mIoU": 61.11013148984643,
+        "F1": 68.8302081748616,
+        "BIoU": 52.87780194783981,
+        "n": 500
+      },
+      "full_metrics": {
+        "mIoU": 60.075235946846696,
+        "F1": 68.2031903254751,
+        "BIoU": 51.18786296009126,
+        "n": 8402
+      },
+      "nonpilot_metrics": {
+        "mIoU": 60.63743564655377,
+        "F1": 68.78518689188164,
+        "BIoU": 51.70110562422903,
+        "n": 7902
+      },
+      "per_image_full_csv": "/path/to/project/results/unetformer_matched/seed456/per_image_full_test.csv",
+      "per_image_nonpilot_csv": "/path/to/project/results/unetformer_matched/seed456/per_image_nonpilot_test.csv",
+      "per_image_full_confusion_csv": "/path/to/project/results/unetformer_matched/seed456/per_image_full_confusion.csv",
+      "per_image_nonpilot_confusion_csv": "/path/to/project/results/unetformer_matched/seed456/per_image_nonpilot_confusion.csv"
+    }
+  }
+}

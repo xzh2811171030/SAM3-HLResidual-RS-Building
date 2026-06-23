@@ -1,0 +1,150 @@
+{
+  "input_csv": "/path/to/project/results/e8_regionwise_full8402_tta_20260614_010515/e8_per_image_metrics_partial.csv",
+  "pilot_manifest": "/path/to/project/data/splits/e0_manifest/target_pilot_test_500.txt",
+  "pilot_images_loaded": 500,
+  "unique_images_before_filter": 8402,
+  "unique_images_after_filter": 7902,
+  "rows_after_filter": 47412,
+  "per_seed_mean": [
+    {
+      "seed": 42,
+      "model": "HL-Residual (Ours)",
+      "mIoU_pct": 75.97811225093,
+      "F1_pct": 83.71422125454667,
+      "Boundary_IoU_pct": 45.758636799149556
+    },
+    {
+      "seed": 42,
+      "model": "Prompt-free LoRA",
+      "mIoU_pct": 74.85241258735826,
+      "F1_pct": 83.08486867727385,
+      "Boundary_IoU_pct": 41.98733703178077
+    },
+    {
+      "seed": 123,
+      "model": "HL-Residual (Ours)",
+      "mIoU_pct": 74.82135321664686,
+      "F1_pct": 82.42946359442286,
+      "Boundary_IoU_pct": 47.90584058693513
+    },
+    {
+      "seed": 123,
+      "model": "Prompt-free LoRA",
+      "mIoU_pct": 74.7712245323832,
+      "F1_pct": 82.38472993075422,
+      "Boundary_IoU_pct": 47.815430403788675
+    },
+    {
+      "seed": 456,
+      "model": "HL-Residual (Ours)",
+      "mIoU_pct": 75.34911451374032,
+      "F1_pct": 83.16571288505742,
+      "Boundary_IoU_pct": 46.32421074076678
+    },
+    {
+      "seed": 456,
+      "model": "Prompt-free LoRA",
+      "mIoU_pct": 73.25311946601664,
+      "F1_pct": 81.62499808937541,
+      "Boundary_IoU_pct": 42.54741956815124
+    }
+  ],
+  "paired_image_analysis": [
+    {
+      "metric": "mIoU",
+      "mean_gain_pp": 1.0906077985196934,
+      "median_gain_pp": 0.9222288091918274,
+      "ci_low_pp": 1.0021384205591568,
+      "ci_high_pp": 1.1802433725345134,
+      "win_rate": 0.705264490002531
+    },
+    {
+      "metric": "F1",
+      "mean_gain_pp": 0.7382670122078165,
+      "median_gain_pp": 0.5942070798599375,
+      "ci_low_pp": 0.6529828821845268,
+      "ci_high_pp": 0.8263064268301998,
+      "win_rate": 0.7091875474563402
+    },
+    {
+      "metric": "Boundary IoU",
+      "mean_gain_pp": 2.546167041043593,
+      "median_gain_pp": 2.3815591016206143,
+      "ci_low_pp": 2.451501742354283,
+      "ci_high_pp": 2.6443456625073876,
+      "win_rate": 0.7467729688686409
+    }
+  ],
+  "region_metrics": [
+    {
+      "region_prefix": "dunedin",
+      "model": "HL-Residual (Ours)",
+      "mIoU_pct": 83.94090072989384,
+      "F1_pct": 89.84259106139484,
+      "Boundary_IoU_pct": 55.12893494395298
+    },
+    {
+      "region_prefix": "dunedin",
+      "model": "Prompt-free LoRA",
+      "mIoU_pct": 83.00170490142548,
+      "F1_pct": 89.34273250102633,
+      "Boundary_IoU_pct": 52.00747707491479
+    },
+    {
+      "region_prefix": "khartoum",
+      "model": "HL-Residual (Ours)",
+      "mIoU_pct": 61.60490992984503,
+      "F1_pct": 74.64357248467076,
+      "Boundary_IoU_pct": 28.87051595412024
+    },
+    {
+      "region_prefix": "khartoum",
+      "model": "Prompt-free LoRA",
+      "mIoU_pct": 59.70967510298061,
+      "F1_pct": 73.10368574142927,
+      "Boundary_IoU_pct": 26.535396338107237
+    },
+    {
+      "region_prefix": "kitsap",
+      "model": "HL-Residual (Ours)",
+      "mIoU_pct": 81.53166023171258,
+      "F1_pct": 87.8636642420197,
+      "Boundary_IoU_pct": 60.9762330233554
+    },
+    {
+      "region_prefix": "kitsap",
+      "model": "Prompt-free LoRA",
+      "mIoU_pct": 80.12182437364115,
+      "F1_pct": 86.93184331066242,
+      "Boundary_IoU_pct": 57.74546214018146
+    },
+    {
+      "region_prefix": "potsdam",
+      "model": "HL-Residual (Ours)",
+      "mIoU_pct": 53.21871614303553,
+      "F1_pct": 64.15684994970383,
+      "Boundary_IoU_pct": 17.92426562884946
+    },
+    {
+      "region_prefix": "potsdam",
+      "model": "Prompt-free LoRA",
+      "mIoU_pct": 53.188879195961924,
+      "F1_pct": 64.11567154004058,
+      "Boundary_IoU_pct": 17.358429197757992
+    },
+    {
+      "region_prefix": "wuxi",
+      "model": "HL-Residual (Ours)",
+      "mIoU_pct": 77.71037900055971,
+      "F1_pct": 84.91066617410713,
+      "Boundary_IoU_pct": 35.11829230909323
+    },
+    {
+      "region_prefix": "wuxi",
+      "model": "Prompt-free LoRA",
+      "mIoU_pct": 76.95599902663156,
+      "F1_pct": 84.38914799347911,
+      "Boundary_IoU_pct": 33.17765392926245
+    }
+  ]
+}

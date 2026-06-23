@@ -1,0 +1,2 @@
+% Auto-generated excluding-pilot 7902 result. Values are mean over seeds.
+DeepLabv3+ ResNet50 & 58.63 & 67.21 & 39.66 \\

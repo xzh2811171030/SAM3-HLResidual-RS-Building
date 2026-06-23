@@ -1,0 +1,168 @@
+{
+  "source_test": {
+    "total": 500,
+    "cities": {
+      "unknown": 500
+    }
+  },
+  "source_train": {
+    "total": 1000,
+    "cities": {
+      "unknown": 1000
+    }
+  },
+  "source_val": {
+    "total": 200,
+    "cities": {
+      "unknown": 200
+    }
+  },
+  "target_final_test_8402": {
+    "total": 8402,
+    "cities": {
+      "kitsap": 3600,
+      "wuxi": 1409,
+      "dunedin": 1312,
+      "potsdam": 1176,
+      "khartoum": 905
+    }
+  },
+  "target_pilot_test_1000": {
+    "total": 1000,
+    "cities": {
+      "potsdam": 200,
+      "khartoum": 200,
+      "kitsap": 200,
+      "wuxi": 200,
+      "dunedin": 200
+    }
+  },
+  "target_pilot_test_500": {
+    "total": 500,
+    "cities": {
+      "potsdam": 100,
+      "khartoum": 100,
+      "kitsap": 100,
+      "wuxi": 100,
+      "dunedin": 100
+    }
+  },
+  "target_support_10_seed123": {
+    "total": 10,
+    "cities": {
+      "chongqing": 3,
+      "unknown": 3,
+      "tianjin": 2,
+      "tyrol": 2
+    }
+  },
+  "target_support_10_seed42": {
+    "total": 10,
+    "cities": {
+      "hangzhou": 3,
+      "tyrol": 3,
+      "unknown": 2,
+      "hubei": 2
+    }
+  },
+  "target_support_10_seed456": {
+    "total": 10,
+    "cities": {
+      "christchurch": 3,
+      "tianjin": 3,
+      "chongqing": 2,
+      "hubei": 2
+    }
+  },
+  "target_support_20_seed123": {
+    "total": 20,
+    "cities": {
+      "chongqing": 3,
+      "unknown": 3,
+      "asia": 2,
+      "christchurch": 2,
+      "hangzhou": 2,
+      "hubei": 2,
+      "tianjin": 2,
+      "tyrol": 2,
+      "vienna": 2
+    }
+  },
+  "target_support_20_seed42": {
+    "total": 20,
+    "cities": {
+      "hangzhou": 3,
+      "tyrol": 3,
+      "asia": 2,
+      "chongqing": 2,
+      "christchurch": 2,
+      "unknown": 2,
+      "hubei": 2,
+      "tianjin": 2,
+      "vienna": 2
+    }
+  },
+  "target_support_20_seed456": {
+    "total": 20,
+    "cities": {
+      "christchurch": 3,
+      "tianjin": 3,
+      "asia": 2,
+      "chongqing": 2,
+      "unknown": 2,
+      "hangzhou": 2,
+      "hubei": 2,
+      "tyrol": 2,
+      "vienna": 2
+    }
+  },
+  "target_support_5_seed123": {
+    "total": 5,
+    "cities": {
+      "unknown": 3,
+      "chongqing": 2
+    }
+  },
+  "target_support_5_seed42": {
+    "total": 5,
+    "cities": {
+      "hangzhou": 3,
+      "tyrol": 2
+    }
+  },
+  "target_support_5_seed456": {
+    "total": 5,
+    "cities": {
+      "tianjin": 3,
+      "christchurch": 2
+    }
+  },
+  "target_train_pool_all": {
+    "total": 39346,
+    "cities": {
+      "hangzhou": 13397,
+      "christchurch": 7353,
+      "chongqing": 4947,
+      "asia": 3666,
+      "hubei": 3561,
+      "tyrol": 2635,
+      "vienna": 2604,
+      "tianjin": 992,
+      "unknown": 191
+    }
+  },
+  "target_val": {
+    "total": 500,
+    "cities": {
+      "hangzhou": 74,
+      "christchurch": 63,
+      "vienna": 61,
+      "asia": 60,
+      "chongqing": 60,
+      "hubei": 57,
+      "tianjin": 56,
+      "tyrol": 56,
+      "unknown": 13
+    }
+  }
+}

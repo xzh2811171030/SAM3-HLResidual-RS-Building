@@ -1,0 +1,7 @@
+{
+  "source_train_manifest": "/path/to/project/data/splits/e0_manifest/source_train.txt",
+  "source_val_manifest": "/path/to/project/data/splits/e0_manifest/source_val.txt",
+  "target_val_manifest": "/path/to/project/data/splits/e0_manifest/target_val.txt",
+  "target_test_manifest": "/path/to/project/data/splits/e0_manifest/target_final_test_8402.txt",
+  "pilot_manifest": "/path/to/project/data/splits/e0_manifest/target_pilot_test_500.txt"
+}

@@ -1,0 +1,3 @@
+model,num_seeds,sam_total_params_mean,sam_total_params_std,lora_params_mean,lora_params_std,decoder_params_mean,decoder_params_std,residual_params_mean,residual_params_std,model_head_total_params_mean,model_head_total_params_std,trainable_params_estimated_mean,trainable_params_estimated_std,extra_params_vs_lora_mean,extra_params_vs_lora_std,trainable_ratio_percent_mean,trainable_ratio_percent_std
+HL-Residual (Ours),3,841558326.0,0.0,1048576.0,0.0,688833.0,0.0,1028706.0,0.0,1717539.0,0.0,2766115.0,0.0,1028706.0,0.0,0.328020178782183,0.0
+Prompt-free LoRA,3,841558326.0,0.0,1048576.0,0.0,688833.0,0.0,0.0,0.0,688833.0,0.0,1737409.0,0.0,0.0,0.0,0.2062825598679164,0.0

@@ -1,0 +1,5 @@
+data/raw/processed_slim/target_whu/train_pool/images/chongqing_train_1928.tif
+data/raw/processed_slim/target_whu/train_pool/images/chongqing_train_4192.tif
+data/raw/processed_slim/target_whu/train_pool/images/global_train_112.tif
+data/raw/processed_slim/target_whu/train_pool/images/global_train_2.tif
+data/raw/processed_slim/target_whu/train_pool/images/global_train_41.tif

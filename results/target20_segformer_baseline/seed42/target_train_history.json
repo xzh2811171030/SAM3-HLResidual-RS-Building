@@ -1,0 +1,787 @@
+[
+  {
+    "epoch": 1,
+    "loss": 1.469437551498413,
+    "val_calib_mIoU": 0.39402093289696904,
+    "val_calib_BIoU": 0.2551571875291551,
+    "val_calib_F1": 0.4774610246214103,
+    "threshold": 0.65,
+    "min_area": 128,
+    "closing_kernel": 3,
+    "fill_holes": false
+  },
+  {
+    "epoch": 2,
+    "loss": 1.1481733441352844,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 3,
+    "loss": 0.9064545273780823,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 4,
+    "loss": 0.774180006980896,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 5,
+    "loss": 0.8083531856536865,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 6,
+    "loss": 0.7353931069374084,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 7,
+    "loss": 0.6346006870269776,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 8,
+    "loss": 0.6013037383556366,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 9,
+    "loss": 0.5977658092975616,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 10,
+    "loss": 0.573449170589447,
+    "val_calib_mIoU": 0.41608406976304946,
+    "val_calib_BIoU": 0.2686290069018267,
+    "val_calib_F1": 0.5031733572608927,
+    "threshold": 0.65,
+    "min_area": 128,
+    "closing_kernel": 0,
+    "fill_holes": false
+  },
+  {
+    "epoch": 11,
+    "loss": 0.5616625905036926,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 12,
+    "loss": 0.508346575498581,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 13,
+    "loss": 0.4987527787685394,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 14,
+    "loss": 0.7212003290653228,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 15,
+    "loss": 0.5338288187980652,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 16,
+    "loss": 0.5041250050067901,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 17,
+    "loss": 0.43904473185539244,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 18,
+    "loss": 0.42428544759750364,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 19,
+    "loss": 0.41251747906208036,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 20,
+    "loss": 0.40999664068222047,
+    "val_calib_mIoU": 0.42601704466467455,
+    "val_calib_BIoU": 0.26597898800070546,
+    "val_calib_F1": 0.5124880488156448,
+    "threshold": 0.5,
+    "min_area": 64,
+    "closing_kernel": 0,
+    "fill_holes": false
+  },
+  {
+    "epoch": 21,
+    "loss": 0.4367313265800476,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 22,
+    "loss": 0.3918782532215118,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 23,
+    "loss": 0.38711220026016235,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 24,
+    "loss": 0.37694685757160185,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 25,
+    "loss": 0.3708728104829788,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 26,
+    "loss": 0.40420005917549134,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 27,
+    "loss": 0.3512170612812042,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 28,
+    "loss": 0.35510674118995667,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 29,
+    "loss": 0.3918292075395584,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 30,
+    "loss": 0.3528419017791748,
+    "val_calib_mIoU": 0.4212701596961906,
+    "val_calib_BIoU": 0.2590995107740224,
+    "val_calib_F1": 0.5075591087308308,
+    "threshold": 0.55,
+    "min_area": 128,
+    "closing_kernel": 0,
+    "fill_holes": false
+  },
+  {
+    "epoch": 31,
+    "loss": 0.35017651319503784,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 32,
+    "loss": 0.32874858379364014,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 33,
+    "loss": 0.3417996406555176,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 34,
+    "loss": 0.362695087492466,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 35,
+    "loss": 0.3326396316289902,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 36,
+    "loss": 0.3235450193285942,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 37,
+    "loss": 0.30895619094371796,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 38,
+    "loss": 0.48401461243629457,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 39,
+    "loss": 0.30882616639137267,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 40,
+    "loss": 0.3333641692996025,
+    "val_calib_mIoU": 0.4093044567505806,
+    "val_calib_BIoU": 0.246905117443536,
+    "val_calib_F1": 0.49610492805065975,
+    "threshold": 0.6,
+    "min_area": 128,
+    "closing_kernel": 0,
+    "fill_holes": false
+  },
+  {
+    "epoch": 41,
+    "loss": 0.27473513782024384,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 42,
+    "loss": 0.3140196979045868,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 43,
+    "loss": 0.2715676471590996,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 44,
+    "loss": 0.31100953817367555,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 45,
+    "loss": 0.2821145743131638,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 46,
+    "loss": 0.25608442425727845,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 47,
+    "loss": 0.29393245875835416,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 48,
+    "loss": 0.3005650818347931,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 49,
+    "loss": 0.3553151965141296,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 50,
+    "loss": 0.2962672054767609,
+    "val_calib_mIoU": 0.4077596511948533,
+    "val_calib_BIoU": 0.2531458982674723,
+    "val_calib_F1": 0.4960455751681725,
+    "threshold": 0.6,
+    "min_area": 128,
+    "closing_kernel": 3,
+    "fill_holes": false
+  },
+  {
+    "epoch": 51,
+    "loss": 0.3129420101642609,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 52,
+    "loss": 0.23798379004001619,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 53,
+    "loss": 0.23682157099246978,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 54,
+    "loss": 0.2607975900173187,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 55,
+    "loss": 0.26127826869487764,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 56,
+    "loss": 0.25904320180416107,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 57,
+    "loss": 0.2567055493593216,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 58,
+    "loss": 0.25879629552364347,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 59,
+    "loss": 0.289139050245285,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 60,
+    "loss": 0.2872268378734589,
+    "val_calib_mIoU": 0.422590535369372,
+    "val_calib_BIoU": 0.26408492430650166,
+    "val_calib_F1": 0.5140703476076969,
+    "threshold": 0.6,
+    "min_area": 128,
+    "closing_kernel": 0,
+    "fill_holes": false
+  },
+  {
+    "epoch": 61,
+    "loss": 0.2763542503118515,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 62,
+    "loss": 0.23741669654846193,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 63,
+    "loss": 0.23158655762672425,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 64,
+    "loss": 0.22981326282024384,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 65,
+    "loss": 0.23949582278728485,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 66,
+    "loss": 0.22825233340263368,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 67,
+    "loss": 0.234957255423069,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 68,
+    "loss": 0.24577492326498032,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 69,
+    "loss": 0.22537702918052674,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 70,
+    "loss": 0.2196673035621643,
+    "val_calib_mIoU": 0.39516811608393654,
+    "val_calib_BIoU": 0.23863166628923435,
+    "val_calib_F1": 0.488216540442301,
+    "threshold": 0.5,
+    "min_area": 64,
+    "closing_kernel": 0,
+    "fill_holes": false
+  },
+  {
+    "epoch": 71,
+    "loss": 0.2225840538740158,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 72,
+    "loss": 0.23949761390686036,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 73,
+    "loss": 0.22722601592540742,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 74,
+    "loss": 0.21560096740722656,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 75,
+    "loss": 0.2096254289150238,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 76,
+    "loss": 0.20586531162261962,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 77,
+    "loss": 0.20942565202713012,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 78,
+    "loss": 0.20553408414125443,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 79,
+    "loss": 0.20210621058940886,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 80,
+    "loss": 0.2380384236574173,
+    "val_calib_mIoU": 0.4064021233505365,
+    "val_calib_BIoU": 0.25272877020706497,
+    "val_calib_F1": 0.49610102012998647,
+    "threshold": 0.5,
+    "min_area": 128,
+    "closing_kernel": 0,
+    "fill_holes": false
+  },
+  {
+    "epoch": 81,
+    "loss": 0.21643700897693635,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 82,
+    "loss": 0.1992042452096939,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 83,
+    "loss": 0.1975434958934784,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 84,
+    "loss": 0.21997268199920655,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 85,
+    "loss": 0.21099940687417984,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 86,
+    "loss": 0.2500353753566742,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 87,
+    "loss": 0.19958972930908203,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 88,
+    "loss": 0.20878456234931947,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 89,
+    "loss": 0.20628177225589753,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 90,
+    "loss": 0.1966364189982414,
+    "val_calib_mIoU": 0.40889072183349356,
+    "val_calib_BIoU": 0.25489364717526697,
+    "val_calib_F1": 0.4988396095580713,
+    "threshold": 0.5,
+    "min_area": 64,
+    "closing_kernel": 3,
+    "fill_holes": false
+  },
+  {
+    "epoch": 91,
+    "loss": 0.2155006229877472,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 92,
+    "loss": 0.20528698861598968,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 93,
+    "loss": 0.18935956358909606,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 94,
+    "loss": 0.2575793519616127,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 95,
+    "loss": 0.2137076050043106,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 96,
+    "loss": 0.23887215554714203,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 97,
+    "loss": 0.18495952486991882,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 98,
+    "loss": 0.1873866453766823,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 99,
+    "loss": 0.18810701817274095,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 100,
+    "loss": 0.1917581796646118,
+    "val_calib_mIoU": 0.39882759842284543,
+    "val_calib_BIoU": 0.2401645362127364,
+    "val_calib_F1": 0.4913545641139919,
+    "threshold": 0.5,
+    "min_area": 64,
+    "closing_kernel": 0,
+    "fill_holes": false
+  },
+  {
+    "epoch": 101,
+    "loss": 0.18717461526393891,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 102,
+    "loss": 0.1911597341299057,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 103,
+    "loss": 0.18756428956985474,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 104,
+    "loss": 0.17926901280879975,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 105,
+    "loss": 0.18083916157484053,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 106,
+    "loss": 0.1982056200504303,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 107,
+    "loss": 0.18041332215070724,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 108,
+    "loss": 0.1886388584971428,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 109,
+    "loss": 0.17878349125385284,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 110,
+    "loss": 0.18468040078878403,
+    "val_calib_mIoU": 0.41194160848910044,
+    "val_calib_BIoU": 0.2506784533875324,
+    "val_calib_F1": 0.5034815638675396,
+    "threshold": 0.5,
+    "min_area": 64,
+    "closing_kernel": 0,
+    "fill_holes": false
+  },
+  {
+    "epoch": 111,
+    "loss": 0.18575919568538665,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 112,
+    "loss": 0.18547347635030748,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 113,
+    "loss": 0.18161212354898454,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 114,
+    "loss": 0.1730461224913597,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 115,
+    "loss": 0.17375439107418061,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 116,
+    "loss": 0.18189339637756347,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 117,
+    "loss": 0.16892801821231843,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 118,
+    "loss": 0.17774764597415924,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 119,
+    "loss": 0.18333520591259003,
+    "val_calib_mIoU": null,
+    "val_calib_BIoU": null
+  },
+  {
+    "epoch": 120,
+    "loss": 0.19044899195432663,
+    "val_calib_mIoU": 0.40817029029895235,
+    "val_calib_BIoU": 0.2558328902506481,
+    "val_calib_F1": 0.49908518499278887,
+    "threshold": 0.5,
+    "min_area": 64,
+    "closing_kernel": 3,
+    "fill_holes": false
+  }
+]

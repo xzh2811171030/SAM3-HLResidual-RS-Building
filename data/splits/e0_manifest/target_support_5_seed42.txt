@@ -1,0 +1,5 @@
+data/raw/processed_slim/target_whu/train_pool/images/hangzhou_train_10055.tif
+data/raw/processed_slim/target_whu/train_pool/images/hangzhou_train_12316.tif
+data/raw/processed_slim/target_whu/train_pool/images/hangzhou_train_6184.tif
+data/raw/processed_slim/target_whu/train_pool/images/tyrol_train_2038.tif
+data/raw/processed_slim/target_whu/train_pool/images/tyrol_train_753.tif

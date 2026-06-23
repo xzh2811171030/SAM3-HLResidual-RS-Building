@@ -1,0 +1,17 @@
+{
+  "config": {
+    "project_root": "/path/to/project",
+    "manifest_dir": null,
+    "sam3_checkpoint": null,
+    "models": "hl_residual_old",
+    "use_tta": false,
+    "val_eval_limit": 150,
+    "pilot_eval_limit": 500,
+    "lora_light_ckpt": null,
+    "hl_lite_ckpt": null,
+    "hl_residual_old_ckpt": "results/e6v3_hl_lite_seed123/weights/hl_residual_best.pth",
+    "hl_residual_v2_ckpt": null,
+    "out_dir": null
+  },
+  "results": []
+}

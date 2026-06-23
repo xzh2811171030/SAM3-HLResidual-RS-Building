@@ -1,0 +1,306 @@
+{
+  "experiment": "E7a_prompt_drift_box_jitter",
+  "metadata": {
+    "timestamp": "2026-06-13T02:47:59.938914",
+    "test_manifest": "target_pilot_test_500.txt",
+    "val_manifest": "target_val.txt",
+    "sigmas": [
+      0,
+      2,
+      5,
+      10,
+      20
+    ],
+    "seeds": [
+      42,
+      123,
+      456
+    ],
+    "use_tta": true,
+    "bbox_json": "/path/to/project/data/raw/whu_mix_full_test/bbox.json",
+    "note": "Prompt-free models do not consume bbox prompts; their metrics are repeated across sigma levels."
+  },
+  "results": {
+    "HL-Residual (Ours)": {
+      "0": {
+        "mIoU": 0.7019720683444661,
+        "mIoU_std": 0.015656046757562197,
+        "F1": 0.7846141762182937,
+        "F1_std": 0.014945529209706411,
+        "Boundary_IoU": 0.398131589454843,
+        "Boundary_IoU_std": 0.008956526477931014
+      },
+      "2": {
+        "mIoU": 0.7019720683444661,
+        "mIoU_std": 0.015656046757562197,
+        "F1": 0.7846141762182937,
+        "F1_std": 0.014945529209706411,
+        "Boundary_IoU": 0.398131589454843,
+        "Boundary_IoU_std": 0.008956526477931014
+      },
+      "5": {
+        "mIoU": 0.7019720683444661,
+        "mIoU_std": 0.015656046757562197,
+        "F1": 0.7846141762182937,
+        "F1_std": 0.014945529209706411,
+        "Boundary_IoU": 0.398131589454843,
+        "Boundary_IoU_std": 0.008956526477931014
+      },
+      "10": {
+        "mIoU": 0.7019720683444661,
+        "mIoU_std": 0.015656046757562197,
+        "F1": 0.7846141762182937,
+        "F1_std": 0.014945529209706411,
+        "Boundary_IoU": 0.398131589454843,
+        "Boundary_IoU_std": 0.008956526477931014
+      },
+      "20": {
+        "mIoU": 0.7019720683444661,
+        "mIoU_std": 0.015656046757562197,
+        "F1": 0.7846141762182937,
+        "F1_std": 0.014945529209706411,
+        "Boundary_IoU": 0.398131589454843,
+        "Boundary_IoU_std": 0.008956526477931014
+      }
+    }
+  },
+  "raw_per_seed": {
+    "HL-Residual (Ours)": {
+      "0": [
+        {
+          "mIoU": 0.7198576251591735,
+          "F1": 0.8017472976133726,
+          "Boundary_IoU": 0.39581672795807127,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.65,
+            "min_area": 128,
+            "closing_kernel": 3,
+            "fill_holes": false,
+            "mIoU": 0.7553752977890541,
+            "F1": 0.8245789491034134,
+            "Boundary_IoU": 0.5057278837803328
+          }
+        },
+        {
+          "mIoU": 0.6953078735203675,
+          "F1": 0.7778395298056187,
+          "Boundary_IoU": 0.40801830589782917,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot_seed123/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.7,
+            "min_area": 128,
+            "closing_kernel": 0,
+            "fill_holes": false,
+            "mIoU": 0.7463940915130539,
+            "F1": 0.8165322488548806,
+            "Boundary_IoU": 0.5187281526377526
+          }
+        },
+        {
+          "mIoU": 0.6907507063538574,
+          "F1": 0.7742557012358895,
+          "Boundary_IoU": 0.39055973450862874,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot_seed456/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.45,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7499081961990101,
+            "F1": 0.8221604029656446,
+            "Boundary_IoU": 0.503892884245246
+          }
+        }
+      ],
+      "2": [
+        {
+          "mIoU": 0.7198576251591735,
+          "F1": 0.8017472976133726,
+          "Boundary_IoU": 0.39581672795807127,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.65,
+            "min_area": 128,
+            "closing_kernel": 3,
+            "fill_holes": false,
+            "mIoU": 0.7553752977890541,
+            "F1": 0.8245789491034134,
+            "Boundary_IoU": 0.5057278837803328
+          }
+        },
+        {
+          "mIoU": 0.6953078735203675,
+          "F1": 0.7778395298056187,
+          "Boundary_IoU": 0.40801830589782917,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot_seed123/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.7,
+            "min_area": 128,
+            "closing_kernel": 0,
+            "fill_holes": false,
+            "mIoU": 0.7463940915130539,
+            "F1": 0.8165322488548806,
+            "Boundary_IoU": 0.5187281526377526
+          }
+        },
+        {
+          "mIoU": 0.6907507063538574,
+          "F1": 0.7742557012358895,
+          "Boundary_IoU": 0.39055973450862874,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot_seed456/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.45,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7499081961990101,
+            "F1": 0.8221604029656446,
+            "Boundary_IoU": 0.503892884245246
+          }
+        }
+      ],
+      "5": [
+        {
+          "mIoU": 0.7198576251591735,
+          "F1": 0.8017472976133726,
+          "Boundary_IoU": 0.39581672795807127,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.65,
+            "min_area": 128,
+            "closing_kernel": 3,
+            "fill_holes": false,
+            "mIoU": 0.7553752977890541,
+            "F1": 0.8245789491034134,
+            "Boundary_IoU": 0.5057278837803328
+          }
+        },
+        {
+          "mIoU": 0.6953078735203675,
+          "F1": 0.7778395298056187,
+          "Boundary_IoU": 0.40801830589782917,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot_seed123/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.7,
+            "min_area": 128,
+            "closing_kernel": 0,
+            "fill_holes": false,
+            "mIoU": 0.7463940915130539,
+            "F1": 0.8165322488548806,
+            "Boundary_IoU": 0.5187281526377526
+          }
+        },
+        {
+          "mIoU": 0.6907507063538574,
+          "F1": 0.7742557012358895,
+          "Boundary_IoU": 0.39055973450862874,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot_seed456/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.45,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7499081961990101,
+            "F1": 0.8221604029656446,
+            "Boundary_IoU": 0.503892884245246
+          }
+        }
+      ],
+      "10": [
+        {
+          "mIoU": 0.7198576251591735,
+          "F1": 0.8017472976133726,
+          "Boundary_IoU": 0.39581672795807127,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.65,
+            "min_area": 128,
+            "closing_kernel": 3,
+            "fill_holes": false,
+            "mIoU": 0.7553752977890541,
+            "F1": 0.8245789491034134,
+            "Boundary_IoU": 0.5057278837803328
+          }
+        },
+        {
+          "mIoU": 0.6953078735203675,
+          "F1": 0.7778395298056187,
+          "Boundary_IoU": 0.40801830589782917,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot_seed123/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.7,
+            "min_area": 128,
+            "closing_kernel": 0,
+            "fill_holes": false,
+            "mIoU": 0.7463940915130539,
+            "F1": 0.8165322488548806,
+            "Boundary_IoU": 0.5187281526377526
+          }
+        },
+        {
+          "mIoU": 0.6907507063538574,
+          "F1": 0.7742557012358895,
+          "Boundary_IoU": 0.39055973450862874,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot_seed456/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.45,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7499081961990101,
+            "F1": 0.8221604029656446,
+            "Boundary_IoU": 0.503892884245246
+          }
+        }
+      ],
+      "20": [
+        {
+          "mIoU": 0.7198576251591735,
+          "F1": 0.8017472976133726,
+          "Boundary_IoU": 0.39581672795807127,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.65,
+            "min_area": 128,
+            "closing_kernel": 3,
+            "fill_holes": false,
+            "mIoU": 0.7553752977890541,
+            "F1": 0.8245789491034134,
+            "Boundary_IoU": 0.5057278837803328
+          }
+        },
+        {
+          "mIoU": 0.6953078735203675,
+          "F1": 0.7778395298056187,
+          "Boundary_IoU": 0.40801830589782917,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot_seed123/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.7,
+            "min_area": 128,
+            "closing_kernel": 0,
+            "fill_holes": false,
+            "mIoU": 0.7463940915130539,
+            "F1": 0.8165322488548806,
+            "Boundary_IoU": 0.5187281526377526
+          }
+        },
+        {
+          "mIoU": 0.6907507063538574,
+          "F1": 0.7742557012358895,
+          "Boundary_IoU": 0.39055973450862874,
+          "checkpoint": "/path/to/project/results/hl_residual_pilot_seed456/weights/hl_residual_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.45,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7499081961990101,
+            "F1": 0.8221604029656446,
+            "Boundary_IoU": 0.503892884245246
+          }
+        }
+      ]
+    }
+  }
+}

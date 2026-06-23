@@ -1,0 +1,169 @@
+{
+  "variant": "hl_residual",
+  "base_lora_ckpt": "results/e6v3_hl_lite_seed456/weights/e6v2_pilot_lora_light_best.pth",
+  "best_weight": "results/hl_residual_pilot_seed456/weights/hl_residual_best.pth",
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 0.9811961114406585,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 2,
+      "loss": 0.9705623269081116,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 3,
+      "loss": 0.958085685968399,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 4,
+      "loss": 0.9435870468616485,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 5,
+      "loss": 0.9277245163917541,
+      "val_select_mIoU": 0.511869642754743,
+      "val_select_info": {
+        "threshold": 0.5,
+        "min_area": 0,
+        "mIoU": 0.511869642754743,
+        "F1": 0.6002554824044825,
+        "Boundary_IoU": 0.22422238731774286
+      }
+    },
+    {
+      "epoch": 6,
+      "loss": 0.91014204621315,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 7,
+      "loss": 0.8906035840511322,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 8,
+      "loss": 0.8691507786512375,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 9,
+      "loss": 0.8461503684520721,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 10,
+      "loss": 0.8222387373447418,
+      "val_select_mIoU": 0.6789895510610873,
+      "val_select_info": {
+        "threshold": 0.5,
+        "min_area": 0,
+        "mIoU": 0.6789895510610873,
+        "F1": 0.7633093965778547,
+        "Boundary_IoU": 0.4196930752926087
+      }
+    },
+    {
+      "epoch": 11,
+      "loss": 0.7953951299190521,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 12,
+      "loss": 0.7695199191570282,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 13,
+      "loss": 0.7412201821804046,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 14,
+      "loss": 0.714089247584343,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 15,
+      "loss": 0.6860116511583328,
+      "val_select_mIoU": 0.6813767974085881,
+      "val_select_info": {
+        "threshold": 0.5,
+        "min_area": 0,
+        "mIoU": 0.6813767974085881,
+        "F1": 0.7650530754598028,
+        "Boundary_IoU": 0.41724448479333814
+      }
+    },
+    {
+      "epoch": 16,
+      "loss": 0.6567149668931961,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 17,
+      "loss": 0.628600001335144,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 18,
+      "loss": 0.6012318104505538,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 19,
+      "loss": 0.577183398604393,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 20,
+      "loss": 0.5520909428596497,
+      "val_select_mIoU": 0.6889681707876397,
+      "val_select_info": {
+        "threshold": 0.5,
+        "min_area": 0,
+        "mIoU": 0.6889681707876397,
+        "F1": 0.7721543819823856,
+        "Boundary_IoU": 0.43175425306638887
+      }
+    }
+  ],
+  "val_sweep_best": {
+    "threshold": 0.55,
+    "min_area": 128,
+    "mIoU": 0.7338595412426595,
+    "F1": 0.8077602766157441,
+    "Boundary_IoU": 0.48809434472779556
+  },
+  "pilot_fixed_05": {
+    "mIoU": 0.6702106104909308,
+    "F1": 0.756322580346755,
+    "Boundary_IoU": 0.36714456704632015
+  },
+  "pilot_calibrated": {
+    "mIoU": 0.683451971929572,
+    "F1": 0.7693170669224828,
+    "Boundary_IoU": 0.3834102319406269
+  },
+  "timestamp": "2026-06-11T15:24:46.560927"
+}

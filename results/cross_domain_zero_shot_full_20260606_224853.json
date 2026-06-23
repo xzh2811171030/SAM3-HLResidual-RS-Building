@@ -1,0 +1,87 @@
+{
+  "experiment": "E4_Zero_Shot_Cross_Domain",
+  "metadata": {
+    "platform": "cloud-linux",
+    "device": "cuda",
+    "timestamp": "20260606_224853",
+    "full_test": true,
+    "source_domain": "source_whu (20-shot)",
+    "target_domain": "target_whu_mix",
+    "eval_batch_size": 32,
+    "num_workers": 8
+  },
+  "individual_results": [
+    {
+      "mode": "decoder_only",
+      "domain": "zero_shot_cross",
+      "num_shots": 20,
+      "full_test": true,
+      "seed": 42,
+      "source_weight": "sam3_dec_src_20shot_seed42.pth",
+      "best_val_iou": 0.0,
+      "mIoU": 0.5560046188695971,
+      "F1": 0.6472161190948234,
+      "Boundary_IoU": 0.3671364825657232
+    },
+    {
+      "mode": "decoder_only",
+      "domain": "zero_shot_cross",
+      "num_shots": 20,
+      "full_test": true,
+      "seed": 123,
+      "source_weight": "sam3_dec_src_20shot_seed123.pth",
+      "best_val_iou": 0.0,
+      "mIoU": 0.5968799455258419,
+      "F1": 0.6882607135684564,
+      "Boundary_IoU": 0.41814426771260493
+    },
+    {
+      "mode": "decoder_only",
+      "domain": "zero_shot_cross",
+      "num_shots": 20,
+      "full_test": true,
+      "seed": 456,
+      "source_weight": "sam3_dec_src_20shot_seed456.pth",
+      "best_val_iou": 0.0,
+      "mIoU": 0.5871956527487009,
+      "F1": 0.6778385185465453,
+      "Boundary_IoU": 0.4128066442208197
+    },
+    {
+      "mode": "lora",
+      "domain": "zero_shot_cross",
+      "num_shots": 20,
+      "full_test": true,
+      "seed": 42,
+      "source_weight": "sam3_lora_src_20shot_seed42.pth",
+      "best_val_iou": 0.0,
+      "mIoU": 0.5971167023087204,
+      "F1": 0.6851111702896175,
+      "Boundary_IoU": 0.41046161701025385
+    },
+    {
+      "mode": "lora",
+      "domain": "zero_shot_cross",
+      "num_shots": 20,
+      "full_test": true,
+      "seed": 123,
+      "source_weight": "sam3_lora_src_20shot_seed123.pth",
+      "best_val_iou": 0.0,
+      "mIoU": 0.6170640771250293,
+      "F1": 0.7061960081681377,
+      "Boundary_IoU": 0.42862437125174957
+    },
+    {
+      "mode": "lora",
+      "domain": "zero_shot_cross",
+      "num_shots": 20,
+      "full_test": true,
+      "seed": 456,
+      "source_weight": "sam3_lora_src_20shot_seed456.pth",
+      "best_val_iou": 0.0,
+      "mIoU": 0.6170604041839368,
+      "F1": 0.7054659589911206,
+      "Boundary_IoU": 0.46936448119314256
+    }
+  ]
+}

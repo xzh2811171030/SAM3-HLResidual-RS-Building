@@ -1,0 +1,124 @@
+{
+  "variant": "lora_light",
+  "best_weight": "results/e6v3_hl_lite_seed456/weights/e6v2_pilot_lora_light_best.pth",
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 1.4070923686027528,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 2,
+      "loss": 1.1816406488418578,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 3,
+      "loss": 1.1033720254898072,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 4,
+      "loss": 1.0497556149959564,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 5,
+      "loss": 1.0092771410942079,
+      "val_mIoU_05": 0.6612617488587506
+    },
+    {
+      "epoch": 6,
+      "loss": 0.971187287569046,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 7,
+      "loss": 0.9422603487968445,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 8,
+      "loss": 0.9192347943782806,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 9,
+      "loss": 0.8986648142337799,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 10,
+      "loss": 0.8801611483097076,
+      "val_mIoU_05": 0.5159374643765893
+    },
+    {
+      "epoch": 11,
+      "loss": 0.857735526561737,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 12,
+      "loss": 0.8411934435367584,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 13,
+      "loss": 0.8280011147260666,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 14,
+      "loss": 0.8100146919488906,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 15,
+      "loss": 0.7932502806186676,
+      "val_mIoU_05": 0.503949815387704
+    },
+    {
+      "epoch": 16,
+      "loss": 0.7768456786870956,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 17,
+      "loss": 0.7621116936206818,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 18,
+      "loss": 0.7482010394334793,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 19,
+      "loss": 0.7368899941444397,
+      "val_mIoU_05": null
+    },
+    {
+      "epoch": 20,
+      "loss": 0.7224554717540741,
+      "val_mIoU_05": 0.5315761452753565
+    }
+  ],
+  "val_sweep_best": {
+    "threshold": 0.65,
+    "min_area": 128,
+    "mIoU": 0.7188258623974189,
+    "F1": 0.7965694983851918,
+    "Boundary_IoU": 0.4635879194992982
+  },
+  "pilot_fixed_05": {
+    "mIoU": 0.6239230322106539,
+    "F1": 0.7186646021748846,
+    "Boundary_IoU": 0.27706540180148953
+  },
+  "pilot_calibrated": {
+    "mIoU": 0.6704476850264095,
+    "F1": 0.7600400917268906,
+    "Boundary_IoU": 0.36120895887181775
+  },
+  "timestamp": "2026-06-10T21:46:09.796359"
+}

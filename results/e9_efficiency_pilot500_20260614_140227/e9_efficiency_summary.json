@@ -1,0 +1,102 @@
+{
+  "experiment": "E9_efficiency_params",
+  "metadata": {
+    "timestamp": "2026-06-14T14:24:25.821211",
+    "test_manifest": "target_pilot_test_500.txt",
+    "test_eval_limit": 500,
+    "models": [
+      "promptfree_lora",
+      "hl_residual"
+    ],
+    "seeds": [
+      42,
+      123,
+      456
+    ],
+    "batch_size": 4,
+    "num_workers": 2,
+    "include_tta": true,
+    "device": "cuda",
+    "note": "Timing excludes disk loading as much as possible but includes SAM feature extraction and decoder inference. TTA uses original + horizontal flip + vertical flip."
+  },
+  "params_summary": [
+    {
+      "model": "HL-Residual (Ours)",
+      "num_seeds": 3,
+      "sam_total_params_mean": 841558326.0,
+      "sam_total_params_std": 0.0,
+      "lora_params_mean": 1048576.0,
+      "lora_params_std": 0.0,
+      "decoder_params_mean": 688833.0,
+      "decoder_params_std": 0.0,
+      "residual_params_mean": 1028706.0,
+      "residual_params_std": 0.0,
+      "model_head_total_params_mean": 1717539.0,
+      "model_head_total_params_std": 0.0,
+      "trainable_params_estimated_mean": 2766115.0,
+      "trainable_params_estimated_std": 0.0,
+      "extra_params_vs_lora_mean": 1028706.0,
+      "extra_params_vs_lora_std": 0.0,
+      "trainable_ratio_percent_mean": 0.328020178782183,
+      "trainable_ratio_percent_std": 0.0
+    },
+    {
+      "model": "Prompt-free LoRA",
+      "num_seeds": 3,
+      "sam_total_params_mean": 841558326.0,
+      "sam_total_params_std": 0.0,
+      "lora_params_mean": 1048576.0,
+      "lora_params_std": 0.0,
+      "decoder_params_mean": 688833.0,
+      "decoder_params_std": 0.0,
+      "residual_params_mean": 0.0,
+      "residual_params_std": 0.0,
+      "model_head_total_params_mean": 688833.0,
+      "model_head_total_params_std": 0.0,
+      "trainable_params_estimated_mean": 1737409.0,
+      "trainable_params_estimated_std": 0.0,
+      "extra_params_vs_lora_mean": 0.0,
+      "extra_params_vs_lora_std": 0.0,
+      "trainable_ratio_percent_mean": 0.2062825598679164,
+      "trainable_ratio_percent_std": 0.0
+    }
+  ],
+  "timing_summary": [
+    {
+      "model": "HL-Residual (Ours)",
+      "use_tta": false,
+      "num_seeds": 3,
+      "avg_ms_per_image_mean": 101.1851847389092,
+      "avg_ms_per_image_std": 0.10069372224900179,
+      "fps_mean": 9.882876257527391,
+      "fps_std": 0.009829853788971409
+    },
+    {
+      "model": "HL-Residual (Ours)",
+      "use_tta": true,
+      "num_seeds": 3,
+      "avg_ms_per_image_mean": 298.21430535862845,
+      "avg_ms_per_image_std": 0.2023114277403754,
+      "fps_mean": 3.3532942213522805,
+      "fps_std": 0.002275331364511308
+    },
+    {
+      "model": "Prompt-free LoRA",
+      "use_tta": false,
+      "num_seeds": 3,
+      "avg_ms_per_image_mean": 98.64000903690855,
+      "avg_ms_per_image_std": 0.09625568614793796,
+      "fps_mean": 10.13788060504593,
+      "fps_std": 0.009887678389072537
+    },
+    {
+      "model": "Prompt-free LoRA",
+      "use_tta": true,
+      "num_seeds": 3,
+      "avg_ms_per_image_mean": 295.06031397357583,
+      "avg_ms_per_image_std": 0.23207719198457538,
+      "fps_mean": 3.3891389836374395,
+      "fps_std": 0.0026668636524419314
+    }
+  ]
+}

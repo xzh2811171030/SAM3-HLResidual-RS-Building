@@ -1,0 +1,268 @@
+{
+  "config": {
+    "project_root": "/path/to/project",
+    "manifest_dir": null,
+    "sam3_checkpoint": null,
+    "variants": "lora_light,hl_lite",
+    "seed": 42,
+    "shot": 20,
+    "epochs": 20,
+    "lr": 0.0003,
+    "batch_size": 2,
+    "num_workers": 2,
+    "val_every": 5,
+    "val_eval_limit": 200,
+    "pilot_eval_limit": 500,
+    "out_dir": null
+  },
+  "results": [
+    {
+      "variant": "lora_light",
+      "best_weight": "/path/to/project/results/e6v2_pilot/weights/e6v2_pilot_lora_light_best.pth",
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 1.2904459595680238,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 2,
+          "loss": 1.0575500071048736,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 3,
+          "loss": 0.9755385339260101,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 4,
+          "loss": 0.9246225357055664,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 5,
+          "loss": 0.880230724811554,
+          "val_mIoU_05": 0.6816384766021417
+        },
+        {
+          "epoch": 6,
+          "loss": 0.8462984561920166,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 7,
+          "loss": 0.8315388679504394,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 8,
+          "loss": 0.8067442536354065,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 9,
+          "loss": 0.7825841844081879,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 10,
+          "loss": 0.7630114197731018,
+          "val_mIoU_05": 0.6462055509394602
+        },
+        {
+          "epoch": 11,
+          "loss": 0.7467683792114258,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 12,
+          "loss": 0.7316852599382401,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 13,
+          "loss": 0.7102590650320053,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 14,
+          "loss": 0.6907297313213349,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 15,
+          "loss": 0.6746977508068085,
+          "val_mIoU_05": 0.6442286650087041
+        },
+        {
+          "epoch": 16,
+          "loss": 0.6625780940055848,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 17,
+          "loss": 0.6456236451864242,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 18,
+          "loss": 0.6325698405504226,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 19,
+          "loss": 0.6202615648508072,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 20,
+          "loss": 0.6083387225866318,
+          "val_mIoU_05": 0.6633435077754289
+        }
+      ],
+      "val_sweep_best": {
+        "threshold": 0.65,
+        "min_area": 128,
+        "mIoU": 0.740392660463669,
+        "F1": 0.8146554803717964,
+        "Boundary_IoU": 0.47415140594403304
+      },
+      "pilot_fixed_05": {
+        "mIoU": 0.6677377881943753,
+        "F1": 0.7591794535276283,
+        "Boundary_IoU": 0.3032552232059544
+      },
+      "pilot_calibrated": {
+        "mIoU": 0.7048427149479551,
+        "F1": 0.7922319726492423,
+        "Boundary_IoU": 0.36491449092863687
+      },
+      "timestamp": "2026-06-10T15:44:59.366320"
+    },
+    {
+      "variant": "hl_lite",
+      "best_weight": "/path/to/project/results/e6v2_pilot/weights/e6v2_pilot_hl_lite_best.pth",
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 1.3366486787796021,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 2,
+          "loss": 1.1259133756160735,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 3,
+          "loss": 1.051057130098343,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 4,
+          "loss": 1.0068161010742187,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 5,
+          "loss": 0.9660618722438812,
+          "val_mIoU_05": 0.49712348240344584
+        },
+        {
+          "epoch": 6,
+          "loss": 0.9374269783496857,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 7,
+          "loss": 0.9135051071643829,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 8,
+          "loss": 0.8864719331264496,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 9,
+          "loss": 0.8663537621498107,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 10,
+          "loss": 0.8428740441799164,
+          "val_mIoU_05": 0.5253292960790781
+        },
+        {
+          "epoch": 11,
+          "loss": 0.820842856168747,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 12,
+          "loss": 0.8009090721607208,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 13,
+          "loss": 0.7811374187469482,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 14,
+          "loss": 0.7628638058900833,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 15,
+          "loss": 0.7481571227312088,
+          "val_mIoU_05": 0.5303728607968794
+        },
+        {
+          "epoch": 16,
+          "loss": 0.7348345786333084,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 17,
+          "loss": 0.7235492706298828,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 18,
+          "loss": 0.707794326543808,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 19,
+          "loss": 0.6902454644441605,
+          "val_mIoU_05": null
+        },
+        {
+          "epoch": 20,
+          "loss": 0.673090785741806,
+          "val_mIoU_05": 0.5340979367358415
+        }
+      ],
+      "val_sweep_best": {
+        "threshold": 0.65,
+        "min_area": 128,
+        "mIoU": 0.7262703861842119,
+        "F1": 0.796144669570962,
+        "Boundary_IoU": 0.48594874793674353
+      },
+      "pilot_fixed_05": {
+        "mIoU": 0.5891348063622561,
+        "F1": 0.671486897276405,
+        "Boundary_IoU": 0.25795547937740326
+      },
+      "pilot_calibrated": {
+        "mIoU": 0.712693089070969,
+        "F1": 0.7951573437233871,
+        "Boundary_IoU": 0.3886125035382364
+      },
+      "timestamp": "2026-06-10T15:52:09.338623"
+    }
+  ]
+}

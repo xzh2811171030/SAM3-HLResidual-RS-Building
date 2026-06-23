@@ -1,0 +1,180 @@
+{
+  "variant": "rgb_only",
+  "base_lora_ckpt": "/path/to/project/results/e6v3_hl_lite_seed456/weights/e6v2_pilot_lora_light_best.pth",
+  "best_weight": "/path/to/project/results/exp2_component_ablation/rgb_only_seed456/weights/hl_residual_rgb_only_best.pth",
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 0.9964747667312622,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 2,
+      "loss": 0.9911910057067871,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 3,
+      "loss": 0.9882821202278137,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 4,
+      "loss": 0.9839759230613708,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 5,
+      "loss": 0.9896722912788392,
+      "val_select_mIoU": 0.7227619850819889,
+      "val_select_info": {
+        "threshold": 0.5,
+        "min_area": 128,
+        "mIoU": 0.7227619850819889,
+        "F1": 0.8103690504086518,
+        "Boundary_IoU": 0.42624364520812574
+      }
+    },
+    {
+      "epoch": 6,
+      "loss": 0.983162659406662,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 7,
+      "loss": 0.9849210858345032,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 8,
+      "loss": 0.9776074290275574,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 9,
+      "loss": 0.9641279578208923,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 10,
+      "loss": 0.9719329118728638,
+      "val_select_mIoU": 0.7254271834301234,
+      "val_select_info": {
+        "threshold": 0.55,
+        "min_area": 128,
+        "mIoU": 0.7254271834301234,
+        "F1": 0.8115453506862724,
+        "Boundary_IoU": 0.45255476579616755
+      }
+    },
+    {
+      "epoch": 11,
+      "loss": 0.9593851625919342,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 12,
+      "loss": 0.9763633608818054,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 13,
+      "loss": 0.9674396991729737,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 14,
+      "loss": 0.9471618115901947,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 15,
+      "loss": 0.9447586953639984,
+      "val_select_mIoU": 0.7299146281536215,
+      "val_select_info": {
+        "threshold": 0.55,
+        "min_area": 128,
+        "mIoU": 0.7299146281536215,
+        "F1": 0.8160374410846043,
+        "Boundary_IoU": 0.4515587119982519
+      }
+    },
+    {
+      "epoch": 16,
+      "loss": 0.9443773090839386,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 17,
+      "loss": 0.9495887696743012,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 18,
+      "loss": 0.9380090236663818,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 19,
+      "loss": 0.9433628499507904,
+      "val_select_mIoU": null,
+      "val_select_info": null
+    },
+    {
+      "epoch": 20,
+      "loss": 0.9286130547523499,
+      "val_select_mIoU": 0.7248062173990284,
+      "val_select_info": {
+        "threshold": 0.65,
+        "min_area": 128,
+        "mIoU": 0.7248062173990284,
+        "F1": 0.8109645078813081,
+        "Boundary_IoU": 0.4504500912688668
+      }
+    }
+  ],
+  "val_sweep_best": {
+    "threshold": 0.65,
+    "min_area": 128,
+    "mIoU": 0.7305109808318794,
+    "F1": 0.807654485838895,
+    "Boundary_IoU": 0.4690158723988331
+  },
+  "test_fixed_05": {
+    "mIoU": 0.6844135361353232,
+    "F1": 0.776149935425104,
+    "Boundary_IoU": 0.3411201338202065
+  },
+  "test_calibrated": {
+    "mIoU": 0.7253069225310717,
+    "F1": 0.810176568557446,
+    "Boundary_IoU": 0.41770290156554457
+  },
+  "pilot_fixed_05": {
+    "mIoU": 0.6844135361353232,
+    "F1": 0.776149935425104,
+    "Boundary_IoU": 0.3411201338202065
+  },
+  "pilot_calibrated": {
+    "mIoU": 0.7253069225310717,
+    "F1": 0.810176568557446,
+    "Boundary_IoU": 0.41770290156554457
+  },
+  "use_tta_eval": true,
+  "timestamp": "2026-06-22T05:14:48.930200"
+}

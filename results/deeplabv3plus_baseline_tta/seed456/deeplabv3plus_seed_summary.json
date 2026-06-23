@@ -1,0 +1,27 @@
+{
+  "seed": 456,
+  "method": "DeepLabv3+ ResNet50",
+  "source_checkpoint": "/path/to/project/results/deeplabv3plus_baseline_tta/source_pretrain/deeplabv3plus_source_best.pth",
+  "target_checkpoint": "/path/to/project/results/deeplabv3plus_baseline_tta/seed456/deeplabv3plus_target_best.pth",
+  "support_manifest": "/path/to/project/data/splits/e0_manifest/target_support_20_seed456.txt",
+  "val_manifest": "/path/to/project/data/splits/e0_manifest/target_val.txt",
+  "test_manifest": "/path/to/project/data/splits/e0_manifest/target_final_test_8402.txt",
+  "use_tta": true,
+  "val_best_cfg": {
+    "threshold": 0.35,
+    "min_area": 64,
+    "closing_kernel": 3,
+    "fill_holes": false,
+    "mIoU": 0.6281314037097336,
+    "F1": 0.70376280090134,
+    "Boundary_IoU": 0.4374985031910426
+  },
+  "test_calibrated_postprocess": {
+    "mIoU": 0.601709091097926,
+    "F1": 0.6830286773993869,
+    "Boundary_IoU": 0.4061748613721745
+  },
+  "per_image_csv": "/path/to/project/results/deeplabv3plus_baseline_tta/seed456/deeplabv3plus_per_image_metrics.csv",
+  "region_csv": "/path/to/project/results/deeplabv3plus_baseline_tta/seed456/deeplabv3plus_region_metrics.csv",
+  "timestamp": "2026-06-17T21:44:06.786625"
+}

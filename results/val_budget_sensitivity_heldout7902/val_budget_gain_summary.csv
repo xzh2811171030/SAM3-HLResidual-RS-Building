@@ -1,0 +1,13 @@
+budget,gain_metric,mean_gain_pp,std_gain_pp,n_seeds
+0,gain_miou,10.0810,9.4287,3
+0,gain_f1,9.1863,8.8615,3
+0,gain_biou,13.1566,12.3690,3
+50,gain_miou,4.9767,3.3189,3
+50,gain_f1,4.2913,3.1733,3
+50,gain_biou,5.6626,2.3870,3
+100,gain_miou,4.3508,3.4923,3
+100,gain_f1,3.8083,3.1743,3
+100,gain_biou,4.6158,3.5490,3
+500,gain_miou,5.0458,3.8901,3
+500,gain_f1,4.3228,3.5085,3
+500,gain_biou,5.5641,3.0727,3

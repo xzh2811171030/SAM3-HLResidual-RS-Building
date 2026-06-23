@@ -1,0 +1,88 @@
+{
+  "input_per_image_csvs": [
+    "/path/to/project/results/deeplabv3plus_baseline_tta/seed42/deeplabv3plus_per_image_metrics.csv",
+    "/path/to/project/results/deeplabv3plus_baseline_tta/seed123/deeplabv3plus_per_image_metrics.csv",
+    "/path/to/project/results/deeplabv3plus_baseline_tta/seed456/deeplabv3plus_per_image_metrics.csv"
+  ],
+  "pilot_manifest": "/path/to/project/data/splits/e0_manifest/target_pilot_test_500.txt",
+  "pilot_images_loaded": 500,
+  "unique_images_before_filter": 8402,
+  "unique_images_after_filter": 7902,
+  "rows_after_filter": 23706,
+  "per_seed_rows": [
+    {
+      "seed": 42,
+      "model": "DeepLabv3+ ResNet50",
+      "mIoU": 0.5854974239859164,
+      "F1": 0.6749746383306432,
+      "Boundary_IoU": 0.3915483397853572
+    },
+    {
+      "seed": 123,
+      "model": "DeepLabv3+ ResNet50",
+      "mIoU": 0.5664749806774999,
+      "F1": 0.6530940119990618,
+      "Boundary_IoU": 0.38728854054506523
+    },
+    {
+      "seed": 456,
+      "model": "DeepLabv3+ ResNet50",
+      "mIoU": 0.6069150580588062,
+      "F1": 0.6882747924388835,
+      "Boundary_IoU": 0.41093938044069533
+    }
+  ],
+  "mean_over_seeds": [
+    {
+      "model": "DeepLabv3+ ResNet50",
+      "mIoU": 0.5862958209074075,
+      "F1": 0.6721144809228629,
+      "Boundary_IoU": 0.3965920869237059
+    }
+  ],
+  "region_metrics": [
+    {
+      "region_prefix": "Dunedin",
+      "model": "DeepLabv3+ ResNet50",
+      "mIoU": 0.8108958507616282,
+      "F1": 0.8765232034392203,
+      "Boundary_IoU": 0.5606626476114497
+    },
+    {
+      "region_prefix": "Khartoum",
+      "model": "DeepLabv3+ ResNet50",
+      "mIoU": 0.3646339855954311,
+      "F1": 0.504062049152159,
+      "Boundary_IoU": 0.17262077814314547
+    },
+    {
+      "region_prefix": "Kitsap",
+      "model": "DeepLabv3+ ResNet50",
+      "mIoU": 0.6837517415019354,
+      "F1": 0.7632734872566793,
+      "Boundary_IoU": 0.5342811255171559
+    },
+    {
+      "region_prefix": "Potsdam",
+      "model": "DeepLabv3+ ResNet50",
+      "mIoU": 0.20530470133005851,
+      "F1": 0.2680411800830678,
+      "Boundary_IoU": 0.13037377203713535
+    },
+    {
+      "region_prefix": "Wuxi",
+      "model": "DeepLabv3+ ResNet50",
+      "mIoU": 0.5672532417074114,
+      "F1": 0.6746088930090758,
+      "Boundary_IoU": 0.23309526167976466
+    }
+  ],
+  "region_balanced_summary": [
+    {
+      "model": "DeepLabv3+ ResNet50",
+      "mIoU": 0.5263679041792929,
+      "F1": 0.6173017625880405,
+      "Boundary_IoU": 0.3262067169977302
+    }
+  ]
+}

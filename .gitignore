@@ -1,0 +1,53 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Logs and runtime outputs
+logs/
+*.log
+nohup.out
+runs/
+outputs/
+wandb/
+
+# Local weights and checkpoints
+weights/
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+
+# Checkpoints or large files accidentally saved under results/
+results/**/*.pth
+results/**/*.pt
+results/**/*.ckpt
+results/**/*.safetensors
+results/**/checkpoints/
+results/**/checkpoint/
+results/**/weights/
+results/**/pred_masks/
+results/**/masks/
+results/**/visualizations/
+results/**/*.npy
+results/**/*.npz
+
+# Raw datasets and large data
+data/raw/
+data/images/
+data/masks/
+datasets/
+
+# Compressed files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Local IDE/system files
+.DS_Store
+.vscode/
+.idea/

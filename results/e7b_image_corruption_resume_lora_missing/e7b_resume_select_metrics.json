@@ -1,0 +1,507 @@
+{
+  "experiment": "E7b_image_corruption_resume_select",
+  "metadata": {
+    "timestamp": "2026-06-14T00:54:37.991459",
+    "test_manifest": "target_pilot_test_500.txt",
+    "val_manifest": "target_val.txt",
+    "models": [
+      "promptfree_lora"
+    ],
+    "seeds": [
+      42,
+      123,
+      456
+    ],
+    "corruptions": [
+      [
+        "brightness",
+        1.3
+      ],
+      [
+        "contrast",
+        0.7
+      ],
+      [
+        "contrast",
+        1.3
+      ],
+      [
+        "downsample",
+        0.5
+      ],
+      [
+        "downsample",
+        0.25
+      ],
+      [
+        "occlusion",
+        0.1
+      ],
+      [
+        "occlusion",
+        0.2
+      ]
+    ],
+    "use_tta": true,
+    "note": "Validation calibration is performed on clean target_val; corrupted test is evaluated using the clean-val-selected postprocess config."
+  },
+  "results": {
+    "brightness_1.3": {
+      "Prompt-free LoRA": {
+        "mIoU": 0.6930649177171685,
+        "mIoU_std": 0.01694196501987295,
+        "F1": 0.7778589814159713,
+        "F1_std": 0.016285687179437975,
+        "Boundary_IoU": 0.3777143190207273,
+        "Boundary_IoU_std": 0.02390667363684116
+      }
+    },
+    "contrast_0.7": {
+      "Prompt-free LoRA": {
+        "mIoU": 0.688744537203117,
+        "mIoU_std": 0.018357132377301563,
+        "F1": 0.7738378199465509,
+        "F1_std": 0.018339774786417823,
+        "Boundary_IoU": 0.37784263795592593,
+        "Boundary_IoU_std": 0.02517516272414546
+      }
+    },
+    "contrast_1.3": {
+      "Prompt-free LoRA": {
+        "mIoU": 0.6880967588393624,
+        "mIoU_std": 0.022054718888904645,
+        "F1": 0.7732066937819674,
+        "F1_std": 0.02068243863312203,
+        "Boundary_IoU": 0.3769152100712591,
+        "Boundary_IoU_std": 0.025051112312866552
+      }
+    },
+    "downsample_0.5": {
+      "Prompt-free LoRA": {
+        "mIoU": 0.6876462530062479,
+        "mIoU_std": 0.017762943206979652,
+        "F1": 0.7732369515665064,
+        "F1_std": 0.017393706373726232,
+        "Boundary_IoU": 0.373933399102847,
+        "Boundary_IoU_std": 0.023131207756678436
+      }
+    },
+    "downsample_0.25": {
+      "Prompt-free LoRA": {
+        "mIoU": 0.6524138660267934,
+        "mIoU_std": 0.02963011309924098,
+        "F1": 0.740996855022168,
+        "F1_std": 0.03107103087214741,
+        "Boundary_IoU": 0.34560373768411673,
+        "Boundary_IoU_std": 0.0036259981008023435
+      }
+    },
+    "occlusion_0.1": {
+      "Prompt-free LoRA": {
+        "mIoU": 0.49481662811642974,
+        "mIoU_std": 0.04338914671561948,
+        "F1": 0.5964803309757094,
+        "F1_std": 0.04219882756461441,
+        "Boundary_IoU": 0.2191474566978215,
+        "Boundary_IoU_std": 0.005525475583602874
+      }
+    },
+    "occlusion_0.2": {
+      "Prompt-free LoRA": {
+        "mIoU": 0.4728065671418757,
+        "mIoU_std": 0.06368131509458551,
+        "F1": 0.5801119148761117,
+        "F1_std": 0.06357169169245,
+        "Boundary_IoU": 0.2154771222011008,
+        "Boundary_IoU_std": 0.019633067633624716
+      }
+    }
+  },
+  "raw_per_seed": {
+    "brightness_1.3": {
+      "Prompt-free LoRA": [
+        {
+          "mIoU": 0.7098142666116297,
+          "F1": 0.7950343264660898,
+          "Boundary_IoU": 0.36242214428559943,
+          "checkpoint": "/path/to/project/results/e6v2_pilot/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.6,
+            "min_area": 128,
+            "closing_kernel": 3,
+            "fill_holes": false,
+            "mIoU": 0.7449276160591644,
+            "F1": 0.8173614755423045,
+            "Boundary_IoU": 0.4735112309960061
+          },
+          "corruption": "brightness",
+          "severity": 1.3
+        },
+        {
+          "mIoU": 0.6934437946888367,
+          "F1": 0.7759029941000829,
+          "Boundary_IoU": 0.4052636997911724,
+          "checkpoint": "/path/to/project/results/e6v3_hl_lite_seed123/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.7,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7459883469815063,
+            "F1": 0.8162050333133145,
+            "Boundary_IoU": 0.5183140035728127
+          },
+          "corruption": "brightness",
+          "severity": 1.3
+        },
+        {
+          "mIoU": 0.675936691851039,
+          "F1": 0.7626396236817411,
+          "Boundary_IoU": 0.36545711298540995,
+          "checkpoint": "/path/to/project/results/e6v3_hl_lite_seed456/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.65,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7282719283124612,
+            "F1": 0.8045762031263122,
+            "Boundary_IoU": 0.47320787988195323
+          },
+          "corruption": "brightness",
+          "severity": 1.3
+        }
+      ]
+    },
+    "contrast_0.7": {
+      "Prompt-free LoRA": [
+        {
+          "mIoU": 0.7085726686251131,
+          "F1": 0.7944101655234306,
+          "Boundary_IoU": 0.36253348305239924,
+          "checkpoint": "/path/to/project/results/e6v2_pilot/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.6,
+            "min_area": 128,
+            "closing_kernel": 3,
+            "fill_holes": false,
+            "mIoU": 0.7449276160591644,
+            "F1": 0.8173614755423045,
+            "Boundary_IoU": 0.4735112309960061
+          },
+          "corruption": "contrast",
+          "severity": 0.7
+        },
+        {
+          "mIoU": 0.6853203260630487,
+          "F1": 0.7679026570771529,
+          "Boundary_IoU": 0.40689841047460257,
+          "checkpoint": "/path/to/project/results/e6v3_hl_lite_seed123/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.7,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7459883469815063,
+            "F1": 0.8162050333133145,
+            "Boundary_IoU": 0.5183140035728127
+          },
+          "corruption": "contrast",
+          "severity": 0.7
+        },
+        {
+          "mIoU": 0.6723406169211896,
+          "F1": 0.7592006372390688,
+          "Boundary_IoU": 0.36409602034077615,
+          "checkpoint": "/path/to/project/results/e6v3_hl_lite_seed456/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.65,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7282719283124612,
+            "F1": 0.8045762031263122,
+            "Boundary_IoU": 0.47320787988195323
+          },
+          "corruption": "contrast",
+          "severity": 0.7
+        }
+      ]
+    },
+    "contrast_1.3": {
+      "Prompt-free LoRA": [
+        {
+          "mIoU": 0.707842722510285,
+          "F1": 0.7932963374651363,
+          "Boundary_IoU": 0.36155378575793534,
+          "checkpoint": "/path/to/project/results/e6v2_pilot/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.6,
+            "min_area": 128,
+            "closing_kernel": 3,
+            "fill_holes": false,
+            "mIoU": 0.7449276160591644,
+            "F1": 0.8173614755423045,
+            "Boundary_IoU": 0.4735112309960061
+          },
+          "corruption": "contrast",
+          "severity": 1.3
+        },
+        {
+          "mIoU": 0.6921515662864313,
+          "F1": 0.7743452493517617,
+          "Boundary_IoU": 0.40582274983855027,
+          "checkpoint": "/path/to/project/results/e6v3_hl_lite_seed123/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.7,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7459883469815063,
+            "F1": 0.8162050333133145,
+            "Boundary_IoU": 0.5183140035728127
+          },
+          "corruption": "contrast",
+          "severity": 1.3
+        },
+        {
+          "mIoU": 0.664295987721371,
+          "F1": 0.7519784945290039,
+          "Boundary_IoU": 0.3633690946172917,
+          "checkpoint": "/path/to/project/results/e6v3_hl_lite_seed456/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.65,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7282719283124612,
+            "F1": 0.8045762031263122,
+            "Boundary_IoU": 0.47320787988195323
+          },
+          "corruption": "contrast",
+          "severity": 1.3
+        }
+      ]
+    },
+    "downsample_0.5": {
+      "Prompt-free LoRA": [
+        {
+          "mIoU": 0.7055497055227292,
+          "F1": 0.79171307251304,
+          "Boundary_IoU": 0.3599460140602886,
+          "checkpoint": "/path/to/project/results/e6v2_pilot/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.6,
+            "min_area": 128,
+            "closing_kernel": 3,
+            "fill_holes": false,
+            "mIoU": 0.7449276160591644,
+            "F1": 0.8173614755423045,
+            "Boundary_IoU": 0.4735112309960061
+          },
+          "corruption": "downsample",
+          "severity": 0.5
+        },
+        {
+          "mIoU": 0.687361818272293,
+          "F1": 0.7708191357730295,
+          "Boundary_IoU": 0.40063286659077063,
+          "checkpoint": "/path/to/project/results/e6v3_hl_lite_seed123/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.7,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7459883469815063,
+            "F1": 0.8162050333133145,
+            "Boundary_IoU": 0.5183140035728127
+          },
+          "corruption": "downsample",
+          "severity": 0.5
+        },
+        {
+          "mIoU": 0.6700272352237213,
+          "F1": 0.7571786464134498,
+          "Boundary_IoU": 0.36122131665748175,
+          "checkpoint": "/path/to/project/results/e6v3_hl_lite_seed456/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.65,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7282719283124612,
+            "F1": 0.8045762031263122,
+            "Boundary_IoU": 0.47320787988195323
+          },
+          "corruption": "downsample",
+          "severity": 0.5
+        }
+      ]
+    },
+    "downsample_0.25": {
+      "Prompt-free LoRA": [
+        {
+          "mIoU": 0.6810590421283551,
+          "F1": 0.7699147235843276,
+          "Boundary_IoU": 0.3484473379386591,
+          "checkpoint": "/path/to/project/results/e6v2_pilot/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.6,
+            "min_area": 128,
+            "closing_kernel": 3,
+            "fill_holes": false,
+            "mIoU": 0.7449276160591644,
+            "F1": 0.8173614755423045,
+            "Boundary_IoU": 0.4735112309960061
+          },
+          "corruption": "downsample",
+          "severity": 0.25
+        },
+        {
+          "mIoU": 0.6218883764810117,
+          "F1": 0.7081469822706299,
+          "Boundary_IoU": 0.3468433874288695,
+          "checkpoint": "/path/to/project/results/e6v3_hl_lite_seed123/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.7,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7459883469815063,
+            "F1": 0.8162050333133145,
+            "Boundary_IoU": 0.5183140035728127
+          },
+          "corruption": "downsample",
+          "severity": 0.25
+        },
+        {
+          "mIoU": 0.6542941794710132,
+          "F1": 0.7449288592115468,
+          "Boundary_IoU": 0.3415204876848214,
+          "checkpoint": "/path/to/project/results/e6v3_hl_lite_seed456/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.65,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7282719283124612,
+            "F1": 0.8045762031263122,
+            "Boundary_IoU": 0.47320787988195323
+          },
+          "corruption": "downsample",
+          "severity": 0.25
+        }
+      ]
+    },
+    "occlusion_0.1": {
+      "Prompt-free LoRA": [
+        {
+          "mIoU": 0.5407891375061601,
+          "F1": 0.6409293979227069,
+          "Boundary_IoU": 0.21765391483669377,
+          "checkpoint": "/path/to/project/results/e6v2_pilot/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.6,
+            "min_area": 128,
+            "closing_kernel": 3,
+            "fill_holes": false,
+            "mIoU": 0.7449276160591644,
+            "F1": 0.8173614755423045,
+            "Boundary_IoU": 0.4735112309960061
+          },
+          "corruption": "occlusion",
+          "severity": 0.1
+        },
+        {
+          "mIoU": 0.45458176947753715,
+          "F1": 0.5569655868764241,
+          "Boundary_IoU": 0.22526618071425514,
+          "checkpoint": "/path/to/project/results/e6v3_hl_lite_seed123/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.7,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7459883469815063,
+            "F1": 0.8162050333133145,
+            "Boundary_IoU": 0.5183140035728127
+          },
+          "corruption": "occlusion",
+          "severity": 0.1
+        },
+        {
+          "mIoU": 0.48907897736559197,
+          "F1": 0.5915460081279973,
+          "Boundary_IoU": 0.21452227454251557,
+          "checkpoint": "/path/to/project/results/e6v3_hl_lite_seed456/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.65,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7282719283124612,
+            "F1": 0.8045762031263122,
+            "Boundary_IoU": 0.47320787988195323
+          },
+          "corruption": "occlusion",
+          "severity": 0.1
+        }
+      ]
+    },
+    "occlusion_0.2": {
+      "Prompt-free LoRA": [
+        {
+          "mIoU": 0.5339291184995283,
+          "F1": 0.6412860511211566,
+          "Boundary_IoU": 0.23446811876430662,
+          "checkpoint": "/path/to/project/results/e6v2_pilot/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.6,
+            "min_area": 128,
+            "closing_kernel": 3,
+            "fill_holes": false,
+            "mIoU": 0.7449276160591644,
+            "F1": 0.8173614755423045,
+            "Boundary_IoU": 0.4735112309960061
+          },
+          "corruption": "occlusion",
+          "severity": 0.2
+        },
+        {
+          "mIoU": 0.4068428172723346,
+          "F1": 0.514387206314248,
+          "Boundary_IoU": 0.19525950277400103,
+          "checkpoint": "/path/to/project/results/e6v3_hl_lite_seed123/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.7,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7459883469815063,
+            "F1": 0.8162050333133145,
+            "Boundary_IoU": 0.5183140035728127
+          },
+          "corruption": "occlusion",
+          "severity": 0.2
+        },
+        {
+          "mIoU": 0.47764776565376404,
+          "F1": 0.5846624871929306,
+          "Boundary_IoU": 0.21670374506499473,
+          "checkpoint": "/path/to/project/results/e6v3_hl_lite_seed456/weights/e6v2_pilot_lora_light_best.pth",
+          "val_best_cfg": {
+            "threshold": 0.65,
+            "min_area": 128,
+            "closing_kernel": 5,
+            "fill_holes": false,
+            "mIoU": 0.7282719283124612,
+            "F1": 0.8045762031263122,
+            "Boundary_IoU": 0.47320787988195323
+          },
+          "corruption": "occlusion",
+          "severity": 0.2
+        }
+      ]
+    }
+  }
+}

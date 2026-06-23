@@ -1,0 +1,409 @@
+{
+  "metadata": {
+    "platform": "cloud-linux",
+    "device": "cuda",
+    "timestamp": "20260531_200021",
+    "full_test": false,
+    "batch_size_desc": "train: auto(2/4/16 by num_shots), eval: 32",
+    "learning_rate": 0.0003,
+    "num_epochs": 30,
+    "num_workers": 4,
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05
+  },
+  "individual_results": [
+    {
+      "mode": "decoder_only",
+      "domain": "source",
+      "num_shots": 5,
+      "full_test": false,
+      "seed": 42,
+      "best_val_iou": 0.4542725251108625,
+      "mIoU": 0.5093790323222733,
+      "F1": 0.5835342893723994,
+      "Boundary_IoU": 0.36120004515282367
+    },
+    {
+      "mode": "decoder_only",
+      "domain": "source",
+      "num_shots": 5,
+      "full_test": false,
+      "seed": 123,
+      "best_val_iou": 0.49661130178814944,
+      "mIoU": 0.571553045570138,
+      "F1": 0.6446199275388753,
+      "Boundary_IoU": 0.42137826058001987
+    },
+    {
+      "mode": "decoder_only",
+      "domain": "source",
+      "num_shots": 5,
+      "full_test": false,
+      "seed": 456,
+      "best_val_iou": 0.53683607425087,
+      "mIoU": 0.6305307790591137,
+      "F1": 0.7013729043006869,
+      "Boundary_IoU": 0.4768760456838339
+    },
+    {
+      "mode": "lora",
+      "domain": "source",
+      "num_shots": 5,
+      "full_test": false,
+      "seed": 42,
+      "best_val_iou": 0.5113867035787206,
+      "mIoU": 0.5641675963293312,
+      "F1": 0.6285620287571785,
+      "Boundary_IoU": 0.4107950860272048
+    },
+    {
+      "mode": "lora",
+      "domain": "source",
+      "num_shots": 5,
+      "full_test": false,
+      "seed": 123,
+      "best_val_iou": 0.7240276059920423,
+      "mIoU": 0.7572614803920569,
+      "F1": 0.8212679617959435,
+      "Boundary_IoU": 0.6110859274435596
+    },
+    {
+      "mode": "lora",
+      "domain": "source",
+      "num_shots": 5,
+      "full_test": false,
+      "seed": 456,
+      "best_val_iou": 0.6119327006569875,
+      "mIoU": 0.6747421780382086,
+      "F1": 0.7342177808868223,
+      "Boundary_IoU": 0.5310908204676231
+    },
+    {
+      "mode": "decoder_only",
+      "domain": "source",
+      "num_shots": 10,
+      "full_test": false,
+      "seed": 42,
+      "best_val_iou": 0.5222279033330728,
+      "mIoU": 0.5843807741817574,
+      "F1": 0.6572215723096727,
+      "Boundary_IoU": 0.4413770306085173
+    },
+    {
+      "mode": "decoder_only",
+      "domain": "source",
+      "num_shots": 10,
+      "full_test": false,
+      "seed": 123,
+      "best_val_iou": 0.48850495298427854,
+      "mIoU": 0.5111817834943232,
+      "F1": 0.5828925387091437,
+      "Boundary_IoU": 0.35200571123151453
+    },
+    {
+      "mode": "decoder_only",
+      "domain": "source",
+      "num_shots": 10,
+      "full_test": false,
+      "seed": 456,
+      "best_val_iou": 0.5070674396148153,
+      "mIoU": 0.5504413045609169,
+      "F1": 0.6197751983798848,
+      "Boundary_IoU": 0.40002809585109717
+    },
+    {
+      "mode": "lora",
+      "domain": "source",
+      "num_shots": 10,
+      "full_test": false,
+      "seed": 42,
+      "best_val_iou": 0.6761460563509272,
+      "mIoU": 0.7129384522530755,
+      "F1": 0.7700078341292415,
+      "Boundary_IoU": 0.5675818654736012
+    },
+    {
+      "mode": "lora",
+      "domain": "source",
+      "num_shots": 10,
+      "full_test": false,
+      "seed": 123,
+      "best_val_iou": 0.6661718750418347,
+      "mIoU": 0.6662108392083803,
+      "F1": 0.726514286945815,
+      "Boundary_IoU": 0.5140105131911851
+    },
+    {
+      "mode": "lora",
+      "domain": "source",
+      "num_shots": 10,
+      "full_test": false,
+      "seed": 456,
+      "best_val_iou": 0.5704670700310349,
+      "mIoU": 0.6250473791518882,
+      "F1": 0.6924934103747422,
+      "Boundary_IoU": 0.4761371174538808
+    },
+    {
+      "mode": "decoder_only",
+      "domain": "source",
+      "num_shots": 20,
+      "full_test": false,
+      "seed": 42,
+      "best_val_iou": 0.5476886364764947,
+      "mIoU": 0.5681036713225128,
+      "F1": 0.6291472328896823,
+      "Boundary_IoU": 0.4129485439814636
+    },
+    {
+      "mode": "decoder_only",
+      "domain": "source",
+      "num_shots": 20,
+      "full_test": false,
+      "seed": 123,
+      "best_val_iou": 0.5778593581332817,
+      "mIoU": 0.6021336705403225,
+      "F1": 0.6650188392482944,
+      "Boundary_IoU": 0.44484048833021633
+    },
+    {
+      "mode": "decoder_only",
+      "domain": "source",
+      "num_shots": 20,
+      "full_test": false,
+      "seed": 456,
+      "best_val_iou": 0.5654406222618114,
+      "mIoU": 0.5984730109783545,
+      "F1": 0.659779104513972,
+      "Boundary_IoU": 0.4475787769765871
+    },
+    {
+      "mode": "lora",
+      "domain": "source",
+      "num_shots": 20,
+      "full_test": false,
+      "seed": 42,
+      "best_val_iou": 0.6291097320947752,
+      "mIoU": 0.7050455949628991,
+      "F1": 0.7607143919034313,
+      "Boundary_IoU": 0.5478689144982015
+    },
+    {
+      "mode": "lora",
+      "domain": "source",
+      "num_shots": 20,
+      "full_test": false,
+      "seed": 123,
+      "best_val_iou": 0.7711016052563316,
+      "mIoU": 0.7450586093780839,
+      "F1": 0.8002815138487218,
+      "Boundary_IoU": 0.5924841335019821
+    },
+    {
+      "mode": "lora",
+      "domain": "source",
+      "num_shots": 20,
+      "full_test": false,
+      "seed": 456,
+      "best_val_iou": 0.7656309334846709,
+      "mIoU": 0.7817108928626678,
+      "F1": 0.8358508786466256,
+      "Boundary_IoU": 0.642214927895794
+    }
+  ],
+  "aggregated_summary": {
+    "source_decoder_only_5shot": {
+      "domain": "source",
+      "num_shots": 5,
+      "mode": "decoder_only",
+      "num_runs": 3,
+      "mIoU_mean": 0.5704876189838417,
+      "mIoU_std": 0.06058290010147226,
+      "F1_mean": 0.6431757070706539,
+      "F1_std": 0.058932581155290736,
+      "Boundary_IoU_mean": 0.41981811713889244,
+      "Boundary_IoU_std": 0.05785377956866984,
+      "seeds": [
+        42,
+        123,
+        456
+      ],
+      "individual_mIoU": [
+        0.5093790323222733,
+        0.571553045570138,
+        0.6305307790591137
+      ],
+      "individual_F1": [
+        0.5835342893723994,
+        0.6446199275388753,
+        0.7013729043006869
+      ],
+      "individual_Boundary_IoU": [
+        0.36120004515282367,
+        0.42137826058001987,
+        0.4768760456838339
+      ]
+    },
+    "source_lora_5shot": {
+      "domain": "source",
+      "num_shots": 5,
+      "mode": "lora",
+      "num_runs": 3,
+      "mIoU_mean": 0.6653904182531989,
+      "mIoU_std": 0.09688603394666709,
+      "F1_mean": 0.7280159238133148,
+      "F1_std": 0.09650254623819732,
+      "Boundary_IoU_mean": 0.5176572779794625,
+      "Boundary_IoU_std": 0.1008188987078006,
+      "seeds": [
+        42,
+        123,
+        456
+      ],
+      "individual_mIoU": [
+        0.5641675963293312,
+        0.7572614803920569,
+        0.6747421780382086
+      ],
+      "individual_F1": [
+        0.6285620287571785,
+        0.8212679617959435,
+        0.7342177808868223
+      ],
+      "individual_Boundary_IoU": [
+        0.4107950860272048,
+        0.6110859274435596,
+        0.5310908204676231
+      ]
+    },
+    "source_decoder_only_10shot": {
+      "domain": "source",
+      "num_shots": 10,
+      "mode": "decoder_only",
+      "num_runs": 3,
+      "mIoU_mean": 0.5486679540789992,
+      "mIoU_std": 0.036631702640794045,
+      "F1_mean": 0.6199631031329004,
+      "F1_std": 0.03716487306778131,
+      "Boundary_IoU_mean": 0.39780361256370966,
+      "Boundary_IoU_std": 0.04472716653465159,
+      "seeds": [
+        42,
+        123,
+        456
+      ],
+      "individual_mIoU": [
+        0.5843807741817574,
+        0.5111817834943232,
+        0.5504413045609169
+      ],
+      "individual_F1": [
+        0.6572215723096727,
+        0.5828925387091437,
+        0.6197751983798848
+      ],
+      "individual_Boundary_IoU": [
+        0.4413770306085173,
+        0.35200571123151453,
+        0.40002809585109717
+      ]
+    },
+    "source_lora_10shot": {
+      "domain": "source",
+      "num_shots": 10,
+      "mode": "lora",
+      "num_runs": 3,
+      "mIoU_mean": 0.6680655568711146,
+      "mIoU_std": 0.04397488107915592,
+      "F1_mean": 0.7296718438165994,
+      "F1_std": 0.03885355963798167,
+      "Boundary_IoU_mean": 0.5192431653728891,
+      "Boundary_IoU_std": 0.045946392369135565,
+      "seeds": [
+        42,
+        123,
+        456
+      ],
+      "individual_mIoU": [
+        0.7129384522530755,
+        0.6662108392083803,
+        0.6250473791518882
+      ],
+      "individual_F1": [
+        0.7700078341292415,
+        0.726514286945815,
+        0.6924934103747422
+      ],
+      "individual_Boundary_IoU": [
+        0.5675818654736012,
+        0.5140105131911851,
+        0.4761371174538808
+      ]
+    },
+    "source_decoder_only_20shot": {
+      "domain": "source",
+      "num_shots": 20,
+      "mode": "decoder_only",
+      "num_runs": 3,
+      "mIoU_mean": 0.5895701176137299,
+      "mIoU_std": 0.018680373240046323,
+      "F1_mean": 0.6513150588839829,
+      "F1_std": 0.019375837711095436,
+      "Boundary_IoU_mean": 0.435122603096089,
+      "Boundary_IoU_std": 0.019252044810665902,
+      "seeds": [
+        42,
+        123,
+        456
+      ],
+      "individual_mIoU": [
+        0.5681036713225128,
+        0.6021336705403225,
+        0.5984730109783545
+      ],
+      "individual_F1": [
+        0.6291472328896823,
+        0.6650188392482944,
+        0.659779104513972
+      ],
+      "individual_Boundary_IoU": [
+        0.4129485439814636,
+        0.44484048833021633,
+        0.4475787769765871
+      ]
+    },
+    "source_lora_20shot": {
+      "domain": "source",
+      "num_shots": 20,
+      "mode": "lora",
+      "num_runs": 3,
+      "mIoU_mean": 0.7439383657345502,
+      "mIoU_std": 0.03834492384763241,
+      "F1_mean": 0.7989489281329262,
+      "F1_std": 0.03758596478135169,
+      "Boundary_IoU_mean": 0.5941893252986592,
+      "Boundary_IoU_std": 0.04719611552132514,
+      "seeds": [
+        42,
+        123,
+        456
+      ],
+      "individual_mIoU": [
+        0.7050455949628991,
+        0.7450586093780839,
+        0.7817108928626678
+      ],
+      "individual_F1": [
+        0.7607143919034313,
+        0.8002815138487218,
+        0.8358508786466256
+      ],
+      "individual_Boundary_IoU": [
+        0.5478689144982015,
+        0.5924841335019821,
+        0.642214927895794
+      ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "seed": 42,
+  "use_tta": true,
+  "test_manifest": "target_pilot_test_500.txt",
+  "val_manifest": "target_val.txt",
+  "lora_ckpt": "/path/to/project/results/e6v2_pilot/weights/e6v2_pilot_lora_light_best.pth",
+  "hl_ckpt": "/path/to/project/results/hl_residual_pilot/weights/hl_residual_best.pth",
+  "lora_cfg": {
+    "threshold": 0.6,
+    "min_area": 128,
+    "closing_kernel": 3,
+    "fill_holes": false,
+    "mIoU": 0.7449276160591644,
+    "F1": 0.8173614755423045,
+    "Boundary_IoU": 0.4735112309960061
+  },
+  "hl_cfg": {
+    "threshold": 0.65,
+    "min_area": 128,
+    "closing_kernel": 3,
+    "fill_holes": false,
+    "mIoU": 0.7553752977890541,
+    "F1": 0.8245789491034134,
+    "Boundary_IoU": 0.5057278837803328
+  },
+  "num_candidates": 500,
+  "num_selected_pool": 80,
+  "num_main_examples": 6,
+  "num_supp_examples": 12,
+  "error_color_rule": "TP=green, FP=red, FN=blue"
+}

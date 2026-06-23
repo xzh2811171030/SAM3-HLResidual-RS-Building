@@ -1,0 +1,386 @@
+[
+  {
+    "model": "lora",
+    "seed": 42,
+    "budget": 0,
+    "params": {
+      "threshold": 0.5,
+      "min_area": 0,
+      "closing_ks": 0,
+      "fill_holes": false
+    },
+    "test_metrics_percent": {
+      "miou": 71.90861126071168,
+      "f1": 80.69415337440117,
+      "biou": 50.39624194899276
+    }
+  },
+  {
+    "model": "lora",
+    "seed": 42,
+    "budget": 50,
+    "params": {
+      "threshold": 0.6,
+      "min_area": 256,
+      "closing_ks": 5,
+      "fill_holes": false
+    },
+    "test_metrics_percent": {
+      "miou": 74.77715741720957,
+      "f1": 83.03290392389367,
+      "biou": 54.170264734194504
+    }
+  },
+  {
+    "model": "lora",
+    "seed": 42,
+    "budget": 100,
+    "params": {
+      "threshold": 0.7,
+      "min_area": 128,
+      "closing_ks": 3,
+      "fill_holes": true
+    },
+    "test_metrics_percent": {
+      "miou": 75.14581929278768,
+      "f1": 83.19449324088644,
+      "biou": 55.75092887024503
+    }
+  },
+  {
+    "model": "lora",
+    "seed": 42,
+    "budget": 500,
+    "params": {
+      "threshold": 0.6,
+      "min_area": 256,
+      "closing_ks": 5,
+      "fill_holes": false
+    },
+    "test_metrics_percent": {
+      "miou": 74.77715741720957,
+      "f1": 83.03290392389367,
+      "biou": 54.170264734194504
+    }
+  },
+  {
+    "model": "lora",
+    "seed": 123,
+    "budget": 0,
+    "params": {
+      "threshold": 0.5,
+      "min_area": 0,
+      "closing_ks": 0,
+      "fill_holes": false
+    },
+    "test_metrics_percent": {
+      "miou": 51.10012001231129,
+      "f1": 60.64085381753792,
+      "biou": 26.55908163951538
+    }
+  },
+  {
+    "model": "lora",
+    "seed": 123,
+    "budget": 50,
+    "params": {
+      "threshold": 0.55,
+      "min_area": 256,
+      "closing_ks": 5,
+      "fill_holes": true
+    },
+    "test_metrics_percent": {
+      "miou": 67.43732650779532,
+      "f1": 76.13384720640607,
+      "biou": 50.298449862579474
+    }
+  },
+  {
+    "model": "lora",
+    "seed": 123,
+    "budget": 100,
+    "params": {
+      "threshold": 0.55,
+      "min_area": 256,
+      "closing_ks": 5,
+      "fill_holes": true
+    },
+    "test_metrics_percent": {
+      "miou": 67.43732650779532,
+      "f1": 76.13384720640607,
+      "biou": 50.298449862579474
+    }
+  },
+  {
+    "model": "lora",
+    "seed": 123,
+    "budget": 500,
+    "params": {
+      "threshold": 0.65,
+      "min_area": 256,
+      "closing_ks": 5,
+      "fill_holes": true
+    },
+    "test_metrics_percent": {
+      "miou": 66.11247682857298,
+      "f1": 75.10037678588543,
+      "biou": 49.56389847068671
+    }
+  },
+  {
+    "model": "lora",
+    "seed": 456,
+    "budget": 0,
+    "params": {
+      "threshold": 0.5,
+      "min_area": 0,
+      "closing_ks": 0,
+      "fill_holes": false
+    },
+    "test_metrics_percent": {
+      "miou": 64.56451904211069,
+      "f1": 73.12788044975315,
+      "biou": 46.08782816024012
+    }
+  },
+  {
+    "model": "lora",
+    "seed": 456,
+    "budget": 50,
+    "params": {
+      "threshold": 0.6,
+      "min_area": 32,
+      "closing_ks": 3,
+      "fill_holes": false
+    },
+    "test_metrics_percent": {
+      "miou": 68.30133603826187,
+      "f1": 76.81018953551235,
+      "biou": 50.614561162900586
+    }
+  },
+  {
+    "model": "lora",
+    "seed": 456,
+    "budget": 100,
+    "params": {
+      "threshold": 0.55,
+      "min_area": 32,
+      "closing_ks": 5,
+      "fill_holes": true
+    },
+    "test_metrics_percent": {
+      "miou": 69.44314472319478,
+      "f1": 77.85037662496453,
+      "biou": 51.43200904400338
+    }
+  },
+  {
+    "model": "lora",
+    "seed": 456,
+    "budget": 500,
+    "params": {
+      "threshold": 0.55,
+      "min_area": 256,
+      "closing_ks": 5,
+      "fill_holes": true
+    },
+    "test_metrics_percent": {
+      "miou": 69.72252483754808,
+      "f1": 78.0729295109103,
+      "biou": 51.42527661576556
+    }
+  },
+  {
+    "model": "hl",
+    "seed": 42,
+    "budget": 0,
+    "params": {
+      "threshold": 0.5,
+      "min_area": 0,
+      "closing_ks": 0,
+      "fill_holes": false
+    },
+    "test_metrics_percent": {
+      "miou": 73.03343226581217,
+      "f1": 81.35610621509775,
+      "biou": 52.71421765984259
+    }
+  },
+  {
+    "model": "hl",
+    "seed": 42,
+    "budget": 50,
+    "params": {
+      "threshold": 0.7,
+      "min_area": 128,
+      "closing_ks": 5,
+      "fill_holes": false
+    },
+    "test_metrics_percent": {
+      "miou": 75.98504976547605,
+      "f1": 83.67478059032953,
+      "biou": 57.53815830446517
+    }
+  },
+  {
+    "model": "hl",
+    "seed": 42,
+    "budget": 100,
+    "params": {
+      "threshold": 0.65,
+      "min_area": 128,
+      "closing_ks": 5,
+      "fill_holes": false
+    },
+    "test_metrics_percent": {
+      "miou": 75.68460400400228,
+      "f1": 83.45337364589187,
+      "biou": 56.79080488406739
+    }
+  },
+  {
+    "model": "hl",
+    "seed": 42,
+    "budget": 500,
+    "params": {
+      "threshold": 0.65,
+      "min_area": 256,
+      "closing_ks": 5,
+      "fill_holes": false
+    },
+    "test_metrics_percent": {
+      "miou": 75.88207680151275,
+      "f1": 83.64543308686964,
+      "biou": 56.80732439669387
+    }
+  },
+  {
+    "model": "hl",
+    "seed": 123,
+    "budget": 0,
+    "params": {
+      "threshold": 0.5,
+      "min_area": 0,
+      "closing_ks": 0,
+      "fill_holes": false
+    },
+    "test_metrics_percent": {
+      "miou": 71.02019282770075,
+      "f1": 78.99108302822968,
+      "biou": 53.19011043428492
+    }
+  },
+  {
+    "model": "hl",
+    "seed": 123,
+    "budget": 50,
+    "params": {
+      "threshold": 0.75,
+      "min_area": 128,
+      "closing_ks": 3,
+      "fill_holes": false
+    },
+    "test_metrics_percent": {
+      "miou": 74.89992430653692,
+      "f1": 82.53500861859257,
+      "biou": 58.43059206557266
+    }
+  },
+  {
+    "model": "hl",
+    "seed": 123,
+    "budget": 100,
+    "params": {
+      "threshold": 0.8,
+      "min_area": 128,
+      "closing_ks": 3,
+      "fill_holes": false
+    },
+    "test_metrics_percent": {
+      "miou": 74.83320791121608,
+      "f1": 82.50909075919608,
+      "biou": 58.43574288607884
+    }
+  },
+  {
+    "model": "hl",
+    "seed": 123,
+    "budget": 500,
+    "params": {
+      "threshold": 0.8,
+      "min_area": 256,
+      "closing_ks": 5,
+      "fill_holes": false
+    },
+    "test_metrics_percent": {
+      "miou": 74.99557784689682,
+      "f1": 82.68715878216956,
+      "biou": 58.327960017555604
+    }
+  },
+  {
+    "model": "hl",
+    "seed": 456,
+    "budget": 0,
+    "params": {
+      "threshold": 0.5,
+      "min_area": 0,
+      "closing_ks": 0,
+      "fill_holes": false
+    },
+    "test_metrics_percent": {
+      "miou": 73.76274121003459,
+      "f1": 81.67482570048003,
+      "biou": 56.60858013039937
+    }
+  },
+  {
+    "model": "hl",
+    "seed": 456,
+    "budget": 50,
+    "params": {
+      "threshold": 0.3,
+      "min_area": 256,
+      "closing_ks": 0,
+      "fill_holes": false
+    },
+    "test_metrics_percent": {
+      "miou": 74.56090235917404,
+      "f1": 82.64098153301123,
+      "biou": 56.1022519440498
+    }
+  },
+  {
+    "model": "hl",
+    "seed": 456,
+    "budget": 100,
+    "params": {
+      "threshold": 0.3,
+      "min_area": 256,
+      "closing_ks": 0,
+      "fill_holes": false
+    },
+    "test_metrics_percent": {
+      "miou": 74.56090235917404,
+      "f1": 82.64098153301123,
+      "biou": 56.1022519440498
+    }
+  },
+  {
+    "model": "hl",
+    "seed": 456,
+    "budget": 500,
+    "params": {
+      "threshold": 0.35,
+      "min_area": 256,
+      "closing_ks": 5,
+      "fill_holes": false
+    },
+    "test_metrics_percent": {
+      "miou": 74.87180155168956,
+      "f1": 82.84202616801582,
+      "biou": 56.71647657291173
+    }
+  }
+]

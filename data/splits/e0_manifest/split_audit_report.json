@@ -1,0 +1,108 @@
+{
+  "timestamp": "2026-06-09T16:14:52.508623",
+  "manifest_dir": "/path/to/project\\data\\splits\\e0_manifest",
+  "checks": {
+    "manifest_files_found": 17,
+    "empty_manifests": [],
+    "missing_files": 0,
+    "target_final_test_count": 8402,
+    "target_final_test_is_full_8402": true,
+    "target_val_count": 500,
+    "target_val_intersect_final_test": 0,
+    "nested_support_ok": true,
+    "support_positive_filter_ok": true,
+    "support_val_intersection_ok": true,
+    "support_test_intersection_ok": true,
+    "support_count_ok": true,
+    "strict_paper_ready": true
+  },
+  "intersections": {
+    "target_support_10_seed123": {
+      "count": 10,
+      "expected_shot": 10,
+      "intersect_with_val": 0,
+      "intersect_with_final_test": 0
+    },
+    "target_support_10_seed42": {
+      "count": 10,
+      "expected_shot": 10,
+      "intersect_with_val": 0,
+      "intersect_with_final_test": 0
+    },
+    "target_support_10_seed456": {
+      "count": 10,
+      "expected_shot": 10,
+      "intersect_with_val": 0,
+      "intersect_with_final_test": 0
+    },
+    "target_support_20_seed123": {
+      "count": 20,
+      "expected_shot": 20,
+      "intersect_with_val": 0,
+      "intersect_with_final_test": 0
+    },
+    "target_support_20_seed42": {
+      "count": 20,
+      "expected_shot": 20,
+      "intersect_with_val": 0,
+      "intersect_with_final_test": 0
+    },
+    "target_support_20_seed456": {
+      "count": 20,
+      "expected_shot": 20,
+      "intersect_with_val": 0,
+      "intersect_with_final_test": 0
+    },
+    "target_support_5_seed123": {
+      "count": 5,
+      "expected_shot": 5,
+      "intersect_with_val": 0,
+      "intersect_with_final_test": 0
+    },
+    "target_support_5_seed42": {
+      "count": 5,
+      "expected_shot": 5,
+      "intersect_with_val": 0,
+      "intersect_with_final_test": 0
+    },
+    "target_support_5_seed456": {
+      "count": 5,
+      "expected_shot": 5,
+      "intersect_with_val": 0,
+      "intersect_with_final_test": 0
+    }
+  },
+  "paper_ready": true,
+  "warnings": [],
+  "support_positive_filter": {
+    "enabled": true,
+    "min_positive_pixels": 100,
+    "input_candidates": 39346,
+    "positive_candidates": 26214,
+    "empty_or_too_small": 13132,
+    "missing_labels": 0,
+    "examples_empty": [
+      "chongqing_train_0",
+      "chongqing_train_1",
+      "chongqing_train_10",
+      "chongqing_train_1007",
+      "chongqing_train_1008",
+      "chongqing_train_1009",
+      "chongqing_train_1010",
+      "chongqing_train_1019",
+      "chongqing_train_1020",
+      "chongqing_train_1021",
+      "chongqing_train_1022",
+      "chongqing_train_1029",
+      "chongqing_train_1030",
+      "chongqing_train_1031",
+      "chongqing_train_1032",
+      "chongqing_train_1033",
+      "chongqing_train_1034",
+      "chongqing_train_1036",
+      "chongqing_train_1037",
+      "chongqing_train_1039"
+    ],
+    "examples_missing_label": []
+  }
+}

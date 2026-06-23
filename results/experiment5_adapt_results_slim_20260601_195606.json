@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "platform": "cloud-linux",
+    "device": "cuda",
+    "timestamp": "20260601_195606",
+    "full_test": false,
+    "batch_size_desc": "train: auto(2/4/16 by num_shots), eval: 32",
+    "learning_rate": 0.0003,
+    "num_epochs": 30,
+    "num_workers": 8,
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05
+  },
+  "individual_results": [
+    {
+      "mode": "lora",
+      "domain": "target",
+      "num_shots": 5,
+      "full_test": false,
+      "seed": 42,
+      "best_val_iou": 0.6662935565337282,
+      "mIoU": 0.6570966955337876,
+      "F1": 0.7504829923832822,
+      "Boundary_IoU": 0.48668315550510327
+    },
+    {
+      "mode": "lora",
+      "domain": "target",
+      "num_shots": 5,
+      "full_test": false,
+      "seed": 123,
+      "best_val_iou": 0.7067740905574417,
+      "mIoU": 0.6643878851526829,
+      "F1": 0.7626595382512926,
+      "Boundary_IoU": 0.46772818092359375
+    },
+    {
+      "mode": "lora",
+      "domain": "target",
+      "num_shots": 5,
+      "full_test": false,
+      "seed": 456,
+      "best_val_iou": 0.6648713095574326,
+      "mIoU": 0.6699428152658714,
+      "F1": 0.7660238336982127,
+      "Boundary_IoU": 0.4697953006055338
+    }
+  ],
+  "aggregated_summary": {
+    "target_lora_5shot": {
+      "domain": "target",
+      "num_shots": 5,
+      "mode": "lora",
+      "num_runs": 3,
+      "mIoU_mean": 0.663809131984114,
+      "mIoU_std": 0.006442586007602443,
+      "F1_mean": 0.7597221214442625,
+      "F1_std": 0.008176230813622492,
+      "Boundary_IoU_mean": 0.4747355456780769,
+      "Boundary_IoU_std": 0.010398426870397657,
+      "seeds": [
+        42,
+        123,
+        456
+      ],
+      "individual_mIoU": [
+        0.6570966955337876,
+        0.6643878851526829,
+        0.6699428152658714
+      ],
+      "individual_F1": [
+        0.7504829923832822,
+        0.7626595382512926,
+        0.7660238336982127
+      ],
+      "individual_Boundary_IoU": [
+        0.48668315550510327,
+        0.46772818092359375,
+        0.4697953006055338
+      ]
+    }
+  }
+}

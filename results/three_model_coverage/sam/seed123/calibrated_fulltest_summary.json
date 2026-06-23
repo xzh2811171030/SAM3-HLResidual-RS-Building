@@ -1,0 +1,105 @@
+{
+  "config": {
+    "project_root": "/path/to/project",
+    "manifest_dir": "data/splits/e0_manifest",
+    "sam3_checkpoint": null,
+    "models": "lora_light,hl_residual_v2",
+    "use_tta": true,
+    "val_eval_limit": 500,
+    "pilot_eval_limit": 500,
+    "test_manifest_name": "target_final_test_8402.txt",
+    "test_eval_limit": null,
+    "lora_light_ckpt": null,
+    "hl_lite_ckpt": null,
+    "hl_residual_old_ckpt": null,
+    "hl_residual_v2_ckpt": null,
+    "grid_mode": "full",
+    "num_workers": 2,
+    "disable_empty_cache": false,
+    "out_dir": "/path/to/project/results/three_model_coverage/sam/seed123",
+    "run_seed": 123,
+    "save_masks": false,
+    "save_mask_root": null,
+    "save_per_image_confusion": true,
+    "confusion_dir": null,
+    "make_coverage_table": false,
+    "eval_manifest_name": "target_final_test_8402.txt",
+    "exclude_manifest_name": "target_pilot_test_500.txt",
+    "coverage_out_dir": null,
+    "extra_confusion_csv": []
+  },
+  "results": [
+    {
+      "model": "lora_light",
+      "checkpoint": "/path/to/project/results/e6v2_pilot/weights/e6v2_pilot_lora_light_best.pth",
+      "use_tta": true,
+      "val_best_cfg": {
+        "threshold": 0.6,
+        "min_area": 128,
+        "closing_kernel": 3,
+        "fill_holes": false,
+        "mIoU": 0.7449276160591644,
+        "F1": 0.8173614755423045,
+        "Boundary_IoU": 0.4735112309960061
+      },
+      "saved_confusion_csv": "/path/to/project/results/three_model_coverage/sam/seed123/per_image_confusion/lora_light_seed123_calibrated_confusion.csv",
+      "test_manifest": "target_final_test_8402.txt",
+      "test_fixed_05": {
+        "mIoU": 0.7190444165282052,
+        "F1": 0.8068873866612358,
+        "Boundary_IoU": 0.3718238913899919
+      },
+      "test_calibrated_postprocess": {
+        "mIoU": 0.7461729801865904,
+        "F1": 0.8286966117783081,
+        "Boundary_IoU": 0.416349565107594
+      },
+      "pilot_fixed_05": {
+        "mIoU": 0.7190444165282052,
+        "F1": 0.8068873866612358,
+        "Boundary_IoU": 0.3718238913899919
+      },
+      "pilot_calibrated_postprocess": {
+        "mIoU": 0.7461729801865904,
+        "F1": 0.8286966117783081,
+        "Boundary_IoU": 0.416349565107594
+      }
+    },
+    {
+      "model": "hl_residual_v2",
+      "checkpoint": "/path/to/project/results/hl_residual_v2_erase015/weights/hl_residual_best.pth",
+      "use_tta": true,
+      "val_best_cfg": {
+        "threshold": 0.65,
+        "min_area": 64,
+        "closing_kernel": 5,
+        "fill_holes": false,
+        "mIoU": 0.7484940172121793,
+        "F1": 0.8201505891437145,
+        "Boundary_IoU": 0.4861067351613856
+      },
+      "saved_confusion_csv": "/path/to/project/results/three_model_coverage/sam/seed123/per_image_confusion/hl_residual_v2_seed123_calibrated_confusion.csv",
+      "test_manifest": "target_final_test_8402.txt",
+      "test_fixed_05": {
+        "mIoU": 0.7234803305915949,
+        "F1": 0.8101121847141043,
+        "Boundary_IoU": 0.37916518607363375
+      },
+      "test_calibrated_postprocess": {
+        "mIoU": 0.7514706025970989,
+        "F1": 0.8318331250845978,
+        "Boundary_IoU": 0.4329507425389023
+      },
+      "pilot_fixed_05": {
+        "mIoU": 0.7234803305915949,
+        "F1": 0.8101121847141043,
+        "Boundary_IoU": 0.37916518607363375
+      },
+      "pilot_calibrated_postprocess": {
+        "mIoU": 0.7514706025970989,
+        "F1": 0.8318331250845978,
+        "Boundary_IoU": 0.4329507425389023
+      }
+    }
+  ]
+}

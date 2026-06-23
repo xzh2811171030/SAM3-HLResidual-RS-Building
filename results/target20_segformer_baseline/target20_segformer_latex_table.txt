@@ -1,0 +1,2 @@
+% Add this line to the baseline table if the result is useful:
+Target-adapted SegFormer & Target 20-shot, full test & 44.98 $\pm$ 4.85 & 53.94 $\pm$ 5.64 & 28.01 $\pm$ 1.94 \\

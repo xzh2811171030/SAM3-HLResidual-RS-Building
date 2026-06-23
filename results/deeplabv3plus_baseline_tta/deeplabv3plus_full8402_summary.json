@@ -1,0 +1,50 @@
+{
+  "model": "DeepLabv3+ ResNet50",
+  "rows": [
+    {
+      "seed": 42,
+      "mIoU": 0.5814749499787073,
+      "F1": 0.6710197177665252,
+      "Boundary_IoU": 0.38743144091640663,
+      "threshold": 0.4,
+      "min_area": 128,
+      "closing_kernel": 5,
+      "fill_holes": false
+    },
+    {
+      "seed": 123,
+      "mIoU": 0.5622426675196528,
+      "F1": 0.6487084841828619,
+      "Boundary_IoU": 0.3835783598131824,
+      "threshold": 0.4,
+      "min_area": 128,
+      "closing_kernel": 5,
+      "fill_holes": false
+    },
+    {
+      "seed": 456,
+      "mIoU": 0.601709091097926,
+      "F1": 0.6830286773993869,
+      "Boundary_IoU": 0.4061748613721745,
+      "threshold": 0.35,
+      "min_area": 64,
+      "closing_kernel": 3,
+      "fill_holes": false
+    }
+  ],
+  "aggregate": {
+    "mIoU": {
+      "mean": 0.5818089028654287,
+      "std": 0.019735331031245272
+    },
+    "F1": {
+      "mean": 0.6675856264495913,
+      "std": 0.017415902301766716
+    },
+    "Boundary_IoU": {
+      "mean": 0.39239488736725453,
+      "std": 0.012088313413343035
+    }
+  },
+  "timestamp": "2026-06-17T21:44:07.061375"
+}

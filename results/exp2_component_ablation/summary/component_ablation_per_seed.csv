@@ -1,0 +1,7 @@
+variant,seed,mIoU,F1,BIoU,threshold,min_area,json
+rgb_only,42,74.70213452426376,82.90642261471669,42.5853641934207,0.55,128,/path/to/project/results/exp2_component_ablation/rgb_only_seed42/hl_residual_rgb_only_summary.json
+rgb_only,123,74.52231581047705,82.1673711426481,47.080009017888145,0.7,128,/path/to/project/results/exp2_component_ablation/rgb_only_seed123/hl_residual_rgb_only_summary.json
+rgb_only,456,72.53069225310716,81.0176568557446,41.77029015655446,0.65,128,/path/to/project/results/exp2_component_ablation/rgb_only_seed456/hl_residual_rgb_only_summary.json
+sam_only,42,75.61487298121253,83.5520798871571,44.1145063599472,0.65,128,/path/to/project/results/exp2_component_ablation/sam_only_seed42/hl_residual_sam_only_summary.json
+sam_only,123,74.9511407214158,82.5736838156235,47.608133193214776,0.7,128,/path/to/project/results/exp2_component_ablation/sam_only_seed123/hl_residual_sam_only_summary.json
+sam_only,456,72.67260070037725,81.12433230484858,42.21135910275681,0.7,128,/path/to/project/results/exp2_component_ablation/sam_only_seed456/hl_residual_sam_only_summary.json

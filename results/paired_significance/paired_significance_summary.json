@@ -1,0 +1,41 @@
+{
+  "n_images": 8402,
+  "lora_name": "Prompt-free LoRA",
+  "hl_name": "HL-Residual (Ours)",
+  "metrics": {
+    "mIoU": {
+      "metric": "mIoU",
+      "mean_gain_pp": 1.0825667850040217,
+      "median_gain_pp": 0.913586710587283,
+      "ci95_low_pp": 0.9999458813462104,
+      "ci95_high_pp": 1.1669753725322933,
+      "image_win_rate_percent": 70.48321828136159,
+      "image_nonnegative_rate_percent": 86.18186146155678,
+      "paired_t_p": null,
+      "wilcoxon_p": null
+    },
+    "F1": {
+      "metric": "F1",
+      "mean_gain_pp": 0.735838892525473,
+      "median_gain_pp": 0.5886756942882099,
+      "ci95_low_pp": 0.6551108744370423,
+      "ci95_high_pp": 0.8181262636632136,
+      "image_win_rate_percent": 70.87598190906928,
+      "image_nonnegative_rate_percent": 86.57462508926446,
+      "paired_t_p": null,
+      "wilcoxon_p": null
+    },
+    "Boundary_IoU": {
+      "metric": "Boundary_IoU",
+      "mean_gain_pp": 2.5185285478004635,
+      "median_gain_pp": 2.3395058022227913,
+      "ci95_low_pp": 2.428643680124365,
+      "ci95_high_pp": 2.6136809333765036,
+      "image_win_rate_percent": 74.70840276124731,
+      "image_nonnegative_rate_percent": 90.4070459414425,
+      "paired_t_p": null,
+      "wilcoxon_p": null
+    }
+  },
+  "protocol": "Each image is first averaged over random seeds, and then HL-Residual is paired with Prompt-free LoRA on the same test image."
+}

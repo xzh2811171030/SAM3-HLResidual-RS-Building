@@ -1,0 +1,7029 @@
+{
+  "metadata": {
+    "test_manifest": "target_pilot_test_500.txt",
+    "test_eval_limit": 500,
+    "prompt": "building",
+    "modes": [
+      "text",
+      "oracle_box"
+    ]
+  },
+  "summary": [
+    {
+      "mode": "text",
+      "mIoU": 0.6823567212512409,
+      "F1": 0.7736152240878845,
+      "Boundary_IoU": 0.3882981909947954,
+      "N": 500
+    },
+    {
+      "mode": "oracle_box",
+      "mIoU": 0.7511043218004716,
+      "F1": 0.8340441617538029,
+      "Boundary_IoU": 0.4811278004471952,
+      "N": 500
+    }
+  ],
+  "per_image": [
+    {
+      "image_name": "potsdam_352",
+      "mode": "text",
+      "mIoU": 0.7013987572798053,
+      "F1": 0.8244966140695655,
+      "Boundary_IoU": 0.2939018798770143
+    },
+    {
+      "image_name": "potsdam_1007",
+      "mode": "text",
+      "mIoU": 0.42440347672355416,
+      "F1": 0.5959034552466248,
+      "Boundary_IoU": 0.07067351254801157
+    },
+    {
+      "image_name": "potsdam_357",
+      "mode": "text",
+      "mIoU": 0.6339849624062652,
+      "F1": 0.7759985275171193,
+      "Boundary_IoU": 0.11739146720935913
+    },
+    {
+      "image_name": "potsdam_772",
+      "mode": "text",
+      "mIoU": 0.4824326925138652,
+      "F1": 0.6508662348717952,
+      "Boundary_IoU": 0.06453417413006238
+    },
+    {
+      "image_name": "potsdam_789",
+      "mode": "text",
+      "mIoU": 0.5993311580822708,
+      "F1": 0.7494772487279721,
+      "Boundary_IoU": 0.08569868995789148
+    },
+    {
+      "image_name": "potsdam_814",
+      "mode": "text",
+      "mIoU": 0.511168671433889,
+      "F1": 0.6765210013899728,
+      "Boundary_IoU": 0.11035877594286325
+    },
+    {
+      "image_name": "potsdam_175",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "potsdam_423",
+      "mode": "text",
+      "mIoU": 0.9004669636627661,
+      "F1": 0.9476270631164079,
+      "Boundary_IoU": 4.589261128937176e-12
+    },
+    {
+      "image_name": "potsdam_553",
+      "mode": "text",
+      "mIoU": 0.5561975362479522,
+      "F1": 0.7148161120841741,
+      "Boundary_IoU": 0.0322826702122677
+    },
+    {
+      "image_name": "potsdam_779",
+      "mode": "text",
+      "mIoU": 0.8205861083376818,
+      "F1": 0.9014526745859471,
+      "Boundary_IoU": 0.2611057226137516
+    },
+    {
+      "image_name": "potsdam_655",
+      "mode": "text",
+      "mIoU": 6.0488749092302866e-12,
+      "F1": 6.0488749092302866e-12,
+      "Boundary_IoU": 1.772421127228422e-11
+    },
+    {
+      "image_name": "potsdam_205",
+      "mode": "text",
+      "mIoU": 0.8510016190224838,
+      "F1": 0.9195039164491388,
+      "Boundary_IoU": 0.05720323545101506
+    },
+    {
+      "image_name": "potsdam_1008",
+      "mode": "text",
+      "mIoU": 0.5434829754953655,
+      "F1": 0.7042293101034025,
+      "Boundary_IoU": 0.19152949246928105
+    },
+    {
+      "image_name": "potsdam_267",
+      "mode": "text",
+      "mIoU": 0.4955857287861275,
+      "F1": 0.6627312888151209,
+      "Boundary_IoU": 0.04833970026726906
+    },
+    {
+      "image_name": "potsdam_468",
+      "mode": "text",
+      "mIoU": 0.22967870069221163,
+      "F1": 0.373558882596749,
+      "Boundary_IoU": 0.024718632767716884
+    },
+    {
+      "image_name": "potsdam_426",
+      "mode": "text",
+      "mIoU": 0.19444269157318012,
+      "F1": 0.325578938101038,
+      "Boundary_IoU": 0.005181741987310967
+    },
+    {
+      "image_name": "potsdam_691",
+      "mode": "text",
+      "mIoU": 0.5156679982288889,
+      "F1": 0.680449806725545,
+      "Boundary_IoU": 0.045812992901020914
+    },
+    {
+      "image_name": "potsdam_697",
+      "mode": "text",
+      "mIoU": 0.5479908628389846,
+      "F1": 0.7080027098272459,
+      "Boundary_IoU": 0.0341409691669353
+    },
+    {
+      "image_name": "potsdam_48",
+      "mode": "text",
+      "mIoU": 0.6484399392218462,
+      "F1": 0.7867316531140629,
+      "Boundary_IoU": 0.13178633976431933
+    },
+    {
+      "image_name": "potsdam_375",
+      "mode": "text",
+      "mIoU": 0.5014246894842499,
+      "F1": 0.6679318556514615,
+      "Boundary_IoU": 0.055026724362153084
+    },
+    {
+      "image_name": "potsdam_978",
+      "mode": "text",
+      "mIoU": 0.006138914879524444,
+      "F1": 0.012202917084012999,
+      "Boundary_IoU": 0.017957488406817036
+    },
+    {
+      "image_name": "potsdam_94",
+      "mode": "text",
+      "mIoU": 0.2799724868283542,
+      "F1": 0.43746641386290014,
+      "Boundary_IoU": 0.049078688150138605
+    },
+    {
+      "image_name": "potsdam_798",
+      "mode": "text",
+      "mIoU": 0.6460120982499964,
+      "F1": 0.7849421021106416,
+      "Boundary_IoU": 0.11870070517919677
+    },
+    {
+      "image_name": "potsdam_948",
+      "mode": "text",
+      "mIoU": 0.5297468894808713,
+      "F1": 0.6925941711318332,
+      "Boundary_IoU": 0.08666956774337586
+    },
+    {
+      "image_name": "potsdam_516",
+      "mode": "text",
+      "mIoU": 0.7767947944498075,
+      "F1": 0.8743776117267593,
+      "Boundary_IoU": 0.06555153707244461
+    },
+    {
+      "image_name": "potsdam_915",
+      "mode": "text",
+      "mIoU": 0.650739849141614,
+      "F1": 0.7884220514576313,
+      "Boundary_IoU": 0.10817662242298959
+    },
+    {
+      "image_name": "potsdam_282",
+      "mode": "text",
+      "mIoU": 0.6977563937634456,
+      "F1": 0.8219746912177909,
+      "Boundary_IoU": 0.19703146232258265
+    },
+    {
+      "image_name": "potsdam_23",
+      "mode": "text",
+      "mIoU": 0.37483249314063855,
+      "F1": 0.5452773265261106,
+      "Boundary_IoU": 0.064356831222629
+    },
+    {
+      "image_name": "potsdam_70",
+      "mode": "text",
+      "mIoU": 0.6798606862160311,
+      "F1": 0.8094250812512344,
+      "Boundary_IoU": 0.33499411179151195
+    },
+    {
+      "image_name": "potsdam_700",
+      "mode": "text",
+      "mIoU": 0.6728411876917346,
+      "F1": 0.804429246052724,
+      "Boundary_IoU": 5.643340857469337e-11
+    },
+    {
+      "image_name": "potsdam_1102",
+      "mode": "text",
+      "mIoU": 0.53896103896168,
+      "F1": 0.7004219409285407,
+      "Boundary_IoU": 0.11767492218759186
+    },
+    {
+      "image_name": "potsdam_1057",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "potsdam_1151",
+      "mode": "text",
+      "mIoU": 0.2816267312210662,
+      "F1": 0.43948323542320916,
+      "Boundary_IoU": 0.006384941874861099
+    },
+    {
+      "image_name": "potsdam_812",
+      "mode": "text",
+      "mIoU": 0.5677433340564495,
+      "F1": 0.7242809734515392,
+      "Boundary_IoU": 0.1209805969377179
+    },
+    {
+      "image_name": "potsdam_228",
+      "mode": "text",
+      "mIoU": 0.42535324653733353,
+      "F1": 0.5968390608721325,
+      "Boundary_IoU": 0.02986062777084241
+    },
+    {
+      "image_name": "potsdam_393",
+      "mode": "text",
+      "mIoU": 0.6832468685739352,
+      "F1": 0.8118201570191298,
+      "Boundary_IoU": 0.2099314569111132
+    },
+    {
+      "image_name": "potsdam_854",
+      "mode": "text",
+      "mIoU": 0.7113474525411269,
+      "F1": 0.8313302497220227,
+      "Boundary_IoU": 0.1336123861413808
+    },
+    {
+      "image_name": "potsdam_208",
+      "mode": "text",
+      "mIoU": 0.8204825242501964,
+      "F1": 0.9013901680688462,
+      "Boundary_IoU": 0.2983690438175698
+    },
+    {
+      "image_name": "potsdam_502",
+      "mode": "text",
+      "mIoU": 0.25162871874225395,
+      "F1": 0.4020820471340961,
+      "Boundary_IoU": 0.04533589047442685
+    },
+    {
+      "image_name": "potsdam_968",
+      "mode": "text",
+      "mIoU": 0.4899870244700759,
+      "F1": 0.657706431563382,
+      "Boundary_IoU": 0.06666477143772269
+    },
+    {
+      "image_name": "potsdam_1048",
+      "mode": "text",
+      "mIoU": 0.3743760097308458,
+      "F1": 0.5447941568825105,
+      "Boundary_IoU": 0.05208727457369042
+    },
+    {
+      "image_name": "potsdam_170",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "potsdam_906",
+      "mode": "text",
+      "mIoU": 0.38077247646908097,
+      "F1": 0.5515354382535911,
+      "Boundary_IoU": 0.01920302569692517
+    },
+    {
+      "image_name": "potsdam_1000",
+      "mode": "text",
+      "mIoU": 1.1650937900365244e-11,
+      "F1": 1.1650937900365244e-11,
+      "Boundary_IoU": 2.990430621920143e-11
+    },
+    {
+      "image_name": "potsdam_625",
+      "mode": "text",
+      "mIoU": 0.606820776728272,
+      "F1": 0.7553061119408088,
+      "Boundary_IoU": 0.15078725120251754
+    },
+    {
+      "image_name": "potsdam_1076",
+      "mode": "text",
+      "mIoU": 0.12923369659379133,
+      "F1": 0.22888742513253646,
+      "Boundary_IoU": 0.12678263596416262
+    },
+    {
+      "image_name": "potsdam_155",
+      "mode": "text",
+      "mIoU": 2.5926886180297463e-11,
+      "F1": 2.5926886180297463e-11,
+      "Boundary_IoU": 7.974481658056261e-11
+    },
+    {
+      "image_name": "potsdam_686",
+      "mode": "text",
+      "mIoU": 0.39865684926451445,
+      "F1": 0.5700566932802843,
+      "Boundary_IoU": 0.22516556292741086
+    },
+    {
+      "image_name": "potsdam_520",
+      "mode": "text",
+      "mIoU": 0.6454123945545167,
+      "F1": 0.7844992497813272,
+      "Boundary_IoU": 0.16241992473883995
+    },
+    {
+      "image_name": "potsdam_132",
+      "mode": "text",
+      "mIoU": 8.525149189384044e-11,
+      "F1": 8.525149189384044e-11,
+      "Boundary_IoU": 9.041591319254828e-11
+    },
+    {
+      "image_name": "potsdam_305",
+      "mode": "text",
+      "mIoU": 0.5801674364900113,
+      "F1": 0.7343113433328252,
+      "Boundary_IoU": 0.09643505687137324
+    },
+    {
+      "image_name": "potsdam_839",
+      "mode": "text",
+      "mIoU": 0.6950191570886095,
+      "F1": 0.82007233273073,
+      "Boundary_IoU": 0.17164653528694973
+    },
+    {
+      "image_name": "potsdam_78",
+      "mode": "text",
+      "mIoU": 9.090909090082643e-11,
+      "F1": 9.090909090082643e-11,
+      "Boundary_IoU": 2.1834061130603914e-10
+    },
+    {
+      "image_name": "potsdam_571",
+      "mode": "text",
+      "mIoU": 0.7164166717627845,
+      "F1": 0.8347817677941548,
+      "Boundary_IoU": 0.07799733123900415
+    },
+    {
+      "image_name": "potsdam_583",
+      "mode": "text",
+      "mIoU": 0.9034378440903744,
+      "F1": 0.9492696038331487,
+      "Boundary_IoU": 0.08570529958259392
+    },
+    {
+      "image_name": "potsdam_56",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "potsdam_415",
+      "mode": "text",
+      "mIoU": 0.8302863333023548,
+      "F1": 0.9072747997896276,
+      "Boundary_IoU": 0.08960658593295649
+    },
+    {
+      "image_name": "potsdam_192",
+      "mode": "text",
+      "mIoU": 0.7596102863207856,
+      "F1": 0.8633846849223908,
+      "Boundary_IoU": 0.2295869356480597
+    },
+    {
+      "image_name": "potsdam_988",
+      "mode": "text",
+      "mIoU": 0.5064817300092809,
+      "F1": 0.6724034150829585,
+      "Boundary_IoU": 0.045705250775681334
+    },
+    {
+      "image_name": "potsdam_896",
+      "mode": "text",
+      "mIoU": 0.3328291538268955,
+      "F1": 0.4994325834952505,
+      "Boundary_IoU": 0.02753673493225145
+    },
+    {
+      "image_name": "potsdam_760",
+      "mode": "text",
+      "mIoU": 0.5766024775217524,
+      "F1": 0.7314494119378141,
+      "Boundary_IoU": 0.005699810018927172
+    },
+    {
+      "image_name": "potsdam_1070",
+      "mode": "text",
+      "mIoU": 0.08856567755932364,
+      "F1": 0.16271995228653313,
+      "Boundary_IoU": 1.7188037125864764e-11
+    },
+    {
+      "image_name": "potsdam_641",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "potsdam_608",
+      "mode": "text",
+      "mIoU": 4.191114836528955e-12,
+      "F1": 4.191114836528955e-12,
+      "Boundary_IoU": 1.1158223610676653e-11
+    },
+    {
+      "image_name": "potsdam_399",
+      "mode": "text",
+      "mIoU": 0.412836016610457,
+      "F1": 0.5844075487268389,
+      "Boundary_IoU": 0.013659288322964
+    },
+    {
+      "image_name": "potsdam_998",
+      "mode": "text",
+      "mIoU": 9.7475387463715e-12,
+      "F1": 9.7475387463715e-12,
+      "Boundary_IoU": 1.7427675147831516e-11
+    },
+    {
+      "image_name": "potsdam_21",
+      "mode": "text",
+      "mIoU": 0.5240878641535914,
+      "F1": 0.6877396985829929,
+      "Boundary_IoU": 0.07716119504976382
+    },
+    {
+      "image_name": "potsdam_942",
+      "mode": "text",
+      "mIoU": 0.452972614777754,
+      "F1": 0.6235115654219057,
+      "Boundary_IoU": 0.052635505655042956
+    },
+    {
+      "image_name": "potsdam_320",
+      "mode": "text",
+      "mIoU": 0.7683230337673546,
+      "F1": 0.8689849298975633,
+      "Boundary_IoU": 0.13213995813589036
+    },
+    {
+      "image_name": "potsdam_61",
+      "mode": "text",
+      "mIoU": 0.531979144943039,
+      "F1": 0.6944991995471208,
+      "Boundary_IoU": 0.04242742677419139
+    },
+    {
+      "image_name": "potsdam_579",
+      "mode": "text",
+      "mIoU": 0.6404045915688329,
+      "F1": 0.780788586986719,
+      "Boundary_IoU": 0.058106569638462155
+    },
+    {
+      "image_name": "potsdam_496",
+      "mode": "text",
+      "mIoU": 0.6726158881818989,
+      "F1": 0.8042682039960806,
+      "Boundary_IoU": 0.1310502283204218
+    },
+    {
+      "image_name": "potsdam_717",
+      "mode": "text",
+      "mIoU": 0.7387391361895579,
+      "F1": 0.8497411955750789,
+      "Boundary_IoU": 0.1330448891386366
+    },
+    {
+      "image_name": "potsdam_597",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "potsdam_762",
+      "mode": "text",
+      "mIoU": 0.5299717954521297,
+      "F1": 0.6927863598888531,
+      "Boundary_IoU": 0.113633063934987
+    },
+    {
+      "image_name": "potsdam_837",
+      "mode": "text",
+      "mIoU": 0.7197961366943053,
+      "F1": 0.8370714660143661,
+      "Boundary_IoU": 0.047718508999979335
+    },
+    {
+      "image_name": "potsdam_268",
+      "mode": "text",
+      "mIoU": 0.7496363132557328,
+      "F1": 0.8569052980624796,
+      "Boundary_IoU": 0.20324131184140865
+    },
+    {
+      "image_name": "potsdam_129",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "potsdam_130",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "potsdam_209",
+      "mode": "text",
+      "mIoU": 0.6140494920957495,
+      "F1": 0.7608806236768039,
+      "Boundary_IoU": 0.27094414894828883
+    },
+    {
+      "image_name": "potsdam_412",
+      "mode": "text",
+      "mIoU": 0.5997178139023688,
+      "F1": 0.7497795032228338,
+      "Boundary_IoU": 0.07616081540857757
+    },
+    {
+      "image_name": "potsdam_564",
+      "mode": "text",
+      "mIoU": 0.774472121917024,
+      "F1": 0.8729042427336597,
+      "Boundary_IoU": 0.16820257368432764
+    },
+    {
+      "image_name": "potsdam_633",
+      "mode": "text",
+      "mIoU": 0.40398461990668594,
+      "F1": 0.5754829706514539,
+      "Boundary_IoU": 0.0687818610738128
+    },
+    {
+      "image_name": "potsdam_696",
+      "mode": "text",
+      "mIoU": 0.13930196238494158,
+      "F1": 0.2445391423570506,
+      "Boundary_IoU": 0.015044170392591233
+    },
+    {
+      "image_name": "potsdam_469",
+      "mode": "text",
+      "mIoU": 3.863987635090263e-11,
+      "F1": 3.863987635090263e-11,
+      "Boundary_IoU": 1.6025641023072813e-10
+    },
+    {
+      "image_name": "potsdam_74",
+      "mode": "text",
+      "mIoU": 0.1937752621130103,
+      "F1": 0.3246427837175392,
+      "Boundary_IoU": 0.03700988378669216
+    },
+    {
+      "image_name": "potsdam_1148",
+      "mode": "text",
+      "mIoU": 0.8995026889759351,
+      "F1": 0.9470928303458893,
+      "Boundary_IoU": 0.04802162904880259
+    },
+    {
+      "image_name": "potsdam_926",
+      "mode": "text",
+      "mIoU": 0.42651203121768233,
+      "F1": 0.5979788769857952,
+      "Boundary_IoU": 0.10857471706207007
+    },
+    {
+      "image_name": "potsdam_689",
+      "mode": "text",
+      "mIoU": 0.6294777729903004,
+      "F1": 0.7726128989567923,
+      "Boundary_IoU": 0.1711934157060746
+    },
+    {
+      "image_name": "potsdam_148",
+      "mode": "text",
+      "mIoU": 0.5819658016087773,
+      "F1": 0.7357501673131795,
+      "Boundary_IoU": 0.06981348751011834
+    },
+    {
+      "image_name": "potsdam_586",
+      "mode": "text",
+      "mIoU": 0.6196133397780381,
+      "F1": 0.7651373628014699,
+      "Boundary_IoU": 0.08515084936988826
+    },
+    {
+      "image_name": "potsdam_446",
+      "mode": "text",
+      "mIoU": 0.6797815724015344,
+      "F1": 0.8093690079354497,
+      "Boundary_IoU": 0.08294466154618087
+    },
+    {
+      "image_name": "potsdam_418",
+      "mode": "text",
+      "mIoU": 0.7401832142686735,
+      "F1": 0.8506957292765877,
+      "Boundary_IoU": 0.10396619317191606
+    },
+    {
+      "image_name": "potsdam_1139",
+      "mode": "text",
+      "mIoU": 1.4791586545550998e-12,
+      "F1": 1.4791586545550998e-12,
+      "Boundary_IoU": 1.3222266296268382e-11
+    },
+    {
+      "image_name": "potsdam_832",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "potsdam_739",
+      "mode": "text",
+      "mIoU": 0.7544926658784311,
+      "F1": 0.8600693300709613,
+      "Boundary_IoU": 0.24242424243453697
+    },
+    {
+      "image_name": "potsdam_79",
+      "mode": "text",
+      "mIoU": 0.11932536894505041,
+      "F1": 0.2132094424961501,
+      "Boundary_IoU": 0.025022956863521052
+    },
+    {
+      "image_name": "potsdam_653",
+      "mode": "text",
+      "mIoU": 0.48139853521403303,
+      "F1": 0.6499244109815243,
+      "Boundary_IoU": 0.07764118429515687
+    },
+    {
+      "image_name": "potsdam_1012",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "potsdam_508",
+      "mode": "text",
+      "mIoU": 0.5383837127341391,
+      "F1": 0.699934233933296,
+      "Boundary_IoU": 0.07388178914022522
+    },
+    {
+      "image_name": "khartoum_647",
+      "mode": "text",
+      "mIoU": 0.4829619025410507,
+      "F1": 0.651347686968029,
+      "Boundary_IoU": 0.20492231611516218
+    },
+    {
+      "image_name": "khartoum_699",
+      "mode": "text",
+      "mIoU": 0.8438016308694721,
+      "F1": 0.9152846127720458,
+      "Boundary_IoU": 0.4323695687306336
+    },
+    {
+      "image_name": "khartoum_287",
+      "mode": "text",
+      "mIoU": 0.7809259705815204,
+      "F1": 0.8769886940628093,
+      "Boundary_IoU": 0.31139188069879287
+    },
+    {
+      "image_name": "khartoum_6",
+      "mode": "text",
+      "mIoU": 0.5876694233873545,
+      "F1": 0.7402919206356775,
+      "Boundary_IoU": 0.36094228109418225
+    },
+    {
+      "image_name": "khartoum_792",
+      "mode": "text",
+      "mIoU": 0.09601752196345818,
+      "F1": 0.17521165499339203,
+      "Boundary_IoU": 0.08365934397548741
+    },
+    {
+      "image_name": "khartoum_339",
+      "mode": "text",
+      "mIoU": 0.7262467901086211,
+      "F1": 0.8414171070665828,
+      "Boundary_IoU": 0.40581854044124976
+    },
+    {
+      "image_name": "khartoum_961",
+      "mode": "text",
+      "mIoU": 0.7998068432698702,
+      "F1": 0.8887696435424395,
+      "Boundary_IoU": 0.620300751885409
+    },
+    {
+      "image_name": "khartoum_750",
+      "mode": "text",
+      "mIoU": 0.06513409973625363,
+      "F1": 0.12230215837862084,
+      "Boundary_IoU": 0.07136404705769069
+    },
+    {
+      "image_name": "khartoum_735",
+      "mode": "text",
+      "mIoU": 0.5839878988903768,
+      "F1": 0.737364091353722,
+      "Boundary_IoU": 0.1734937614065049
+    },
+    {
+      "image_name": "khartoum_471",
+      "mode": "text",
+      "mIoU": 0.5780986814582518,
+      "F1": 0.7326521316447876,
+      "Boundary_IoU": 0.27610154966922074
+    },
+    {
+      "image_name": "khartoum_484",
+      "mode": "text",
+      "mIoU": 0.41066422912977724,
+      "F1": 0.5822281740037982,
+      "Boundary_IoU": 0.2963905038788098
+    },
+    {
+      "image_name": "khartoum_201",
+      "mode": "text",
+      "mIoU": 0.7878639475898951,
+      "F1": 0.881346646820536,
+      "Boundary_IoU": 0.25077733199786667
+    },
+    {
+      "image_name": "khartoum_803",
+      "mode": "text",
+      "mIoU": 0.7809963242063308,
+      "F1": 0.8770330557019328,
+      "Boundary_IoU": 0.2526915579558364
+    },
+    {
+      "image_name": "khartoum_604",
+      "mode": "text",
+      "mIoU": 0.7553407934894631,
+      "F1": 0.8606201101130577,
+      "Boundary_IoU": 0.23186188811317937
+    },
+    {
+      "image_name": "khartoum_847",
+      "mode": "text",
+      "mIoU": 0.1456707949174923,
+      "F1": 0.25429782370766635,
+      "Boundary_IoU": 0.07058228808230203
+    },
+    {
+      "image_name": "khartoum_664",
+      "mode": "text",
+      "mIoU": 0.6711180762054206,
+      "F1": 0.8031964775694045,
+      "Boundary_IoU": 0.2701727447223895
+    },
+    {
+      "image_name": "khartoum_282",
+      "mode": "text",
+      "mIoU": 0.5639915274185581,
+      "F1": 0.7212206940140442,
+      "Boundary_IoU": 0.21858144342838268
+    },
+    {
+      "image_name": "khartoum_878",
+      "mode": "text",
+      "mIoU": 0.5554063380154483,
+      "F1": 0.714162369588851,
+      "Boundary_IoU": 0.16197247288496497
+    },
+    {
+      "image_name": "khartoum_547",
+      "mode": "text",
+      "mIoU": 0.8009355271336882,
+      "F1": 0.8894660747888022,
+      "Boundary_IoU": 0.25285902503425056
+    },
+    {
+      "image_name": "khartoum_356",
+      "mode": "text",
+      "mIoU": 0.8379077566933455,
+      "F1": 0.9118061052213282,
+      "Boundary_IoU": 0.3118789897326898
+    },
+    {
+      "image_name": "khartoum_877",
+      "mode": "text",
+      "mIoU": 0.5214003387927241,
+      "F1": 0.6854216152023672,
+      "Boundary_IoU": 0.16371394119671775
+    },
+    {
+      "image_name": "khartoum_369",
+      "mode": "text",
+      "mIoU": 0.2978644930502052,
+      "F1": 0.4590070760764472,
+      "Boundary_IoU": 0.21756434067737876
+    },
+    {
+      "image_name": "khartoum_363",
+      "mode": "text",
+      "mIoU": 0.6237259708436855,
+      "F1": 0.7682650669425762,
+      "Boundary_IoU": 0.3269823479997806
+    },
+    {
+      "image_name": "khartoum_31",
+      "mode": "text",
+      "mIoU": 0.8030658469511281,
+      "F1": 0.8907781690933158,
+      "Boundary_IoU": 0.32293734052241807
+    },
+    {
+      "image_name": "khartoum_261",
+      "mode": "text",
+      "mIoU": 0.39316520844118047,
+      "F1": 0.5644200789091924,
+      "Boundary_IoU": 0.1537486557091071
+    },
+    {
+      "image_name": "khartoum_450",
+      "mode": "text",
+      "mIoU": 0.8746834610453601,
+      "F1": 0.9331532274334619,
+      "Boundary_IoU": 0.46873376753318924
+    },
+    {
+      "image_name": "khartoum_333",
+      "mode": "text",
+      "mIoU": 0.487747957998976,
+      "F1": 0.6556862745125045,
+      "Boundary_IoU": 0.3662420382266522
+    },
+    {
+      "image_name": "khartoum_642",
+      "mode": "text",
+      "mIoU": 0.6329440613957533,
+      "F1": 0.7752183021562435,
+      "Boundary_IoU": 0.3055831369414105
+    },
+    {
+      "image_name": "khartoum_824",
+      "mode": "text",
+      "mIoU": 0.7887948913349583,
+      "F1": 0.8819288283479301,
+      "Boundary_IoU": 0.38949263849297855
+    },
+    {
+      "image_name": "khartoum_853",
+      "mode": "text",
+      "mIoU": 0.49003340835104625,
+      "F1": 0.657748216388282,
+      "Boundary_IoU": 0.1951251927074649
+    },
+    {
+      "image_name": "khartoum_882",
+      "mode": "text",
+      "mIoU": 0.4176775589983543,
+      "F1": 0.5892419702168302,
+      "Boundary_IoU": 0.1428885158996331
+    },
+    {
+      "image_name": "khartoum_928",
+      "mode": "text",
+      "mIoU": 0.7324644294515992,
+      "F1": 0.845575143708296,
+      "Boundary_IoU": 0.22778012580059226
+    },
+    {
+      "image_name": "khartoum_94",
+      "mode": "text",
+      "mIoU": 0.3988461246534666,
+      "F1": 0.5702501763739608,
+      "Boundary_IoU": 0.31055533675127633
+    },
+    {
+      "image_name": "khartoum_630",
+      "mode": "text",
+      "mIoU": 0.6632596961223929,
+      "F1": 0.7975419565187771,
+      "Boundary_IoU": 0.26297509571274036
+    },
+    {
+      "image_name": "khartoum_949",
+      "mode": "text",
+      "mIoU": 6.767914670127259e-13,
+      "F1": 6.767914670127259e-13,
+      "Boundary_IoU": 2.0058973381702084e-12
+    },
+    {
+      "image_name": "khartoum_237",
+      "mode": "text",
+      "mIoU": 0.7675157796427285,
+      "F1": 0.8684683763307267,
+      "Boundary_IoU": 0.2737966992749007
+    },
+    {
+      "image_name": "khartoum_203",
+      "mode": "text",
+      "mIoU": 0.6794903623673726,
+      "F1": 0.8091625621590149,
+      "Boundary_IoU": 0.25510184818248643
+    },
+    {
+      "image_name": "khartoum_323",
+      "mode": "text",
+      "mIoU": 0.637532237920198,
+      "F1": 0.778649999257208,
+      "Boundary_IoU": 0.25096807432276186
+    },
+    {
+      "image_name": "khartoum_813",
+      "mode": "text",
+      "mIoU": 0.6585447918129409,
+      "F1": 0.794123613740958,
+      "Boundary_IoU": 0.2266492099871654
+    },
+    {
+      "image_name": "khartoum_640",
+      "mode": "text",
+      "mIoU": 0.5866616091751925,
+      "F1": 0.739491780456029,
+      "Boundary_IoU": 0.274334611324916
+    },
+    {
+      "image_name": "khartoum_453",
+      "mode": "text",
+      "mIoU": 0.8737540618497629,
+      "F1": 0.9326240616521098,
+      "Boundary_IoU": 0.4201538510663598
+    },
+    {
+      "image_name": "khartoum_415",
+      "mode": "text",
+      "mIoU": 0.5703222326399313,
+      "F1": 0.7263760529976884,
+      "Boundary_IoU": 0.30966693745063023
+    },
+    {
+      "image_name": "khartoum_384",
+      "mode": "text",
+      "mIoU": 0.5061027266174483,
+      "F1": 0.6720693318892605,
+      "Boundary_IoU": 0.1238095238121729
+    },
+    {
+      "image_name": "khartoum_698",
+      "mode": "text",
+      "mIoU": 0.8080528608623332,
+      "F1": 0.8938376508271939,
+      "Boundary_IoU": 0.4026349740032788
+    },
+    {
+      "image_name": "khartoum_533",
+      "mode": "text",
+      "mIoU": 0.396190784504969,
+      "F1": 0.5675310120961012,
+      "Boundary_IoU": 0.2517627719876027
+    },
+    {
+      "image_name": "khartoum_429",
+      "mode": "text",
+      "mIoU": 0.4173460506928521,
+      "F1": 0.588912002807603,
+      "Boundary_IoU": 0.24697976628888757
+    },
+    {
+      "image_name": "khartoum_56",
+      "mode": "text",
+      "mIoU": 0.5831801626057631,
+      "F1": 0.7367198962950066,
+      "Boundary_IoU": 0.2422286671311584
+    },
+    {
+      "image_name": "khartoum_807",
+      "mode": "text",
+      "mIoU": 0.6607257818599914,
+      "F1": 0.7957072613392453,
+      "Boundary_IoU": 0.3083814453559733
+    },
+    {
+      "image_name": "khartoum_277",
+      "mode": "text",
+      "mIoU": 0.3278813599765014,
+      "F1": 0.4938413473641906,
+      "Boundary_IoU": 0.2036728948092931
+    },
+    {
+      "image_name": "khartoum_105",
+      "mode": "text",
+      "mIoU": 0.5057083612367935,
+      "F1": 0.671721528890589,
+      "Boundary_IoU": 0.1783774182578511
+    },
+    {
+      "image_name": "khartoum_717",
+      "mode": "text",
+      "mIoU": 0.5982050489720705,
+      "F1": 0.7485961195738352,
+      "Boundary_IoU": 0.43555159689617706
+    },
+    {
+      "image_name": "khartoum_504",
+      "mode": "text",
+      "mIoU": 0.6141430247603612,
+      "F1": 0.7609524253297791,
+      "Boundary_IoU": 0.26801081160162465
+    },
+    {
+      "image_name": "khartoum_358",
+      "mode": "text",
+      "mIoU": 0.8111779666275268,
+      "F1": 0.8957462839920989,
+      "Boundary_IoU": 0.4199097172738895
+    },
+    {
+      "image_name": "khartoum_653",
+      "mode": "text",
+      "mIoU": 0.4553476283307923,
+      "F1": 0.6257578869356581,
+      "Boundary_IoU": 0.25447081076593914
+    },
+    {
+      "image_name": "khartoum_933",
+      "mode": "text",
+      "mIoU": 0.7256856688202619,
+      "F1": 0.8410403840418743,
+      "Boundary_IoU": 0.2820142400202145
+    },
+    {
+      "image_name": "khartoum_113",
+      "mode": "text",
+      "mIoU": 0.5020288580228551,
+      "F1": 0.6684676600469132,
+      "Boundary_IoU": 0.1906415390227232
+    },
+    {
+      "image_name": "khartoum_576",
+      "mode": "text",
+      "mIoU": 0.9199094628711878,
+      "F1": 0.958284211480942,
+      "Boundary_IoU": 0.5051304181074745
+    },
+    {
+      "image_name": "khartoum_449",
+      "mode": "text",
+      "mIoU": 0.4269579283397319,
+      "F1": 0.5984169818326102,
+      "Boundary_IoU": 0.1383941377433197
+    },
+    {
+      "image_name": "khartoum_684",
+      "mode": "text",
+      "mIoU": 0.2978222483882889,
+      "F1": 0.45895691610386274,
+      "Boundary_IoU": 0.23866771779190646
+    },
+    {
+      "image_name": "khartoum_350",
+      "mode": "text",
+      "mIoU": 0.7596350364967013,
+      "F1": 0.8634006720040955,
+      "Boundary_IoU": 0.33464457092028055
+    },
+    {
+      "image_name": "khartoum_701",
+      "mode": "text",
+      "mIoU": 0.3476993101509576,
+      "F1": 0.5159894459115674,
+      "Boundary_IoU": 0.19716935090940968
+    },
+    {
+      "image_name": "khartoum_465",
+      "mode": "text",
+      "mIoU": 0.6432341144221739,
+      "F1": 0.7828879753354131,
+      "Boundary_IoU": 0.21075962121275923
+    },
+    {
+      "image_name": "khartoum_200",
+      "mode": "text",
+      "mIoU": 0.7446152944968254,
+      "F1": 0.8536154610653477,
+      "Boundary_IoU": 0.18651519527745178
+    },
+    {
+      "image_name": "khartoum_784",
+      "mode": "text",
+      "mIoU": 2.85714285632653e-10,
+      "F1": 2.85714285632653e-10,
+      "Boundary_IoU": 1.862197392576872e-10
+    },
+    {
+      "image_name": "khartoum_438",
+      "mode": "text",
+      "mIoU": 0.6274209530689694,
+      "F1": 0.7710616627926186,
+      "Boundary_IoU": 0.3255574614111454
+    },
+    {
+      "image_name": "khartoum_153",
+      "mode": "text",
+      "mIoU": 0.5206881388010598,
+      "F1": 0.6848059447762518,
+      "Boundary_IoU": 0.19728675910943572
+    },
+    {
+      "image_name": "khartoum_580",
+      "mode": "text",
+      "mIoU": 0.6588527117928235,
+      "F1": 0.7943474512341077,
+      "Boundary_IoU": 0.35141055309341024
+    },
+    {
+      "image_name": "khartoum_269",
+      "mode": "text",
+      "mIoU": 0.5613711422394245,
+      "F1": 0.7190745711286913,
+      "Boundary_IoU": 0.17545645679058214
+    },
+    {
+      "image_name": "khartoum_138",
+      "mode": "text",
+      "mIoU": 0.03872848418212987,
+      "F1": 0.07456902312525344,
+      "Boundary_IoU": 0.11591880344241672
+    },
+    {
+      "image_name": "khartoum_375",
+      "mode": "text",
+      "mIoU": 0.8582579759270406,
+      "F1": 0.9237231719657535,
+      "Boundary_IoU": 0.41466079830197405
+    },
+    {
+      "image_name": "khartoum_863",
+      "mode": "text",
+      "mIoU": 0.4718954118806713,
+      "F1": 0.6412078033146974,
+      "Boundary_IoU": 0.1903219971071087
+    },
+    {
+      "image_name": "khartoum_396",
+      "mode": "text",
+      "mIoU": 0.7745135312620758,
+      "F1": 0.8729305441938993,
+      "Boundary_IoU": 0.37425334706595564
+    },
+    {
+      "image_name": "khartoum_24",
+      "mode": "text",
+      "mIoU": 0.5660972137486215,
+      "F1": 0.7229400688268631,
+      "Boundary_IoU": 0.23339611825528886
+    },
+    {
+      "image_name": "khartoum_85",
+      "mode": "text",
+      "mIoU": 0.6225296113923822,
+      "F1": 0.7673568568749366,
+      "Boundary_IoU": 0.261925399228339
+    },
+    {
+      "image_name": "khartoum_911",
+      "mode": "text",
+      "mIoU": 0.7273992614282856,
+      "F1": 0.8421900803949541,
+      "Boundary_IoU": 0.2400113435857701
+    },
+    {
+      "image_name": "khartoum_560",
+      "mode": "text",
+      "mIoU": 0.5815359806507497,
+      "F1": 0.7354065766002157,
+      "Boundary_IoU": 0.2777882146704378
+    },
+    {
+      "image_name": "khartoum_307",
+      "mode": "text",
+      "mIoU": 0.669882282392327,
+      "F1": 0.8023107849644386,
+      "Boundary_IoU": 0.22788632327094888
+    },
+    {
+      "image_name": "khartoum_671",
+      "mode": "text",
+      "mIoU": 0.5728179984241055,
+      "F1": 0.7283970542019007,
+      "Boundary_IoU": 0.2045015512521088
+    },
+    {
+      "image_name": "khartoum_248",
+      "mode": "text",
+      "mIoU": 0.7987513031258898,
+      "F1": 0.8881175532579505,
+      "Boundary_IoU": 0.24024378867620225
+    },
+    {
+      "image_name": "khartoum_110",
+      "mode": "text",
+      "mIoU": 0.5925936452009533,
+      "F1": 0.7441868765284648,
+      "Boundary_IoU": 0.25057461103584433
+    },
+    {
+      "image_name": "khartoum_937",
+      "mode": "text",
+      "mIoU": 0.5099889692370266,
+      "F1": 0.6754870129872764,
+      "Boundary_IoU": 0.13898777279281074
+    },
+    {
+      "image_name": "khartoum_118",
+      "mode": "text",
+      "mIoU": 0.6574721611464235,
+      "F1": 0.7933432326146541,
+      "Boundary_IoU": 0.2506504901378878
+    },
+    {
+      "image_name": "khartoum_291",
+      "mode": "text",
+      "mIoU": 0.28028224228615123,
+      "F1": 0.4378444580698762,
+      "Boundary_IoU": 0.26363008974245583
+    },
+    {
+      "image_name": "khartoum_389",
+      "mode": "text",
+      "mIoU": 0.4799525901810433,
+      "F1": 0.6486053585299244,
+      "Boundary_IoU": 0.23243899746222274
+    },
+    {
+      "image_name": "khartoum_638",
+      "mode": "text",
+      "mIoU": 0.5593260245754107,
+      "F1": 0.7173945868409473,
+      "Boundary_IoU": 0.26580635944897585
+    },
+    {
+      "image_name": "khartoum_89",
+      "mode": "text",
+      "mIoU": 0.5311995870171781,
+      "F1": 0.693834548442977,
+      "Boundary_IoU": 0.12636687156401427
+    },
+    {
+      "image_name": "khartoum_934",
+      "mode": "text",
+      "mIoU": 0.5374821408257103,
+      "F1": 0.6991718818104299,
+      "Boundary_IoU": 0.16048373917502745
+    },
+    {
+      "image_name": "khartoum_702",
+      "mode": "text",
+      "mIoU": 0.8358259178945715,
+      "F1": 0.910572086108317,
+      "Boundary_IoU": 0.29496059231373917
+    },
+    {
+      "image_name": "khartoum_709",
+      "mode": "text",
+      "mIoU": 0.6473100104533006,
+      "F1": 0.7858994437544842,
+      "Boundary_IoU": 0.2728225893931176
+    },
+    {
+      "image_name": "khartoum_843",
+      "mode": "text",
+      "mIoU": 0.37605177997566,
+      "F1": 0.5465663217522783,
+      "Boundary_IoU": 0.15095785447119095
+    },
+    {
+      "image_name": "khartoum_751",
+      "mode": "text",
+      "mIoU": 0.6009182111892519,
+      "F1": 0.7507169410517783,
+      "Boundary_IoU": 0.23087188612362827
+    },
+    {
+      "image_name": "khartoum_295",
+      "mode": "text",
+      "mIoU": 0.6230807674159105,
+      "F1": 0.7677754304337541,
+      "Boundary_IoU": 0.35030970406196166
+    },
+    {
+      "image_name": "khartoum_289",
+      "mode": "text",
+      "mIoU": 3.135779241043092e-11,
+      "F1": 3.135779241043092e-11,
+      "Boundary_IoU": 4.45831475682308e-11
+    },
+    {
+      "image_name": "khartoum_7",
+      "mode": "text",
+      "mIoU": 0.629261363641151,
+      "F1": 0.7724498692258663,
+      "Boundary_IoU": 0.26032159932072313
+    },
+    {
+      "image_name": "khartoum_565",
+      "mode": "text",
+      "mIoU": 0.8540328657028327,
+      "F1": 0.9212704709838548,
+      "Boundary_IoU": 0.44354766187175465
+    },
+    {
+      "image_name": "khartoum_190",
+      "mode": "text",
+      "mIoU": 0.7443152499228178,
+      "F1": 0.8534182682352736,
+      "Boundary_IoU": 0.2893478337892073
+    },
+    {
+      "image_name": "khartoum_694",
+      "mode": "text",
+      "mIoU": 0.8396529333696006,
+      "F1": 0.9128384143976755,
+      "Boundary_IoU": 0.3279154815136814
+    },
+    {
+      "image_name": "khartoum_355",
+      "mode": "text",
+      "mIoU": 0.7364253241062819,
+      "F1": 0.8482084589329624,
+      "Boundary_IoU": 0.32474912344607765
+    },
+    {
+      "image_name": "khartoum_312",
+      "mode": "text",
+      "mIoU": 0.29174683544662405,
+      "F1": 0.45170899968857126,
+      "Boundary_IoU": 0.2206192621359376
+    },
+    {
+      "image_name": "khartoum_75",
+      "mode": "text",
+      "mIoU": 0.34316798026424233,
+      "F1": 0.510982967590629,
+      "Boundary_IoU": 0.10797429827648566
+    },
+    {
+      "image_name": "kitsap_2115",
+      "mode": "text",
+      "mIoU": 0.8755064456744842,
+      "F1": 0.9336213668506125,
+      "Boundary_IoU": 0.6688980432629017
+    },
+    {
+      "image_name": "kitsap_1025",
+      "mode": "text",
+      "mIoU": 0.8543252822267842,
+      "F1": 0.9214405804797426,
+      "Boundary_IoU": 0.5785537918900984
+    },
+    {
+      "image_name": "kitsap_742",
+      "mode": "text",
+      "mIoU": 0.9206898231601272,
+      "F1": 0.9587074519353759,
+      "Boundary_IoU": 0.7487057625413842
+    },
+    {
+      "image_name": "kitsap_2255",
+      "mode": "text",
+      "mIoU": 0.894274376418732,
+      "F1": 0.9441867424813393,
+      "Boundary_IoU": 0.5949953660922153
+    },
+    {
+      "image_name": "kitsap_1147",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_1976",
+      "mode": "text",
+      "mIoU": 0.4003944773372652,
+      "F1": 0.5718309859255438,
+      "Boundary_IoU": 0.40768277573086487
+    },
+    {
+      "image_name": "kitsap_850",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_2169",
+      "mode": "text",
+      "mIoU": 0.7824483775820122,
+      "F1": 0.877947869259693,
+      "Boundary_IoU": 0.4847645429401455
+    },
+    {
+      "image_name": "kitsap_247",
+      "mode": "text",
+      "mIoU": 0.9363377740773788,
+      "F1": 0.967122355006957,
+      "Boundary_IoU": 0.6982912937371987
+    },
+    {
+      "image_name": "kitsap_639",
+      "mode": "text",
+      "mIoU": 0.7158741424245121,
+      "F1": 0.8344133462038548,
+      "Boundary_IoU": 0.4271175312072516
+    },
+    {
+      "image_name": "kitsap_2975",
+      "mode": "text",
+      "mIoU": 0.5802247095923061,
+      "F1": 0.7343572165021031,
+      "Boundary_IoU": 0.2843722740411851
+    },
+    {
+      "image_name": "kitsap_405",
+      "mode": "text",
+      "mIoU": 0.6639683172266814,
+      "F1": 0.7980540378715679,
+      "Boundary_IoU": 0.2591854067454703
+    },
+    {
+      "image_name": "kitsap_142",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_1241",
+      "mode": "text",
+      "mIoU": 0.8713910761163088,
+      "F1": 0.9312762973354385,
+      "Boundary_IoU": 0.6510733341648954
+    },
+    {
+      "image_name": "kitsap_3288",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_2748",
+      "mode": "text",
+      "mIoU": 5.521811153753627e-11,
+      "F1": 5.521811153753627e-11,
+      "Boundary_IoU": 1.1049723755685113e-10
+    },
+    {
+      "image_name": "kitsap_317",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_2622",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_2670",
+      "mode": "text",
+      "mIoU": 0.5100133512002653,
+      "F1": 0.6755083996750213,
+      "Boundary_IoU": 0.3361774744593705
+    },
+    {
+      "image_name": "kitsap_1363",
+      "mode": "text",
+      "mIoU": 0.8961323763965696,
+      "F1": 0.9452213226792913,
+      "Boundary_IoU": 0.7298212351065843
+    },
+    {
+      "image_name": "kitsap_1536",
+      "mode": "text",
+      "mIoU": 0.7967506527007695,
+      "F1": 0.886879491601188,
+      "Boundary_IoU": 0.35240029334149936
+    },
+    {
+      "image_name": "kitsap_3167",
+      "mode": "text",
+      "mIoU": 0.816160458454829,
+      "F1": 0.8987757162697287,
+      "Boundary_IoU": 0.44737936773195963
+    },
+    {
+      "image_name": "kitsap_357",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_1207",
+      "mode": "text",
+      "mIoU": 0.9393725766676287,
+      "F1": 0.9687386404949339,
+      "Boundary_IoU": 0.7990343995293281
+    },
+    {
+      "image_name": "kitsap_2125",
+      "mode": "text",
+      "mIoU": 0.8886307464167641,
+      "F1": 0.9410317481091396,
+      "Boundary_IoU": 0.6705211468424638
+    },
+    {
+      "image_name": "kitsap_265",
+      "mode": "text",
+      "mIoU": 0.7285092491986666,
+      "F1": 0.8429335851481607,
+      "Boundary_IoU": 0.2996300863995524
+    },
+    {
+      "image_name": "kitsap_1002",
+      "mode": "text",
+      "mIoU": 0.8812148905845129,
+      "F1": 0.936857235178143,
+      "Boundary_IoU": 0.3555633709968103
+    },
+    {
+      "image_name": "kitsap_1193",
+      "mode": "text",
+      "mIoU": 0.4652234116220237,
+      "F1": 0.6350204452528214,
+      "Boundary_IoU": 0.3418048496013515
+    },
+    {
+      "image_name": "kitsap_463",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_1242",
+      "mode": "text",
+      "mIoU": 0.5654994593731556,
+      "F1": 0.7224524492629771,
+      "Boundary_IoU": 0.32373907196605595
+    },
+    {
+      "image_name": "kitsap_517",
+      "mode": "text",
+      "mIoU": 0.8022015823941451,
+      "F1": 0.8902462301986973,
+      "Boundary_IoU": 0.5869297164164846
+    },
+    {
+      "image_name": "kitsap_1122",
+      "mode": "text",
+      "mIoU": 0.7180196699459309,
+      "F1": 0.8358689746180318,
+      "Boundary_IoU": 0.4058409895837097
+    },
+    {
+      "image_name": "kitsap_588",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_2941",
+      "mode": "text",
+      "mIoU": 0.7128940546880471,
+      "F1": 0.8323854621791297,
+      "Boundary_IoU": 0.40974402318636954
+    },
+    {
+      "image_name": "kitsap_326",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_3216",
+      "mode": "text",
+      "mIoU": 0.7623281881093261,
+      "F1": 0.8651375983799721,
+      "Boundary_IoU": 0.4595229151039654
+    },
+    {
+      "image_name": "kitsap_1538",
+      "mode": "text",
+      "mIoU": 0.8565413239330966,
+      "F1": 0.9227279919828354,
+      "Boundary_IoU": 0.3770060510473953
+    },
+    {
+      "image_name": "kitsap_1325",
+      "mode": "text",
+      "mIoU": 0.8139432667281539,
+      "F1": 0.8974296844422333,
+      "Boundary_IoU": 0.6405101043881293
+    },
+    {
+      "image_name": "kitsap_1439",
+      "mode": "text",
+      "mIoU": 0.5789657582183968,
+      "F1": 0.7333480858626538,
+      "Boundary_IoU": 0.3669603524368511
+    },
+    {
+      "image_name": "kitsap_2248",
+      "mode": "text",
+      "mIoU": 0.8178147460242444,
+      "F1": 0.8997778764997789,
+      "Boundary_IoU": 0.3603436657789699
+    },
+    {
+      "image_name": "kitsap_1926",
+      "mode": "text",
+      "mIoU": 1.834862384984429e-10,
+      "F1": 1.834862384984429e-10,
+      "Boundary_IoU": 1.2391573728328182e-10
+    },
+    {
+      "image_name": "kitsap_161",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_273",
+      "mode": "text",
+      "mIoU": 0.9269997294619577,
+      "F1": 0.962117135035304,
+      "Boundary_IoU": 0.7218077351880473
+    },
+    {
+      "image_name": "kitsap_1480",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_3470",
+      "mode": "text",
+      "mIoU": 0.393746885906904,
+      "F1": 0.5650192153046293,
+      "Boundary_IoU": 0.07762280171664397
+    },
+    {
+      "image_name": "kitsap_3324",
+      "mode": "text",
+      "mIoU": 7.199424045557997e-11,
+      "F1": 7.199424045557997e-11,
+      "Boundary_IoU": 7.745933384372894e-11
+    },
+    {
+      "image_name": "kitsap_466",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_857",
+      "mode": "text",
+      "mIoU": 9.643201541982332e-11,
+      "F1": 9.643201541982332e-11,
+      "Boundary_IoU": 8.064516128381893e-11
+    },
+    {
+      "image_name": "kitsap_1769",
+      "mode": "text",
+      "mIoU": 0.6969583176882419,
+      "F1": 0.8214206682899385,
+      "Boundary_IoU": 0.29070430568447814
+    },
+    {
+      "image_name": "kitsap_739",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_1694",
+      "mode": "text",
+      "mIoU": 0.7754916792806205,
+      "F1": 0.8735514655781603,
+      "Boundary_IoU": 0.38122270745060166
+    },
+    {
+      "image_name": "kitsap_1322",
+      "mode": "text",
+      "mIoU": 0.2777777779522276,
+      "F1": 0.4347826088024986,
+      "Boundary_IoU": 0.3010752689424596
+    },
+    {
+      "image_name": "kitsap_3130",
+      "mode": "text",
+      "mIoU": 0.442833607916922,
+      "F1": 0.6138387759806595,
+      "Boundary_IoU": 0.27489309713996807
+    },
+    {
+      "image_name": "kitsap_2240",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_648",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_367",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_2599",
+      "mode": "text",
+      "mIoU": 0.700936329588715,
+      "F1": 0.824177034019839,
+      "Boundary_IoU": 0.28608731982825314
+    },
+    {
+      "image_name": "kitsap_1125",
+      "mode": "text",
+      "mIoU": 0.5131800336784531,
+      "F1": 0.6782802075730808,
+      "Boundary_IoU": 0.3001237624195468
+    },
+    {
+      "image_name": "kitsap_38",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_2926",
+      "mode": "text",
+      "mIoU": 0.6429084380616241,
+      "F1": 0.7826467052783276,
+      "Boundary_IoU": 0.3977211730849614
+    },
+    {
+      "image_name": "kitsap_889",
+      "mode": "text",
+      "mIoU": 0.7721505376368585,
+      "F1": 0.8714277046303536,
+      "Boundary_IoU": 0.4899099099191007
+    },
+    {
+      "image_name": "kitsap_2418",
+      "mode": "text",
+      "mIoU": 0.8317453531221811,
+      "F1": 0.9081451760796745,
+      "Boundary_IoU": 0.3186987682961302
+    },
+    {
+      "image_name": "kitsap_2334",
+      "mode": "text",
+      "mIoU": 0.8175326937085312,
+      "F1": 0.8996071394351,
+      "Boundary_IoU": 0.5676958130404739
+    },
+    {
+      "image_name": "kitsap_134",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_2550",
+      "mode": "text",
+      "mIoU": 0.790370813397521,
+      "F1": 0.8829129781193806,
+      "Boundary_IoU": 0.5251786068676196
+    },
+    {
+      "image_name": "kitsap_178",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_1464",
+      "mode": "text",
+      "mIoU": 0.8130264953653676,
+      "F1": 0.8968721609347259,
+      "Boundary_IoU": 0.5882981756015657
+    },
+    {
+      "image_name": "kitsap_2383",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_732",
+      "mode": "text",
+      "mIoU": 0.9108337549901004,
+      "F1": 0.95333647169603,
+      "Boundary_IoU": 0.7432347388321455
+    },
+    {
+      "image_name": "kitsap_111",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_903",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_1074",
+      "mode": "text",
+      "mIoU": 0.6321308071651589,
+      "F1": 0.774608020863866,
+      "Boundary_IoU": 0.4022781388802221
+    },
+    {
+      "image_name": "kitsap_1422",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_3",
+      "mode": "text",
+      "mIoU": 1.6949152539500143e-10,
+      "F1": 1.6949152539500143e-10,
+      "Boundary_IoU": 6.802721087972603e-11
+    },
+    {
+      "image_name": "kitsap_2265",
+      "mode": "text",
+      "mIoU": 0.7263524617112787,
+      "F1": 0.8414880249784079,
+      "Boundary_IoU": 0.39570230608494317
+    },
+    {
+      "image_name": "kitsap_3590",
+      "mode": "text",
+      "mIoU": 0.6154105547138243,
+      "F1": 0.7619246425221544,
+      "Boundary_IoU": 0.3620086652431904
+    },
+    {
+      "image_name": "kitsap_1979",
+      "mode": "text",
+      "mIoU": 0.7166613873953385,
+      "F1": 0.8349478734208186,
+      "Boundary_IoU": 0.5532979056001531
+    },
+    {
+      "image_name": "kitsap_2263",
+      "mode": "text",
+      "mIoU": 1.78571428252551e-09,
+      "F1": 1.78571428252551e-09,
+      "Boundary_IoU": 7.93650793020912e-10
+    },
+    {
+      "image_name": "kitsap_1572",
+      "mode": "text",
+      "mIoU": 0.36036408773850376,
+      "F1": 0.5298053528123539,
+      "Boundary_IoU": 0.1831632653477978
+    },
+    {
+      "image_name": "kitsap_1017",
+      "mode": "text",
+      "mIoU": 0.673592472134663,
+      "F1": 0.8049659440391597,
+      "Boundary_IoU": 0.3625724476183539
+    },
+    {
+      "image_name": "kitsap_1052",
+      "mode": "text",
+      "mIoU": 0.4735336194621598,
+      "F1": 0.6427184466046101,
+      "Boundary_IoU": 0.3622077922160752
+    },
+    {
+      "image_name": "kitsap_1606",
+      "mode": "text",
+      "mIoU": 0.6843632779353165,
+      "F1": 0.8126076920579137,
+      "Boundary_IoU": 0.34464337280130597
+    },
+    {
+      "image_name": "kitsap_2535",
+      "mode": "text",
+      "mIoU": 0.7920729329175701,
+      "F1": 0.8839739927637559,
+      "Boundary_IoU": 0.38559624896536127
+    },
+    {
+      "image_name": "kitsap_2668",
+      "mode": "text",
+      "mIoU": 0.7173161171338305,
+      "F1": 0.8353920515582018,
+      "Boundary_IoU": 0.48054184365192804
+    },
+    {
+      "image_name": "kitsap_711",
+      "mode": "text",
+      "mIoU": 0.9146341463419763,
+      "F1": 0.9554140127389934,
+      "Boundary_IoU": 0.6536669772440614
+    },
+    {
+      "image_name": "kitsap_1794",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_1941",
+      "mode": "text",
+      "mIoU": 0.7170564746189809,
+      "F1": 0.8352159468452225,
+      "Boundary_IoU": 0.47353084022221903
+    },
+    {
+      "image_name": "kitsap_3523",
+      "mode": "text",
+      "mIoU": 0.738876628461965,
+      "F1": 0.8498321460739787,
+      "Boundary_IoU": 0.42836481765919415
+    },
+    {
+      "image_name": "kitsap_3387",
+      "mode": "text",
+      "mIoU": 0.5711472387514827,
+      "F1": 0.7270448302538148,
+      "Boundary_IoU": 0.3097590298504534
+    },
+    {
+      "image_name": "kitsap_1746",
+      "mode": "text",
+      "mIoU": 0.69393507803782,
+      "F1": 0.8193172064674117,
+      "Boundary_IoU": 0.12263618403102854
+    },
+    {
+      "image_name": "kitsap_2403",
+      "mode": "text",
+      "mIoU": 0.7593994631178419,
+      "F1": 0.8632484879494005,
+      "Boundary_IoU": 0.5233879432311336
+    },
+    {
+      "image_name": "kitsap_1279",
+      "mode": "text",
+      "mIoU": 0.7712573180963025,
+      "F1": 0.8708585818850173,
+      "Boundary_IoU": 0.5517031630261212
+    },
+    {
+      "image_name": "kitsap_3537",
+      "mode": "text",
+      "mIoU": 0.6397398237553531,
+      "F1": 0.7802943058235426,
+      "Boundary_IoU": 0.37225360955159675
+    },
+    {
+      "image_name": "kitsap_2592",
+      "mode": "text",
+      "mIoU": 0.7785008818346059,
+      "F1": 0.8754574032388855,
+      "Boundary_IoU": 0.5202648757818995
+    },
+    {
+      "image_name": "kitsap_2082",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_1211",
+      "mode": "text",
+      "mIoU": 0.6900635159899874,
+      "F1": 0.8166125230918109,
+      "Boundary_IoU": 0.47236180905169306
+    },
+    {
+      "image_name": "kitsap_336",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_973",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_1557",
+      "mode": "text",
+      "mIoU": 1.2210012208521367e-10,
+      "F1": 1.2210012208521367e-10,
+      "Boundary_IoU": 1.6778523487117698e-10
+    },
+    {
+      "image_name": "kitsap_2288",
+      "mode": "text",
+      "mIoU": 0.7481450604439505,
+      "F1": 0.8559301826512665,
+      "Boundary_IoU": 0.49248161563502924
+    },
+    {
+      "image_name": "wuxi_170",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_73",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_757",
+      "mode": "text",
+      "mIoU": 0.7518663842503147,
+      "F1": 0.8583604217873259,
+      "Boundary_IoU": 0.21330251130384256
+    },
+    {
+      "image_name": "wuxi_814",
+      "mode": "text",
+      "mIoU": 0.46751871884305524,
+      "F1": 0.6371553736790257,
+      "Boundary_IoU": 0.07718739107077742
+    },
+    {
+      "image_name": "wuxi_517",
+      "mode": "text",
+      "mIoU": 0.6483090465447805,
+      "F1": 0.7866353071391995,
+      "Boundary_IoU": 0.14933548127950597
+    },
+    {
+      "image_name": "wuxi_146",
+      "mode": "text",
+      "mIoU": 7.575757570018365e-10,
+      "F1": 7.575757570018365e-10,
+      "Boundary_IoU": 2.890173409569314e-10
+    },
+    {
+      "image_name": "wuxi_103",
+      "mode": "text",
+      "mIoU": 0.884617651103175,
+      "F1": 0.9387767864588314,
+      "Boundary_IoU": 0.4003797838197459
+    },
+    {
+      "image_name": "wuxi_775",
+      "mode": "text",
+      "mIoU": 0.8514022787031092,
+      "F1": 0.9197377452721408,
+      "Boundary_IoU": 0.10177884929235825
+    },
+    {
+      "image_name": "wuxi_1166",
+      "mode": "text",
+      "mIoU": 0.6144103017434137,
+      "F1": 0.7611575583725524,
+      "Boundary_IoU": 0.20672036995895157
+    },
+    {
+      "image_name": "wuxi_1316",
+      "mode": "text",
+      "mIoU": 0.754140009701009,
+      "F1": 0.8598401558942713,
+      "Boundary_IoU": 0.27263763353103826
+    },
+    {
+      "image_name": "wuxi_770",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_163",
+      "mode": "text",
+      "mIoU": 0.9024896560550788,
+      "F1": 0.9487459268781585,
+      "Boundary_IoU": 0.4744540691971863
+    },
+    {
+      "image_name": "wuxi_833",
+      "mode": "text",
+      "mIoU": 1.2227928588747519e-11,
+      "F1": 1.2227928588747519e-11,
+      "Boundary_IoU": 6.161429451253146e-11
+    },
+    {
+      "image_name": "wuxi_1155",
+      "mode": "text",
+      "mIoU": 0.5661001954831184,
+      "F1": 0.722942500250806,
+      "Boundary_IoU": 0.18035866780879437
+    },
+    {
+      "image_name": "wuxi_1128",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_138",
+      "mode": "text",
+      "mIoU": 0.892266686974152,
+      "F1": 0.943066527690046,
+      "Boundary_IoU": 0.3836087808324117
+    },
+    {
+      "image_name": "wuxi_1320",
+      "mode": "text",
+      "mIoU": 0.39777131783362557,
+      "F1": 0.5691507798981473,
+      "Boundary_IoU": 0.1089824688395268
+    },
+    {
+      "image_name": "wuxi_965",
+      "mode": "text",
+      "mIoU": 0.5930339539995925,
+      "F1": 0.7445339787141593,
+      "Boundary_IoU": 0.1366995074024523
+    },
+    {
+      "image_name": "wuxi_1006",
+      "mode": "text",
+      "mIoU": 0.5449557598899528,
+      "F1": 0.705464549908472,
+      "Boundary_IoU": 0.17774148977292123
+    },
+    {
+      "image_name": "wuxi_1290",
+      "mode": "text",
+      "mIoU": 0.6611461671679627,
+      "F1": 0.796012031012333,
+      "Boundary_IoU": 0.1594023992683208
+    },
+    {
+      "image_name": "wuxi_732",
+      "mode": "text",
+      "mIoU": 0.6887155906299498,
+      "F1": 0.8156679484114808,
+      "Boundary_IoU": 0.2489103588578784
+    },
+    {
+      "image_name": "wuxi_1023",
+      "mode": "text",
+      "mIoU": 0.1335077511846089,
+      "F1": 0.2355656607439866,
+      "Boundary_IoU": 0.15175159237019503
+    },
+    {
+      "image_name": "wuxi_417",
+      "mode": "text",
+      "mIoU": 0.46375505863665883,
+      "F1": 0.6336511780438588,
+      "Boundary_IoU": 0.1098439716362562
+    },
+    {
+      "image_name": "wuxi_487",
+      "mode": "text",
+      "mIoU": 0.7158117668969564,
+      "F1": 0.8343709732114827,
+      "Boundary_IoU": 0.27612121212706164
+    },
+    {
+      "image_name": "wuxi_410",
+      "mode": "text",
+      "mIoU": 0.6777567397003077,
+      "F1": 0.8079320722275153,
+      "Boundary_IoU": 0.3344856194782289
+    },
+    {
+      "image_name": "wuxi_345",
+      "mode": "text",
+      "mIoU": 0.7640268659297641,
+      "F1": 0.8662304193728897,
+      "Boundary_IoU": 0.19850065189374794
+    },
+    {
+      "image_name": "wuxi_223",
+      "mode": "text",
+      "mIoU": 0.7025463805023614,
+      "F1": 0.8252889772024405,
+      "Boundary_IoU": 0.25460206665553065
+    },
+    {
+      "image_name": "wuxi_1193",
+      "mode": "text",
+      "mIoU": 0.5174228134622617,
+      "F1": 0.6819757932615985,
+      "Boundary_IoU": 0.10774940951858526
+    },
+    {
+      "image_name": "wuxi_444",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_2",
+      "mode": "text",
+      "mIoU": 0.6408668730654532,
+      "F1": 0.7811320754718607,
+      "Boundary_IoU": 0.30928685324872357
+    },
+    {
+      "image_name": "wuxi_1234",
+      "mode": "text",
+      "mIoU": 0.5886267177583383,
+      "F1": 0.7410510111385248,
+      "Boundary_IoU": 0.2000847192308966
+    },
+    {
+      "image_name": "wuxi_726",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_20",
+      "mode": "text",
+      "mIoU": 0.9077231180039657,
+      "F1": 0.9516298349978423,
+      "Boundary_IoU": 0.5299842564830402
+    },
+    {
+      "image_name": "wuxi_575",
+      "mode": "text",
+      "mIoU": 0.9120201438236732,
+      "F1": 0.953985915650197,
+      "Boundary_IoU": 0.3056840713890098
+    },
+    {
+      "image_name": "wuxi_765",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_630",
+      "mode": "text",
+      "mIoU": 0.5952331534537317,
+      "F1": 0.7462647728510328,
+      "Boundary_IoU": 0.16011675180694135
+    },
+    {
+      "image_name": "wuxi_610",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_96",
+      "mode": "text",
+      "mIoU": 0.8686402521391692,
+      "F1": 0.9297030299380967,
+      "Boundary_IoU": 0.4845119813050188
+    },
+    {
+      "image_name": "wuxi_1392",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_749",
+      "mode": "text",
+      "mIoU": 0.7566204663795835,
+      "F1": 0.8614501320696601,
+      "Boundary_IoU": 0.291075397509907
+    },
+    {
+      "image_name": "wuxi_1065",
+      "mode": "text",
+      "mIoU": 0.5441770769826239,
+      "F1": 0.704811753902934,
+      "Boundary_IoU": 0.1683612007942545
+    },
+    {
+      "image_name": "wuxi_1177",
+      "mode": "text",
+      "mIoU": 0.44469493338037996,
+      "F1": 0.6156246874066064,
+      "Boundary_IoU": 0.12110128021787799
+    },
+    {
+      "image_name": "wuxi_613",
+      "mode": "text",
+      "mIoU": 0.04041570439907141,
+      "F1": 0.07769145395030308,
+      "Boundary_IoU": 0.047760560410788355
+    },
+    {
+      "image_name": "wuxi_1382",
+      "mode": "text",
+      "mIoU": 0.7290115652953856,
+      "F1": 0.8432697385348689,
+      "Boundary_IoU": 0.23707841335475444
+    },
+    {
+      "image_name": "wuxi_5",
+      "mode": "text",
+      "mIoU": 0.8590514855140625,
+      "F1": 0.9241825653650294,
+      "Boundary_IoU": 0.46737462552191494
+    },
+    {
+      "image_name": "wuxi_158",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_470",
+      "mode": "text",
+      "mIoU": 0.6763234036364233,
+      "F1": 0.8069127975772566,
+      "Boundary_IoU": 0.15691408391184974
+    },
+    {
+      "image_name": "wuxi_35",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_1001",
+      "mode": "text",
+      "mIoU": 0.7842862108477615,
+      "F1": 0.8791035945685515,
+      "Boundary_IoU": 0.2357061957328927
+    },
+    {
+      "image_name": "wuxi_434",
+      "mode": "text",
+      "mIoU": 0.8145641321048998,
+      "F1": 0.897806936324571,
+      "Boundary_IoU": 0.30458650611559596
+    },
+    {
+      "image_name": "wuxi_559",
+      "mode": "text",
+      "mIoU": 0.6188064659902816,
+      "F1": 0.7645218610011649,
+      "Boundary_IoU": 0.04401509089923385
+    },
+    {
+      "image_name": "wuxi_352",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_592",
+      "mode": "text",
+      "mIoU": 0.7384945212011946,
+      "F1": 0.8495793483326717,
+      "Boundary_IoU": 0.1916447120873794
+    },
+    {
+      "image_name": "wuxi_640",
+      "mode": "text",
+      "mIoU": 0.06504524887935469,
+      "F1": 0.12214551248940897,
+      "Boundary_IoU": 0.022070015239306125
+    },
+    {
+      "image_name": "wuxi_964",
+      "mode": "text",
+      "mIoU": 0.7791539926036948,
+      "F1": 0.8758702122949769,
+      "Boundary_IoU": 0.24751429508231956
+    },
+    {
+      "image_name": "wuxi_939",
+      "mode": "text",
+      "mIoU": 0.577614505647216,
+      "F1": 0.7322631778289221,
+      "Boundary_IoU": 0.14268436663362027
+    },
+    {
+      "image_name": "wuxi_756",
+      "mode": "text",
+      "mIoU": 0.404784399009956,
+      "F1": 0.5762939840374887,
+      "Boundary_IoU": 0.07003127045982087
+    },
+    {
+      "image_name": "wuxi_271",
+      "mode": "text",
+      "mIoU": 3.58808754920746e-11,
+      "F1": 3.58808754920746e-11,
+      "Boundary_IoU": 8.10372771409208e-11
+    },
+    {
+      "image_name": "wuxi_1358",
+      "mode": "text",
+      "mIoU": 0.789425678757747,
+      "F1": 0.8823229577275344,
+      "Boundary_IoU": 0.24973307709534767
+    },
+    {
+      "image_name": "wuxi_849",
+      "mode": "text",
+      "mIoU": 0.3915113905998249,
+      "F1": 0.5627138854115987,
+      "Boundary_IoU": 0.19067666085644647
+    },
+    {
+      "image_name": "wuxi_280",
+      "mode": "text",
+      "mIoU": 0.8827511595275311,
+      "F1": 0.9377247280506475,
+      "Boundary_IoU": 0.3691555917544547
+    },
+    {
+      "image_name": "wuxi_1022",
+      "mode": "text",
+      "mIoU": 0.07265407840950516,
+      "F1": 0.1354659994677175,
+      "Boundary_IoU": 0.05327955850024879
+    },
+    {
+      "image_name": "wuxi_852",
+      "mode": "text",
+      "mIoU": 0.7945519005524513,
+      "F1": 0.885515654696552,
+      "Boundary_IoU": 0.38770936542359385
+    },
+    {
+      "image_name": "wuxi_496",
+      "mode": "text",
+      "mIoU": 0.31149354640865706,
+      "F1": 0.47502108913921165,
+      "Boundary_IoU": 2.528445006257182e-11
+    },
+    {
+      "image_name": "wuxi_662",
+      "mode": "text",
+      "mIoU": 0.26184889724866617,
+      "F1": 0.41502417256573026,
+      "Boundary_IoU": 0.00421348318103183
+    },
+    {
+      "image_name": "wuxi_1170",
+      "mode": "text",
+      "mIoU": 0.7961133991765683,
+      "F1": 0.8864845610989511,
+      "Boundary_IoU": 0.35853058863540216
+    },
+    {
+      "image_name": "wuxi_375",
+      "mode": "text",
+      "mIoU": 0.40824915825132396,
+      "F1": 0.5797967722664835,
+      "Boundary_IoU": 0.06590148255317167
+    },
+    {
+      "image_name": "wuxi_1167",
+      "mode": "text",
+      "mIoU": 0.5857325171426254,
+      "F1": 0.738753239667345,
+      "Boundary_IoU": 0.15137874814222946
+    },
+    {
+      "image_name": "wuxi_1094",
+      "mode": "text",
+      "mIoU": 0.6660882733392243,
+      "F1": 0.7995834122329112,
+      "Boundary_IoU": 0.1950626519618939
+    },
+    {
+      "image_name": "wuxi_1282",
+      "mode": "text",
+      "mIoU": 0.7713234875919281,
+      "F1": 0.8709007620516146,
+      "Boundary_IoU": 0.30015240030657825
+    },
+    {
+      "image_name": "wuxi_680",
+      "mode": "text",
+      "mIoU": 0.7991679320521472,
+      "F1": 0.8883750291619973,
+      "Boundary_IoU": 0.33347210658016424
+    },
+    {
+      "image_name": "wuxi_1328",
+      "mode": "text",
+      "mIoU": 0.7710952925289123,
+      "F1": 0.8707552843502989,
+      "Boundary_IoU": 0.2999918213846406
+    },
+    {
+      "image_name": "wuxi_902",
+      "mode": "text",
+      "mIoU": 2.8026905828810904e-11,
+      "F1": 2.8026905828810904e-11,
+      "Boundary_IoU": 9.532888464296197e-11
+    },
+    {
+      "image_name": "wuxi_1369",
+      "mode": "text",
+      "mIoU": 0.7852340012719191,
+      "F1": 0.879698684555935,
+      "Boundary_IoU": 0.3339571037953943
+    },
+    {
+      "image_name": "wuxi_1122",
+      "mode": "text",
+      "mIoU": 0.8100431116870792,
+      "F1": 0.8950539425903619,
+      "Boundary_IoU": 0.21544845196575715
+    },
+    {
+      "image_name": "wuxi_729",
+      "mode": "text",
+      "mIoU": 0.833355853280983,
+      "F1": 0.9091043092256835,
+      "Boundary_IoU": 0.3787323520595412
+    },
+    {
+      "image_name": "wuxi_1077",
+      "mode": "text",
+      "mIoU": 0.5911307864052748,
+      "F1": 0.7430323031341128,
+      "Boundary_IoU": 0.14413518886954357
+    },
+    {
+      "image_name": "wuxi_1040",
+      "mode": "text",
+      "mIoU": 0.8028195506401802,
+      "F1": 0.8906266302193672,
+      "Boundary_IoU": 0.3226854926106222
+    },
+    {
+      "image_name": "wuxi_1099",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_898",
+      "mode": "text",
+      "mIoU": 0.5048991354472346,
+      "F1": 0.6710072769056425,
+      "Boundary_IoU": 0.17729792074078973
+    },
+    {
+      "image_name": "wuxi_379",
+      "mode": "text",
+      "mIoU": 0.5783355350084618,
+      "F1": 0.7328423167064702,
+      "Boundary_IoU": 0.08652965048976921
+    },
+    {
+      "image_name": "wuxi_1238",
+      "mode": "text",
+      "mIoU": 0.8972111798383847,
+      "F1": 0.9458210971693438,
+      "Boundary_IoU": 0.48198843702385735
+    },
+    {
+      "image_name": "wuxi_15",
+      "mode": "text",
+      "mIoU": 0.7033478201829982,
+      "F1": 0.8258416887598903,
+      "Boundary_IoU": 0.37490109195482035
+    },
+    {
+      "image_name": "wuxi_985",
+      "mode": "text",
+      "mIoU": 0.8921912601490091,
+      "F1": 0.9430243960419915,
+      "Boundary_IoU": 0.37747674101997947
+    },
+    {
+      "image_name": "wuxi_803",
+      "mode": "text",
+      "mIoU": 0.8145613357657956,
+      "F1": 0.8978052377843264,
+      "Boundary_IoU": 0.3907030508219845
+    },
+    {
+      "image_name": "wuxi_812",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_995",
+      "mode": "text",
+      "mIoU": 0.7255038220992247,
+      "F1": 0.8409182440597883,
+      "Boundary_IoU": 0.2983876548384306
+    },
+    {
+      "image_name": "wuxi_141",
+      "mode": "text",
+      "mIoU": 0.8180499669020833,
+      "F1": 0.899920224190521,
+      "Boundary_IoU": 0.32734542850522996
+    },
+    {
+      "image_name": "wuxi_1088",
+      "mode": "text",
+      "mIoU": 0.6022633744859864,
+      "F1": 0.7517657634520588,
+      "Boundary_IoU": 0.16449799197122691
+    },
+    {
+      "image_name": "wuxi_919",
+      "mode": "text",
+      "mIoU": 0.7941659819269892,
+      "F1": 0.8852759331361887,
+      "Boundary_IoU": 0.5999050783293829
+    },
+    {
+      "image_name": "wuxi_1374",
+      "mode": "text",
+      "mIoU": 0.8956003559962249,
+      "F1": 0.9449252878257024,
+      "Boundary_IoU": 0.31143421290053075
+    },
+    {
+      "image_name": "wuxi_935",
+      "mode": "text",
+      "mIoU": 0.8104203762486484,
+      "F1": 0.8952841968425369,
+      "Boundary_IoU": 0.22393044585048014
+    },
+    {
+      "image_name": "wuxi_799",
+      "mode": "text",
+      "mIoU": 0.8248353529216952,
+      "F1": 0.9040107115428401,
+      "Boundary_IoU": 0.25042699806083735
+    },
+    {
+      "image_name": "wuxi_654",
+      "mode": "text",
+      "mIoU": 0.21766735680858984,
+      "F1": 0.35751530265974246,
+      "Boundary_IoU": 0.023726448045229363
+    },
+    {
+      "image_name": "wuxi_522",
+      "mode": "text",
+      "mIoU": 0.7762600656142186,
+      "F1": 0.8740387521411933,
+      "Boundary_IoU": 0.3445922090226598
+    },
+    {
+      "image_name": "wuxi_1377",
+      "mode": "text",
+      "mIoU": 0.8175268202887782,
+      "F1": 0.8996035834659386,
+      "Boundary_IoU": 0.3132961783494164
+    },
+    {
+      "image_name": "wuxi_1083",
+      "mode": "text",
+      "mIoU": 5.076142131722023e-11,
+      "F1": 5.076142131722023e-11,
+      "Boundary_IoU": 6.142506142128839e-11
+    },
+    {
+      "image_name": "wuxi_1044",
+      "mode": "text",
+      "mIoU": 0.8046140624163337,
+      "F1": 0.8917297932821189,
+      "Boundary_IoU": 0.24954417779899696
+    },
+    {
+      "image_name": "wuxi_248",
+      "mode": "text",
+      "mIoU": 0.9658417117818272,
+      "F1": 0.9826240902237058,
+      "Boundary_IoU": 0.6588669950948973
+    },
+    {
+      "image_name": "wuxi_656",
+      "mode": "text",
+      "mIoU": 0.7067804160314969,
+      "F1": 0.8282031002848559,
+      "Boundary_IoU": 0.13967568483365222
+    },
+    {
+      "image_name": "dunedin_1104",
+      "mode": "text",
+      "mIoU": 0.826313317153597,
+      "F1": 0.9048976529847427,
+      "Boundary_IoU": 0.5065334700987679
+    },
+    {
+      "image_name": "dunedin_423",
+      "mode": "text",
+      "mIoU": 0.8857243733086747,
+      "F1": 0.9393996130563578,
+      "Boundary_IoU": 0.6347077204509206
+    },
+    {
+      "image_name": "dunedin_502",
+      "mode": "text",
+      "mIoU": 0.6223567393089398,
+      "F1": 0.7672255111697566,
+      "Boundary_IoU": 0.3130737943136191
+    },
+    {
+      "image_name": "dunedin_955",
+      "mode": "text",
+      "mIoU": 0.8622112211222926,
+      "F1": 0.9260079751883551,
+      "Boundary_IoU": 0.6089976539868233
+    },
+    {
+      "image_name": "dunedin_1040",
+      "mode": "text",
+      "mIoU": 0.9106944804966011,
+      "F1": 0.9532601782152827,
+      "Boundary_IoU": 0.4562078922063179
+    },
+    {
+      "image_name": "dunedin_1292",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_1278",
+      "mode": "text",
+      "mIoU": 0.8329688932780127,
+      "F1": 0.9088740090818633,
+      "Boundary_IoU": 0.4999724583671484
+    },
+    {
+      "image_name": "dunedin_98",
+      "mode": "text",
+      "mIoU": 0.9674782802597214,
+      "F1": 0.9834703538704378,
+      "Boundary_IoU": 0.3770846201422989
+    },
+    {
+      "image_name": "dunedin_713",
+      "mode": "text",
+      "mIoU": 0.8978134213114246,
+      "F1": 0.9461556243932256,
+      "Boundary_IoU": 0.6206958009566526
+    },
+    {
+      "image_name": "dunedin_496",
+      "mode": "text",
+      "mIoU": 0.8541220354365145,
+      "F1": 0.9213223499987476,
+      "Boundary_IoU": 0.5450104994086323
+    },
+    {
+      "image_name": "dunedin_926",
+      "mode": "text",
+      "mIoU": 0.7960503735779021,
+      "F1": 0.886445486483789,
+      "Boundary_IoU": 0.46221057230362067
+    },
+    {
+      "image_name": "dunedin_79",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_352",
+      "mode": "text",
+      "mIoU": 0.7984630296330762,
+      "F1": 0.887939330947038,
+      "Boundary_IoU": 0.4631966938516341
+    },
+    {
+      "image_name": "dunedin_995",
+      "mode": "text",
+      "mIoU": 0.9023618962333703,
+      "F1": 0.9486753262037058,
+      "Boundary_IoU": 0.6458124976855839
+    },
+    {
+      "image_name": "dunedin_734",
+      "mode": "text",
+      "mIoU": 0.9207731535965759,
+      "F1": 0.9587526271620862,
+      "Boundary_IoU": 0.48876274029289446
+    },
+    {
+      "image_name": "dunedin_1102",
+      "mode": "text",
+      "mIoU": 0.8586403392527715,
+      "F1": 0.9239445858556152,
+      "Boundary_IoU": 0.610327161604327
+    },
+    {
+      "image_name": "dunedin_1179",
+      "mode": "text",
+      "mIoU": 0.8723598465592823,
+      "F1": 0.9318292615197059,
+      "Boundary_IoU": 0.4842318900929324
+    },
+    {
+      "image_name": "dunedin_598",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_1112",
+      "mode": "text",
+      "mIoU": 0.822506202042859,
+      "F1": 0.9026100444769581,
+      "Boundary_IoU": 0.46450477359078085
+    },
+    {
+      "image_name": "dunedin_969",
+      "mode": "text",
+      "mIoU": 0.8492813015146601,
+      "F1": 0.9184987711918037,
+      "Boundary_IoU": 0.5614820028163043
+    },
+    {
+      "image_name": "dunedin_1159",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_280",
+      "mode": "text",
+      "mIoU": 0.8490181278885459,
+      "F1": 0.9183448394397445,
+      "Boundary_IoU": 0.5714868447899972
+    },
+    {
+      "image_name": "dunedin_989",
+      "mode": "text",
+      "mIoU": 0.8218401228524179,
+      "F1": 0.9022088300104188,
+      "Boundary_IoU": 0.5324020178511685
+    },
+    {
+      "image_name": "dunedin_648",
+      "mode": "text",
+      "mIoU": 0.8503099422245873,
+      "F1": 0.9191000089446824,
+      "Boundary_IoU": 0.5812335371015823
+    },
+    {
+      "image_name": "dunedin_424",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_1147",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_121",
+      "mode": "text",
+      "mIoU": 0.859019550246648,
+      "F1": 0.9241640843772886,
+      "Boundary_IoU": 0.49758089421302687
+    },
+    {
+      "image_name": "dunedin_810",
+      "mode": "text",
+      "mIoU": 0.8645789083725715,
+      "F1": 0.9273717561539417,
+      "Boundary_IoU": 0.5887594242639558
+    },
+    {
+      "image_name": "dunedin_59",
+      "mode": "text",
+      "mIoU": 0.6854080381113721,
+      "F1": 0.8133437394534537,
+      "Boundary_IoU": 0.3813319530732183
+    },
+    {
+      "image_name": "dunedin_549",
+      "mode": "text",
+      "mIoU": 0.8281669951652362,
+      "F1": 0.9060080368528275,
+      "Boundary_IoU": 0.5461798097715196
+    },
+    {
+      "image_name": "dunedin_882",
+      "mode": "text",
+      "mIoU": 0.817346620990513,
+      "F1": 0.899494473481329,
+      "Boundary_IoU": 0.46025048169660837
+    },
+    {
+      "image_name": "dunedin_274",
+      "mode": "text",
+      "mIoU": 0.8581907510481375,
+      "F1": 0.9236842348547887,
+      "Boundary_IoU": 0.5827233241211837
+    },
+    {
+      "image_name": "dunedin_922",
+      "mode": "text",
+      "mIoU": 0.9060036159625114,
+      "F1": 0.9506840473699377,
+      "Boundary_IoU": 0.6245593419513816
+    },
+    {
+      "image_name": "dunedin_774",
+      "mode": "text",
+      "mIoU": 0.9620361755857545,
+      "F1": 0.9806508030347937,
+      "Boundary_IoU": 0.6120841161165258
+    },
+    {
+      "image_name": "dunedin_715",
+      "mode": "text",
+      "mIoU": 0.8261790806662851,
+      "F1": 0.9048171555713941,
+      "Boundary_IoU": 0.5964949225523036
+    },
+    {
+      "image_name": "dunedin_434",
+      "mode": "text",
+      "mIoU": 0.8065423298509783,
+      "F1": 0.8929127389087035,
+      "Boundary_IoU": 0.5180842862664844
+    },
+    {
+      "image_name": "dunedin_687",
+      "mode": "text",
+      "mIoU": 0.9181398173656419,
+      "F1": 0.9573231409445028,
+      "Boundary_IoU": 0.3295098127132403
+    },
+    {
+      "image_name": "dunedin_145",
+      "mode": "text",
+      "mIoU": 0.7457674943638327,
+      "F1": 0.8543720704726948,
+      "Boundary_IoU": 0.46894719364101806
+    },
+    {
+      "image_name": "dunedin_792",
+      "mode": "text",
+      "mIoU": 0.7501468522541819,
+      "F1": 0.8572387526085651,
+      "Boundary_IoU": 0.4413403633288155
+    },
+    {
+      "image_name": "dunedin_184",
+      "mode": "text",
+      "mIoU": 0.867258218199933,
+      "F1": 0.9289108595122663,
+      "Boundary_IoU": 0.501163128823769
+    },
+    {
+      "image_name": "dunedin_604",
+      "mode": "text",
+      "mIoU": 0.8926699062351753,
+      "F1": 0.9432916995133086,
+      "Boundary_IoU": 0.5619428532706439
+    },
+    {
+      "image_name": "dunedin_195",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_1051",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_287",
+      "mode": "text",
+      "mIoU": 0.8408816479538614,
+      "F1": 0.9135640511039076,
+      "Boundary_IoU": 0.5339606788790658
+    },
+    {
+      "image_name": "dunedin_370",
+      "mode": "text",
+      "mIoU": 0.823808912289965,
+      "F1": 0.9033938881848383,
+      "Boundary_IoU": 0.506174203708649
+    },
+    {
+      "image_name": "dunedin_618",
+      "mode": "text",
+      "mIoU": 0.9150491774741626,
+      "F1": 0.9556403963276221,
+      "Boundary_IoU": 0.372892252843821
+    },
+    {
+      "image_name": "dunedin_1302",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_1189",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_778",
+      "mode": "text",
+      "mIoU": 0.7500969231315862,
+      "F1": 0.857206150376235,
+      "Boundary_IoU": 0.40487886382822097
+    },
+    {
+      "image_name": "dunedin_1183",
+      "mode": "text",
+      "mIoU": 0.88287568405278,
+      "F1": 0.937794981931432,
+      "Boundary_IoU": 0.5224906430791256
+    },
+    {
+      "image_name": "dunedin_301",
+      "mode": "text",
+      "mIoU": 0.7671297146242231,
+      "F1": 0.8682211704953616,
+      "Boundary_IoU": 0.4646144994265513
+    },
+    {
+      "image_name": "dunedin_772",
+      "mode": "text",
+      "mIoU": 0.8519333116108649,
+      "F1": 0.920047505241744,
+      "Boundary_IoU": 0.5531005105200255
+    },
+    {
+      "image_name": "dunedin_1204",
+      "mode": "text",
+      "mIoU": 0.8620398575991705,
+      "F1": 0.9259091357051832,
+      "Boundary_IoU": 0.550448120905906
+    },
+    {
+      "image_name": "dunedin_226",
+      "mode": "text",
+      "mIoU": 0.8171618766248113,
+      "F1": 0.899382589010188,
+      "Boundary_IoU": 0.5416539424676551
+    },
+    {
+      "image_name": "dunedin_1271",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_2",
+      "mode": "text",
+      "mIoU": 0.8793821387864252,
+      "F1": 0.9358204706087019,
+      "Boundary_IoU": 0.540598079019999
+    },
+    {
+      "image_name": "dunedin_912",
+      "mode": "text",
+      "mIoU": 0.8719672534619982,
+      "F1": 0.9316052423987077,
+      "Boundary_IoU": 0.5946715776559983
+    },
+    {
+      "image_name": "dunedin_719",
+      "mode": "text",
+      "mIoU": 0.7932795256169778,
+      "F1": 0.8847249012594404,
+      "Boundary_IoU": 0.5351724138037891
+    },
+    {
+      "image_name": "dunedin_260",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_204",
+      "mode": "text",
+      "mIoU": 0.7722647035364015,
+      "F1": 0.8715004050978848,
+      "Boundary_IoU": 0.44468304030903083
+    },
+    {
+      "image_name": "dunedin_479",
+      "mode": "text",
+      "mIoU": 0.8885098016540096,
+      "F1": 0.9409639292057528,
+      "Boundary_IoU": 0.620150464671426
+    },
+    {
+      "image_name": "dunedin_859",
+      "mode": "text",
+      "mIoU": 0.8241044277982287,
+      "F1": 0.9035715447419709,
+      "Boundary_IoU": 0.5185521918627911
+    },
+    {
+      "image_name": "dunedin_811",
+      "mode": "text",
+      "mIoU": 0.8449965729953792,
+      "F1": 0.9159871463863662,
+      "Boundary_IoU": 0.5458575046990239
+    },
+    {
+      "image_name": "dunedin_545",
+      "mode": "text",
+      "mIoU": 0.8533192320220199,
+      "F1": 0.9208550985473822,
+      "Boundary_IoU": 0.5745296671546569
+    },
+    {
+      "image_name": "dunedin_991",
+      "mode": "text",
+      "mIoU": 0.8382037158063964,
+      "F1": 0.9119813093606205,
+      "Boundary_IoU": 0.5627787268985317
+    },
+    {
+      "image_name": "dunedin_92",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_435",
+      "mode": "text",
+      "mIoU": 0.851654504732585,
+      "F1": 0.9198848948935083,
+      "Boundary_IoU": 0.5411953212640884
+    },
+    {
+      "image_name": "dunedin_390",
+      "mode": "text",
+      "mIoU": 0.8563381531098362,
+      "F1": 0.9226100876880448,
+      "Boundary_IoU": 0.580181602845794
+    },
+    {
+      "image_name": "dunedin_703",
+      "mode": "text",
+      "mIoU": 0.8836285603850832,
+      "F1": 0.9382195396361963,
+      "Boundary_IoU": 0.46771371769595343
+    },
+    {
+      "image_name": "dunedin_986",
+      "mode": "text",
+      "mIoU": 0.41650252061611814,
+      "F1": 0.5880716970906419,
+      "Boundary_IoU": 0.3765640610890705
+    },
+    {
+      "image_name": "dunedin_172",
+      "mode": "text",
+      "mIoU": 0.8524559701033335,
+      "F1": 0.9203522068658935,
+      "Boundary_IoU": 0.5511294542523082
+    },
+    {
+      "image_name": "dunedin_1009",
+      "mode": "text",
+      "mIoU": 0.8844224337539092,
+      "F1": 0.9386668486980124,
+      "Boundary_IoU": 0.5385438208690113
+    },
+    {
+      "image_name": "dunedin_333",
+      "mode": "text",
+      "mIoU": 0.8362989323845756,
+      "F1": 0.9108527131783639,
+      "Boundary_IoU": 0.5339598135851122
+    },
+    {
+      "image_name": "dunedin_853",
+      "mode": "text",
+      "mIoU": 0.8370750481079989,
+      "F1": 0.9113128491620816,
+      "Boundary_IoU": 0.5363837136883844
+    },
+    {
+      "image_name": "dunedin_1044",
+      "mode": "text",
+      "mIoU": 0.8041387077100931,
+      "F1": 0.8914377861008487,
+      "Boundary_IoU": 0.5250925894481157
+    },
+    {
+      "image_name": "dunedin_433",
+      "mode": "text",
+      "mIoU": 0.8027817273692027,
+      "F1": 0.8906033550058237,
+      "Boundary_IoU": 0.5238004022618402
+    },
+    {
+      "image_name": "dunedin_438",
+      "mode": "text",
+      "mIoU": 0.8259886813619314,
+      "F1": 0.9047029587782315,
+      "Boundary_IoU": 0.526859295638848
+    },
+    {
+      "image_name": "dunedin_880",
+      "mode": "text",
+      "mIoU": 0.8533552971733339,
+      "F1": 0.9208760980420656,
+      "Boundary_IoU": 0.5989881429109468
+    },
+    {
+      "image_name": "dunedin_908",
+      "mode": "text",
+      "mIoU": 0.7946217346604699,
+      "F1": 0.8855590226212765,
+      "Boundary_IoU": 0.5034393944160828
+    },
+    {
+      "image_name": "dunedin_421",
+      "mode": "text",
+      "mIoU": 0.8045854544027284,
+      "F1": 0.8917122239232632,
+      "Boundary_IoU": 0.4825383883715006
+    },
+    {
+      "image_name": "dunedin_189",
+      "mode": "text",
+      "mIoU": 0.8376519832585444,
+      "F1": 0.9116546450463059,
+      "Boundary_IoU": 0.5835600744725252
+    },
+    {
+      "image_name": "dunedin_1196",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_673",
+      "mode": "text",
+      "mIoU": 0.899128986807358,
+      "F1": 0.9468856439485148,
+      "Boundary_IoU": 0.550417568828481
+    },
+    {
+      "image_name": "dunedin_1261",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_804",
+      "mode": "text",
+      "mIoU": 0.7584771392994868,
+      "F1": 0.8626522601272079,
+      "Boundary_IoU": 0.46918758469552435
+    },
+    {
+      "image_name": "dunedin_764",
+      "mode": "text",
+      "mIoU": 0.8365554180314396,
+      "F1": 0.911004818932254,
+      "Boundary_IoU": 0.5733567864458244
+    },
+    {
+      "image_name": "dunedin_1116",
+      "mode": "text",
+      "mIoU": 0.9242986320427592,
+      "F1": 0.9606602807398299,
+      "Boundary_IoU": 0.3425785207741731
+    },
+    {
+      "image_name": "dunedin_387",
+      "mode": "text",
+      "mIoU": 0.8092997198900918,
+      "F1": 0.8945999504589138,
+      "Boundary_IoU": 0.49438890023476045
+    },
+    {
+      "image_name": "dunedin_63",
+      "mode": "text",
+      "mIoU": 0.8489831662941553,
+      "F1": 0.9183243869067846,
+      "Boundary_IoU": 0.5063573883189785
+    },
+    {
+      "image_name": "dunedin_977",
+      "mode": "text",
+      "mIoU": 0.801206722739951,
+      "F1": 0.8896332804277924,
+      "Boundary_IoU": 0.4710590327741191
+    },
+    {
+      "image_name": "dunedin_1285",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_896",
+      "mode": "text",
+      "mIoU": 0.8723832160162837,
+      "F1": 0.9318425934967843,
+      "Boundary_IoU": 0.6160406925971946
+    },
+    {
+      "image_name": "dunedin_752",
+      "mode": "text",
+      "mIoU": 0.8541941092788685,
+      "F1": 0.921364278965409,
+      "Boundary_IoU": 0.5772079772089408
+    },
+    {
+      "image_name": "dunedin_627",
+      "mode": "text",
+      "mIoU": 0.98569146001563,
+      "F1": 0.9927941776089109,
+      "Boundary_IoU": 0.5639878440016546
+    },
+    {
+      "image_name": "dunedin_1291",
+      "mode": "text",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_688",
+      "mode": "text",
+      "mIoU": 0.8671678888841737,
+      "F1": 0.9288590426674213,
+      "Boundary_IoU": 0.42812336644441695
+    },
+    {
+      "image_name": "dunedin_831",
+      "mode": "text",
+      "mIoU": 0.6195029375179388,
+      "F1": 0.7650531816475573,
+      "Boundary_IoU": 0.3434392302328595
+    },
+    {
+      "image_name": "dunedin_475",
+      "mode": "text",
+      "mIoU": 0.8335880866264607,
+      "F1": 0.9092424767659508,
+      "Boundary_IoU": 0.570687418937517
+    },
+    {
+      "image_name": "dunedin_107",
+      "mode": "text",
+      "mIoU": 0.7312156383643516,
+      "F1": 0.844742413550251,
+      "Boundary_IoU": 0.3634672919918859
+    },
+    {
+      "image_name": "dunedin_4",
+      "mode": "text",
+      "mIoU": 0.9170674639287855,
+      "F1": 0.9567398969353244,
+      "Boundary_IoU": 0.6548134126601567
+    },
+    {
+      "image_name": "potsdam_352",
+      "mode": "oracle_box",
+      "mIoU": 0.6480796878213595,
+      "F1": 0.7864664465077369,
+      "Boundary_IoU": 0.23770357863043898
+    },
+    {
+      "image_name": "potsdam_1007",
+      "mode": "oracle_box",
+      "mIoU": 0.5681235870416871,
+      "F1": 0.7245903214968302,
+      "Boundary_IoU": 0.24598829527570348
+    },
+    {
+      "image_name": "potsdam_357",
+      "mode": "oracle_box",
+      "mIoU": 0.7535048697471156,
+      "F1": 0.8594271766758472,
+      "Boundary_IoU": 0.17012759570023298
+    },
+    {
+      "image_name": "potsdam_772",
+      "mode": "oracle_box",
+      "mIoU": 0.44598788553386487,
+      "F1": 0.6168625477370431,
+      "Boundary_IoU": 0.08203139427855205
+    },
+    {
+      "image_name": "potsdam_789",
+      "mode": "oracle_box",
+      "mIoU": 0.5577096504171236,
+      "F1": 0.7160636775508381,
+      "Boundary_IoU": 0.08249614895338139
+    },
+    {
+      "image_name": "potsdam_814",
+      "mode": "oracle_box",
+      "mIoU": 0.5505215412418303,
+      "F1": 0.7101114387625158,
+      "Boundary_IoU": 0.1330488522685902
+    },
+    {
+      "image_name": "potsdam_175",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "potsdam_423",
+      "mode": "oracle_box",
+      "mIoU": 0.6683430841073112,
+      "F1": 0.8012058076949702,
+      "Boundary_IoU": 2.5820444627989825e-12
+    },
+    {
+      "image_name": "potsdam_553",
+      "mode": "oracle_box",
+      "mIoU": 0.5427507965037871,
+      "F1": 0.7036143461843666,
+      "Boundary_IoU": 0.029675762263823357
+    },
+    {
+      "image_name": "potsdam_779",
+      "mode": "oracle_box",
+      "mIoU": 0.8202254845198398,
+      "F1": 0.9012350299403046,
+      "Boundary_IoU": 0.2764353801978179
+    },
+    {
+      "image_name": "potsdam_655",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "potsdam_205",
+      "mode": "oracle_box",
+      "mIoU": 0.8787356904063941,
+      "F1": 0.9354543003505423,
+      "Boundary_IoU": 0.08706706982485524
+    },
+    {
+      "image_name": "potsdam_1008",
+      "mode": "oracle_box",
+      "mIoU": 0.5418250950590139,
+      "F1": 0.7028360049330152,
+      "Boundary_IoU": 0.23154164206687033
+    },
+    {
+      "image_name": "potsdam_267",
+      "mode": "oracle_box",
+      "mIoU": 0.3616807094903697,
+      "F1": 0.531226897714514,
+      "Boundary_IoU": 0.06386152680653565
+    },
+    {
+      "image_name": "potsdam_468",
+      "mode": "oracle_box",
+      "mIoU": 0.5308059793511148,
+      "F1": 0.6934987013516147,
+      "Boundary_IoU": 0.16151051415653958
+    },
+    {
+      "image_name": "potsdam_426",
+      "mode": "oracle_box",
+      "mIoU": 0.20843731690022257,
+      "F1": 0.3449700104167206,
+      "Boundary_IoU": 0.04052130927241014
+    },
+    {
+      "image_name": "potsdam_691",
+      "mode": "oracle_box",
+      "mIoU": 0.172045233106463,
+      "F1": 0.293581217252888,
+      "Boundary_IoU": 0.017651919184123396
+    },
+    {
+      "image_name": "potsdam_697",
+      "mode": "oracle_box",
+      "mIoU": 0.4873020028801978,
+      "F1": 0.6552831932404375,
+      "Boundary_IoU": 0.07403369132807422
+    },
+    {
+      "image_name": "potsdam_48",
+      "mode": "oracle_box",
+      "mIoU": 0.650206104010388,
+      "F1": 0.7880301768730754,
+      "Boundary_IoU": 0.21319854612433894
+    },
+    {
+      "image_name": "potsdam_375",
+      "mode": "oracle_box",
+      "mIoU": 0.516615079133894,
+      "F1": 0.6812738264856704,
+      "Boundary_IoU": 0.12979752901240288
+    },
+    {
+      "image_name": "potsdam_978",
+      "mode": "oracle_box",
+      "mIoU": 0.0012114778887964699,
+      "F1": 0.0024200239709108277,
+      "Boundary_IoU": 0.005829152833300964
+    },
+    {
+      "image_name": "potsdam_94",
+      "mode": "oracle_box",
+      "mIoU": 0.2655335856084083,
+      "F1": 0.4196389390651812,
+      "Boundary_IoU": 0.07566653054620112
+    },
+    {
+      "image_name": "potsdam_798",
+      "mode": "oracle_box",
+      "mIoU": 0.562775280575601,
+      "F1": 0.7202254701242295,
+      "Boundary_IoU": 0.10137444757633636
+    },
+    {
+      "image_name": "potsdam_948",
+      "mode": "oracle_box",
+      "mIoU": 0.6968091547593275,
+      "F1": 0.8213170618566961,
+      "Boundary_IoU": 0.16759633809168575
+    },
+    {
+      "image_name": "potsdam_516",
+      "mode": "oracle_box",
+      "mIoU": 0.6312253515428163,
+      "F1": 0.7739278340000678,
+      "Boundary_IoU": 0.04178292410881385
+    },
+    {
+      "image_name": "potsdam_915",
+      "mode": "oracle_box",
+      "mIoU": 0.6343648583712606,
+      "F1": 0.7762830375628222,
+      "Boundary_IoU": 0.13912409772647444
+    },
+    {
+      "image_name": "potsdam_282",
+      "mode": "oracle_box",
+      "mIoU": 0.7057265344535693,
+      "F1": 0.8274791066430518,
+      "Boundary_IoU": 0.1840459056526784
+    },
+    {
+      "image_name": "potsdam_23",
+      "mode": "oracle_box",
+      "mIoU": 0.7515687269042076,
+      "F1": 0.858166414323299,
+      "Boundary_IoU": 0.2232873509499521
+    },
+    {
+      "image_name": "potsdam_70",
+      "mode": "oracle_box",
+      "mIoU": 0.697943996566818,
+      "F1": 0.8221048491323759,
+      "Boundary_IoU": 0.35780148255868915
+    },
+    {
+      "image_name": "potsdam_700",
+      "mode": "oracle_box",
+      "mIoU": 0.25937007017755875,
+      "F1": 0.4119044533738849,
+      "Boundary_IoU": 0.07168056447928672
+    },
+    {
+      "image_name": "potsdam_1102",
+      "mode": "oracle_box",
+      "mIoU": 0.5613618952213428,
+      "F1": 0.7190669849689854,
+      "Boundary_IoU": 0.12301849406030922
+    },
+    {
+      "image_name": "potsdam_1057",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "potsdam_1151",
+      "mode": "oracle_box",
+      "mIoU": 0.16945365652814104,
+      "F1": 0.2897996950662539,
+      "Boundary_IoU": 0.03714182974465617
+    },
+    {
+      "image_name": "potsdam_812",
+      "mode": "oracle_box",
+      "mIoU": 0.39132112298927474,
+      "F1": 0.5625173319416974,
+      "Boundary_IoU": 0.09202062623416075
+    },
+    {
+      "image_name": "potsdam_228",
+      "mode": "oracle_box",
+      "mIoU": 0.2783428595781193,
+      "F1": 0.4354745012144967,
+      "Boundary_IoU": 0.030284843729851987
+    },
+    {
+      "image_name": "potsdam_393",
+      "mode": "oracle_box",
+      "mIoU": 0.4716131278939358,
+      "F1": 0.6409471605744252,
+      "Boundary_IoU": 0.11533768369909454
+    },
+    {
+      "image_name": "potsdam_854",
+      "mode": "oracle_box",
+      "mIoU": 0.7397840920222112,
+      "F1": 0.8504320684554528,
+      "Boundary_IoU": 0.10444101048406193
+    },
+    {
+      "image_name": "potsdam_208",
+      "mode": "oracle_box",
+      "mIoU": 0.813676483833408,
+      "F1": 0.8972675017691732,
+      "Boundary_IoU": 0.2914469830163192
+    },
+    {
+      "image_name": "potsdam_502",
+      "mode": "oracle_box",
+      "mIoU": 0.2360469752913625,
+      "F1": 0.3819385185345787,
+      "Boundary_IoU": 0.0368187176973029
+    },
+    {
+      "image_name": "potsdam_968",
+      "mode": "oracle_box",
+      "mIoU": 0.5296900690832507,
+      "F1": 0.6925456074910601,
+      "Boundary_IoU": 0.10397117333757733
+    },
+    {
+      "image_name": "potsdam_1048",
+      "mode": "oracle_box",
+      "mIoU": 0.10290160583184851,
+      "F1": 0.18660160668467102,
+      "Boundary_IoU": 0.04868230706533182
+    },
+    {
+      "image_name": "potsdam_170",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "potsdam_906",
+      "mode": "oracle_box",
+      "mIoU": 0.49019763054478993,
+      "F1": 0.6578961347099067,
+      "Boundary_IoU": 0.045065395651482834
+    },
+    {
+      "image_name": "potsdam_1000",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "potsdam_625",
+      "mode": "oracle_box",
+      "mIoU": 0.6420797957346671,
+      "F1": 0.7820323925821193,
+      "Boundary_IoU": 0.24426450742549272
+    },
+    {
+      "image_name": "potsdam_1076",
+      "mode": "oracle_box",
+      "mIoU": 0.10415690358569095,
+      "F1": 0.1886632293775329,
+      "Boundary_IoU": 0.08883693747412229
+    },
+    {
+      "image_name": "potsdam_155",
+      "mode": "oracle_box",
+      "mIoU": 0.07453908153142852,
+      "F1": 0.13873684598673314,
+      "Boundary_IoU": 0.03628325330041816
+    },
+    {
+      "image_name": "potsdam_686",
+      "mode": "oracle_box",
+      "mIoU": 0.4516573317468399,
+      "F1": 0.6222643896292077,
+      "Boundary_IoU": 0.3125221709948116
+    },
+    {
+      "image_name": "potsdam_520",
+      "mode": "oracle_box",
+      "mIoU": 0.5517052515305603,
+      "F1": 0.7110954235494229,
+      "Boundary_IoU": 0.15837442517824152
+    },
+    {
+      "image_name": "potsdam_132",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "potsdam_305",
+      "mode": "oracle_box",
+      "mIoU": 0.6484743886160969,
+      "F1": 0.7867570076843946,
+      "Boundary_IoU": 0.16387472687951504
+    },
+    {
+      "image_name": "potsdam_839",
+      "mode": "oracle_box",
+      "mIoU": 0.553811616172163,
+      "F1": 0.7128426772046026,
+      "Boundary_IoU": 0.1593180884625543
+    },
+    {
+      "image_name": "potsdam_78",
+      "mode": "oracle_box",
+      "mIoU": 0.006292461018910085,
+      "F1": 0.012506227090619954,
+      "Boundary_IoU": 0.006203362405207817
+    },
+    {
+      "image_name": "potsdam_571",
+      "mode": "oracle_box",
+      "mIoU": 0.27542811542980017,
+      "F1": 0.43189908094009966,
+      "Boundary_IoU": 0.02460579064761763
+    },
+    {
+      "image_name": "potsdam_583",
+      "mode": "oracle_box",
+      "mIoU": 0.8559663984522334,
+      "F1": 0.922394283825411,
+      "Boundary_IoU": 0.010164131915297664
+    },
+    {
+      "image_name": "potsdam_56",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "potsdam_415",
+      "mode": "oracle_box",
+      "mIoU": 0.1453511134316783,
+      "F1": 0.2538105769085235,
+      "Boundary_IoU": 0.01858165934215369
+    },
+    {
+      "image_name": "potsdam_192",
+      "mode": "oracle_box",
+      "mIoU": 0.7642801469774763,
+      "F1": 0.8663931839698752,
+      "Boundary_IoU": 0.3402800749879779
+    },
+    {
+      "image_name": "potsdam_988",
+      "mode": "oracle_box",
+      "mIoU": 0.5750364214293961,
+      "F1": 0.7301880941996509,
+      "Boundary_IoU": 0.1126640821631209
+    },
+    {
+      "image_name": "potsdam_896",
+      "mode": "oracle_box",
+      "mIoU": 0.7548288458623591,
+      "F1": 0.8602877114107833,
+      "Boundary_IoU": 0.1288578021406918
+    },
+    {
+      "image_name": "potsdam_760",
+      "mode": "oracle_box",
+      "mIoU": 0.6656949365392975,
+      "F1": 0.799299946149974,
+      "Boundary_IoU": 0.10162383052907167
+    },
+    {
+      "image_name": "potsdam_1070",
+      "mode": "oracle_box",
+      "mIoU": 0.10407484729680604,
+      "F1": 0.18852860845165256,
+      "Boundary_IoU": 0.06067518249246492
+    },
+    {
+      "image_name": "potsdam_641",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "potsdam_608",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "potsdam_399",
+      "mode": "oracle_box",
+      "mIoU": 0.3878361334729086,
+      "F1": 0.558907675219868,
+      "Boundary_IoU": 0.04511278195755622
+    },
+    {
+      "image_name": "potsdam_998",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "potsdam_21",
+      "mode": "oracle_box",
+      "mIoU": 0.46816363823421,
+      "F1": 0.637754029649134,
+      "Boundary_IoU": 0.0819016009393745
+    },
+    {
+      "image_name": "potsdam_942",
+      "mode": "oracle_box",
+      "mIoU": 0.45861472303991513,
+      "F1": 0.6288359986987868,
+      "Boundary_IoU": 0.12870557908625038
+    },
+    {
+      "image_name": "potsdam_320",
+      "mode": "oracle_box",
+      "mIoU": 0.7040480340889811,
+      "F1": 0.8263241645829538,
+      "Boundary_IoU": 0.12625842101609924
+    },
+    {
+      "image_name": "potsdam_61",
+      "mode": "oracle_box",
+      "mIoU": 0.3925162733123752,
+      "F1": 0.5637510754233125,
+      "Boundary_IoU": 0.07838427345018253
+    },
+    {
+      "image_name": "potsdam_579",
+      "mode": "oracle_box",
+      "mIoU": 0.6956533783973075,
+      "F1": 0.8205136583453877,
+      "Boundary_IoU": 0.056581045174390464
+    },
+    {
+      "image_name": "potsdam_496",
+      "mode": "oracle_box",
+      "mIoU": 0.7764460112292036,
+      "F1": 0.8741566096813503,
+      "Boundary_IoU": 0.25431472082164575
+    },
+    {
+      "image_name": "potsdam_717",
+      "mode": "oracle_box",
+      "mIoU": 0.462428678572278,
+      "F1": 0.6324119396011267,
+      "Boundary_IoU": 0.036072496924880904
+    },
+    {
+      "image_name": "potsdam_597",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "potsdam_762",
+      "mode": "oracle_box",
+      "mIoU": 0.6196487376513772,
+      "F1": 0.765164351067604,
+      "Boundary_IoU": 0.2154882154932952
+    },
+    {
+      "image_name": "potsdam_837",
+      "mode": "oracle_box",
+      "mIoU": 0.6087511705117865,
+      "F1": 0.7567996613398886,
+      "Boundary_IoU": 0.024634141995642442
+    },
+    {
+      "image_name": "potsdam_268",
+      "mode": "oracle_box",
+      "mIoU": 0.5856453936246385,
+      "F1": 0.7386839402797576,
+      "Boundary_IoU": 0.16295657626805937
+    },
+    {
+      "image_name": "potsdam_129",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "potsdam_130",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "potsdam_209",
+      "mode": "oracle_box",
+      "mIoU": 0.6078638317477589,
+      "F1": 0.7561135709940969,
+      "Boundary_IoU": 0.34920634921481647
+    },
+    {
+      "image_name": "potsdam_412",
+      "mode": "oracle_box",
+      "mIoU": 0.6231309007404655,
+      "F1": 0.7678134899114393,
+      "Boundary_IoU": 0.07783299125484588
+    },
+    {
+      "image_name": "potsdam_564",
+      "mode": "oracle_box",
+      "mIoU": 0.6032294906817387,
+      "F1": 0.7525179572703136,
+      "Boundary_IoU": 0.10485295094057644
+    },
+    {
+      "image_name": "potsdam_633",
+      "mode": "oracle_box",
+      "mIoU": 0.4909522800867084,
+      "F1": 0.6585754442226657,
+      "Boundary_IoU": 0.14576099537654977
+    },
+    {
+      "image_name": "potsdam_696",
+      "mode": "oracle_box",
+      "mIoU": 0.11546974495482865,
+      "F1": 0.20703339642466867,
+      "Boundary_IoU": 0.03154574133296077
+    },
+    {
+      "image_name": "potsdam_469",
+      "mode": "oracle_box",
+      "mIoU": 0.3635595606960918,
+      "F1": 0.5332507228466207,
+      "Boundary_IoU": 0.14784703405155536
+    },
+    {
+      "image_name": "potsdam_74",
+      "mode": "oracle_box",
+      "mIoU": 0.5445573731058789,
+      "F1": 0.7051306511337485,
+      "Boundary_IoU": 0.06607984131112885
+    },
+    {
+      "image_name": "potsdam_1148",
+      "mode": "oracle_box",
+      "mIoU": 0.7831141486971149,
+      "F1": 0.878366816021612,
+      "Boundary_IoU": 0.07620926167088264
+    },
+    {
+      "image_name": "potsdam_926",
+      "mode": "oracle_box",
+      "mIoU": 0.47132648772098856,
+      "F1": 0.6406823932745073,
+      "Boundary_IoU": 0.17832611223090813
+    },
+    {
+      "image_name": "potsdam_689",
+      "mode": "oracle_box",
+      "mIoU": 0.6380932022309086,
+      "F1": 0.7790682500355074,
+      "Boundary_IoU": 0.26552287587699974
+    },
+    {
+      "image_name": "potsdam_148",
+      "mode": "oracle_box",
+      "mIoU": 0.7082657235304383,
+      "F1": 0.8292219574207657,
+      "Boundary_IoU": 0.12243428160235892
+    },
+    {
+      "image_name": "potsdam_586",
+      "mode": "oracle_box",
+      "mIoU": 0.5574722794627048,
+      "F1": 0.7158679956151536,
+      "Boundary_IoU": 0.07876657097997365
+    },
+    {
+      "image_name": "potsdam_446",
+      "mode": "oracle_box",
+      "mIoU": 0.7147292025006138,
+      "F1": 0.833635073641047,
+      "Boundary_IoU": 0.11307441447309176
+    },
+    {
+      "image_name": "potsdam_418",
+      "mode": "oracle_box",
+      "mIoU": 0.7580893682591401,
+      "F1": 0.8624014022787936,
+      "Boundary_IoU": 0.1129571690629358
+    },
+    {
+      "image_name": "potsdam_1139",
+      "mode": "oracle_box",
+      "mIoU": 0.2657756885735315,
+      "F1": 0.41994121229000686,
+      "Boundary_IoU": 0.0586746688067889
+    },
+    {
+      "image_name": "potsdam_832",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "potsdam_739",
+      "mode": "oracle_box",
+      "mIoU": 0.6835515365322248,
+      "F1": 0.8120351788457502,
+      "Boundary_IoU": 0.05546594982925209
+    },
+    {
+      "image_name": "potsdam_79",
+      "mode": "oracle_box",
+      "mIoU": 0.018897464774156162,
+      "F1": 0.03709394797228998,
+      "Boundary_IoU": 0.010456368608922921
+    },
+    {
+      "image_name": "potsdam_653",
+      "mode": "oracle_box",
+      "mIoU": 0.6343464773816215,
+      "F1": 0.7762692747964042,
+      "Boundary_IoU": 0.09571259997547113
+    },
+    {
+      "image_name": "potsdam_1012",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "potsdam_508",
+      "mode": "oracle_box",
+      "mIoU": 0.13232694818024227,
+      "F1": 0.23372568919721468,
+      "Boundary_IoU": 0.04234046836368124
+    },
+    {
+      "image_name": "khartoum_647",
+      "mode": "oracle_box",
+      "mIoU": 0.5892154496714802,
+      "F1": 0.7415173943761322,
+      "Boundary_IoU": 0.3673941625041186
+    },
+    {
+      "image_name": "khartoum_699",
+      "mode": "oracle_box",
+      "mIoU": 0.8783705868945971,
+      "F1": 0.935247381984099,
+      "Boundary_IoU": 0.5139864647131357
+    },
+    {
+      "image_name": "khartoum_287",
+      "mode": "oracle_box",
+      "mIoU": 0.7942341750200028,
+      "F1": 0.8853183002280555,
+      "Boundary_IoU": 0.3445739504381405
+    },
+    {
+      "image_name": "khartoum_6",
+      "mode": "oracle_box",
+      "mIoU": 0.6455322137057594,
+      "F1": 0.7845877562636073,
+      "Boundary_IoU": 0.4341469357940375
+    },
+    {
+      "image_name": "khartoum_792",
+      "mode": "oracle_box",
+      "mIoU": 0.5356160195667171,
+      "F1": 0.6975910810276287,
+      "Boundary_IoU": 0.15701319896023988
+    },
+    {
+      "image_name": "khartoum_339",
+      "mode": "oracle_box",
+      "mIoU": 0.7538805761449177,
+      "F1": 0.8596715037479682,
+      "Boundary_IoU": 0.45609294785928
+    },
+    {
+      "image_name": "khartoum_961",
+      "mode": "oracle_box",
+      "mIoU": 0.8443795620460675,
+      "F1": 0.9156245053038181,
+      "Boundary_IoU": 0.6940464820169684
+    },
+    {
+      "image_name": "khartoum_750",
+      "mode": "oracle_box",
+      "mIoU": 0.09629629646364884,
+      "F1": 0.17567567581491966,
+      "Boundary_IoU": 0.11830357152697504
+    },
+    {
+      "image_name": "khartoum_735",
+      "mode": "oracle_box",
+      "mIoU": 0.6235676494831418,
+      "F1": 0.7681449549473047,
+      "Boundary_IoU": 0.23397240200385583
+    },
+    {
+      "image_name": "khartoum_471",
+      "mode": "oracle_box",
+      "mIoU": 0.6332421503334523,
+      "F1": 0.7754418414979461,
+      "Boundary_IoU": 0.3656921451226388
+    },
+    {
+      "image_name": "khartoum_484",
+      "mode": "oracle_box",
+      "mIoU": 0.7407324947131962,
+      "F1": 0.8510583871589796,
+      "Boundary_IoU": 0.5330721935762938
+    },
+    {
+      "image_name": "khartoum_201",
+      "mode": "oracle_box",
+      "mIoU": 0.7244795927645218,
+      "F1": 0.8402298244690029,
+      "Boundary_IoU": 0.21887829718390417
+    },
+    {
+      "image_name": "khartoum_803",
+      "mode": "oracle_box",
+      "mIoU": 0.7768565120365979,
+      "F1": 0.8744167092548661,
+      "Boundary_IoU": 0.26029602538369156
+    },
+    {
+      "image_name": "khartoum_604",
+      "mode": "oracle_box",
+      "mIoU": 0.7811866700137873,
+      "F1": 0.8771530611193075,
+      "Boundary_IoU": 0.26617511205517813
+    },
+    {
+      "image_name": "khartoum_847",
+      "mode": "oracle_box",
+      "mIoU": 0.6021107962720174,
+      "F1": 0.7516468869354425,
+      "Boundary_IoU": 0.49657587722345675
+    },
+    {
+      "image_name": "khartoum_664",
+      "mode": "oracle_box",
+      "mIoU": 0.8191586282295087,
+      "F1": 0.9005906527532733,
+      "Boundary_IoU": 0.37759824509860945
+    },
+    {
+      "image_name": "khartoum_282",
+      "mode": "oracle_box",
+      "mIoU": 0.6538683759143686,
+      "F1": 0.7907139231110483,
+      "Boundary_IoU": 0.3090109247937454
+    },
+    {
+      "image_name": "khartoum_878",
+      "mode": "oracle_box",
+      "mIoU": 0.6019061745892073,
+      "F1": 0.75148742683812,
+      "Boundary_IoU": 0.27580333589664996
+    },
+    {
+      "image_name": "khartoum_547",
+      "mode": "oracle_box",
+      "mIoU": 0.8144501873274985,
+      "F1": 0.8977377202369675,
+      "Boundary_IoU": 0.3021164111994677
+    },
+    {
+      "image_name": "khartoum_356",
+      "mode": "oracle_box",
+      "mIoU": 0.9168127402354076,
+      "F1": 0.9566012589448826,
+      "Boundary_IoU": 0.4485385296739045
+    },
+    {
+      "image_name": "khartoum_877",
+      "mode": "oracle_box",
+      "mIoU": 0.5803397162009275,
+      "F1": 0.7344493215619367,
+      "Boundary_IoU": 0.3016354822665626
+    },
+    {
+      "image_name": "khartoum_369",
+      "mode": "oracle_box",
+      "mIoU": 0.33171140939877636,
+      "F1": 0.4981731132685581,
+      "Boundary_IoU": 0.25051874395144313
+    },
+    {
+      "image_name": "khartoum_363",
+      "mode": "oracle_box",
+      "mIoU": 0.7030999270616225,
+      "F1": 0.8256707852420273,
+      "Boundary_IoU": 0.46044311931599013
+    },
+    {
+      "image_name": "khartoum_31",
+      "mode": "oracle_box",
+      "mIoU": 0.8571489598023959,
+      "F1": 0.9230804618854417,
+      "Boundary_IoU": 0.4158204168956085
+    },
+    {
+      "image_name": "khartoum_261",
+      "mode": "oracle_box",
+      "mIoU": 0.6409114271035791,
+      "F1": 0.7811651701818948,
+      "Boundary_IoU": 0.41151871261603007
+    },
+    {
+      "image_name": "khartoum_450",
+      "mode": "oracle_box",
+      "mIoU": 0.8722440847646712,
+      "F1": 0.9317632159850038,
+      "Boundary_IoU": 0.4945501500152119
+    },
+    {
+      "image_name": "khartoum_333",
+      "mode": "oracle_box",
+      "mIoU": 0.5092838196345637,
+      "F1": 0.6748681898092758,
+      "Boundary_IoU": 0.3922434179506189
+    },
+    {
+      "image_name": "khartoum_642",
+      "mode": "oracle_box",
+      "mIoU": 0.6606788150965615,
+      "F1": 0.7956732019346746,
+      "Boundary_IoU": 0.32549512428033217
+    },
+    {
+      "image_name": "khartoum_824",
+      "mode": "oracle_box",
+      "mIoU": 0.7934999085986766,
+      "F1": 0.8848619448423726,
+      "Boundary_IoU": 0.42017324192409344
+    },
+    {
+      "image_name": "khartoum_853",
+      "mode": "oracle_box",
+      "mIoU": 0.5447164088312946,
+      "F1": 0.7052639639444148,
+      "Boundary_IoU": 0.3039072147894841
+    },
+    {
+      "image_name": "khartoum_882",
+      "mode": "oracle_box",
+      "mIoU": 0.5519651165058574,
+      "F1": 0.7113112410006075,
+      "Boundary_IoU": 0.31598069618636626
+    },
+    {
+      "image_name": "khartoum_928",
+      "mode": "oracle_box",
+      "mIoU": 0.7492675501248561,
+      "F1": 0.8566643222431028,
+      "Boundary_IoU": 0.2994697055189
+    },
+    {
+      "image_name": "khartoum_94",
+      "mode": "oracle_box",
+      "mIoU": 0.6349425287398281,
+      "F1": 0.7767154105752481,
+      "Boundary_IoU": 0.6056125021038009
+    },
+    {
+      "image_name": "khartoum_630",
+      "mode": "oracle_box",
+      "mIoU": 0.7529785312716567,
+      "F1": 0.8590847153447122,
+      "Boundary_IoU": 0.42076307197110185
+    },
+    {
+      "image_name": "khartoum_949",
+      "mode": "oracle_box",
+      "mIoU": 0.7289646133684375,
+      "F1": 0.84323832625839,
+      "Boundary_IoU": 0.2609375519853823
+    },
+    {
+      "image_name": "khartoum_237",
+      "mode": "oracle_box",
+      "mIoU": 0.803927310589741,
+      "F1": 0.8913078768421463,
+      "Boundary_IoU": 0.3391337644684346
+    },
+    {
+      "image_name": "khartoum_203",
+      "mode": "oracle_box",
+      "mIoU": 0.6775427344143914,
+      "F1": 0.8077799992985796,
+      "Boundary_IoU": 0.35274358529959965
+    },
+    {
+      "image_name": "khartoum_323",
+      "mode": "oracle_box",
+      "mIoU": 0.7227027440777272,
+      "F1": 0.8390336017773735,
+      "Boundary_IoU": 0.36312643985282106
+    },
+    {
+      "image_name": "khartoum_813",
+      "mode": "oracle_box",
+      "mIoU": 0.6668763319917218,
+      "F1": 0.8001509400458147,
+      "Boundary_IoU": 0.28204706945512514
+    },
+    {
+      "image_name": "khartoum_640",
+      "mode": "oracle_box",
+      "mIoU": 0.6232520460622312,
+      "F1": 0.7679054495253037,
+      "Boundary_IoU": 0.311662219766233
+    },
+    {
+      "image_name": "khartoum_453",
+      "mode": "oracle_box",
+      "mIoU": 0.8731238997478511,
+      "F1": 0.9322649717569192,
+      "Boundary_IoU": 0.42934766471858027
+    },
+    {
+      "image_name": "khartoum_415",
+      "mode": "oracle_box",
+      "mIoU": 0.6243562261634916,
+      "F1": 0.7687429839672238,
+      "Boundary_IoU": 0.37324459641109364
+    },
+    {
+      "image_name": "khartoum_384",
+      "mode": "oracle_box",
+      "mIoU": 0.6068253786585655,
+      "F1": 0.7553096767303131,
+      "Boundary_IoU": 0.3098382673923839
+    },
+    {
+      "image_name": "khartoum_698",
+      "mode": "oracle_box",
+      "mIoU": 0.8345339580105726,
+      "F1": 0.9098048628279721,
+      "Boundary_IoU": 0.44053598014999396
+    },
+    {
+      "image_name": "khartoum_533",
+      "mode": "oracle_box",
+      "mIoU": 0.5265225574222476,
+      "F1": 0.6898326590221807,
+      "Boundary_IoU": 0.4129747185432462
+    },
+    {
+      "image_name": "khartoum_429",
+      "mode": "oracle_box",
+      "mIoU": 0.569570744109784,
+      "F1": 0.7257662596565447,
+      "Boundary_IoU": 0.4227658646282669
+    },
+    {
+      "image_name": "khartoum_56",
+      "mode": "oracle_box",
+      "mIoU": 0.7090009753382904,
+      "F1": 0.8297256532552039,
+      "Boundary_IoU": 0.4137955084404757
+    },
+    {
+      "image_name": "khartoum_807",
+      "mode": "oracle_box",
+      "mIoU": 0.7063021480571408,
+      "F1": 0.827874651463174,
+      "Boundary_IoU": 0.40396210164018725
+    },
+    {
+      "image_name": "khartoum_277",
+      "mode": "oracle_box",
+      "mIoU": 0.640315080197017,
+      "F1": 0.7807220550811114,
+      "Boundary_IoU": 0.47467312349177065
+    },
+    {
+      "image_name": "khartoum_105",
+      "mode": "oracle_box",
+      "mIoU": 0.6334075861646006,
+      "F1": 0.775565867980064,
+      "Boundary_IoU": 0.36395511921557744
+    },
+    {
+      "image_name": "khartoum_717",
+      "mode": "oracle_box",
+      "mIoU": 0.6717285897021273,
+      "F1": 0.8036335489383136,
+      "Boundary_IoU": 0.5129186602878714
+    },
+    {
+      "image_name": "khartoum_504",
+      "mode": "oracle_box",
+      "mIoU": 0.624797114517891,
+      "F1": 0.7690770852989677,
+      "Boundary_IoU": 0.31181428768921954
+    },
+    {
+      "image_name": "khartoum_358",
+      "mode": "oracle_box",
+      "mIoU": 0.834433815740349,
+      "F1": 0.909745348761518,
+      "Boundary_IoU": 0.48542244640735077
+    },
+    {
+      "image_name": "khartoum_653",
+      "mode": "oracle_box",
+      "mIoU": 0.5477771385038677,
+      "F1": 0.7078243047744456,
+      "Boundary_IoU": 0.3954181639999277
+    },
+    {
+      "image_name": "khartoum_933",
+      "mode": "oracle_box",
+      "mIoU": 0.7791595957554794,
+      "F1": 0.8758737525449143,
+      "Boundary_IoU": 0.4118238993740285
+    },
+    {
+      "image_name": "khartoum_113",
+      "mode": "oracle_box",
+      "mIoU": 0.6275527801481043,
+      "F1": 0.7711612032525229,
+      "Boundary_IoU": 0.3392884452301093
+    },
+    {
+      "image_name": "khartoum_576",
+      "mode": "oracle_box",
+      "mIoU": 0.923438489987883,
+      "F1": 0.9601954986287823,
+      "Boundary_IoU": 0.5273352380052911
+    },
+    {
+      "image_name": "khartoum_449",
+      "mode": "oracle_box",
+      "mIoU": 0.6525466589368639,
+      "F1": 0.7897467286721433,
+      "Boundary_IoU": 0.4241845074247633
+    },
+    {
+      "image_name": "khartoum_684",
+      "mode": "oracle_box",
+      "mIoU": 0.48707189839547427,
+      "F1": 0.6550751162994352,
+      "Boundary_IoU": 0.46170644206111827
+    },
+    {
+      "image_name": "khartoum_350",
+      "mode": "oracle_box",
+      "mIoU": 0.8057165457341826,
+      "F1": 0.8924064495477125,
+      "Boundary_IoU": 0.44136746800049526
+    },
+    {
+      "image_name": "khartoum_701",
+      "mode": "oracle_box",
+      "mIoU": 0.582989413244913,
+      "F1": 0.7365676717307619,
+      "Boundary_IoU": 0.34300248945402095
+    },
+    {
+      "image_name": "khartoum_465",
+      "mode": "oracle_box",
+      "mIoU": 0.7608231898637116,
+      "F1": 0.8641676168766806,
+      "Boundary_IoU": 0.3600000000134737
+    },
+    {
+      "image_name": "khartoum_200",
+      "mode": "oracle_box",
+      "mIoU": 0.7586338758635318,
+      "F1": 0.8627536251580314,
+      "Boundary_IoU": 0.21144326275236908
+    },
+    {
+      "image_name": "khartoum_784",
+      "mode": "oracle_box",
+      "mIoU": 0.13688818149077248,
+      "F1": 0.240812040628603,
+      "Boundary_IoU": 0.18192133134712857
+    },
+    {
+      "image_name": "khartoum_438",
+      "mode": "oracle_box",
+      "mIoU": 0.7106807511751239,
+      "F1": 0.8308747855922503,
+      "Boundary_IoU": 0.5333608190783112
+    },
+    {
+      "image_name": "khartoum_153",
+      "mode": "oracle_box",
+      "mIoU": 0.6382850140179652,
+      "F1": 0.7792111977541175,
+      "Boundary_IoU": 0.38884397736600335
+    },
+    {
+      "image_name": "khartoum_580",
+      "mode": "oracle_box",
+      "mIoU": 0.6678774532621226,
+      "F1": 0.8008711334945378,
+      "Boundary_IoU": 0.3736650547658636
+    },
+    {
+      "image_name": "khartoum_269",
+      "mode": "oracle_box",
+      "mIoU": 0.6713849214813169,
+      "F1": 0.803387553462121,
+      "Boundary_IoU": 0.34940617031690197
+    },
+    {
+      "image_name": "khartoum_138",
+      "mode": "oracle_box",
+      "mIoU": 0.15860679334603894,
+      "F1": 0.2737888198938189,
+      "Boundary_IoU": 0.23503453570155347
+    },
+    {
+      "image_name": "khartoum_375",
+      "mode": "oracle_box",
+      "mIoU": 0.8730511692985795,
+      "F1": 0.932223511678517,
+      "Boundary_IoU": 0.45939810233581874
+    },
+    {
+      "image_name": "khartoum_863",
+      "mode": "oracle_box",
+      "mIoU": 0.6313377679236292,
+      "F1": 0.7740123233057317,
+      "Boundary_IoU": 0.33270497388296005
+    },
+    {
+      "image_name": "khartoum_396",
+      "mode": "oracle_box",
+      "mIoU": 0.7655151329870533,
+      "F1": 0.8671861471862111,
+      "Boundary_IoU": 0.4132172446788702
+    },
+    {
+      "image_name": "khartoum_24",
+      "mode": "oracle_box",
+      "mIoU": 0.6786775547241934,
+      "F1": 0.808585964367161,
+      "Boundary_IoU": 0.3402579193045768
+    },
+    {
+      "image_name": "khartoum_85",
+      "mode": "oracle_box",
+      "mIoU": 0.7293748443340181,
+      "F1": 0.8435127256807325,
+      "Boundary_IoU": 0.39851844832038397
+    },
+    {
+      "image_name": "khartoum_911",
+      "mode": "oracle_box",
+      "mIoU": 0.7314980588444627,
+      "F1": 0.8449308448345446,
+      "Boundary_IoU": 0.26670174457920204
+    },
+    {
+      "image_name": "khartoum_560",
+      "mode": "oracle_box",
+      "mIoU": 0.554946213880493,
+      "F1": 0.7137818773744941,
+      "Boundary_IoU": 0.29603915888668875
+    },
+    {
+      "image_name": "khartoum_307",
+      "mode": "oracle_box",
+      "mIoU": 0.6983431366843831,
+      "F1": 0.8223816749395002,
+      "Boundary_IoU": 0.28501578263512717
+    },
+    {
+      "image_name": "khartoum_671",
+      "mode": "oracle_box",
+      "mIoU": 0.7934848484852396,
+      "F1": 0.88485258089055,
+      "Boundary_IoU": 0.4269265180712377
+    },
+    {
+      "image_name": "khartoum_248",
+      "mode": "oracle_box",
+      "mIoU": 0.8160056255467086,
+      "F1": 0.8986818257250939,
+      "Boundary_IoU": 0.2668021181639388
+    },
+    {
+      "image_name": "khartoum_110",
+      "mode": "oracle_box",
+      "mIoU": 0.6981644216750987,
+      "F1": 0.8222577422580973,
+      "Boundary_IoU": 0.40586924572414607
+    },
+    {
+      "image_name": "khartoum_937",
+      "mode": "oracle_box",
+      "mIoU": 0.6227587158924142,
+      "F1": 0.7675308840350404,
+      "Boundary_IoU": 0.26220290006179625
+    },
+    {
+      "image_name": "khartoum_118",
+      "mode": "oracle_box",
+      "mIoU": 0.729843843696058,
+      "F1": 0.8438262752510405,
+      "Boundary_IoU": 0.36621214523645756
+    },
+    {
+      "image_name": "khartoum_291",
+      "mode": "oracle_box",
+      "mIoU": 0.5688960516060518,
+      "F1": 0.7252182845544315,
+      "Boundary_IoU": 0.49347420761383004
+    },
+    {
+      "image_name": "khartoum_389",
+      "mode": "oracle_box",
+      "mIoU": 0.5208928498209094,
+      "F1": 0.6849829688949239,
+      "Boundary_IoU": 0.3104951989615697
+    },
+    {
+      "image_name": "khartoum_638",
+      "mode": "oracle_box",
+      "mIoU": 0.6740884126296189,
+      "F1": 0.8053199670269344,
+      "Boundary_IoU": 0.3718263940781474
+    },
+    {
+      "image_name": "khartoum_89",
+      "mode": "oracle_box",
+      "mIoU": 0.6675119271943356,
+      "F1": 0.8006082790872203,
+      "Boundary_IoU": 0.3604589638552957
+    },
+    {
+      "image_name": "khartoum_934",
+      "mode": "oracle_box",
+      "mIoU": 0.6325704499460804,
+      "F1": 0.7749380125884275,
+      "Boundary_IoU": 0.3554243113730081
+    },
+    {
+      "image_name": "khartoum_702",
+      "mode": "oracle_box",
+      "mIoU": 0.8706705539361115,
+      "F1": 0.9308646593105886,
+      "Boundary_IoU": 0.34741755205215613
+    },
+    {
+      "image_name": "khartoum_709",
+      "mode": "oracle_box",
+      "mIoU": 0.6723636616049234,
+      "F1": 0.8040878632337636,
+      "Boundary_IoU": 0.3238754912910332
+    },
+    {
+      "image_name": "khartoum_843",
+      "mode": "oracle_box",
+      "mIoU": 0.4217948718195814,
+      "F1": 0.5933273219238555,
+      "Boundary_IoU": 0.3587529976326737
+    },
+    {
+      "image_name": "khartoum_751",
+      "mode": "oracle_box",
+      "mIoU": 0.6737232480883997,
+      "F1": 0.8050593177309179,
+      "Boundary_IoU": 0.3814574411155599
+    },
+    {
+      "image_name": "khartoum_295",
+      "mode": "oracle_box",
+      "mIoU": 0.7231575529896215,
+      "F1": 0.8393400263775564,
+      "Boundary_IoU": 0.46141496307511204
+    },
+    {
+      "image_name": "khartoum_289",
+      "mode": "oracle_box",
+      "mIoU": 0.022018837249101572,
+      "F1": 0.04308890686992204,
+      "Boundary_IoU": 0.03987616099309009
+    },
+    {
+      "image_name": "khartoum_7",
+      "mode": "oracle_box",
+      "mIoU": 0.7279717053709369,
+      "F1": 0.8425736406528204,
+      "Boundary_IoU": 0.43203559511830847
+    },
+    {
+      "image_name": "khartoum_565",
+      "mode": "oracle_box",
+      "mIoU": 0.8714929562014943,
+      "F1": 0.9313344763747362,
+      "Boundary_IoU": 0.49916156809540185
+    },
+    {
+      "image_name": "khartoum_190",
+      "mode": "oracle_box",
+      "mIoU": 0.7445012511200269,
+      "F1": 0.8535405184054481,
+      "Boundary_IoU": 0.22745795668612323
+    },
+    {
+      "image_name": "khartoum_694",
+      "mode": "oracle_box",
+      "mIoU": 0.830840861709638,
+      "F1": 0.9076057663840508,
+      "Boundary_IoU": 0.366204942548491
+    },
+    {
+      "image_name": "khartoum_355",
+      "mode": "oracle_box",
+      "mIoU": 0.8844849648114451,
+      "F1": 0.9387020658983019,
+      "Boundary_IoU": 0.4728009259281052
+    },
+    {
+      "image_name": "khartoum_312",
+      "mode": "oracle_box",
+      "mIoU": 0.3913311844222527,
+      "F1": 0.5625277271180434,
+      "Boundary_IoU": 0.33966259135755983
+    },
+    {
+      "image_name": "khartoum_75",
+      "mode": "oracle_box",
+      "mIoU": 0.7202823300345281,
+      "F1": 0.8374001377087206,
+      "Boundary_IoU": 0.5211073018480256
+    },
+    {
+      "image_name": "kitsap_2115",
+      "mode": "oracle_box",
+      "mIoU": 0.9463996763764887,
+      "F1": 0.9724618102465711,
+      "Boundary_IoU": 0.8553216721062756
+    },
+    {
+      "image_name": "kitsap_1025",
+      "mode": "oracle_box",
+      "mIoU": 0.8695277832973392,
+      "F1": 0.9302111378774086,
+      "Boundary_IoU": 0.567381913465283
+    },
+    {
+      "image_name": "kitsap_742",
+      "mode": "oracle_box",
+      "mIoU": 0.9096808306099323,
+      "F1": 0.9527045734854824,
+      "Boundary_IoU": 0.7441085852298767
+    },
+    {
+      "image_name": "kitsap_2255",
+      "mode": "oracle_box",
+      "mIoU": 0.9428440085819362,
+      "F1": 0.9705812761261094,
+      "Boundary_IoU": 0.7831491712782062
+    },
+    {
+      "image_name": "kitsap_1147",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_1976",
+      "mode": "oracle_box",
+      "mIoU": 0.378589263440119,
+      "F1": 0.5492415666844184,
+      "Boundary_IoU": 0.3980498996444494
+    },
+    {
+      "image_name": "kitsap_850",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_2169",
+      "mode": "oracle_box",
+      "mIoU": 0.8706086321750588,
+      "F1": 0.9308292682928516,
+      "Boundary_IoU": 0.6220502531802612
+    },
+    {
+      "image_name": "kitsap_247",
+      "mode": "oracle_box",
+      "mIoU": 0.9421089385476882,
+      "F1": 0.9701916507857139,
+      "Boundary_IoU": 0.7255096145933357
+    },
+    {
+      "image_name": "kitsap_639",
+      "mode": "oracle_box",
+      "mIoU": 0.7021819870078416,
+      "F1": 0.8250375017070088,
+      "Boundary_IoU": 0.417870036118596
+    },
+    {
+      "image_name": "kitsap_2975",
+      "mode": "oracle_box",
+      "mIoU": 0.7901726041733301,
+      "F1": 0.8827892934246387,
+      "Boundary_IoU": 0.553252073136411
+    },
+    {
+      "image_name": "kitsap_405",
+      "mode": "oracle_box",
+      "mIoU": 0.8692562843486891,
+      "F1": 0.9300557570697268,
+      "Boundary_IoU": 0.5598839943582071
+    },
+    {
+      "image_name": "kitsap_142",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_1241",
+      "mode": "oracle_box",
+      "mIoU": 0.8922049872380902,
+      "F1": 0.9430320639205042,
+      "Boundary_IoU": 0.6842788523992693
+    },
+    {
+      "image_name": "kitsap_3288",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_2748",
+      "mode": "oracle_box",
+      "mIoU": 0.01890992541707526,
+      "F1": 0.03711795310813631,
+      "Boundary_IoU": 0.029029331724787118
+    },
+    {
+      "image_name": "kitsap_317",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_2622",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_2670",
+      "mode": "oracle_box",
+      "mIoU": 0.5847328244908806,
+      "F1": 0.7379576108152256,
+      "Boundary_IoU": 0.40736949852534604
+    },
+    {
+      "image_name": "kitsap_1363",
+      "mode": "oracle_box",
+      "mIoU": 0.9023906358505863,
+      "F1": 0.9486912086768762,
+      "Boundary_IoU": 0.7345301237626203
+    },
+    {
+      "image_name": "kitsap_1536",
+      "mode": "oracle_box",
+      "mIoU": 0.8520748631913745,
+      "F1": 0.9201300445523743,
+      "Boundary_IoU": 0.4980998068687427
+    },
+    {
+      "image_name": "kitsap_3167",
+      "mode": "oracle_box",
+      "mIoU": 0.9104573484081391,
+      "F1": 0.953130253513865,
+      "Boundary_IoU": 0.674387996849845
+    },
+    {
+      "image_name": "kitsap_357",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_1207",
+      "mode": "oracle_box",
+      "mIoU": 0.9461099214865771,
+      "F1": 0.972308820833077,
+      "Boundary_IoU": 0.8172839506285627
+    },
+    {
+      "image_name": "kitsap_2125",
+      "mode": "oracle_box",
+      "mIoU": 0.9161645810808169,
+      "F1": 0.9562483203441111,
+      "Boundary_IoU": 0.735232252412487
+    },
+    {
+      "image_name": "kitsap_265",
+      "mode": "oracle_box",
+      "mIoU": 0.8854748603431931,
+      "F1": 0.9392592592615089,
+      "Boundary_IoU": 0.5952693824447741
+    },
+    {
+      "image_name": "kitsap_1002",
+      "mode": "oracle_box",
+      "mIoU": 0.9454559848005684,
+      "F1": 0.9719633774160895,
+      "Boundary_IoU": 0.5299253181890716
+    },
+    {
+      "image_name": "kitsap_1193",
+      "mode": "oracle_box",
+      "mIoU": 0.7994815294888767,
+      "F1": 0.8885687531516037,
+      "Boundary_IoU": 0.45453831658719734
+    },
+    {
+      "image_name": "kitsap_463",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_1242",
+      "mode": "oracle_box",
+      "mIoU": 0.7556988769069753,
+      "F1": 0.8608524922423152,
+      "Boundary_IoU": 0.4980124026157098
+    },
+    {
+      "image_name": "kitsap_517",
+      "mode": "oracle_box",
+      "mIoU": 0.8593073593124347,
+      "F1": 0.9243306169979757,
+      "Boundary_IoU": 0.6715296198200031
+    },
+    {
+      "image_name": "kitsap_1122",
+      "mode": "oracle_box",
+      "mIoU": 0.7773520181016811,
+      "F1": 0.8747305094144617,
+      "Boundary_IoU": 0.5490996532851521
+    },
+    {
+      "image_name": "kitsap_588",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_2941",
+      "mode": "oracle_box",
+      "mIoU": 0.783044749270146,
+      "F1": 0.8783231599660033,
+      "Boundary_IoU": 0.5110326566670443
+    },
+    {
+      "image_name": "kitsap_326",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_3216",
+      "mode": "oracle_box",
+      "mIoU": 0.8348070464053917,
+      "F1": 0.9099671249254521,
+      "Boundary_IoU": 0.5827573273343902
+    },
+    {
+      "image_name": "kitsap_1538",
+      "mode": "oracle_box",
+      "mIoU": 0.3166074384196809,
+      "F1": 0.48094432581876917,
+      "Boundary_IoU": 0.1646845297838053
+    },
+    {
+      "image_name": "kitsap_1325",
+      "mode": "oracle_box",
+      "mIoU": 0.9007456255389833,
+      "F1": 0.9477813479470366,
+      "Boundary_IoU": 0.7480763582981024
+    },
+    {
+      "image_name": "kitsap_1439",
+      "mode": "oracle_box",
+      "mIoU": 0.8993471164336413,
+      "F1": 0.9470065883708535,
+      "Boundary_IoU": 0.7618617261743398
+    },
+    {
+      "image_name": "kitsap_2248",
+      "mode": "oracle_box",
+      "mIoU": 0.8431273218520506,
+      "F1": 0.9148877691254471,
+      "Boundary_IoU": 0.6003696857744848
+    },
+    {
+      "image_name": "kitsap_1926",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_161",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_273",
+      "mode": "oracle_box",
+      "mIoU": 0.931592996426134,
+      "F1": 0.9645851876142676,
+      "Boundary_IoU": 0.7388117616647512
+    },
+    {
+      "image_name": "kitsap_1480",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_3470",
+      "mode": "oracle_box",
+      "mIoU": 0.7558276430478966,
+      "F1": 0.860936033259207,
+      "Boundary_IoU": 0.45636971725581127
+    },
+    {
+      "image_name": "kitsap_3324",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_466",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_857",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_1769",
+      "mode": "oracle_box",
+      "mIoU": 0.7627976651698807,
+      "F1": 0.8654398405911462,
+      "Boundary_IoU": 0.48241965974513384
+    },
+    {
+      "image_name": "kitsap_739",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_1694",
+      "mode": "oracle_box",
+      "mIoU": 0.8701563562246718,
+      "F1": 0.9305707015643299,
+      "Boundary_IoU": 0.6075550892126151
+    },
+    {
+      "image_name": "kitsap_1322",
+      "mode": "oracle_box",
+      "mIoU": 0.27073170749494346,
+      "F1": 0.4261036469431663,
+      "Boundary_IoU": 0.299200000112128
+    },
+    {
+      "image_name": "kitsap_3130",
+      "mode": "oracle_box",
+      "mIoU": 0.4652151726575061,
+      "F1": 0.6350127699136868,
+      "Boundary_IoU": 0.31026176329997973
+    },
+    {
+      "image_name": "kitsap_2240",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_648",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_367",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_2599",
+      "mode": "oracle_box",
+      "mIoU": 0.89327013073309,
+      "F1": 0.9436267083420613,
+      "Boundary_IoU": 0.5720174787734189
+    },
+    {
+      "image_name": "kitsap_1125",
+      "mode": "oracle_box",
+      "mIoU": 0.5783749200525672,
+      "F1": 0.7328739359654288,
+      "Boundary_IoU": 0.4600132188063441
+    },
+    {
+      "image_name": "kitsap_38",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_2926",
+      "mode": "oracle_box",
+      "mIoU": 0.7421932698321393,
+      "F1": 0.8520217391305956,
+      "Boundary_IoU": 0.5365222640654942
+    },
+    {
+      "image_name": "kitsap_889",
+      "mode": "oracle_box",
+      "mIoU": 0.8017009847828815,
+      "F1": 0.8899378881994414,
+      "Boundary_IoU": 0.5551463818899807
+    },
+    {
+      "image_name": "kitsap_2418",
+      "mode": "oracle_box",
+      "mIoU": 0.8660245852468167,
+      "F1": 0.9282027601284037,
+      "Boundary_IoU": 0.34162345841948144
+    },
+    {
+      "image_name": "kitsap_2334",
+      "mode": "oracle_box",
+      "mIoU": 0.8450745491245442,
+      "F1": 0.9160329586958413,
+      "Boundary_IoU": 0.6170185292796673
+    },
+    {
+      "image_name": "kitsap_134",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_2550",
+      "mode": "oracle_box",
+      "mIoU": 0.8586102966808303,
+      "F1": 0.923927192498705,
+      "Boundary_IoU": 0.6564849230090923
+    },
+    {
+      "image_name": "kitsap_178",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_1464",
+      "mode": "oracle_box",
+      "mIoU": 0.8717935770557877,
+      "F1": 0.931506110227059,
+      "Boundary_IoU": 0.6660617059917457
+    },
+    {
+      "image_name": "kitsap_2383",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_732",
+      "mode": "oracle_box",
+      "mIoU": 0.9337394402624347,
+      "F1": 0.9657344943387152,
+      "Boundary_IoU": 0.7778503756966366
+    },
+    {
+      "image_name": "kitsap_111",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_903",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_1074",
+      "mode": "oracle_box",
+      "mIoU": 0.7472561351600243,
+      "F1": 0.8553481314187975,
+      "Boundary_IoU": 0.5797777259689144
+    },
+    {
+      "image_name": "kitsap_1422",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_3",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_2265",
+      "mode": "oracle_box",
+      "mIoU": 0.8442917143954017,
+      "F1": 0.915572854126298,
+      "Boundary_IoU": 0.5595917142043471
+    },
+    {
+      "image_name": "kitsap_3590",
+      "mode": "oracle_box",
+      "mIoU": 0.652275170191142,
+      "F1": 0.7895478694572492,
+      "Boundary_IoU": 0.42018138112204884
+    },
+    {
+      "image_name": "kitsap_1979",
+      "mode": "oracle_box",
+      "mIoU": 0.9055639097753828,
+      "F1": 0.9504419191921799,
+      "Boundary_IoU": 0.7595167860688367
+    },
+    {
+      "image_name": "kitsap_2263",
+      "mode": "oracle_box",
+      "mIoU": 0.004657959640107243,
+      "F1": 0.009272727281733882,
+      "Boundary_IoU": 0.010934157380296313
+    },
+    {
+      "image_name": "kitsap_1572",
+      "mode": "oracle_box",
+      "mIoU": 0.3693808312396361,
+      "F1": 0.5394859089644012,
+      "Boundary_IoU": 0.2262773723031138
+    },
+    {
+      "image_name": "kitsap_1017",
+      "mode": "oracle_box",
+      "mIoU": 0.7046620275092141,
+      "F1": 0.8267469048261207,
+      "Boundary_IoU": 0.41330494331925355
+    },
+    {
+      "image_name": "kitsap_1052",
+      "mode": "oracle_box",
+      "mIoU": 0.6573717454990391,
+      "F1": 0.7932701245603898,
+      "Boundary_IoU": 0.5768292683000552
+    },
+    {
+      "image_name": "kitsap_1606",
+      "mode": "oracle_box",
+      "mIoU": 0.7530789298072162,
+      "F1": 0.8591500553712293,
+      "Boundary_IoU": 0.4622883244236727
+    },
+    {
+      "image_name": "kitsap_2535",
+      "mode": "oracle_box",
+      "mIoU": 0.8534419144003618,
+      "F1": 0.9209265289292015,
+      "Boundary_IoU": 0.4631628937803921
+    },
+    {
+      "image_name": "kitsap_2668",
+      "mode": "oracle_box",
+      "mIoU": 0.739487338343224,
+      "F1": 0.8502359540564053,
+      "Boundary_IoU": 0.5075123294012213
+    },
+    {
+      "image_name": "kitsap_711",
+      "mode": "oracle_box",
+      "mIoU": 0.9268382128236242,
+      "F1": 0.9620301348137604,
+      "Boundary_IoU": 0.6834435298922757
+    },
+    {
+      "image_name": "kitsap_1794",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_1941",
+      "mode": "oracle_box",
+      "mIoU": 0.7953927371653272,
+      "F1": 0.886037601355377,
+      "Boundary_IoU": 0.6184938036297714
+    },
+    {
+      "image_name": "kitsap_3523",
+      "mode": "oracle_box",
+      "mIoU": 0.7765118054831093,
+      "F1": 0.8741983060133377,
+      "Boundary_IoU": 0.477493588085655
+    },
+    {
+      "image_name": "kitsap_3387",
+      "mode": "oracle_box",
+      "mIoU": 0.7705592581873627,
+      "F1": 0.8704134070902084,
+      "Boundary_IoU": 0.5724172433955439
+    },
+    {
+      "image_name": "kitsap_1746",
+      "mode": "oracle_box",
+      "mIoU": 0.7668665458101608,
+      "F1": 0.8680525958550488,
+      "Boundary_IoU": 0.4370120752629204
+    },
+    {
+      "image_name": "kitsap_2403",
+      "mode": "oracle_box",
+      "mIoU": 0.819924241102135,
+      "F1": 0.9010531565923948,
+      "Boundary_IoU": 0.6191030867802307
+    },
+    {
+      "image_name": "kitsap_1279",
+      "mode": "oracle_box",
+      "mIoU": 0.8608969315521495,
+      "F1": 0.9252494503642377,
+      "Boundary_IoU": 0.671970051481704
+    },
+    {
+      "image_name": "kitsap_3537",
+      "mode": "oracle_box",
+      "mIoU": 0.7431360585754345,
+      "F1": 0.8526426321326381,
+      "Boundary_IoU": 0.47839910231011035
+    },
+    {
+      "image_name": "kitsap_2592",
+      "mode": "oracle_box",
+      "mIoU": 0.8504803253249308,
+      "F1": 0.9191995328839968,
+      "Boundary_IoU": 0.648023449260218
+    },
+    {
+      "image_name": "kitsap_2082",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_1211",
+      "mode": "oracle_box",
+      "mIoU": 0.6978549099957113,
+      "F1": 0.8220430448871688,
+      "Boundary_IoU": 0.488105301298296
+    },
+    {
+      "image_name": "kitsap_336",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_973",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_1557",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "kitsap_2288",
+      "mode": "oracle_box",
+      "mIoU": 0.862559685424,
+      "F1": 0.9262089072085744,
+      "Boundary_IoU": 0.674326896931271
+    },
+    {
+      "image_name": "wuxi_170",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_73",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_757",
+      "mode": "oracle_box",
+      "mIoU": 0.7887309072999622,
+      "F1": 0.8818888342353529,
+      "Boundary_IoU": 0.2558214747816319
+    },
+    {
+      "image_name": "wuxi_814",
+      "mode": "oracle_box",
+      "mIoU": 0.8273423688868684,
+      "F1": 0.905514350209789,
+      "Boundary_IoU": 0.4619958634999828
+    },
+    {
+      "image_name": "wuxi_517",
+      "mode": "oracle_box",
+      "mIoU": 0.6501015228435276,
+      "F1": 0.7879533638911804,
+      "Boundary_IoU": 0.23192474016211267
+    },
+    {
+      "image_name": "wuxi_146",
+      "mode": "oracle_box",
+      "mIoU": 0.0640000000468,
+      "F1": 0.12030075192103852,
+      "Boundary_IoU": 0.19759759764578994
+    },
+    {
+      "image_name": "wuxi_103",
+      "mode": "oracle_box",
+      "mIoU": 0.8806459902352672,
+      "F1": 0.9365356317007184,
+      "Boundary_IoU": 0.399340187207309
+    },
+    {
+      "image_name": "wuxi_775",
+      "mode": "oracle_box",
+      "mIoU": 0.8780454253662489,
+      "F1": 0.9350630325621292,
+      "Boundary_IoU": 0.30747266523220645
+    },
+    {
+      "image_name": "wuxi_1166",
+      "mode": "oracle_box",
+      "mIoU": 0.7534577422838755,
+      "F1": 0.8593965216434415,
+      "Boundary_IoU": 0.4354984698959722
+    },
+    {
+      "image_name": "wuxi_1316",
+      "mode": "oracle_box",
+      "mIoU": 0.908739697802459,
+      "F1": 0.9521881887285384,
+      "Boundary_IoU": 0.4429452986147584
+    },
+    {
+      "image_name": "wuxi_770",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_163",
+      "mode": "oracle_box",
+      "mIoU": 0.9120668815472659,
+      "F1": 0.9540114839593666,
+      "Boundary_IoU": 0.484175517651088
+    },
+    {
+      "image_name": "wuxi_833",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_1155",
+      "mode": "oracle_box",
+      "mIoU": 0.6545407989080667,
+      "F1": 0.7912053898457629,
+      "Boundary_IoU": 0.3381531985021591
+    },
+    {
+      "image_name": "wuxi_1128",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_138",
+      "mode": "oracle_box",
+      "mIoU": 0.8801462248245914,
+      "F1": 0.9362529501200688,
+      "Boundary_IoU": 0.4189542806373582
+    },
+    {
+      "image_name": "wuxi_1320",
+      "mode": "oracle_box",
+      "mIoU": 0.6873922842411853,
+      "F1": 0.8147391577638691,
+      "Boundary_IoU": 0.29709697346210323
+    },
+    {
+      "image_name": "wuxi_965",
+      "mode": "oracle_box",
+      "mIoU": 0.6793301539145928,
+      "F1": 0.8090489560144285,
+      "Boundary_IoU": 0.23984463506651815
+    },
+    {
+      "image_name": "wuxi_1006",
+      "mode": "oracle_box",
+      "mIoU": 0.5409394222628275,
+      "F1": 0.7020904448899736,
+      "Boundary_IoU": 0.337726358155556
+    },
+    {
+      "image_name": "wuxi_1290",
+      "mode": "oracle_box",
+      "mIoU": 0.8566551135483722,
+      "F1": 0.9227940152127811,
+      "Boundary_IoU": 0.30911520314289065
+    },
+    {
+      "image_name": "wuxi_732",
+      "mode": "oracle_box",
+      "mIoU": 0.8251433409015563,
+      "F1": 0.9041956567574276,
+      "Boundary_IoU": 0.4199765300621955
+    },
+    {
+      "image_name": "wuxi_1023",
+      "mode": "oracle_box",
+      "mIoU": 0.9589887640460958,
+      "F1": 0.9790650989392161,
+      "Boundary_IoU": 0.79362780595267
+    },
+    {
+      "image_name": "wuxi_417",
+      "mode": "oracle_box",
+      "mIoU": 0.4733567966418552,
+      "F1": 0.6425555543918169,
+      "Boundary_IoU": 0.15727189572857722
+    },
+    {
+      "image_name": "wuxi_487",
+      "mode": "oracle_box",
+      "mIoU": 0.6468138096881509,
+      "F1": 0.7855336236346047,
+      "Boundary_IoU": 0.23403846154337152
+    },
+    {
+      "image_name": "wuxi_410",
+      "mode": "oracle_box",
+      "mIoU": 0.682762060211812,
+      "F1": 0.8114778391491002,
+      "Boundary_IoU": 0.3489686352168837
+    },
+    {
+      "image_name": "wuxi_345",
+      "mode": "oracle_box",
+      "mIoU": 0.8627763341735597,
+      "F1": 0.9263337936449482,
+      "Boundary_IoU": 0.31923735028443295
+    },
+    {
+      "image_name": "wuxi_223",
+      "mode": "oracle_box",
+      "mIoU": 0.8096972424172659,
+      "F1": 0.8948427653408539,
+      "Boundary_IoU": 0.36204801609183374
+    },
+    {
+      "image_name": "wuxi_1193",
+      "mode": "oracle_box",
+      "mIoU": 0.7776943493752573,
+      "F1": 0.8749472029862237,
+      "Boundary_IoU": 0.503311258281136
+    },
+    {
+      "image_name": "wuxi_444",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_2",
+      "mode": "oracle_box",
+      "mIoU": 0.7369276850666996,
+      "F1": 0.8485415845488039,
+      "Boundary_IoU": 0.435109456028138
+    },
+    {
+      "image_name": "wuxi_1234",
+      "mode": "oracle_box",
+      "mIoU": 0.7496689594293692,
+      "F1": 0.8569266264788714,
+      "Boundary_IoU": 0.3487042001800244
+    },
+    {
+      "image_name": "wuxi_726",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_20",
+      "mode": "oracle_box",
+      "mIoU": 0.9168819092885789,
+      "F1": 0.9566389091008256,
+      "Boundary_IoU": 0.5536337209367205
+    },
+    {
+      "image_name": "wuxi_575",
+      "mode": "oracle_box",
+      "mIoU": 0.9232253170046099,
+      "F1": 0.9600802452439364,
+      "Boundary_IoU": 0.33454973514615005
+    },
+    {
+      "image_name": "wuxi_765",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_630",
+      "mode": "oracle_box",
+      "mIoU": 0.6512500478592165,
+      "F1": 0.7887964014936846,
+      "Boundary_IoU": 0.28077165024868134
+    },
+    {
+      "image_name": "wuxi_610",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_96",
+      "mode": "oracle_box",
+      "mIoU": 0.8684899730624496,
+      "F1": 0.9296169479987794,
+      "Boundary_IoU": 0.48000000000753623
+    },
+    {
+      "image_name": "wuxi_1392",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_749",
+      "mode": "oracle_box",
+      "mIoU": 0.9426821223259962,
+      "F1": 0.9704954933103354,
+      "Boundary_IoU": 0.5249941874019608
+    },
+    {
+      "image_name": "wuxi_1065",
+      "mode": "oracle_box",
+      "mIoU": 0.46296631983532976,
+      "F1": 0.632914529279415,
+      "Boundary_IoU": 0.14785527788456598
+    },
+    {
+      "image_name": "wuxi_1177",
+      "mode": "oracle_box",
+      "mIoU": 0.6789081219076989,
+      "F1": 0.8087495831946532,
+      "Boundary_IoU": 0.3053725291478372
+    },
+    {
+      "image_name": "wuxi_613",
+      "mode": "oracle_box",
+      "mIoU": 0.17370192573429508,
+      "F1": 0.2959898453326313,
+      "Boundary_IoU": 0.11735151624692848
+    },
+    {
+      "image_name": "wuxi_1382",
+      "mode": "oracle_box",
+      "mIoU": 0.926264108014471,
+      "F1": 0.9617207777070361,
+      "Boundary_IoU": 0.5691915513513365
+    },
+    {
+      "image_name": "wuxi_5",
+      "mode": "oracle_box",
+      "mIoU": 0.9064526447411416,
+      "F1": 0.9509311938500272,
+      "Boundary_IoU": 0.5453523042330247
+    },
+    {
+      "image_name": "wuxi_158",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_470",
+      "mode": "oracle_box",
+      "mIoU": 0.658591022682401,
+      "F1": 0.7941572258326596,
+      "Boundary_IoU": 0.15133412983297823
+    },
+    {
+      "image_name": "wuxi_35",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_1001",
+      "mode": "oracle_box",
+      "mIoU": 0.793140521097685,
+      "F1": 0.8846384449692557,
+      "Boundary_IoU": 0.285359056809066
+    },
+    {
+      "image_name": "wuxi_434",
+      "mode": "oracle_box",
+      "mIoU": 0.8357934508820257,
+      "F1": 0.9105528189790061,
+      "Boundary_IoU": 0.31653281640065967
+    },
+    {
+      "image_name": "wuxi_559",
+      "mode": "oracle_box",
+      "mIoU": 0.6374540360723278,
+      "F1": 0.7785916697861878,
+      "Boundary_IoU": 0.1883185164019853
+    },
+    {
+      "image_name": "wuxi_352",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_592",
+      "mode": "oracle_box",
+      "mIoU": 0.9095307208517491,
+      "F1": 0.9526222447429177,
+      "Boundary_IoU": 0.4523786169744739
+    },
+    {
+      "image_name": "wuxi_640",
+      "mode": "oracle_box",
+      "mIoU": 0.043935850325393114,
+      "F1": 0.08417346776216857,
+      "Boundary_IoU": 0.013165361491168249
+    },
+    {
+      "image_name": "wuxi_964",
+      "mode": "oracle_box",
+      "mIoU": 0.8445886240666184,
+      "F1": 0.9157474062748687,
+      "Boundary_IoU": 0.31905724419618225
+    },
+    {
+      "image_name": "wuxi_939",
+      "mode": "oracle_box",
+      "mIoU": 0.7973113044572905,
+      "F1": 0.8872267174639339,
+      "Boundary_IoU": 0.2637621430701216
+    },
+    {
+      "image_name": "wuxi_756",
+      "mode": "oracle_box",
+      "mIoU": 0.4461028846354357,
+      "F1": 0.6169725396094775,
+      "Boundary_IoU": 0.140291156665892
+    },
+    {
+      "image_name": "wuxi_271",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_1358",
+      "mode": "oracle_box",
+      "mIoU": 0.8946333930016684,
+      "F1": 0.9443868099297066,
+      "Boundary_IoU": 0.38698224852796465
+    },
+    {
+      "image_name": "wuxi_849",
+      "mode": "oracle_box",
+      "mIoU": 0.44053400333856985,
+      "F1": 0.6116259696990529,
+      "Boundary_IoU": 0.34284258788239586
+    },
+    {
+      "image_name": "wuxi_280",
+      "mode": "oracle_box",
+      "mIoU": 0.9203715916586083,
+      "F1": 0.958534895700751,
+      "Boundary_IoU": 0.47260950274705715
+    },
+    {
+      "image_name": "wuxi_1022",
+      "mode": "oracle_box",
+      "mIoU": 0.7578203834632785,
+      "F1": 0.8622273249178465,
+      "Boundary_IoU": 0.43091537137902286
+    },
+    {
+      "image_name": "wuxi_852",
+      "mode": "oracle_box",
+      "mIoU": 0.4268116465580199,
+      "F1": 0.5982732865790665,
+      "Boundary_IoU": 0.1401047440684273
+    },
+    {
+      "image_name": "wuxi_496",
+      "mode": "oracle_box",
+      "mIoU": 0.32785399948661753,
+      "F1": 0.49381031289846083,
+      "Boundary_IoU": 0.024810366639936625
+    },
+    {
+      "image_name": "wuxi_662",
+      "mode": "oracle_box",
+      "mIoU": 0.9386503067538431,
+      "F1": 0.9683544303811774,
+      "Boundary_IoU": 0.7772357723939455
+    },
+    {
+      "image_name": "wuxi_1170",
+      "mode": "oracle_box",
+      "mIoU": 0.8682876672654402,
+      "F1": 0.9295010425629766,
+      "Boundary_IoU": 0.46434037343401524
+    },
+    {
+      "image_name": "wuxi_375",
+      "mode": "oracle_box",
+      "mIoU": 0.5300692620036778,
+      "F1": 0.6928696303705892,
+      "Boundary_IoU": 0.11188128478852015
+    },
+    {
+      "image_name": "wuxi_1167",
+      "mode": "oracle_box",
+      "mIoU": 0.6624566068399163,
+      "F1": 0.7969610805048598,
+      "Boundary_IoU": 0.30660557464921867
+    },
+    {
+      "image_name": "wuxi_1094",
+      "mode": "oracle_box",
+      "mIoU": 0.8513030368302765,
+      "F1": 0.9196798361954496,
+      "Boundary_IoU": 0.3408989764203282
+    },
+    {
+      "image_name": "wuxi_1282",
+      "mode": "oracle_box",
+      "mIoU": 0.8012821142124213,
+      "F1": 0.8896797540930601,
+      "Boundary_IoU": 0.32130353523567007
+    },
+    {
+      "image_name": "wuxi_680",
+      "mode": "oracle_box",
+      "mIoU": 0.8346102426986906,
+      "F1": 0.909850194089106,
+      "Boundary_IoU": 0.3929408318709983
+    },
+    {
+      "image_name": "wuxi_1328",
+      "mode": "oracle_box",
+      "mIoU": 0.9229633816973715,
+      "F1": 0.9599385931963222,
+      "Boundary_IoU": 0.5518637732369238
+    },
+    {
+      "image_name": "wuxi_902",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_1369",
+      "mode": "oracle_box",
+      "mIoU": 0.7811513654460644,
+      "F1": 0.8771308049388887,
+      "Boundary_IoU": 0.339860515030313
+    },
+    {
+      "image_name": "wuxi_1122",
+      "mode": "oracle_box",
+      "mIoU": 0.8657576689564003,
+      "F1": 0.928049428241788,
+      "Boundary_IoU": 0.30170713202085847
+    },
+    {
+      "image_name": "wuxi_729",
+      "mode": "oracle_box",
+      "mIoU": 0.8617640315732373,
+      "F1": 0.9257500058640457,
+      "Boundary_IoU": 0.470656745391554
+    },
+    {
+      "image_name": "wuxi_1077",
+      "mode": "oracle_box",
+      "mIoU": 0.7755044266010712,
+      "F1": 0.8735595529723046,
+      "Boundary_IoU": 0.2906362368852622
+    },
+    {
+      "image_name": "wuxi_1040",
+      "mode": "oracle_box",
+      "mIoU": 0.8540930609631838,
+      "F1": 0.9213054931767569,
+      "Boundary_IoU": 0.3491471608973302
+    },
+    {
+      "image_name": "wuxi_1099",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_898",
+      "mode": "oracle_box",
+      "mIoU": 0.5856759246052049,
+      "F1": 0.738708225958409,
+      "Boundary_IoU": 0.3108826940794669
+    },
+    {
+      "image_name": "wuxi_379",
+      "mode": "oracle_box",
+      "mIoU": 0.674593843524612,
+      "F1": 0.8056805489075932,
+      "Boundary_IoU": 0.2517411491693015
+    },
+    {
+      "image_name": "wuxi_1238",
+      "mode": "oracle_box",
+      "mIoU": 0.9032648501025646,
+      "F1": 0.9491740994994463,
+      "Boundary_IoU": 0.5114885114909516
+    },
+    {
+      "image_name": "wuxi_15",
+      "mode": "oracle_box",
+      "mIoU": 0.7381901362085808,
+      "F1": 0.8493778912110197,
+      "Boundary_IoU": 0.43651207226964545
+    },
+    {
+      "image_name": "wuxi_985",
+      "mode": "oracle_box",
+      "mIoU": 0.8902287559561342,
+      "F1": 0.9419270055552584,
+      "Boundary_IoU": 0.3859722645558291
+    },
+    {
+      "image_name": "wuxi_803",
+      "mode": "oracle_box",
+      "mIoU": 0.915268606103999,
+      "F1": 0.9557600465929289,
+      "Boundary_IoU": 0.5140406363833907
+    },
+    {
+      "image_name": "wuxi_812",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_995",
+      "mode": "oracle_box",
+      "mIoU": 0.6246772220718526,
+      "F1": 0.7689862498041836,
+      "Boundary_IoU": 0.19914117015996166
+    },
+    {
+      "image_name": "wuxi_141",
+      "mode": "oracle_box",
+      "mIoU": 0.8686459774660062,
+      "F1": 0.9297063092110293,
+      "Boundary_IoU": 0.43962938881846675
+    },
+    {
+      "image_name": "wuxi_1088",
+      "mode": "oracle_box",
+      "mIoU": 0.5921064345421712,
+      "F1": 0.7438025771339987,
+      "Boundary_IoU": 0.24764040431338227
+    },
+    {
+      "image_name": "wuxi_919",
+      "mode": "oracle_box",
+      "mIoU": 0.9269786816974521,
+      "F1": 0.9621057985762703,
+      "Boundary_IoU": 0.6762977473224144
+    },
+    {
+      "image_name": "wuxi_1374",
+      "mode": "oracle_box",
+      "mIoU": 0.893766461809028,
+      "F1": 0.9439035697729509,
+      "Boundary_IoU": 0.3210941802951883
+    },
+    {
+      "image_name": "wuxi_935",
+      "mode": "oracle_box",
+      "mIoU": 0.8280776423553426,
+      "F1": 0.9059545646960051,
+      "Boundary_IoU": 0.26875443286993966
+    },
+    {
+      "image_name": "wuxi_799",
+      "mode": "oracle_box",
+      "mIoU": 0.8597138369766146,
+      "F1": 0.924565726062693,
+      "Boundary_IoU": 0.422553191492872
+    },
+    {
+      "image_name": "wuxi_654",
+      "mode": "oracle_box",
+      "mIoU": 0.23588437922366506,
+      "F1": 0.38172564227603334,
+      "Boundary_IoU": 0.06143838095188152
+    },
+    {
+      "image_name": "wuxi_522",
+      "mode": "oracle_box",
+      "mIoU": 0.8022469195469785,
+      "F1": 0.8902741470611627,
+      "Boundary_IoU": 0.39466666667400396
+    },
+    {
+      "image_name": "wuxi_1377",
+      "mode": "oracle_box",
+      "mIoU": 0.8187992590715912,
+      "F1": 0.9003734249258135,
+      "Boundary_IoU": 0.39340081294816764
+    },
+    {
+      "image_name": "wuxi_1083",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "wuxi_1044",
+      "mode": "oracle_box",
+      "mIoU": 0.8558086357429237,
+      "F1": 0.9223026763212208,
+      "Boundary_IoU": 0.30863643167535476
+    },
+    {
+      "image_name": "wuxi_248",
+      "mode": "oracle_box",
+      "mIoU": 0.9000910628346547,
+      "F1": 0.9474188689583225,
+      "Boundary_IoU": 0.32200188860613776
+    },
+    {
+      "image_name": "wuxi_656",
+      "mode": "oracle_box",
+      "mIoU": 0.7160918280693147,
+      "F1": 0.8345612004630766,
+      "Boundary_IoU": 0.165602309512879
+    },
+    {
+      "image_name": "dunedin_1104",
+      "mode": "oracle_box",
+      "mIoU": 0.8430379408504376,
+      "F1": 0.9148351449144618,
+      "Boundary_IoU": 0.5379069660661755
+    },
+    {
+      "image_name": "dunedin_423",
+      "mode": "oracle_box",
+      "mIoU": 0.9037313133745993,
+      "F1": 0.9494315789474749,
+      "Boundary_IoU": 0.6787684926055276
+    },
+    {
+      "image_name": "dunedin_502",
+      "mode": "oracle_box",
+      "mIoU": 0.6894850714003505,
+      "F1": 0.8162073558046501,
+      "Boundary_IoU": 0.3462915601106612
+    },
+    {
+      "image_name": "dunedin_955",
+      "mode": "oracle_box",
+      "mIoU": 0.8603331454859438,
+      "F1": 0.9249237402166095,
+      "Boundary_IoU": 0.6032845720525094
+    },
+    {
+      "image_name": "dunedin_1040",
+      "mode": "oracle_box",
+      "mIoU": 0.9219341544065727,
+      "F1": 0.959381623239023,
+      "Boundary_IoU": 0.49425630952088545
+    },
+    {
+      "image_name": "dunedin_1292",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_1278",
+      "mode": "oracle_box",
+      "mIoU": 0.8460712642504513,
+      "F1": 0.9166182049791384,
+      "Boundary_IoU": 0.534060606061475
+    },
+    {
+      "image_name": "dunedin_98",
+      "mode": "oracle_box",
+      "mIoU": 0.9102642251644517,
+      "F1": 0.9530244174321689,
+      "Boundary_IoU": 0.2065570493317679
+    },
+    {
+      "image_name": "dunedin_713",
+      "mode": "oracle_box",
+      "mIoU": 0.899681193946364,
+      "F1": 0.9471917675589935,
+      "Boundary_IoU": 0.63369277002074
+    },
+    {
+      "image_name": "dunedin_496",
+      "mode": "oracle_box",
+      "mIoU": 0.8946024134069311,
+      "F1": 0.9443695490687755,
+      "Boundary_IoU": 0.6503175378619916
+    },
+    {
+      "image_name": "dunedin_926",
+      "mode": "oracle_box",
+      "mIoU": 0.812579458012964,
+      "F1": 0.8966000959799943,
+      "Boundary_IoU": 0.4725741468873536
+    },
+    {
+      "image_name": "dunedin_79",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_352",
+      "mode": "oracle_box",
+      "mIoU": 0.7726729050884917,
+      "F1": 0.8717602698953294,
+      "Boundary_IoU": 0.45110512129971847
+    },
+    {
+      "image_name": "dunedin_995",
+      "mode": "oracle_box",
+      "mIoU": 0.9172904511171982,
+      "F1": 0.9568612315183397,
+      "Boundary_IoU": 0.6791594495314176
+    },
+    {
+      "image_name": "dunedin_734",
+      "mode": "oracle_box",
+      "mIoU": 0.9224974482094894,
+      "F1": 0.9596865255333779,
+      "Boundary_IoU": 0.4915241672445104
+    },
+    {
+      "image_name": "dunedin_1102",
+      "mode": "oracle_box",
+      "mIoU": 0.8746885731602253,
+      "F1": 0.9331561366330713,
+      "Boundary_IoU": 0.62974798295796
+    },
+    {
+      "image_name": "dunedin_1179",
+      "mode": "oracle_box",
+      "mIoU": 0.8945359868750808,
+      "F1": 0.9443325363806144,
+      "Boundary_IoU": 0.5639745418644684
+    },
+    {
+      "image_name": "dunedin_598",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_1112",
+      "mode": "oracle_box",
+      "mIoU": 0.8570131638678862,
+      "F1": 0.9230017110732127,
+      "Boundary_IoU": 0.5231261728693944
+    },
+    {
+      "image_name": "dunedin_969",
+      "mode": "oracle_box",
+      "mIoU": 0.856704897368685,
+      "F1": 0.9228228983321408,
+      "Boundary_IoU": 0.5810440257970318
+    },
+    {
+      "image_name": "dunedin_1159",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_280",
+      "mode": "oracle_box",
+      "mIoU": 0.8454377868136475,
+      "F1": 0.9162463160281709,
+      "Boundary_IoU": 0.5693160353922624
+    },
+    {
+      "image_name": "dunedin_989",
+      "mode": "oracle_box",
+      "mIoU": 0.8211014687855224,
+      "F1": 0.9017635566820438,
+      "Boundary_IoU": 0.5312468652833158
+    },
+    {
+      "image_name": "dunedin_648",
+      "mode": "oracle_box",
+      "mIoU": 0.8652992846148914,
+      "F1": 0.9277860038352892,
+      "Boundary_IoU": 0.6154810965786585
+    },
+    {
+      "image_name": "dunedin_424",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_1147",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_121",
+      "mode": "oracle_box",
+      "mIoU": 0.8769479761072564,
+      "F1": 0.9344403651783361,
+      "Boundary_IoU": 0.5547634702579688
+    },
+    {
+      "image_name": "dunedin_810",
+      "mode": "oracle_box",
+      "mIoU": 0.8833594104881811,
+      "F1": 0.9380678011523848,
+      "Boundary_IoU": 0.6228164471923392
+    },
+    {
+      "image_name": "dunedin_59",
+      "mode": "oracle_box",
+      "mIoU": 0.8207845925163817,
+      "F1": 0.901572427501625,
+      "Boundary_IoU": 0.47267568568003343
+    },
+    {
+      "image_name": "dunedin_549",
+      "mode": "oracle_box",
+      "mIoU": 0.8201692524714357,
+      "F1": 0.90120108485179,
+      "Boundary_IoU": 0.5330343796851111
+    },
+    {
+      "image_name": "dunedin_882",
+      "mode": "oracle_box",
+      "mIoU": 0.8123322671962314,
+      "F1": 0.8964495991156218,
+      "Boundary_IoU": 0.464164065984014
+    },
+    {
+      "image_name": "dunedin_274",
+      "mode": "oracle_box",
+      "mIoU": 0.8693846207548791,
+      "F1": 0.9301292105460358,
+      "Boundary_IoU": 0.6147102710780443
+    },
+    {
+      "image_name": "dunedin_922",
+      "mode": "oracle_box",
+      "mIoU": 0.9082496480526436,
+      "F1": 0.9519191044835081,
+      "Boundary_IoU": 0.6338250686264316
+    },
+    {
+      "image_name": "dunedin_774",
+      "mode": "oracle_box",
+      "mIoU": 0.9601217729563042,
+      "F1": 0.9796552297954555,
+      "Boundary_IoU": 0.6070460704630196
+    },
+    {
+      "image_name": "dunedin_715",
+      "mode": "oracle_box",
+      "mIoU": 0.8597149667801139,
+      "F1": 0.9245663794044368,
+      "Boundary_IoU": 0.622127618403507
+    },
+    {
+      "image_name": "dunedin_434",
+      "mode": "oracle_box",
+      "mIoU": 0.8847106555629197,
+      "F1": 0.9388291544397426,
+      "Boundary_IoU": 0.6233443102831199
+    },
+    {
+      "image_name": "dunedin_687",
+      "mode": "oracle_box",
+      "mIoU": 0.3191638154684219,
+      "F1": 0.48388806867765083,
+      "Boundary_IoU": 0.08193750124662523
+    },
+    {
+      "image_name": "dunedin_145",
+      "mode": "oracle_box",
+      "mIoU": 0.7095501183975388,
+      "F1": 0.8301015697163727,
+      "Boundary_IoU": 0.44577284373908993
+    },
+    {
+      "image_name": "dunedin_792",
+      "mode": "oracle_box",
+      "mIoU": 0.8516020236089847,
+      "F1": 0.9198542805100811,
+      "Boundary_IoU": 0.5236340104678306
+    },
+    {
+      "image_name": "dunedin_184",
+      "mode": "oracle_box",
+      "mIoU": 0.8908200734400806,
+      "F1": 0.9422578974626415,
+      "Boundary_IoU": 0.5785725344545816
+    },
+    {
+      "image_name": "dunedin_604",
+      "mode": "oracle_box",
+      "mIoU": 0.8979446607226507,
+      "F1": 0.9462284958094793,
+      "Boundary_IoU": 0.5733056023255313
+    },
+    {
+      "image_name": "dunedin_195",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_1051",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_287",
+      "mode": "oracle_box",
+      "mIoU": 0.8715886893362825,
+      "F1": 0.9313891394003958,
+      "Boundary_IoU": 0.5900288121390641
+    },
+    {
+      "image_name": "dunedin_370",
+      "mode": "oracle_box",
+      "mIoU": 0.8844007073116255,
+      "F1": 0.9386546119198882,
+      "Boundary_IoU": 0.6006354298417576
+    },
+    {
+      "image_name": "dunedin_618",
+      "mode": "oracle_box",
+      "mIoU": 0.8798338566196495,
+      "F1": 0.9360761894157619,
+      "Boundary_IoU": 0.37262831273367764
+    },
+    {
+      "image_name": "dunedin_1302",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_1189",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_778",
+      "mode": "oracle_box",
+      "mIoU": 0.7515400046160169,
+      "F1": 0.8581476901872396,
+      "Boundary_IoU": 0.41173175152607766
+    },
+    {
+      "image_name": "dunedin_1183",
+      "mode": "oracle_box",
+      "mIoU": 0.9201019223979008,
+      "F1": 0.9583886268378794,
+      "Boundary_IoU": 0.5873597606612763
+    },
+    {
+      "image_name": "dunedin_301",
+      "mode": "oracle_box",
+      "mIoU": 0.8413837973664744,
+      "F1": 0.913860324577326,
+      "Boundary_IoU": 0.551426487276903
+    },
+    {
+      "image_name": "dunedin_772",
+      "mode": "oracle_box",
+      "mIoU": 0.8645087130444025,
+      "F1": 0.9273313736708519,
+      "Boundary_IoU": 0.5817603287986912
+    },
+    {
+      "image_name": "dunedin_1204",
+      "mode": "oracle_box",
+      "mIoU": 0.8614367261127948,
+      "F1": 0.9255611152700015,
+      "Boundary_IoU": 0.5550851678465109
+    },
+    {
+      "image_name": "dunedin_226",
+      "mode": "oracle_box",
+      "mIoU": 0.8624770334080201,
+      "F1": 0.9261612550784146,
+      "Boundary_IoU": 0.6074772410677828
+    },
+    {
+      "image_name": "dunedin_1271",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_2",
+      "mode": "oracle_box",
+      "mIoU": 0.900222418865185,
+      "F1": 0.9474916303773914,
+      "Boundary_IoU": 0.6008691919755292
+    },
+    {
+      "image_name": "dunedin_912",
+      "mode": "oracle_box",
+      "mIoU": 0.8582506125131238,
+      "F1": 0.9237189071632977,
+      "Boundary_IoU": 0.6038569706718884
+    },
+    {
+      "image_name": "dunedin_719",
+      "mode": "oracle_box",
+      "mIoU": 0.8241269841297758,
+      "F1": 0.9035851026809643,
+      "Boundary_IoU": 0.6068493150774692
+    },
+    {
+      "image_name": "dunedin_260",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_204",
+      "mode": "oracle_box",
+      "mIoU": 0.8687801832338985,
+      "F1": 0.9297831719624098,
+      "Boundary_IoU": 0.530647452812232
+    },
+    {
+      "image_name": "dunedin_479",
+      "mode": "oracle_box",
+      "mIoU": 0.9073972440187084,
+      "F1": 0.9514507236121101,
+      "Boundary_IoU": 0.640194588021769
+    },
+    {
+      "image_name": "dunedin_859",
+      "mode": "oracle_box",
+      "mIoU": 0.8537382603893964,
+      "F1": 0.9210990339164705,
+      "Boundary_IoU": 0.5691354182885505
+    },
+    {
+      "image_name": "dunedin_811",
+      "mode": "oracle_box",
+      "mIoU": 0.8803844826972314,
+      "F1": 0.9363877343152357,
+      "Boundary_IoU": 0.6110981184232782
+    },
+    {
+      "image_name": "dunedin_545",
+      "mode": "oracle_box",
+      "mIoU": 0.7940422322790797,
+      "F1": 0.8851990415743193,
+      "Boundary_IoU": 0.5131086142377356
+    },
+    {
+      "image_name": "dunedin_991",
+      "mode": "oracle_box",
+      "mIoU": 0.8642507830102419,
+      "F1": 0.9271829636725907,
+      "Boundary_IoU": 0.598159509203367
+    },
+    {
+      "image_name": "dunedin_92",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_435",
+      "mode": "oracle_box",
+      "mIoU": 0.8671369782483335,
+      "F1": 0.9288413098237476,
+      "Boundary_IoU": 0.5735691716356442
+    },
+    {
+      "image_name": "dunedin_390",
+      "mode": "oracle_box",
+      "mIoU": 0.8917297397088253,
+      "F1": 0.9427665284217058,
+      "Boundary_IoU": 0.6436801375783002
+    },
+    {
+      "image_name": "dunedin_703",
+      "mode": "oracle_box",
+      "mIoU": 0.9184652611671602,
+      "F1": 0.9575000181221449,
+      "Boundary_IoU": 0.5260315888965215
+    },
+    {
+      "image_name": "dunedin_986",
+      "mode": "oracle_box",
+      "mIoU": 0.5624588489050262,
+      "F1": 0.7199662881349347,
+      "Boundary_IoU": 0.5037473079698385
+    },
+    {
+      "image_name": "dunedin_172",
+      "mode": "oracle_box",
+      "mIoU": 0.8766951227303414,
+      "F1": 0.9342967987840208,
+      "Boundary_IoU": 0.6142236270264155
+    },
+    {
+      "image_name": "dunedin_1009",
+      "mode": "oracle_box",
+      "mIoU": 0.9106292262086185,
+      "F1": 0.9532244285989065,
+      "Boundary_IoU": 0.6191255552987364
+    },
+    {
+      "image_name": "dunedin_333",
+      "mode": "oracle_box",
+      "mIoU": 0.8534345572671678,
+      "F1": 0.9209222455908808,
+      "Boundary_IoU": 0.5616304290335883
+    },
+    {
+      "image_name": "dunedin_853",
+      "mode": "oracle_box",
+      "mIoU": 0.8802317896065414,
+      "F1": 0.9363013586646042,
+      "Boundary_IoU": 0.6047780285941661
+    },
+    {
+      "image_name": "dunedin_1044",
+      "mode": "oracle_box",
+      "mIoU": 0.8102234610483058,
+      "F1": 0.8951640264113903,
+      "Boundary_IoU": 0.5521959984811079
+    },
+    {
+      "image_name": "dunedin_433",
+      "mode": "oracle_box",
+      "mIoU": 0.8481892338854856,
+      "F1": 0.9178597281429283,
+      "Boundary_IoU": 0.5652606776638063
+    },
+    {
+      "image_name": "dunedin_438",
+      "mode": "oracle_box",
+      "mIoU": 0.8478085270776009,
+      "F1": 0.9176367731329599,
+      "Boundary_IoU": 0.5786681558021127
+    },
+    {
+      "image_name": "dunedin_880",
+      "mode": "oracle_box",
+      "mIoU": 0.867907757641761,
+      "F1": 0.9292833161498868,
+      "Boundary_IoU": 0.6314940039640616
+    },
+    {
+      "image_name": "dunedin_908",
+      "mode": "oracle_box",
+      "mIoU": 0.8052216947785019,
+      "F1": 0.8921028338042957,
+      "Boundary_IoU": 0.5221654685339857
+    },
+    {
+      "image_name": "dunedin_421",
+      "mode": "oracle_box",
+      "mIoU": 0.8374185667759063,
+      "F1": 0.9115163870855331,
+      "Boundary_IoU": 0.5541511060072238
+    },
+    {
+      "image_name": "dunedin_189",
+      "mode": "oracle_box",
+      "mIoU": 0.8487369382180304,
+      "F1": 0.9181803215720892,
+      "Boundary_IoU": 0.6116097278573884
+    },
+    {
+      "image_name": "dunedin_1196",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_673",
+      "mode": "oracle_box",
+      "mIoU": 0.9328666666671143,
+      "F1": 0.9652674783569646,
+      "Boundary_IoU": 0.6622983871024479
+    },
+    {
+      "image_name": "dunedin_1261",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_804",
+      "mode": "oracle_box",
+      "mIoU": 0.8228124396371976,
+      "F1": 0.9027944090625931,
+      "Boundary_IoU": 0.5116310205190895
+    },
+    {
+      "image_name": "dunedin_764",
+      "mode": "oracle_box",
+      "mIoU": 0.8604593615730541,
+      "F1": 0.9249966748485998,
+      "Boundary_IoU": 0.6097028052965286
+    },
+    {
+      "image_name": "dunedin_1116",
+      "mode": "oracle_box",
+      "mIoU": 0.9356209705894734,
+      "F1": 0.9667398574469028,
+      "Boundary_IoU": 0.4302950910133046
+    },
+    {
+      "image_name": "dunedin_387",
+      "mode": "oracle_box",
+      "mIoU": 0.8141343552771174,
+      "F1": 0.8975458216843892,
+      "Boundary_IoU": 0.5134075907691129
+    },
+    {
+      "image_name": "dunedin_63",
+      "mode": "oracle_box",
+      "mIoU": 0.863413671785541,
+      "F1": 0.9267010163750588,
+      "Boundary_IoU": 0.5408933903194141
+    },
+    {
+      "image_name": "dunedin_977",
+      "mode": "oracle_box",
+      "mIoU": 0.8427124768231206,
+      "F1": 0.914643480654029,
+      "Boundary_IoU": 0.5248900467839738
+    },
+    {
+      "image_name": "dunedin_1285",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_896",
+      "mode": "oracle_box",
+      "mIoU": 0.8645927670110116,
+      "F1": 0.9273797284936597,
+      "Boundary_IoU": 0.6019685332945544
+    },
+    {
+      "image_name": "dunedin_752",
+      "mode": "oracle_box",
+      "mIoU": 0.8549827547770514,
+      "F1": 0.9218228606979796,
+      "Boundary_IoU": 0.5713051779797897
+    },
+    {
+      "image_name": "dunedin_627",
+      "mode": "oracle_box",
+      "mIoU": 0.8752861673358224,
+      "F1": 0.9334961059082525,
+      "Boundary_IoU": 0.25125646310427285
+    },
+    {
+      "image_name": "dunedin_1291",
+      "mode": "oracle_box",
+      "mIoU": 1.0,
+      "F1": 1.0,
+      "Boundary_IoU": 1.0
+    },
+    {
+      "image_name": "dunedin_688",
+      "mode": "oracle_box",
+      "mIoU": 0.6851239669422843,
+      "F1": 0.8131436978911708,
+      "Boundary_IoU": 0.1714826470671197
+    },
+    {
+      "image_name": "dunedin_831",
+      "mode": "oracle_box",
+      "mIoU": 0.8540510261243391,
+      "F1": 0.9212810371347497,
+      "Boundary_IoU": 0.5385860386574907
+    },
+    {
+      "image_name": "dunedin_475",
+      "mode": "oracle_box",
+      "mIoU": 0.8395554072908359,
+      "F1": 0.9127807773153256,
+      "Boundary_IoU": 0.5753318112261954
+    },
+    {
+      "image_name": "dunedin_107",
+      "mode": "oracle_box",
+      "mIoU": 0.774970553593787,
+      "F1": 0.8732207438870792,
+      "Boundary_IoU": 0.44074615947841306
+    },
+    {
+      "image_name": "dunedin_4",
+      "mode": "oracle_box",
+      "mIoU": 0.919691321693024,
+      "F1": 0.9581658377053957,
+      "Boundary_IoU": 0.6624186551021907
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "experiment": "E7b_image_corruption",
+  "metadata": {
+    "test_manifest": "target_pilot_test_500.txt",
+    "val_manifest": "target_val.txt",
+    "corruptions": ["clean_0", "gaussian_10", "gaussian_20", "blur_3", "blur_5", "brightness_0.7"],
+    "use_tta": true,
+    "note": "Partial results from log; missing brightness_1.3, contrast_0.7, contrast_1.3, downsample_0.5, downsample_0.25, occlusion_0.1, occlusion_0.2 will be added after resume."
+  },
+  "results": {
+    "clean_0": {
+      "Prompt-free LoRA": {"mIoU": 0.6924, "F1": 0.7776, "Boundary_IoU": 0.3773},
+      "HL-Residual (Ours)": {"mIoU": 0.7020, "F1": 0.7846, "Boundary_IoU": 0.3981}
+    },
+    "gaussian_10": {
+      "Prompt-free LoRA": {"mIoU": 0.6869, "F1": 0.7730, "Boundary_IoU": 0.3731},
+      "HL-Residual (Ours)": {"mIoU": 0.6916, "F1": 0.7758, "Boundary_IoU": 0.3900}
+    },
+    "gaussian_20": {
+      "Prompt-free LoRA": {"mIoU": 0.6677, "F1": 0.7563, "Boundary_IoU": 0.3616},
+      "HL-Residual (Ours)": {"mIoU": 0.6727, "F1": 0.7600, "Boundary_IoU": 0.3766}
+    },
+    "blur_3": {
+      "Prompt-free LoRA": {"mIoU": 0.6907, "F1": 0.7759, "Boundary_IoU": 0.3772},
+      "HL-Residual (Ours)": {"mIoU": 0.6996, "F1": 0.7827, "Boundary_IoU": 0.3978}
+    },
+    "blur_5": {
+      "Prompt-free LoRA": {"mIoU": 0.6895, "F1": 0.7750, "Boundary_IoU": 0.3749},
+      "HL-Residual (Ours)": {"mIoU": 0.6983, "F1": 0.7817, "Boundary_IoU": 0.3946}
+    },
+    "brightness_0.7": {
+      "Prompt-free LoRA": {"mIoU": 0.6926, "F1": 0.7780, "Boundary_IoU": 0.3784},
+      "HL-Residual (Ours)": {"mIoU": 0.7004, "F1": 0.7836, "Boundary_IoU": 0.3992}
+    }
+  }
+}

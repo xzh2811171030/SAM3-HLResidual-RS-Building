@@ -1,0 +1,53 @@
+{
+  "gt_dir": "/path/to/project/data/raw/whu_mix_full_test/dual_channel_labels",
+  "eval_manifest": "/path/to/project/data/splits/e0_manifest/target_final_test_8402.txt",
+  "exclude_manifest": "/path/to/project/data/splits/e0_manifest/target_pilot_test_500.txt",
+  "output_dir": "results/coverage_diagnostic_nonpilot",
+  "methods": [
+    {
+      "name": "Prompt-free LoRA",
+      "seed": 42,
+      "pred_dir": "TODO: 需先运行带 mask 保存的校准推理脚本生成"
+    },
+    {
+      "name": "HL-Residual",
+      "seed": 42,
+      "pred_dir": "TODO: 需先运行带 mask 保存的校准推理脚本生成"
+    },
+    {
+      "name": "UNetFormer-style ResNet34",
+      "seed": 42,
+      "pred_dir": "TODO: 需先运行带 mask 保存的校准推理脚本生成"
+    },
+    {
+      "name": "Prompt-free LoRA",
+      "seed": 123,
+      "pred_dir": "TODO: 需先运行带 mask 保存的校准推理脚本生成"
+    },
+    {
+      "name": "HL-Residual",
+      "seed": 123,
+      "pred_dir": "TODO: 需先运行带 mask 保存的校准推理脚本生成"
+    },
+    {
+      "name": "UNetFormer-style ResNet34",
+      "seed": 123,
+      "pred_dir": "TODO: 需先运行带 mask 保存的校准推理脚本生成"
+    },
+    {
+      "name": "Prompt-free LoRA",
+      "seed": 456,
+      "pred_dir": "TODO: 需先运行带 mask 保存的校准推理脚本生成"
+    },
+    {
+      "name": "HL-Residual",
+      "seed": 456,
+      "pred_dir": "TODO: 需先运行带 mask 保存的校准推理脚本生成"
+    },
+    {
+      "name": "UNetFormer-style ResNet34",
+      "seed": 456,
+      "pred_dir": "TODO: 需先运行带 mask 保存的校准推理脚本生成"
+    }
+  ]
+}

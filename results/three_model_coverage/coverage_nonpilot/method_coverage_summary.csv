@@ -1,0 +1,4 @@
+method,Precision_micro,Recall_micro,mIoU_image_avg,F1_image_avg,Pred_GT_area_ratio,FP_GT_ratio,FN_GT_ratio
+HL-Residual,84.43$\pm$0.00,85.90$\pm$0.00,75.41$\pm$0.00,83.42$\pm$0.00,1.017$\pm$0.000,0.158$\pm$0.000,0.141$\pm$0.000
+Prompt-free LoRA,82.63$\pm$0.00,87.37$\pm$0.00,74.85$\pm$0.00,83.08$\pm$0.00,1.057$\pm$0.000,0.184$\pm$0.000,0.126$\pm$0.000
+UNetFormer-style ResNet34,80.39$\pm$4.06,58.91$\pm$3.11,59.66$\pm$2.07,68.18$\pm$2.15,0.735$\pm$0.069,0.146$\pm$0.041,0.411$\pm$0.031

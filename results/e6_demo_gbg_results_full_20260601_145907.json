@@ -1,0 +1,81 @@
+{
+  "experiment": "E6_GBG_SAM3",
+  "metadata": {
+    "platform": "cloud-linux",
+    "device": "cuda",
+    "timestamp": "20260601_145907",
+    "full_test": true,
+    "model": "GBG-SAM3 (LoRA + GatedBoundaryAdapter + EU-Head + UG-DP)",
+    "batch_size_desc": "train: auto(2/4/16), eval: 32",
+    "num_epochs": 30,
+    "num_workers": 8,
+    "lora_rank": 8,
+    "ugdp_d": 5,
+    "loss_weights": "seg=1.0, unc=1.0, reg=0.1, gate_norm=0.01"
+  },
+  "individual_results": [
+    {
+      "domain": "target",
+      "num_shots": 5,
+      "seed": 42,
+      "full_test": true,
+      "best_val_iou": 0.6172156625872748,
+      "std_mIoU": 0.6424653584311876,
+      "std_F1": 0.7379635920046941,
+      "std_Boundary_IoU": 0.46290997356813063,
+      "ugdp_mIoU": 0.6501828792448864,
+      "ugdp_F1": 0.7448611635215977,
+      "ugdp_Boundary_IoU": 0.4650828710733958
+    }
+  ],
+  "aggregated_summary": {
+    "target_5shot__ugdp_mIoU": {
+      "domain": "target",
+      "num_shots": 5,
+      "metric": "ugdp_mIoU",
+      "num_runs": 1,
+      "mean": 0.6501828792448864,
+      "std": 0.0
+    },
+    "target_5shot__ugdp_F1": {
+      "domain": "target",
+      "num_shots": 5,
+      "metric": "ugdp_F1",
+      "num_runs": 1,
+      "mean": 0.7448611635215977,
+      "std": 0.0
+    },
+    "target_5shot__ugdp_Boundary_IoU": {
+      "domain": "target",
+      "num_shots": 5,
+      "metric": "ugdp_Boundary_IoU",
+      "num_runs": 1,
+      "mean": 0.4650828710733958,
+      "std": 0.0
+    },
+    "target_5shot__std_mIoU": {
+      "domain": "target",
+      "num_shots": 5,
+      "metric": "std_mIoU",
+      "num_runs": 1,
+      "mean": 0.6424653584311876,
+      "std": 0.0
+    },
+    "target_5shot__std_F1": {
+      "domain": "target",
+      "num_shots": 5,
+      "metric": "std_F1",
+      "num_runs": 1,
+      "mean": 0.7379635920046941,
+      "std": 0.0
+    },
+    "target_5shot__std_Boundary_IoU": {
+      "domain": "target",
+      "num_shots": 5,
+      "metric": "std_Boundary_IoU",
+      "num_runs": 1,
+      "mean": 0.46290997356813063,
+      "std": 0.0
+    }
+  }
+}
