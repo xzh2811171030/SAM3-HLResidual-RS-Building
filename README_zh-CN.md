@@ -4,6 +4,8 @@
 
 本仓库整理了 SAM3 Prompt-free 建筑物分割实验的核心代码、配置模板、数据划分、诊断脚本和结果汇总。模型在推理阶段不使用 box、point 或 text prompt，仅输入 RGB 遥感影像即可直接预测建筑物二值掩膜。
 
+English version: [README.md](README.md).
+
 ## 项目概述
 
 高分辨率遥感建筑物提取在城市制图、地理数据库更新、灾害评估和空间分析中具有重要意义。SAM 类视觉基础模型具有较强的通用视觉表征能力，但其标准推理流程通常依赖 box、point 或 text prompt，这限制了其在大规模自动化制图任务中的直接应用。
@@ -18,7 +20,7 @@
 * **残差修正而非替换解码器**：HL-Residual 只修正 baseline logits，不重新替代完整语义解码器。
 * **Validation-calibrated 20-shot 协议**：每个 support seed 使用 20 张目标域标注影像训练，并使用独立验证集进行 checkpoint 选择和推理校准。
 * **Held-out 测试评估**：主结果报告在排除 pilot500 诊断子集后的 7,902 张 WHU-Mix held-out non-pilot 测试影像上。
-* **可复现实验整理**：包含固定 split、配置模板、诊断脚本、消融实验脚本和结果汇总。
+* **部署诊断分析**：仓库包含 prompt drift、image corruption、region-wise、efficiency、qualitative visualization、paired analysis 和 baseline comparison 等诊断脚本。
 
 ## 方法简述
 
@@ -67,32 +69,69 @@ SAM3-HLResidual-RS-Building/
 │   ├── run_stageA_shot_pilot_5_10.sh
 │   └── run_target20_segformer_baseline.sh
 ├── src/
+│   ├── data/
+│   ├── evaluation/
+│   ├── models/
+│   ├── training/
+│   ├── utils/
+│   ├── generate_mask_predictions.py
+│   ├── make_paper_tables.py
+│   ├── recompute_excluding_pilot_metrics.py
+│   ├── run_calibrated_fulltest.py
+│   ├── run_calibrated_inference_pilot.py
+│   ├── run_deeplabv3plus_baseline_revised.py
+│   ├── run_e7a_prompt_drift.py
+│   ├── run_e7b_image_corruption.py
+│   ├── run_e8_regionwise_eval.py
+│   ├── run_e9_efficiency.py
+│   ├── run_foundation_prompt_baselines.py
+│   ├── run_hl_residual_component_ablation.py
+│   ├── run_qualitative_visualization_v2.py
+│   └── run_target20_segformer_baseline.py
 ├── .gitignore
 ├── README.md
-├── README_CH.md
+├── README_zh-CN.md
 └── requirements.txt
 ```
 
-## 目录说明
+## 代码组织
 
-* `config/`：保存诊断分析和复现实验相关的配置模板。
-* `data/splits/e0_manifest/`：保存固定 support、validation、pilot diagnostic 和 held-out evaluation 子集划分文件。
-* `results/`：保存轻量级结果汇总和导出表格，不应保存大体积权重文件。
-* `scripts/`：保存诊断分析、消融实验、低 shot pilot 实验和 baseline 实验的运行脚本。
-* `src/`：保存核心 Python 代码，包括模型结构、数据读取、训练/评估逻辑、评价指标和工具函数。
-* `weights/`：仅本地使用，用于存放 SAM3 checkpoint 或训练得到的 checkpoint，不上传 GitHub。
+### 核心模块
 
-## 当前脚本说明
+* `src/models/`：SAM3 prompt-free segmentation 和 High--Low Residual refinement 相关模型组件。
+* `src/training/`：训练流程、LoRA 适配、轻量级 decoder 训练和优化工具。
+* `src/evaluation/`：mIoU、F1、Boundary IoU 以及 baseline evaluation 相关评估代码。
+* `src/data/`：数据集读取和 split manifest 加载工具。
+* `src/utils/`：路径管理、实验管理和分析辅助工具。
 
-| 脚本                                           | 用途                                         |
-| -------------------------------------------- | ------------------------------------------ |
-| `scripts/paired_significance_analysis.py`    | 对 Prompt-free LoRA 和 HL-Residual 进行图像级配对分析 |
-| `scripts/run_exp2_component_ablation.sh`     | 运行残差分支组件消融实验                               |
-| `scripts/run_overnight_unet_baseline.sh`     | 运行 U-Net 相关 baseline 实验                    |
-| `scripts/run_stageA_shot_pilot_5_10.sh`      | 运行 5-shot 和 10-shot pilot 诊断实验             |
-| `scripts/run_target20_segformer_baseline.sh` | 运行 20-shot SegFormer baseline 实验           |
+### 主要实验与诊断脚本
 
-运行这些脚本前，需要检查并修改本地数据路径、checkpoint 路径、GPU 编号和输出目录。
+| 脚本                                          | 用途                                                     |
+| ------------------------------------------- | ------------------------------------------------------ |
+| `src/run_calibrated_fulltest.py`            | validation-calibrated full-test evaluation             |
+| `src/run_calibrated_inference_pilot.py`     | calibrated pilot-scale inference                       |
+| `src/generate_mask_predictions.py`          | 导出预测 mask，用于后续诊断分析                                     |
+| `src/recompute_excluding_pilot_metrics.py`  | 排除固定 pilot subset 后重新计算 held-out non-pilot 指标          |
+| `src/run_hl_residual_component_ablation.py` | residual branch 组件消融                                   |
+| `src/run_e7a_prompt_drift.py`               | prompt-drift 诊断                                        |
+| `src/run_e7b_image_corruption.py`           | image-corruption 诊断                                    |
+| `src/run_e8_regionwise_eval.py`             | region-wise evaluation                                 |
+| `src/run_e9_efficiency.py`                  | 参数量与推理时间分析                                             |
+| `src/run_qualitative_visualization_v2.py`   | 定性可视化                                                  |
+| `src/run_deeplabv3plus_baseline_revised.py` | DeepLabv3+ baseline                                    |
+| `src/run_target20_segformer_baseline.py`    | Target 20-shot SegFormer baseline                      |
+| `src/run_foundation_prompt_baselines.py`    | prompt-dependent foundation-model diagnostic baselines |
+| `src/make_paper_tables.py`                  | 根据导出指标生成结果表                                            |
+
+### Shell 脚本
+
+| 脚本                                           | 用途                                      |
+| -------------------------------------------- | --------------------------------------- |
+| `scripts/paired_significance_analysis.py`    | Prompt-free LoRA 与 HL-Residual 的图像级配对分析 |
+| `scripts/run_exp2_component_ablation.sh`     | 组件消融实验                                  |
+| `scripts/run_overnight_unet_baseline.sh`     | U-Net baseline 实验                       |
+| `scripts/run_stageA_shot_pilot_5_10.sh`      | 5-shot 和 10-shot pilot 诊断               |
+| `scripts/run_target20_segformer_baseline.sh` | Target 20-shot SegFormer baseline       |
 
 ## 环境配置
 
@@ -132,9 +171,35 @@ data_root/
     └── masks/
 ```
 
-运行实验前，请在配置文件或脚本中修改本地数据路径和 checkpoint 路径。
+本仓库中的 `data/` 目录只保存轻量级 split manifest 和文件列表，不上传原始遥感影像或 mask。
 
-本仓库中的 `data/` 目录只建议保存轻量级 split manifest 和文件列表，不上传原始遥感影像或 mask。
+## 最小复现说明
+
+运行实验前，需要先检查并修改：
+
+* 数据集路径；
+* SAM3 checkpoint 路径；
+* 输出目录；
+* GPU 编号；
+* 结果文件路径。
+
+常见命令包括：
+
+```bash
+# 图像级配对分析
+python scripts/paired_significance_analysis.py
+
+# 组件消融实验
+bash scripts/run_exp2_component_ablation.sh
+
+# 5-shot 和 10-shot pilot 诊断
+bash scripts/run_stageA_shot_pilot_5_10.sh
+
+# Target 20-shot SegFormer baseline
+bash scripts/run_target20_segformer_baseline.sh
+```
+
+核心训练和评估代码位于 `src/` 目录。运行大规模实验前，请检查对应入口脚本中的本地路径和输出路径。
 
 ## 权重说明
 
@@ -144,7 +209,8 @@ data_root/
 * LoRA 训练 checkpoint；
 * HL-Residual 训练 checkpoint；
 * `.pth`、`.pt`、`.ckpt`、`.safetensors` 等权重文件；
-* 完整预测 mask。
+* 完整预测 mask；
+* 个人日志或临时输出文件。
 
 如需运行实验，请在本地创建：
 

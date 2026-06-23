@@ -2,13 +2,15 @@
 
 **Prompt-free SAM3-LoRA with High--Low Residual refinement for validation-calibrated 20-shot cross-domain building extraction in remote sensing imagery.**
 
-This repository contains the core code, configuration templates, split manifests, diagnostic scripts, and result summaries for a SAM3-based remote-sensing building extraction project. The model performs full-image building segmentation without box, point, or text prompts during inference.
+This repository contains the research code, split manifests, diagnostic scripts, and lightweight result summaries for a SAM3-based remote-sensing building extraction project. The model performs full-image building segmentation without box, point, or text prompts during inference.
+
+中文说明见 [README_zh-CN.md](README_zh-CN.md).
 
 ## Overview
 
 Building extraction from high-resolution remote sensing imagery is important for urban mapping, geographic database updating, disaster response, and downstream geospatial analysis. Although SAM-style foundation models provide transferable visual representations, their standard prompt-based inference is not ideal for fully automated large-scale mapping.
 
-This project focuses on a **prompt-free** setting. The model receives only RGB remote sensing images during inference and directly predicts binary building masks. The framework first adapts the SAM3 image encoder with LoRA to build a prompt-free baseline, and then introduces a High--Low Residual branch to refine local building boundaries.
+This project focuses on a **prompt-free** setting. The model receives only RGB remote-sensing images during inference and directly predicts binary building masks. The framework first adapts the SAM3 image encoder with LoRA to build a prompt-free baseline, and then introduces a High--Low Residual branch to refine local building boundaries.
 
 ## Key Features
 
@@ -18,11 +20,11 @@ This project focuses on a **prompt-free** setting. The model receives only RGB r
 * **Residual correction**: HL-Residual corrects baseline logits instead of replacing the decoder.
 * **Validation-calibrated 20-shot protocol**: each support seed uses 20 labeled target images for training, with a separate validation subset for checkpoint selection and inference calibration.
 * **Held-out evaluation**: the primary comparison is reported on the 7,902-image held-out non-pilot WHU-Mix subset.
-* **Reproducibility utilities**: fixed split manifests, configuration templates, diagnostic scripts, and result summaries are included.
+* **Deployment-oriented diagnostics**: the repository includes scripts for prompt drift, image corruption, region-wise behavior, efficiency analysis, qualitative visualization, paired analysis, and baseline comparison.
 
 ## Method Summary
 
-The framework first builds a prompt-free LoRA baseline using the SAM3 image encoder and a lightweight full-image decoder. On top of this baseline, HL-Residual predicts a residual logit correction:
+The prompt-free LoRA baseline uses the SAM3 image encoder and a lightweight full-image decoder to output building logits. HL-Residual further predicts a residual logit correction:
 
 ```text
 Z_final = Z_LoRA + alpha * R_HL(F_SAM, I_RGB)
@@ -67,34 +69,69 @@ SAM3-HLResidual-RS-Building/
 │   ├── run_stageA_shot_pilot_5_10.sh
 │   └── run_target20_segformer_baseline.sh
 ├── src/
+│   ├── data/
+│   ├── evaluation/
+│   ├── models/
+│   ├── training/
+│   ├── utils/
+│   ├── generate_mask_predictions.py
+│   ├── make_paper_tables.py
+│   ├── recompute_excluding_pilot_metrics.py
+│   ├── run_calibrated_fulltest.py
+│   ├── run_calibrated_inference_pilot.py
+│   ├── run_deeplabv3plus_baseline_revised.py
+│   ├── run_e7a_prompt_drift.py
+│   ├── run_e7b_image_corruption.py
+│   ├── run_e8_regionwise_eval.py
+│   ├── run_e9_efficiency.py
+│   ├── run_foundation_prompt_baselines.py
+│   ├── run_hl_residual_component_ablation.py
+│   ├── run_qualitative_visualization_v2.py
+│   └── run_target20_segformer_baseline.py
 ├── .gitignore
 ├── README.md
-├── README_CH.md
+├── README_zh-CN.md
 └── requirements.txt
 ```
 
-## Directory Description
+## Code Organization
 
-* `config/`: configuration templates for diagnostic analysis and reproducibility.
-* `data/splits/e0_manifest/`: fixed split manifests for support, validation, pilot diagnostic, and held-out evaluation subsets.
-* `results/`: lightweight result summaries and exported tables. Large checkpoints should not be stored here.
-* `scripts/`: shell scripts and analysis utilities for diagnostics, ablation studies, low-shot pilot experiments, and baseline runs.
-* `src/`: core Python source code, including model components, data handling, training/evaluation logic, metrics, and utilities.
-* `weights/`: local-only directory for SAM3 checkpoints or trained checkpoints. This directory is ignored by Git and should not be uploaded.
+### Core modules
 
-## Available Scripts
+* `src/models/`: model components for SAM3-based prompt-free segmentation and High--Low Residual refinement.
+* `src/training/`: training runners, LoRA adaptation logic, lightweight decoder training, and optimization utilities.
+* `src/evaluation/`: evaluation metrics and utilities for mIoU, F1, Boundary IoU, and baseline evaluation.
+* `src/data/`: dataset and split-loading utilities.
+* `src/utils/`: shared utilities for paths, experiment management, and analysis.
 
-The current public scripts include:
+### Main experiment and diagnostic scripts
+
+| Script                                      | Purpose                                                                     |
+| ------------------------------------------- | --------------------------------------------------------------------------- |
+| `src/run_calibrated_fulltest.py`            | Validation-calibrated full-test evaluation                                  |
+| `src/run_calibrated_inference_pilot.py`     | Calibrated pilot-scale inference                                            |
+| `src/generate_mask_predictions.py`          | Export prediction masks for downstream diagnostics                          |
+| `src/recompute_excluding_pilot_metrics.py`  | Recompute held-out non-pilot metrics after excluding the fixed pilot subset |
+| `src/run_hl_residual_component_ablation.py` | Component ablation for residual-branch variants                             |
+| `src/run_e7a_prompt_drift.py`               | Prompt-drift diagnostic                                                     |
+| `src/run_e7b_image_corruption.py`           | Image-corruption diagnostic                                                 |
+| `src/run_e8_regionwise_eval.py`             | Region-wise evaluation                                                      |
+| `src/run_e9_efficiency.py`                  | Parameter and inference-time analysis                                       |
+| `src/run_qualitative_visualization_v2.py`   | Qualitative visualization                                                   |
+| `src/run_deeplabv3plus_baseline_revised.py` | DeepLabv3+ baseline                                                         |
+| `src/run_target20_segformer_baseline.py`    | Target 20-shot SegFormer baseline                                           |
+| `src/run_foundation_prompt_baselines.py`    | Prompt-dependent foundation-model diagnostic baselines                      |
+| `src/make_paper_tables.py`                  | Generate result tables from exported metrics                                |
+
+### Shell scripts
 
 | Script                                       | Purpose                                                              |
 | -------------------------------------------- | -------------------------------------------------------------------- |
 | `scripts/paired_significance_analysis.py`    | Paired image-level analysis between Prompt-free LoRA and HL-Residual |
-| `scripts/run_exp2_component_ablation.sh`     | Component ablation experiments for residual-branch variants          |
-| `scripts/run_overnight_unet_baseline.sh`     | Overnight baseline run for U-Net-related experiments                 |
-| `scripts/run_stageA_shot_pilot_5_10.sh`      | Pilot-scale 5-shot and 10-shot sensitivity diagnostics               |
-| `scripts/run_target20_segformer_baseline.sh` | 20-shot SegFormer baseline experiment                                |
-
-Before running these scripts, please check and update local dataset paths, checkpoint paths, GPU IDs, and output directories.
+| `scripts/run_exp2_component_ablation.sh`     | Component ablation experiments                                       |
+| `scripts/run_overnight_unet_baseline.sh`     | Overnight U-Net baseline experiment                                  |
+| `scripts/run_stageA_shot_pilot_5_10.sh`      | 5-shot and 10-shot pilot diagnostics                                 |
+| `scripts/run_target20_segformer_baseline.sh` | Target 20-shot SegFormer baseline run                                |
 
 ## Environment
 
@@ -136,9 +173,35 @@ data_root/
     └── masks/
 ```
 
-Update local dataset paths and checkpoint paths in your configuration files or scripts before running experiments.
-
 The `data/` directory in this repository is intended to store only lightweight split manifests and file lists, not raw images or masks.
+
+## Minimal Reproduction Guide
+
+Before running experiments, update local paths in configuration files and shell scripts, including:
+
+* dataset root;
+* SAM3 checkpoint path;
+* output directory;
+* GPU ID;
+* result file path.
+
+Typical commands include:
+
+```bash
+# Paired image-level analysis
+python scripts/paired_significance_analysis.py
+
+# Component ablation
+bash scripts/run_exp2_component_ablation.sh
+
+# 5-shot and 10-shot pilot diagnostics
+bash scripts/run_stageA_shot_pilot_5_10.sh
+
+# Target 20-shot SegFormer baseline
+bash scripts/run_target20_segformer_baseline.sh
+```
+
+Core training and evaluation code is organized under `src/`. For large-scale experiments, please inspect the corresponding entry-point scripts and update machine-specific paths before running.
 
 ## Checkpoints and Weights
 
@@ -148,7 +211,8 @@ This repository does not include:
 * LoRA training checkpoints;
 * HL-Residual training checkpoints;
 * `.pth`, `.pt`, `.ckpt`, or `.safetensors` files;
-* full prediction masks.
+* full prediction masks;
+* private logs or temporary runtime outputs.
 
 If you need to run the experiments, create a local directory:
 
@@ -194,4 +258,3 @@ If this repository is useful for your research, please cite the related work:
 ## License
 
 This repository is released for academic and research use. Please also follow the licenses of SAM3, WHU, WHU-Mix, and any third-party resources used in this project.
-    
